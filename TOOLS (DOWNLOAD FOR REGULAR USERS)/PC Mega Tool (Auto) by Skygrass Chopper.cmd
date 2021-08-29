@@ -1,6 +1,6 @@
 @echo off
 Title PC Mega Tool (Auto) by Skygrass Chopper
-MODE CON: COLS=90 LINES=60
+MODE CON: COLS=90 LINES=50
 
 color 0c
 goto Note
@@ -906,6 +906,14 @@ cls
 color 0e
 tree J: /f
 
+color 0a
+cls
+
+color 04
+goto Packages
+:Packages
+echo Displaying Windows Install Packages...
+DISM /online /get-packages
 color 0a
 cls
 
