@@ -1,6 +1,6 @@
 @echo off
 Title Network Connection Viewer by Skygrass Chopper
-MODE CON: COLS=90 LINES=60
+MODE CON: COLS=90 LINES=50
 color 0a
 goto network
 :network
@@ -327,6 +327,16 @@ tree J: /f
 color 0a
 pause
 cls
+
+color 04
+goto Packages
+:Packages
+echo Displaying Windows Install Packages...
+DISM /online /get-packages
+color 0a
+pause
+cls
+
 
 color 03
 goto ShowFiles
