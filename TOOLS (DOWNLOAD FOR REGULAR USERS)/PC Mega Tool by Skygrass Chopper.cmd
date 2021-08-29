@@ -1,6 +1,6 @@
 @echo off
 Title PC Mega Tool by Skygrass Chopper
-MODE CON: COLS=90 LINES=60
+MODE CON: COLS=90 LINES=50
 
 
 color 0c
@@ -988,6 +988,16 @@ tree J: /f
 color 0a
 pause
 cls
+
+color 04
+goto Packages
+:Packages
+echo Displaying Windows Install Packages...
+DISM /online /get-packages
+color 0a
+pause
+cls
+
 
 del /q/f/s "C:\ProgramData\Microsoft\Windows\Power Efficiency Diagnostics"
 del /q/f/s "C:\ProgramData\Microsoft\Windows\WlanReport"
