@@ -515,6 +515,9 @@ color 0b
 Title 16. Entries in Address Resolution Protocal cache
 echo Displaying entries in Address Resolution Protocal cache...
     arp -a
+    arp -a > "C:\File and Network Reports - DELETABLE\16) Entries in Address Resolution Protocal cache.txt"
+    "C:\File and Network Reports - DELETABLE\16) Entries in Address Resolution Protocal cache.txt"
+
 pause
 cls
 color 09
