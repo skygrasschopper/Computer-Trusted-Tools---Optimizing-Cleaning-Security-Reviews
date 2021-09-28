@@ -368,8 +368,10 @@ color 06
 color 0a
 Title 1. Wifi Report
 MODE CON: COLS=90 LINES=50
-    start cmd.exe @cmd /k "color 03 & Title 1.1) Wi-Fi Report (Auto-generate) & MODE CON: COLS=20 LINES=20 & netsh wlan show wlanreport & move "C:\ProgramData\Microsoft\Windows\WlanReport\wlan-report-latest.html" "C:\File and Network Reports - DELETABLE" & color 06 & exit"        
+    netsh wlan show wlanreport
+    move "C:\ProgramData\Microsoft\Windows\WlanReport\wlan-report-latest.html" "C:\File and Network Reports - DELETABLE"
     "C:\File and Network Reports - DELETABLE\wlan-report-latest.html"
+cls
 color 03
 
 ::2. Winsock
