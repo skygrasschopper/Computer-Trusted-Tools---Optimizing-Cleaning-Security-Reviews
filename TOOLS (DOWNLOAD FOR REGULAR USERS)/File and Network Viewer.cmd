@@ -371,22 +371,22 @@ MODE CON: COLS=20 LINES 20
     start cmd.exe @cmd /k "color 03 & Title 1.35) Power (Auto-generate) & MODE CON: COLS=20 LINES=20 & powercfg -energy & move "C:\WINDOWS\system32\energy-report.html" "C:\File and Network Reports - DELETABLE" & color 06 & exit"        
 color 06
 
-::1.35) Performance Monitor Reports (Autorun)
+::1.36) Performance Monitor Reports (Autorun)
 color 06
-Title 1.35) Performance Monitor Reports (Autorun)
+Title 1.36) Performance Monitor Reports (Autorun)
 MODE CON: COLS=20 LINES 20
-        ::1.35.1) Resource View (Autorun)
-        Title 1.35.1) Resource View (Autorun)
-            start cmd.exe @cmd /k "color 03 & Title 1.35.1) Resource View (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /res & color 06 & exit"
-        ::1.35.2) System Diagnostics Data Report (Autorun) 
-        Title 1.35.2) System Diagnostics Data Report (Autorun)
-            start cmd.exe @cmd /k "color 03 & Title 1.35.2) System Diagnostics Data Report (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /report & color 06 & exit"
-        ::1.35.3) Reliability Monitor Report (Autorun)
-        Title 1.35.3) Reliability Monitor Report (Autorun)
-            start cmd.exe @cmd /k "color 03 & Title 1.35.3) Reliability Monitor Report (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /rel & color 06 & exit"
-        ::1.35.4) Performance Monitor View (Autorun)
-        Title 1.35.4) Performance Monitor View (Autorun)
-            start cmd.exe @cmd /k "color 03 & Title 1.35.4) Performance Monitor View (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /sys & color 06 & exit"
+        ::1.36.1) Resource View (Autorun)
+        Title 1.36.1) Resource View (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.36.1) Resource View (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /res & color 06 & exit"
+        ::1.36.2) System Diagnostics Data Report (Autorun) 
+        Title 1.36.2) System Diagnostics Data Report (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.36.2) System Diagnostics Data Report (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /report & color 06 & exit"
+        ::1.36.3) Reliability Monitor Report (Autorun)
+        Title 1.36.3) Reliability Monitor Report (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.36.3) Reliability Monitor Report (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /rel & color 06 & exit"
+        ::1.36.4) Performance Monitor View (Autorun)
+        Title 1.36.4) Performance Monitor View (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.36.4) Performance Monitor View (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /sys & color 06 & exit"
 
 ::2) View
 ::1. Wifi Report
