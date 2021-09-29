@@ -47,8 +47,10 @@ echo 30. File tree
 echo 31. File list
 echo 32. Windows Packages
 echo 33. Apps
-echo 34. Power
-echo 35. Delete generated files
+echo 34. Policy info for user and Computer
+echo 35. Power
+echo 36. Performance Monitor Reports
+echo 37. Delete generated files
 
 timeout /t 30
 
@@ -356,12 +358,35 @@ MODE CON: COLS=20 LINES 20
     start cmd.exe @cmd /k "color 03 & Title 1.33) Apps (Auto-generate) & MODE CON: COLS=20 LINES=20 & wmic product get name,version > "C:\File and Network Reports - DELETABLE\33) Apps.txt" & color 06 & exit"
 color 03
 
-::1.34) Power (Auto-generate)
+::1.34) Policy info for user and Computer (Auto-generate)
 color 03
-Title 1.34) Power (Auto-generate)
+Title 1.34) Policy info for user and Computer (Auto-generate)
 MODE CON: COLS=20 LINES 20
-    start cmd.exe @cmd /k "color 03 & Title 1.34) Power (Auto-generate) & MODE CON: COLS=20 LINES=20 & powercfg -energy & move "C:\WINDOWS\system32\energy-report.html" "C:\File and Network Reports - DELETABLE" & color 06 & exit"        
+    start cmd.exe @cmd /k "color 03 & Title 1.34) Policy info for user and Computer (Auto-generate) & MODE CON: COLS=20 LINES=20 & gpresult /z > "C:\File and Network Reports - DELETABLE\34) Policy info for user and Computer.txt" & color 06 & exit"
+
+::1.35) Power (Auto-generate)
+color 03
+Title 1.35) Power (Auto-generate)
+MODE CON: COLS=20 LINES 20
+    start cmd.exe @cmd /k "color 03 & Title 1.35) Power (Auto-generate) & MODE CON: COLS=20 LINES=20 & powercfg -energy & move "C:\WINDOWS\system32\energy-report.html" "C:\File and Network Reports - DELETABLE" & color 06 & exit"        
 color 06
+
+::1.35) Performance Monitor Reports (Autorun)
+color 06
+Title 1.35) Performance Monitor Reports (Autorun)
+MODE CON: COLS=20 LINES 20
+        ::1.35.1) Resource View (Autorun)
+        Title 1.35.1) Resource View (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.35.1) Resource View (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /res & color 06 & exit"
+        ::1.35.2) System Diagnostics Data Report (Autorun) 
+        Title 1.35.2) System Diagnostics Data Report (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.35.2) System Diagnostics Data Report (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /report & color 06 & exit"
+        ::1.35.3) Reliability Monitor Report (Autorun)
+        Title 1.35.3) Reliability Monitor Report (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.35.3) Reliability Monitor Report (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /rel & color 06 & exit"
+        ::1.35.4) Performance Monitor View (Autorun)
+        Title 1.35.4) Performance Monitor View (Autorun)
+            start cmd.exe @cmd /k "color 03 & Title 1.35.4) Performance Monitor View (Autorun) & MODE CON: COLS=20 LINES=20 & perfmon /sys & color 06 & exit"
 
 ::2) View
 ::1. Wifi Report
@@ -744,14 +769,22 @@ color 0A
 pause
 cls
 
-::34. Power
+::34. Policy info for user and Computer
+color 03
+Title 34. Policy info for user and Computer
+    gpresult /z
+color 0a
+pause
+cls
+
+::35. Power
 color 06
 Title 34. Power
     powercfg -energy
     move "C:\WINDOWS\system32\energy-report.html" "C:\File and Network Reports - DELETABLE"
     "C:\File and Network Reports - DELETABLE\energy-report.html"
     cls
-    color 0a
+color 0a
 ::3) Delete generated files
 color 09
 cls
