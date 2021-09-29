@@ -773,6 +773,8 @@ cls
 color 03
 Title 34. Policy info for user and Computer
     gpresult /z
+    gpresult /z > "C:\File and Network Reports - DELETABLE\34) Policy info for user and Computer.txt"
+    "C:\File and Network Reports - DELETABLE\34) Policy info for user and Computer.txt"
 color 0a
 pause
 cls
