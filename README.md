@@ -77,6 +77,14 @@ Despite being safe to use, as noted, please do edit "This PC Optimizer" accordin
 License (seriously)
 Feel free to edit and repost this script, but do make changes to the script for "improvement" or "specific groups", direct copy and paste is not allowed. If you would like to, feel free to credit me in your intro :), took me 2 weeks to finish this project. This script has MIT License.
 
+Thanks to everyone who contributed to this project, long live freedom, open source and kindness :)
+Feel free to give feedbacks! Any suggestions are appreciated.
+
+Boss: Skygrass Chopper
+Contact: clam2@student.dean.edu
+Youtube: https://www.youtube.com/c/SkygrassChopper
+Discord: https://discord.com/invite/Nqza6kg
+
 MIT License
 
 Copyright (c) 2021 kencom999
