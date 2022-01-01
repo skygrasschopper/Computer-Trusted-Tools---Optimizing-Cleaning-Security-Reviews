@@ -81,7 +81,7 @@ color 0D
 ::Enable Secret Power Plan
 color 0D
 Title Enable Secret Power Plan
-    powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+    ::powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
     cls
 color 0D
 
