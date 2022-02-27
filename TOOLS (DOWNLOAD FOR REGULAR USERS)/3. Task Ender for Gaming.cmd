@@ -1388,7 +1388,8 @@ cd/
 Title 12.14) Remove Empty folders
 color b0
 cd/
-robocopy "C:" "C:" /S /move /log:"C:\File and Network Reports - DELETABLE\35.3 Empty Folder List C-Drive.txt"
+::robocopy "C:" "C:" /S /move /log:"C:\File and Network Reports - DELETABLE\35.3 Empty Folder List C-Drive.txt"
+robocopy "C:" "C:" /S /move
 d:
 robocopy "D:" "D:" /S /move
 e:
