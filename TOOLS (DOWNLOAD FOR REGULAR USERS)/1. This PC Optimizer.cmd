@@ -90,6 +90,7 @@ echo    ********************************
     netsh int portproxy reset all
     netsh int httpstunnel reset all
     netsh winhttp import proxy source=ie
+    ::netsh advfirewall reset
     arp /d
     nbtstat -R
     nbtstat -RR
@@ -1295,7 +1296,7 @@ ping 127.0.0.1 > nul
 
 Title 12.12) Re-register DLL Files
 color be
-::cd /d %WinDir%\system32 
+cd /d %WinDir%\system32 
 ::regsvr32.exe /s atl.dll 
 ::regsvr32.exe /s urlmon.dll 
 ::regsvr32.exe /s mshtml.dll 
@@ -1332,7 +1333,17 @@ color be
 ::regsvr32.exe /s wucltux.dll 
 ::regsvr32.exe /s muweb.dll 
 ::regsvr32.exe /s wuwebv.dll 
-::cd/
+
+::regsvr32.exe /s gptext.dll
+::regsvr32.exe /s fde.dll
+::regsvr32.exe /s ieaksie.dll
+::regsvr32.exe /s ipsecsnp.dll
+::regsvr32.exe /s certmgr.dll
+::regsvr32.exe /s rigpsnap.dll
+::regsvr32.exe /s wsecedit.dll
+::regsvr32.exe /s appmgr.dll
+::for %1 in (*.dll) do regsvr32 /s %1
+cd/
 
 Title 12.13) Windows Log Cleaner
 color a6
@@ -1431,6 +1442,8 @@ echo Custom Script Ends.
         defrag G: /g
         defrag G: /o
         defrag G: /l
+
+        "%windir%\system32\defrag.exe" -c -h -o -$
     cls
     color 01
     echo Starting extreme defrag... Please be patient!
@@ -1472,6 +1485,10 @@ Title 13) System-Health
             ::Windows-Update
             Title 13.2a) Windows update
                 net start wuauserv
+                C:\WINDOWS\system32\sc.exe start wuauserv
+                "%systemroot%\system32\usoclient.exe" StartScan     
+                "%systemroot%\system32\usoclient.exe" StartWork
+                "%systemroot%\system32\usoclient.exe" StartOobeAppsScan
                 C:\Windows\System32\wuauclt.exe /DetectNow
                 C:\Windows\System32\wuauclt.exe /ShowFeaturedOptInDialog
                 C:\Windows\System32\wuauclt.exe /updatenow
@@ -1481,8 +1498,58 @@ Title 13) System-Health
                 ::IF NOT "Windows 10"== "%WinVer:0,10%" ( wuauclt.exe /resetauthorization /detectnow /updatenow ) else ( UsoClient ScanInstallWait && UsoClient StartInstall )
             ::Windows-Defender-Update   
             color 01
-            Title 13.2b) Windows Defender Update
-                "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -removedefinitions -dynamicsignatures
+            Title 13.2b) App Update
+            ::update
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Google\Update\GoogleUpdate.exe" /c & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Google\Update\GoogleUpdate.exe" /ua /installsource scheduler & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /c & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /ua /installsource scheduler & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\NvContainer" & "C:\Program Files\NVIDIA Corporation\NvContainer\nvcontainer.exe" -d "C:\Program Files\NVIDIA Corporation\NvDriverUpdateCheck" -l 3 -f C:\ProgramData\NVIDIA\NvContainerDriverUpdateCheck.log & exit"
+                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience" & "C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA GeForce Experience.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\Update Core" & "C:\Program Files\NVIDIA Corporation\Update Core\NvProfileUpdater64.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Programs\Opera GX\launcher.exe" --scheduledautoupdate --component-name=assistant --component-path="C:\Users\%username%\AppData\Local\Programs\Opera GX\assistant" $(Arg0) & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Programs\Opera GX\launcher.exe" --scheduledautoupdate $(Arg0) & exit"
+                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramData%\Lenovo\ImController\Plugins\LenovoBatteryGaugePackage\x64\BGHelper.exe" & exit"
+                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\ImController.InfInstaller.exe" -checkremoval & exit"
+                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\sc.exe" START ImControllerService & exit"
+                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\System32\reg.exe" add hklm\SOFTWARE\Lenovo\SystemUpdatePlugin\scheduler  /v start /t reg_dword /d 1 /f /reg:32 & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe" /frequentupdate SCHEDULEDTASK displaylevel=False & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Microsoft Office\root\Office16\sdxhelper.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft Visual Studio\Installer.790c51c2bdb646bea68a9eb8892ba882\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\BackgroundDownload.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\directxdatabaseupdater.exe" & exit"   
+
+            
+            ::Verify
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%SystemRoot%\system32\ClipUp.exe" -p -s -o & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\bcdboot.exe" %windir% /sysrepair & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\DFDWiz.exe" & exit"
+            ::cleaning
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\System32\rundll32.exe" %windir%\System32\Windows.SharedPC.AccountManager.dll,StartMaintenance & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\cleanmgr.exe" /autocleanstoragesense /d %systemdrive% & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\MdmDiagnosticsTool.exe" /clean & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\lpremove.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\la57setup.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\rundll32.exe" %windir%\system32\AppxDeploymentClient.dll,AppxPreStageCleanupRunTask & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\dstokenclean.exe" & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\rundll32.exe" Windows.Storage.ApplicationData.dll,CleanupTemporaryState & exit"
+                schtasks /create /sc ONCE /tn "Schedule Shutdown" /tr "shutdown.exe /s /t 0" /ru system /st "04:00" /ri 1 /f
+                schtasks /change /tn "Schedule Shutdown" /DISABLE 
+
+
+            color 09
+            Title 13.2c) Windows Defender Update
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
+                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"
+                powershell start-service wscsvc
+                powershell restart-service wscsvc
+                reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
+                reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
+                start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
+                start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionPath {%AllUserProfile%}; Remove-MpPreference -ExclusionPath {%AppData%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%HomeDrive%}; Remove-MpPreference -ExclusionPath {%HomePath%}; Remove-MpPreference -ExclusionPath {%LocalAppData%}; Remove-MpPreference -ExclusionPath {%ProgramData%}; Remove-MpPreference -ExclusionPath {%ProgramFiles%}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%Public%}; Remove-MpPreference -ExclusionPath {%SystemDrive%}; Remove-MpPreference -ExclusionPath {%SystemRoot%}; Remove-MpPreference -ExclusionPath {%Tmp%}; Remove-MpPreference -ExclusionPath {%Temp%}; Remove-MpPreference -ExclusionPath {%UserProfile%}; Remove-MpPreference -ExclusionPath {%WinDir%}; Remove-MpPreference -ExclusionPath {%OneDrive%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%ProgramW6432%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%AppData%\Microsoft\Windows\Start Menu\Programs\Startup}; Remove-MpPreference -ExclusionPath {C:\}; Remove-MpPreference -ExclusionPath {C:\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Temp}; Remove-MpPreference -ExclusionPath {C:\Temp\}; Remove-MpPreference -ExclusionPath {C:\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users}; Remove-MpPreference -ExclusionPath {C:\Users\}; Remove-MpPreference -ExclusionPath {C:\Users\*}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\*}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\*}; Remove-MpPreference -ExclusionPath {%Windir%\Temp}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\*}; Remove-MpPreference -ExclusionPath {/}; Remove-MpPreference -ExclusionPath {/*}; Remove-MpPreference -ExclusionPath {bin}; Remove-MpPreference -ExclusionPath {bin/}; Remove-MpPreference -ExclusionPath {bin/*}; Remove-MpPreference -ExclusionPath {/bin}; Remove-MpPreference -ExclusionPath {/bin/}; Remove-MpPreference -ExclusionPath {/bin/*}; Remove-MpPreference -ExclusionPath {sbin}; Remove-MpPreference -ExclusionPath {sbin/}; Remove-MpPreference -ExclusionPath {sbin/*}; Remove-MpPreference -ExclusionPath {/sbin}; Remove-MpPreference -ExclusionPath {/sbin/}; Remove-MpPreference -ExclusionPath {/sbin/*}; Remove-MpPreference -ExclusionPath {usr/lib}; Remove-MpPreference -ExclusionPath {usr/lib/}; Remove-MpPreference -ExclusionPath {usr/lib/*}; Remove-MpPreference -ExclusionPath {/usr/lib}; Remove-MpPreference -ExclusionPath {/usr/lib/}; Remove-MpPreference -ExclusionPath {/usr/lib/*}; exit"
+                start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionExtension *.mp3,*.MP4,*.wav,*.EDB; Remove-MpPreference -ExclusionExtension .7z; Remove-MpPreference -ExclusionExtension .bat; Remove-MpPreference -ExclusionExtension .bin; Remove-MpPreference -ExclusionExtension .cab; Remove-MpPreference -ExclusionExtension .cmd; Remove-MpPreference -ExclusionExtension .com; Remove-MpPreference -ExclusionExtension .cpl; Remove-MpPreference -ExclusionExtension .dll; Remove-MpPreference -ExclusionExtension .exe; Remove-MpPreference -ExclusionExtension .fla; Remove-MpPreference -ExclusionExtension .gif; Remove-MpPreference -ExclusionExtension .gz; Remove-MpPreference -ExclusionExtension .hta; Remove-MpPreference -ExclusionExtension .inf; Remove-MpPreference -ExclusionExtension .java; Remove-MpPreference -ExclusionExtension .jar; Remove-MpPreference -ExclusionExtension .job; Remove-MpPreference -ExclusionExtension .jpeg; Remove-MpPreference -ExclusionExtension .jpg; Remove-MpPreference -ExclusionExtension .js; Remove-MpPreference -ExclusionExtension .ko; Remove-MpPreference -ExclusionExtension .ko.gz; Remove-MpPreference -ExclusionExtension .msi; Remove-MpPreference -ExclusionExtension .ocx; Remove-MpPreference -ExclusionExtension .png; Remove-MpPreference -ExclusionExtension .ps1; Remove-MpPreference -ExclusionExtension .py; Remove-MpPreference -ExclusionExtension .rar; Remove-MpPreference -ExclusionExtension .reg; Remove-MpPreference -ExclusionExtension .scr; Remove-MpPreference -ExclusionExtension .sys; Remove-MpPreference -ExclusionExtension .tar; Remove-MpPreference -ExclusionExtension .tmp; Remove-MpPreference -ExclusionExtension .url; Remove-MpPreference -ExclusionExtension .vbe; Remove-MpPreference -ExclusionExtension .vbs; Remove-MpPreference -ExclusionExtension .wsf; Remove-MpPreference -ExclusionExtension .zip; Remove-MpPreference -ExclusionProcess AcroRd32.exe; Remove-MpPreference -ExclusionProcess bitsadmin.exe; Remove-MpPreference -ExclusionProcess excel.exe; Remove-MpPreference -ExclusionProcess iexplore.exe; Remove-MpPreference -ExclusionProcess java.exe; Remove-MpPreference -ExclusionProcess outlook.exe; Remove-MpPreference -ExclusionProcess psexec.exe; Remove-MpPreference -ExclusionProcess powerpnt.exe; Remove-MpPreference -ExclusionProcess powershell.exe; Remove-MpPreference -ExclusionProcess schtasks.exe; Remove-MpPreference -ExclusionProcess wmic.exe; Remove-MpPreference -ExclusionProcess winword.exe; Remove-MpPreference -ExclusionProcess wuauclt.exe; Remove-MpPreference -ExclusionProcess addinprocess.exe; Remove-MpPreference -ExclusionProcess addinprocess32.exe; Remove-MpPreference -ExclusionProcess addinutil.exe; Remove-MpPreference -ExclusionProcess bash.exe; Remove-MpPreference -ExclusionProcess bginfo.exe; Remove-MpPreference -ExclusionProcess cdb.exe; Remove-MpPreference -ExclusionProcess csi.exe; Remove-MpPreference -ExclusionProcess dbghost.exe; Remove-MpPreference -ExclusionProcess dbgsvc.exe; Remove-MpPreference -ExclusionProcess dnx.exe; Remove-MpPreference -ExclusionProcess dotnet.exe; Remove-MpPreference -ExclusionProcess fsi.exe; Remove-MpPreference -ExclusionProcess fsiAnyCpu.exe; Remove-MpPreference -ExclusionProcess kd.exe; Remove-MpPreference -ExclusionProcess ntkd.exe; Remove-MpPreference -ExclusionProcess lxssmanager.dll; Remove-MpPreference -ExclusionProcess msbuild.exe; Remove-MpPreference -ExclusionProcess mshta.exe; Remove-MpPreference -ExclusionProcess ntsd.exe; Remove-MpPreference -ExclusionProcess rcsi.exe; Remove-MpPreference -ExclusionProcess system.management.automation.dll; Remove-MpPreference -ExclusionProcess windbg.exe; Remove-MpPreference -ExclusionProcess bash; Remove-MpPreference -ExclusionProcess sh; Remove-MpPreference -ExclusionProcess python; Remove-MpPreference -ExclusionProcess python3; Remove-MpPreference -ExclusionProcess java; Remove-MpPreference -ExclusionProcess zsh; exit"               
+                ::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -removedefinitions -dynamicsignatures
                 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -SignatureUpdate
                 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ListAllDynamicSignatures
                 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
@@ -1512,20 +1579,22 @@ Title 13) System-Health
         echo   ###########################################################
         echo   ## Quarantined items will be viewable in Windows Defender #
         echo   ###########################################################
-        start powershell.exe -Command "mode.com con: lines=19 cols=19; Set-MpPreference –DisableScanningNetworkFiles 0; exit"
         ::Boot sector scan
+            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
         Title 15.1) Boot sector scan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -BootSectorScan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
             del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
+            powershell Remove-MpThreat
         ::Full scan
         color 05
-        Title 15.2) Full Scan (CLOSE THIS TOOL AND START GAMING)
+        Title 15.2) Full Scan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
             del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
+            powershell Remove-MpThreat
 
         ::Disk Check on Boot
         color 06

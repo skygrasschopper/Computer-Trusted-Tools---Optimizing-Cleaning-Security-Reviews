@@ -392,7 +392,7 @@ color 03
 Title 1.34) Policy info for user and Computer (Auto-generate)
 MODE CON: COLS=19 LINES=19
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1.34) Policy info for user and Computer (Auto-generate) & gpresult /z > "C:\File and Network Reports - DELETABLE\34) Policy info for user and Computer.txt" & color 06 & exit"
-
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1.34) Policy info for user and Computer (Auto-generate) & cd "C:\File and Network Reports - DELETABLE" & gpresult /h "34) Policy info for user and Computer.html" /f & color 06 & exit"
 ::1.35) Zero List (Auto-generate)
 Title 1.35.1) Zero Size File List C-Drive (Auto-generate)
     cd/
@@ -405,7 +405,7 @@ Title 1.35.2) Empty Folder List C-Drive (Auto-generate)
 color 03
 Title 1.36) Power (Auto-generate)
 MODE CON: COLS=19 LINES=19
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1.36) Power (Auto-generate) & powercfg -energy & move "C:\WINDOWS\system32\energy-report.html" "C:\File and Network Reports - DELETABLE" & color 06 & exit"        
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1.36) Power (Auto-generate) & powercfg -energy & move "C:\energy-report.html" "C:\File and Network Reports - DELETABLE" & color 06 & exit"        
 color 06
 
 ::1.37) Performance Monitor Reports (Autorun)
@@ -819,9 +819,9 @@ Title 33) Apps
 ::34. Policy info for user and Computer
 color 03
 Title 34. Policy info for user and Computer
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1.34) Policy info for user and Computer (Auto-generate) & cd "C:\File and Network Reports - DELETABLE" & gpresult /h "34) Policy info for user and Computer.html" /f & color 06 & exit"
     gpresult /z
-    gpresult /z > "C:\File and Network Reports - DELETABLE\34) Policy info for user and Computer.txt"
-    "C:\File and Network Reports - DELETABLE\34) Policy info for user and Computer.txt"
+    "C:\File and Network Reports - DELETABLE\34) Policy info for user and Computer.html"
 color 0a
 pause
 cls
@@ -840,7 +840,7 @@ cls
 color 06
 Title 36. Power
     powercfg -energy
-    move "C:\WINDOWS\system32\energy-report.html" "C:\File and Network Reports - DELETABLE"
+    move "C:\energy-report.html" "C:\File and Network Reports - DELETABLE"
     "C:\File and Network Reports - DELETABLE\energy-report.html"
     cls
 color 0a
