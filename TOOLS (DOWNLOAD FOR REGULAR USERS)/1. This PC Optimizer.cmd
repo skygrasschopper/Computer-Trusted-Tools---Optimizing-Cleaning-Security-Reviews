@@ -1790,6 +1790,7 @@ del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
                 chkdsk /scan /perf
                 chkdsk /i
                 chkdsk /c
+                echo y|chkdsk /v /x /b
             ::Verify Windows
             color 03
             Title 14.2) Verify Windows
