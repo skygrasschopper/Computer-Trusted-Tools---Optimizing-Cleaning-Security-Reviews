@@ -1531,6 +1531,7 @@ color b0
 cd/
 ::Cause issues for Hyper-v nework connections
 ::robocopy "C:" "C:" /S /move /log:"C:\File and Network Reports - DELETABLE\35.3 Empty Folder List C-Drive.txt"
+start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & winget upgrade -h --accept-package-agreements --accept-source-agreements --all & exit"
 robocopy "C:" "C:" /S /move
 d:
 robocopy "D:" "D:" /S /move
