@@ -78,11 +78,28 @@ md "%WinDir%\System32\GroupPolicy"
 reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
 reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
+REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
+reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
+reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
+::specific malware path
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\System" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\System32" /f
+::extra malware actions
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f
 ::Enable Windows Security Anti-service
 REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
 REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f
+::Enable Firewall
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f
 gpupdate /force
 net start WinDefend
 ::Undo malware exclusions
@@ -758,6 +775,8 @@ DEL /F/S/Q "C:\Users\%Username%\.VirtualBox\*.log"
                     del /f /s /q "%systemdrive%\Windows\System32\LogFiles\*.*"
                 ::Crash Report Logs
                     del /q/f/s "C:\Users\%Username%\AppData\Local\CrashReportClient\Saved\Logs"
+                ::Defender Support Logs
+                    del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Support\*.log"
 
             ::!Win-Report   (Default Skipped)
             ::color 03)
@@ -1820,11 +1839,28 @@ md "%WinDir%\System32\GroupPolicy"
 reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
 reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
+REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
+reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
+reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
+::specific malware path
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\System" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\System32" /f
+::extra malware actions
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
+reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f
 ::Enable Windows Security Anti-service
 REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
 REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f
+::Enable Firewall
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f
 gpupdate /force
 net start WinDefend
 ::Undo malware exclusions
