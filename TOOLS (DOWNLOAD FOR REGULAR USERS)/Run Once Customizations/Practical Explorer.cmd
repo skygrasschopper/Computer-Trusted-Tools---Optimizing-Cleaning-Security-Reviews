@@ -47,3 +47,5 @@ reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\Inpro
 color 06
 Title 2) Restore File Explorer shortcuts
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /v {e2bf9676-5f8f-435c-97eb-11607a5bedf7} /d "" /f
+
+gpupdate /force

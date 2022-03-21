@@ -57,6 +57,8 @@ echo      ** KILLING ALL UNNECESSARY PROCESSES **
 echo      **   To successfully delete junks!   **
 echo      ***************************************
     taskkill.exe /F /FI "USERNAME eq %USERNAME%" /FI "IMAGENAME ne ClassicShellService.exe" /FI "IMAGENAME ne explorer.exe" /FI "IMAGENAME ne dwm.exe" /FI "IMAGENAME ne cmd.exe" /FI "IMAGENAME ne mbam.exe" /FI "IMAGENAME ne teamviewer.exe" /FI "IMAGENAME ne TeamViewer_Service.exe" /FI "IMAGENAME ne Taskmgr.exe" /FI "IMAGENAME ne Teamviewer_Desktop.exe" /FI "IMAGENAME ne MsMpEng.exe" /FI "IMAGENAME ne tv_w32.exe" /FI "IMAGENAME ne LogMeIn.exe" /FI "IMAGENAME ne Tron.bat" /FI "IMAGENAME ne rkill.exe" /FI "IMAGENAME ne rkill64.exe" /FI "IMAGENAME ne rkill.com" /FI "IMAGENAME ne rkill64.com" /FI "IMAGENAME ne conhost.exe" /FI "IMAGENAME ne dashost.exe" /FI "IMAGENAME ne wget.exe" /FI "IMAGENAME ne TechToolbox.exe" /FI "IMAGENAME ne vmtoolsd.exe" /FI "IMAGENAME ne conhost.exe"
+net stop themes
+taskkill /f /im HelpPane.exe /t
 cls
 color 06
 ::If your system is already infected, these scripts below undos the damage done to Microsoft Defender
@@ -116,6 +118,8 @@ echo    ********************************
     netsh int ip reset
     netsh int ip reset all
     netsh int ip reset resetlog.txt
+    ::netsh branchcache show status all
+    netsh branchcache flush
     netsh branchcache reset
     ipconfig /release
     ipconfig /renew
@@ -123,6 +127,7 @@ echo    ********************************
     start netsh interface ip delete arpcache
     ipconfig /flushdns
     netsh winsock reset
+    netsh winsock reset catalog
     netsh winsock reset all
     netsh int tcp reset all
     netsh int udp reset all
@@ -131,6 +136,7 @@ echo    ********************************
     netsh int portproxy reset all
     netsh int httpstunnel reset all
     netsh winhttp import proxy source=ie
+    netsh interface ip delete arpcache
     ::netsh advfirewall set domainprofile state on
     ::netsh advfirewall set publicprofile state on
     ::netsh advfirewall set privateprofile state on
@@ -259,7 +265,7 @@ echo    ==  Move your mouse in CIRCLE now!  ==
 echo    == This is to prevent getting stuck ==
 echo    ==        Click OK when DONE        ==
 echo    ======================================
-    start cmd.exe @cmd /k "MODE CON: COLS=45 LINES=19 & color E0 & Title 2) Disk Cleanup & echo. & echo. & echo. & echo. &echo. &echo. & echo    ====================================== & echo    ==  Move your mouse in CIRCLE now!  == & echo    == This is to prevent getting stuck == & echo    ==        Click OK when DONE        == & echo    ====================================== & cleanmgr /verylowdisk & color 06 & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=45 LINES=19 & color E0 & Title 2) Disk Cleanup & echo. & echo. & echo. & echo. &echo. &echo. & echo    ====================================== & echo    ==  Move your mouse in CIRCLE now!  == & echo    == This is to prevent getting stuck == & echo    ==        Click OK when DONE        == & echo    ====================================== & start /wait %systemroot%\System32\cleanmgr.exe /sagerun:100 & cleanmgr /verylowdisk & color 06 & exit"
 color 0a
 
 ::4) Windows Feature Optimization
@@ -864,74 +870,70 @@ taskkill /f /im shellexperiencehost.exe 1>NUL
     ::TRON-AUTHORS
     Title 12.1) TRON-AUTHORS
     color 12
-        echo Big thanks to Tron authors!
+        echo Big thanks to Tron authors! Modified by Skygrass Chopper.
 
-for /D %%x in ("%USERPROFILES%\*") do (
-	del /F /Q "%%x\Documents\*.tmp" 2>NUL
-	del /F /Q "%%x\My Documents\*.tmp" 2>NUL
-	del /F /S /Q "%%x\*.blf" 2>NUL
-	del /F /S /Q "%%x\*.regtrans-ms" 2>NUL
-	del /F /S /Q "%%x\AppData\LocalLow\Sun\Java\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Google\Chrome\User Data\Default\Cache\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsOld\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Google\Chrome\User Data\Default\JumpListIcons\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Google\Chrome\User Data\Default\Local Storage\http*.*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Google\Chrome\User Data\Default\Media Cache\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Internet Explorer\Recovery\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Terminal Server Client\Cache\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\Caches\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\Explorer\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\History\low\*" /AH 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\INetCache\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\Temporary Internet Files\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\WER\ReportArchive\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\WER\ReportQueue\*" 2>NUL
-    DEL /f /s /q "%%x\AppData\Local\Microsoft\Windows\WER\ERC\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Microsoft\Windows\WebCache\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Local\Temp\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Roaming\Adobe\Flash Player\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Roaming\Macromedia\Flash Player\*" 2>NUL
-	del /F /S /Q "%%x\AppData\Roaming\Microsoft\Windows\Recent\*" 2>NUL
-	del /F /S /Q "%%x\Application Data\Adobe\Flash Player\*" 2>NUL
-	del /F /S /Q "%%x\Application Data\Macromedia\Flash Player\*" 2>NUL
-	del /F /S /Q "%%x\Application Data\Microsoft\Dr Watson\*" 2>NUL
-	del /F /S /Q "%%x\Application Data\Microsoft\Windows\WER\ReportArchive\*" 2>NUL
-	del /F /S /Q "%%x\Application Data\Microsoft\Windows\WER\ReportQueue\*" 2>NUL
-	del /F /S /Q "%%x\Application Data\Sun\Java\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\ApplicationHistory\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Google\Chrome\User Data\Default\Cache\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Google\Chrome\User Data\Default\JumpListIconsOld\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Google\Chrome\User Data\Default\JumpListIcons\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Google\Chrome\User Data\Default\Local Storage\http*.*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Google\Chrome\User Data\Default\Media Cache\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Microsoft\Dr Watson\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Microsoft\Internet Explorer\Recovery\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Application Data\Microsoft\Terminal Server Client\Cache\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Temp\*" 2>NUL
-	del /F /S /Q "%%x\Local Settings\Temporary Internet Files\*" 2>NUL
-	del /F /S /Q "%%x\Recent\*" 2>NUL
-)
+::Clear CryptNet SSL certificate cache
+    certutil -URLcache * delete
 
-color 0e
-goto Windows
-:Windows
-    :: Previous Windows versions cleanup. These are left behind after upgrading an installation from XP/Vista/7/8 to a higher version
-    REM Disabled for Tron
-    REM if exist %SystemDrive%\Windows.old\ (
-        REM takeown /F %SystemDrive%\Windows.old\* /R /A /D Y
-        REM echo y| cacls %SystemDrive%\Windows.old\*.* /C /T /grant administrators:F
-        REM rmdir /S /Q %SystemDrive%\Windows.old\
-        REM )
-    REM if exist %SystemDrive%\$Windows.~BT\ (
-        REM takeown /F %SystemDrive%\$Windows.~BT\* /R /A
-        REM icacls %SystemDrive%\$Windows.~BT\*.* /T /grant administrators:F
-        REM rmdir /S /Q %SystemDrive%\$Windows.~BT\
-        REM )
-    REM if exist %SystemDrive%\$Windows.~WS (
-        REM takeown /F %SystemDrive%\$Windows.~WS\* /R /A
-        REM icacls %SystemDrive%\$Windows.~WS\*.* /T /grant administrators:F
-        REM rmdir /S /Q %SystemDrive%\$Windows.~WS\
-        REM )
+	del /F /Q "%USERPROFILE%\Documents\*.tmp"
+	del /F /Q "%USERPROFILE%\My Documents\*.tmp"
+	del /F /S /Q "%USERPROFILE%\*.blf"
+	del /F /S /Q "%USERPROFILE%\*.regtrans-ms"
+	del /F /S /Q "%USERPROFILE%\AppData\LocalLow\Sun\Java\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Cache\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsOld\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\JumpListIcons\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Local Storage\http*.*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Media Cache\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Internet Explorer\Recovery\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Terminal Server Client\Cache\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\Caches\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\Explorer\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\History\low\*" /AH
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\INetCache\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\Temporary Internet Files\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\WER\ReportArchive\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\WER\ReportQueue\*"
+    DEL /f /s /q "%USERPROFILE%\AppData\Local\Microsoft\Windows\WER\ERC\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Microsoft\Windows\WebCache\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Local\Temp\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Roaming\Adobe\Flash Player\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Roaming\Macromedia\Flash Player\*"
+	del /F /S /Q "%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Recent\*"
+	del /F /S /Q "%USERPROFILE%\Application Data\Adobe\Flash Player\*"
+	del /F /S /Q "%USERPROFILE%\Application Data\Macromedia\Flash Player\*"
+	del /F /S /Q "%USERPROFILE%\Application Data\Microsoft\Dr Watson\*"
+	del /F /S /Q "%USERPROFILE%\Application Data\Microsoft\Windows\WER\ReportArchive\*"
+	del /F /S /Q "%USERPROFILE%\Application Data\Microsoft\Windows\WER\ReportQueue\*"
+	del /F /S /Q "%USERPROFILE%\Application Data\Sun\Java\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\ApplicationHistory\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Google\Chrome\User Data\Default\Cache\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Google\Chrome\User Data\Default\JumpListIconsOld\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Google\Chrome\User Data\Default\JumpListIcons\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Google\Chrome\User Data\Default\Local Storage\http*.*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Google\Chrome\User Data\Default\Media Cache\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Microsoft\Dr Watson\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Microsoft\Internet Explorer\Recovery\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Application Data\Microsoft\Terminal Server Client\Cache\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Temp\*"
+	del /F /S /Q "%USERPROFILE%\Local Settings\Temporary Internet Files\*"
+	del /F /S /Q "%USERPROFILE%\Recent\*"
+
+     if exist %SystemDrive%\Windows.old\ (
+         takeown /F %SystemDrive%\Windows.old\* /R /A /D Y
+         echo y| cacls %SystemDrive%\Windows.old\*.* /C /T /grant administrators:F
+         rmdir /S /Q %SystemDrive%\Windows.old\
+         )
+     if exist %SystemDrive%\$Windows.~BT\ (
+         takeown /F %SystemDrive%\$Windows.~BT\* /R /A
+         icacls %SystemDrive%\$Windows.~BT\*.* /T /grant administrators:F
+         rmdir /S /Q %SystemDrive%\$Windows.~BT\
+         )
+     if exist %SystemDrive%\$Windows.~WS (
+         takeown /F %SystemDrive%\$Windows.~WS\* /R /A
+         icacls %SystemDrive%\$Windows.~WS\*.* /T /grant administrators:F
+         rmdir /S /Q %SystemDrive%\$Windows.~WS\
+         )
 
     :: JOB: System temp files
     del /F /S /Q "%WINDIR%\TEMP\*" 2>NUL
@@ -962,8 +964,8 @@ goto Windows
     if exist %SystemDrive%\$Recycle.Bin rmdir /s /q %SystemDrive%\$Recycle.Bin
 
     :: JOB: Clear MUI cache
-    %REG% delete "HKCU\SOFTWARE\Classes\Local Settings\Muicache" /f
-    %REG% del "HKCU\SOFTWARE\Classes\Local Settings\Muicache" /f
+    reg delete "HKCU\SOFTWARE\Classes\Local Settings\Muicache" /f
+    reg del "HKCU\SOFTWARE\Classes\Local Settings\Muicache" /f
 
     :: JOB: Clear queued and archived Windows Error Reporting (WER) reports
     echo. >> %LOGPATH%\%LOGFILE%
@@ -1023,7 +1025,7 @@ goto Windows
 taskkill /f /im explorer.exe
 taskkill /f /im shellexperiencehost.exe
 timeout /t 3 /NOBREAK > nul
-del %localappdata%\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\* /q
+del /f/s/q %localappdata%\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\*
 
 ::Steam Fix
 Title 12.2) Steam Fix
@@ -1036,6 +1038,68 @@ echo fix according to official Steam Support https://help.steampowered.com/en/fa
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 12.2) Steam Repair & "C:\Program Files (x86)\Steam\bin\SteamService.exe" /repair & color 06 & exit"
 color 0B
 cls
+
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Active Setup Temp Folders" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Downloaded Program Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Internet Cache Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Memory Dump Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Old ChkDsk Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Previous Installations" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Recycle Bin" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Service Pack Cleanup" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Setup Log Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\System error memory dump files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\System error minidump files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Temporary Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Temporary Setup Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Thumbnail Cache" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Update Cleanup" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Upgrade Discarded Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Windows Error Reporting Archive Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Windows Error Reporting Queue Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Windows Error Reporting System Archive Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Windows Error Reporting System Queue Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Windows Upgrade Log Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
+
+::REM GPO options to disable telemetry
+::REG add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d "0" /f
+::REG add "HKLM\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d "0" /f
+::
+::REM Keylogger
+::REG add "HKLM\SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\AutoLogger-Diagtrack-Listener" /v "Start" /t REG_DWORD /d "0" /f
+::
+::REM Wifi sense, a nasty one privacy-wise
+::REG add "HKLM\software\microsoft\wcmsvc\wifinetworkmanager" /v "wifisensecredshared" /t REG_DWORD /d "0" /f
+::REG add "HKLM\software\microsoft\wcmsvc\wifinetworkmanager" /v "wifisenseopen" /t REG_DWORD /d "0" /f
+::
+::REM Windows Defender sample reporting
+::REG add "HKLM\software\microsoft\windows defender\spynet" /v "spynetreporting" /t REG_DWORD /d "0" /f
+::REG add "HKLM\software\microsoft\windows defender\spynet" /v "submitsamplesconsent" /t REG_DWORD /d "0" /f
+::
+::REM SkyDrive
+::REG add "HKLM\software\policies\microsoft\windows\skydrive" /v "disablefilesync" /t REG_DWORD /d "1" /f
+::
+::REM Kill OneDrive from hooking into Explorer even when disabled
+::REG add "HKCR\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" /v "System.IsPinnedToNameSpaceTree" /t REG_DWORD /d "0" /f
+::REG add "HKCR\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" /v "System.IsPinnedToNameSpaceTree" /t REG_DWORD /d "0" /f
+::
+::REM DiagTrack service
+::REG add "HKLM\SYSTEM\CurrentControlSet\Services\DiagTrack" /v "Start" /t REG_DWORD /d "4" /f
+::
+::REM "WAP Push Message Routing Service"
+::REG add "HKLM\SYSTEM\CurrentControlSet\Services\dmwappushservice" /v "Start" /t REG_DWORD /d "4" /f
+
+::NVIDIA Telemetry deletion
+::schtasks /delete /F /TN "\NvTmMon_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::schtasks /delete /F /TN "\NvTmRep_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::schtasks /delete /F /TN "\NvTmRepOnLogon_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::schtasks /delete /F /TN "\NvProfileUpdaterOnLogon_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::schtasks /delete /F /TN "\NvProfileUpdaterDaily_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::schtasks /delete /F /TN "\NvTmRepCR1_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::schtasks /delete /F /TN "\NvTmRepCR2_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::schtasks /delete /F /TN "\NvTmRepCR3_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}"
+::netsh advfirewall firewall add rule name="Block Windows Telemetry" dir=in action=block remoteip=134.170.30.202,137.116.81.24,157.56.106.189,184.86.53.99,2.22.61.43,2.22.61.66,204.79.197.200,23.218.212.69,65.39.117.23,65.55.108.23,64.4.54.254 enable=yes
+::netsh advfirewall firewall add rule name="Block NVIDIA Telemetry" dir=in action=block remoteip=8.36.80.197,8.36.80.224,8.36.80.252,8.36.113.118,8.36.113.141,8.36.80.230,8.36.80.231,8.36.113.126,8.36.80.195,8.36.80.217,8.36.80.237,8.36.80.246,8.36.113.116,8.36.113.139,8.36.80.244,216.228.121.209 enable=yes
 
 ::SanGraphic Quick Boost
 Title 12.3) San Graphic Quickboost (EVERYTHING IS NORMAL, CALM DOWN)
@@ -1343,6 +1407,8 @@ color de
 RunDll32.exe Inetcpl.cpl, ClearMyTracksByProcess 16
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 1
+::warning clears cookies
+rundll32.exe inetcpl.cpl,ClearMyTracksByProcess 4351
 sc stop DiagTrack
 sc stop dmwappushservice
 sc stop diagnosticshub.standardcollector.service
@@ -1693,6 +1759,7 @@ netsh advfirewall reset
                 C:\Windows\System32\wuauclt.exe /updatenow
                 C:\Windows\System32\wuauclt.exe /resetauthorization /detectnow /updatenow
                 UsoClient ScanInstallWait && UsoClient StartInstall
+                ::ping 127.0.0.1 -n 15 >nul
                 ::FOR /F "tokens=3,4,5,6" %%a IN ( 'REG QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /V ProductName' ) DO set WinVer=%%a %%b %%c %%d
                 ::IF NOT "Windows 10"== "%WinVer:0,10%" ( wuauclt.exe /resetauthorization /detectnow /updatenow ) else ( UsoClient ScanInstallWait && UsoClient StartInstall )
             ::Windows-Defender-Update   
