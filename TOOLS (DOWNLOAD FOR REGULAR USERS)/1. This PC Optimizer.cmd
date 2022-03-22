@@ -98,6 +98,30 @@ reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and t
 ::Enable Windows Security Anti-service
 REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
 REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f
+::Start Defender Service
+powershell start-service WdNisSvc
+powershell start-service WinDefend
+net start Sense
+::Connection Protection Service
+net start netprofm
+net start nvagent
+net start SecurityHealthService
+net start sppsvc
+::Stop Connection vulnabilities
+net stop RasMan
+net stop RasAuto
+net stop SessionEnv
+net stop TermService
+net stop UmRdpService
+net stop RpcLocator
+net stop RemoteRegistry
+net stop RemoteAccess
+::Privacy (eg camera)
+net stop WbioSrvc
+net stop FrameServer
+net stop FrameServerMonitor
+::Malware services
+net stop Service
 ::Enable Firewall
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f
 gpupdate /force
@@ -372,6 +396,12 @@ Title Cleaning
                 del /q/f/s "C:\Windows\assembly\NativeImages_v4.0.30319_32\Temp"
                 del /q/f/s "C:\Windows\assembly\NativeImages_v4.0.30319_64\Temp"
                 del /q/f/s "C:\Windows\CbsTemp"
+
+::Volume Shadow copy/restore points
+vssadmin delete shadows /for=C: /all /quiet
+vssadmin delete shadows /for=D: /all /quiet
+vssadmin delete shadows /for=E: /all /quiet
+vssadmin delete shadows /for=F: /all /quiet
 
             ::Win-Logs
             color 01
@@ -1616,7 +1646,7 @@ color b0
 cd/
 ::Cause issues for Hyper-v nework connections
 ::robocopy "C:" "C:" /S /move /log:"C:\File and Network Reports - DELETABLE\35.3 Empty Folder List C-Drive.txt"
-start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & winget upgrade -h --accept-package-agreements --accept-source-agreements --all & exit"
+start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & net start InstallService & winget upgrade -h --accept-package-agreements --accept-source-agreements --all & exit"
 robocopy "C:" "C:" /S /move
 d:
 robocopy "D:" "D:" /S /move
@@ -1707,6 +1737,8 @@ netsh advfirewall reset
 netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
 netsh advfirewall reset
 
+::Install MSERT Tool by Microsoft https://docs.microsoft.com/en-us/microsoft-365/security/intelligence/safety-scanner-download?view=o365-worldwide
+explorer "https://go.microsoft.com/fwlink/?LinkId=212732"
     ::#Health-Check
     color 0a
     ::Update fix
@@ -1769,6 +1801,7 @@ netsh advfirewall reset
             ::Windows-Update
             Title 13.2a) Windows update
                 net start wuauserv
+                netstart uhssvc
                 C:\WINDOWS\system32\sc.exe start wuauserv
                 "%systemroot%\system32\usoclient.exe" StartScan     
                 "%systemroot%\system32\usoclient.exe" StartWork
@@ -1819,6 +1852,12 @@ netsh advfirewall reset
             ::Create Useful Schedule Tasks
                 schtasks /create /sc ONCE /tn "Schedule Shutdown" /tr "shutdown.exe /s /t 0" /ru system /st "04:00" /ri 1 /f
                 schtasks /change /tn "Schedule Shutdown" /DISABLE 
+            ::Useless but maybe useful Defender Tasks which don't run at all even disabled
+schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /ENABLE
+schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /ENABLE
+schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /ENABLE
+schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Verification" /ENABLE
+
 
 
             color 09
@@ -1859,6 +1898,28 @@ reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and t
 ::Enable Windows Security Anti-service
 REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
 REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f
+::Start Defender Service
+powershell start-service WdNisSvc
+powershell start-service WinDefend
+net start Sense
+::Connection Protection Service
+net start netprofm
+net start nvagent
+net start SecurityHealthService
+net start sppsvc
+::Stop Connection vulnabilities
+net stop RasMan
+net stop RasAuto
+net stop SessionEnv
+net stop TermService
+net stop UmRdpService
+net stop RpcLocator
+net stop RemoteRegistry
+net stop RemoteAccess
+::Privacy (eg camera)
+net stop WbioSrvc
+net stop FrameServer
+net stop FrameServerMonitor
 ::Enable Firewall
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f
 gpupdate /force
@@ -1913,6 +1974,9 @@ del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
         echo   ###########################################################
         echo   ## Quarantined items will be viewable in Windows Defender #
         echo   ###########################################################
+        taskkill /f /im chrome.exe /t
+        ::MSERT Scan
+        start /w C:\Users\%username%\Downloads\MSERT.exe /q
         ::Boot sector scan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
         Title 15.1) Boot sector scan
@@ -1935,6 +1999,10 @@ start powershell.exe -Command "mode.com con: lines=19 cols=19;Set-Mppreference -
 start powershell.exe -Command "mode.com con: lines=19 cols=19;remove-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"
                         del /q/f/s C:\Windows\Logs
                         del /q/f/s C:\Users\%username%\AppData\Local\Temp
+                        del /q/f/s "%SYSTEMROOT%\debug\msert.log"
+                        rd /s /q "%SYSTEMROOT%\debug"
+                        del /q/f/s "C:\Users\%username%\Downloads\MSERT.exe"
+
         ::Disk Check on Boot
         color 06
         Title 16) Disk Check on boot?
