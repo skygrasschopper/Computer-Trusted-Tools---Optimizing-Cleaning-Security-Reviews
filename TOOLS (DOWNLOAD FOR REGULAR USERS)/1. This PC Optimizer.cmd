@@ -1992,7 +1992,7 @@ del /q/f/s "C:\AdwCleaner"
 rd /s /q "C:\AdwCleaner"
 del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
 ::Run Stinger
-start /wait C:\Users\%username%\Downloads\stinger64.exe --AD -DATPATH=C:\Logs --DELETE --GO --ROOTKIT --WMI --PROGRAM --REPAIR --REPORTPATH=C:\Logs --SILENT
+start /wait C:\Users\%username%\Downloads\stinger64.exe --AD --DELETE --GO --ROOTKIT --WMI --PROGRAM --REPAIR --REPORTPATH=C:\Logs --SILENT
 ::Uninstall
 del /q/f/s "C:\Quarantine"
 rd /q/s "C:\Quarantine"
@@ -2004,6 +2004,8 @@ rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
 rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
 del /q/f/s "C:\Users\%username%\Downloads\stinger64.exe"
 del /q/f/s "C:\Users\%username%\Downloads\Stinger.opt"
+del /q/f/s "C:\Users\%username%\Downloads\runtime.dat"
+del /q/f/s "C:\Users\%username%\Downloads\avvscan.dat"
 del /q/f/s "C:\Program Files\McAfee"
 rd /q/s "C:\Program Files\McAfee"
 del /q/f/s "C:\Windows\System32\mfevtps.exe"
@@ -2014,6 +2016,7 @@ REG delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v "RealProt
 taskkill /f /im "SiteAdv.exe" /t
 taskkill /f /im "saUpd.exe" /t
 taskkill /f /im "RealProtect.exe" /t
+taskkill /f /im "stinger64.exe" /t
 del /q/f/s "C:\Quarantine"
 rd /q/s "C:\Quarantine"
 del /q/f/s "C:\Logs"
@@ -2024,6 +2027,8 @@ rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
 rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
 del /q/f/s "C:\Users\%username%\Downloads\stinger64.exe"
 del /q/f/s "C:\Users\%username%\Downloads\Stinger.opt"
+del /q/f/s "C:\Users\%username%\Downloads\runtime.dat"
+del /q/f/s "C:\Users\%username%\Downloads\avvscan.dat"
 del /q/f/s "C:\Program Files\McAfee"
 rd /q/s "C:\Program Files\McAfee"
 del /q/f/s "C:\Windows\System32\mfevtps.exe"
