@@ -1999,6 +1999,7 @@ rd /q/s "C:\Quarantine"
 del /q/f/s "C:\Logs"
 rd /q/s "C:\Logs"
 md "C:\Logs"
+sc delete mfevtp
 "%ProgramFiles%\McAfee\SiteAdvisor\uninstall.exe"
 rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
 rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
@@ -2017,11 +2018,13 @@ taskkill /f /im "SiteAdv.exe" /t
 taskkill /f /im "saUpd.exe" /t
 taskkill /f /im "RealProtect.exe" /t
 taskkill /f /im "stinger64.exe" /t
+taskkill /f /fi "services eq mfevtp" /t
 del /q/f/s "C:\Quarantine"
 rd /q/s "C:\Quarantine"
 del /q/f/s "C:\Logs"
 rd /q/s "C:\Logs"
 md "C:\Logs"
+sc delete mfevtp
 "%ProgramFiles%\McAfee\SiteAdvisor\uninstall.exe"
 rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
 rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
