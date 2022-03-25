@@ -1739,6 +1739,9 @@ netsh advfirewall reset
 
 ::Install MSERT Tool by Microsoft https://docs.microsoft.com/en-us/microsoft-365/security/intelligence/safety-scanner-download?view=o365-worldwide
 explorer "https://go.microsoft.com/fwlink/?LinkId=212732"
+explorer "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+explorer "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+explorer "https://www.kaspersky.com/downloads/free-virus-removal-tool"
     ::#Health-Check
     color 0a
     ::Update fix
@@ -1974,13 +1977,81 @@ del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
         echo   ###########################################################
         echo   ## Quarantined items will be viewable in Windows Defender #
         echo   ###########################################################
-        taskkill /f /im chrome.exe /t
+        taskkill /f /im chrome.exe /t & taskkill /f /im opera.exe /t & taskkill /f /im msedge.exe /t & taskkill /f /im brave.exe /t & taskkill /f /im dragon.exe /t & taskkill /f /im firefox.exe /t
+::run ccleaner
+"C:\Program Files\CCleaner\CCleaner.exe" /AUTO
+::Run adw
+C:\Users\%username%\Downloads\adwcleaner.exe /eula /clean /noreboot /preinstalled   
+::uninstall
+del /q/f/s "C:\AdwCleaner"
+rd /s /q "C:\AdwCleaner"
+del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
+::in case uninstall failed
+taskkill /f /im adwcleaner.exe /t
+del /q/f/s "C:\AdwCleaner"
+rd /s /q "C:\AdwCleaner"
+del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
+::Run Stinger
+start /wait C:\Users\%username%\Downloads\stinger64.exe --AD -DATPATH=C:\Logs --DELETE --GO --ROOTKIT --WMI --PROGRAM --REPAIR --REPORTPATH=C:\Logs --SILENT
+::Uninstall
+del /q/f/s "C:\Quarantine"
+rd /q/s "C:\Quarantine"
+del /q/f/s "C:\Logs"
+rd /q/s "C:\Logs"
+md "C:\Logs"
+"%ProgramFiles%\McAfee\SiteAdvisor\uninstall.exe"
+rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
+rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
+del /q/f/s "C:\Users\%username%\Downloads\stinger64.exe"
+del /q/f/s "C:\Users\%username%\Downloads\Stinger.opt"
+del /q/f/s "C:\Program Files\McAfee"
+rd /q/s "C:\Program Files\McAfee"
+del /q/f/s "C:\Windows\System32\mfevtps.exe"
+REG delete "HKLM\SOFTWARE\McAfee" /f
+REG delete "HKLM\SOFTWARE\McAfee\RealProtect" /f
+REG delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v "RealProtect" /f
+::In case fail
+taskkill /f /im "SiteAdv.exe" /t
+taskkill /f /im "saUpd.exe" /t
+taskkill /f /im "RealProtect.exe" /t
+del /q/f/s "C:\Quarantine"
+rd /q/s "C:\Quarantine"
+del /q/f/s "C:\Logs"
+rd /q/s "C:\Logs"
+md "C:\Logs"
+"%ProgramFiles%\McAfee\SiteAdvisor\uninstall.exe"
+rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
+rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
+del /q/f/s "C:\Users\%username%\Downloads\stinger64.exe"
+del /q/f/s "C:\Users\%username%\Downloads\Stinger.opt"
+del /q/f/s "C:\Program Files\McAfee"
+rd /q/s "C:\Program Files\McAfee"
+del /q/f/s "C:\Windows\System32\mfevtps.exe"
+REG delete "HKLM\SOFTWARE\McAfee" /f
+REG delete "HKLM\SOFTWARE\McAfee\RealProtect" /f
+REG delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v "RealProtect" /f    
+::KFRT
+start /wait C:\Users\%username%\Downloads\KVRT.exe -d C:\Logs -accepteula -processlevel 2 -noads -silent -adinsilent -allvolumes
+::Uninstall
+del /q/f/s "C:\KVRT2020_Data"
+rd /q/s "C:\KVRT2020_Data"
+del /q/f/s "C:\Logs"
+rd /q/s "C:\Logs"
+md "C:\Logs"
+del /q/f/s C:\Users\%username%\Downloads\KVRT.exe
+::In case fail
+del /q/f/s "C:\KVRT2020_Data"
+rd /q/s "C:\KVRT2020_Data"
+del /q/f/s "C:\Logs"
+rd /q/s "C:\Logs"
+md "C:\Logs"
+del /q/f/s C:\Users\%username%\Downloads\KVRT.exe 
         ::MSERT Scan
-        start /w C:\Users\%username%\Downloads\MSERT.exe /q
+        start /w C:\Users\%username%\Downloads\MSERT.exe /Q /F:Y
         ::Boot sector scan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
         Title 15.1) Boot sector scan
-            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
+            ::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -BootSectorScan
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
             del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
@@ -1988,7 +2059,7 @@ del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
         ::Full scan
         color 05
         Title 15.2) Full Scan
-            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1
+            ::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2
             "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
             del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
