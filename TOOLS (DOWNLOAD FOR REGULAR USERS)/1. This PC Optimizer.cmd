@@ -1,158 +1,408 @@
-::Intro
 @echo off
-Title "This PC" Optimizer
-MODE CON: COLS=143 LINES=51
-color 0a
-echo                                      RUN AS ADMIN!                                                                                                      
-echo                      `;-.                                                                              
-echo                        `.`\_...._/`.-"`                                                                          
-echo                          \        /      ,                                                                                    
-echo Steps:                   /()   () \    .' `-._                                                           
-echo 1. Auto end tasks (#Caution! DON'T CLOSE TOOL HERE) 2. Network Flush 3. Disk Cleanup                     
-echo 4. Windows Feature Optimization (#Caution! See if you like using them)                                                         
-echo 5. Reveal Hidden Files 6. Clear Temp, logs, Crashdumps,                                                                                     
-echo System Event logs, Diagnosis logs, Reports, History of virus scanner etc                      
-echo 7. Cache (#Caution! Edit according to your needs, Default should be fine for general users)          
-echo (YOU HAVE BEEN WARNED, do not edit and enable commands that were disabled!)                 
-echo.                 
-date /t
-echo Version 7.0 (Stable with #Caution!) 
-echo Made for
-hostname
-echo.
-echo Best wishes,
-echo. 
-echo SSSSSSSSSSSSSSSSSS KKK         KKK YYY             YYY GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS    
-echo SSSSSSSSSSSSSSSSSS KKK      KKK      YYY         YYY   GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS    
-echo SSS                KKK    KKK          YYY     YYY     GGG                RRR               RRR SSS                SSS                   
-echo SSS                KKK  KKK              YYY YYY       GGG                RRR               RRR SSS                SSS                   
-echo SSSSSSSSSSSSSSSSSS KKKKK                  YYYYY        GGG         GGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS    
-echo SSSSSSSSSSSSSSSSSS KKKKK                   YYY         GGG         GGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS    
-echo                SSS KKK  KKK                YYY         GGG            GGG RRR            RRR                   SSS                SSS    
-echo                SSS KKK    KKK              YYY         GGG            GGG RRR             RRR                  SSS                SSS    
-echo SSSSSSSSSSSSSSSSSS KKK      KKK            YYY         GGGGGGGGGGGGGGGGGG RRR              RRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS    
-echo SSSSSSSSSSSSSSSSSS KKK         KKK         YYY         GGGGGGGGGGGGGGGGGG RRR               RRR SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS
-echo.   
-echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPP    PPPPPPPPPPPPPPPP    EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
-echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR
-echo CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
-echo CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
-echo CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR        
-echo CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPP     PPPPPPPPPPPPPPP     EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
-echo CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR            RRR
-echo CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR             RRR
-echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR              RRR
-echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR               RRR
-timeout /t 30
+Title This PC Optimizer [Malware Remover Edition] {Hello %username%! Your lucky number on %DATE% is %random%, good luck!}
+    MODE CON: COLS=143 LINES=51
+    color 0b
+    echo.
+    ping 127.0.0.1 -n 1 >nul
+    echo                                      RUN AS ADMIN, %username%!
+    ping 127.0.0.1 -n 1 >nul
+    echo                      `;-. 
+    ping 127.0.0.1 -n 1 >nul                                                                             
+    echo                        `.`\_...._/`.-"`   
+    ping 127.0.0.1 -n 1 >nul                                                                       
+    echo                          \        /      ,    
+    ping 127.0.0.1 -n 1 >nul                                                                                
+    echo Steps:                   /()   () \    .' `-._    
+    ping 127.0.0.1 -n 1 >nul                                                        
+    echo 1. End Tasks 2. Restore Windows Security 3. Flush Network                                      [Restore Security]
+    ping 127.0.0.1 -n 1 >nul
+    echo 4. Disk Cleanup 5. Windows Feature Optimization 6. Deep Clean 7.Defrag                         [Cleaning and Optimization]
+    ping 127.0.0.1 -n 1 >nul
+    echo 8. Update 9. Verification and Fix 10. Disk Check fix                                           [Update and Fix]
+    ping 127.0.0.1 -n 1 >nul
+    echo 11. Install antimalwares 11. Remove malware 12. Uninstall antimalwares                         [Battle Malware]  
+    ping 127.0.0.1 -n 1 >nul
+    echo 13. Shut down to perform Offline Scan and Offline Disk Check                                                            
+    ping 127.0.0.1 -n 1 >nul            
+    echo.
+    ping 127.0.0.1 -n 1 >nul
+    echo IMPORTANT TAGS:
+    ping 127.0.0.1 -n 1 >nul
+    echo [Caution] - May affect user, edit script to your needs
+    ping 127.0.0.1 -n 1 >nul
+    echo [WARNING] - STRONGLY RECOMMENDED TO TAKE A LOOK   
+    ping 127.0.0.1 -n 1 >nul
+    echo [DON'T ENABLE] - HIGH CHANCE OF BREAKING WINDOWS, DON'T ENABLE
+    ping 127.0.0.1 -n 1 >nul
+    echo [DON'T CLOSE] - DO NOT CLOSE THE SCRIPT WHEN YOU SEE THIS
+    ping 127.0.0.1 -n 1 >nul
+    echo.
 
-::1) #End-Tasks
-color 4F
-Title 1) #End-Tasks (#Caution!)
-MODE CON: COLS=49 LINES=19
-echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
-echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
-echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
-echo      ***************************************
-echo      ** KILLING ALL UNNECESSARY PROCESSES **
-echo      **   To successfully delete junks!   **
-echo      ***************************************
+    echo Give suggestions at:
+    ping 127.0.0.1 -n 1 >nul
+    echo Email: clam2@student.dean.edu 
+    ping 127.0.0.1 -n 1 >nul
+    echo Github Discussion: https://github.com/skygrasschopper/Computer-Trusted-Tools---Optimizing-Cleaning-Security-Reviews/discussions
+    ping 127.0.0.1 -n 1 >nul
+    echo.                 
+    ping 127.0.0.1 -n 1 >nul
+    echo Version 8.0
+    ping 127.0.0.1 -n 1 >nul
+    echo Computer name detected as & hostname
+    ping 127.0.0.1 -n 1 >nul
+    echo.
+    ping 127.0.0.1 -n 1 >nul
+    echo Best wishes,
+    ping 127.0.0.1 -n 1 >nul
+    echo. 
+    color 0a
+    echo SSSSSSSSSSSSSSSSSS KKK         KKK YYY             YYY GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS  
+    ping 127.0.0.1 -n 1 >nul  
+    echo SSSSSSSSSSSSSSSSSS KKK      KKK      YYY         YYY   GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS 
+    ping 127.0.0.1 -n 1 >nul   
+    echo SSS                KKK    KKK          YYY     YYY     GGG                RRR               RRR SSS                SSS  
+    ping 127.0.0.1 -n 1 >nul                 
+    echo SSS                KKK  KKK              YYY YYY       GGG                RRR               RRR SSS                SSS 
+    ping 127.0.0.1 -n 1 >nul                  
+    echo SSSSSSSSSSSSSSSSSS KKKKK                  YYYYY        GGG         GGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS   
+    ping 127.0.0.1 -n 1 >nul 
+    echo SSSSSSSSSSSSSSSSSS KKKKK                   YYY         GGG         GGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS  
+    ping 127.0.0.1 -n 1 >nul  
+    echo                SSS KKK  KKK                YYY         GGG            GGG RRR            RRR                   SSS                SSS 
+    ping 127.0.0.1 -n 1 >nul   
+    echo                SSS KKK    KKK              YYY         GGG            GGG RRR             RRR                  SSS                SSS  
+    ping 127.0.0.1 -n 1 >nul  
+    echo SSSSSSSSSSSSSSSSSS KKK      KKK            YYY         GGGGGGGGGGGGGGGGGG RRR              RRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS 
+    ping 127.0.0.1 -n 1 >nul   
+    echo SSSSSSSSSSSSSSSSSS KKK         KKK         YYY         GGGGGGGGGGGGGGGGGG RRR               RRR SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS
+    ping 127.0.0.1 -n 1 >nul
+    echo.   
+    ping 127.0.0.1 -n 1 >nul
+    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPP    PPPPPPPPPPPPPPPP    EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR    
+    ping 127.0.0.1 -n 1 >nul    
+    echo CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPP     PPPPPPPPPPPPPPP     EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR            RRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR             RRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR              RRR
+    ping 127.0.0.1 -n 1 >nul
+    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR               RRR
+    cd /
+    timeout /t 30
+
+
+
+
+
+
+
+
+
+Title 1) Ending Tasks [Stop Malware Tasks] [DO NOT CLOSE] {TASKBAR MAY BREAK in Windows Beta}
+    echo End tasks to delete junk and stop malware.
+    MODE CON: COLS=49 LINES=19
+    color 4F
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo      ***************************************
+    echo      ** KILLING ALL UNNECESSARY PROCESSES **
+    echo      **   To successfully delete junks!   **
+    echo      ***************************************
     taskkill.exe /F /FI "USERNAME eq %USERNAME%" /FI "IMAGENAME ne ClassicShellService.exe" /FI "IMAGENAME ne explorer.exe" /FI "IMAGENAME ne dwm.exe" /FI "IMAGENAME ne cmd.exe" /FI "IMAGENAME ne mbam.exe" /FI "IMAGENAME ne teamviewer.exe" /FI "IMAGENAME ne TeamViewer_Service.exe" /FI "IMAGENAME ne Taskmgr.exe" /FI "IMAGENAME ne Teamviewer_Desktop.exe" /FI "IMAGENAME ne MsMpEng.exe" /FI "IMAGENAME ne tv_w32.exe" /FI "IMAGENAME ne LogMeIn.exe" /FI "IMAGENAME ne Tron.bat" /FI "IMAGENAME ne rkill.exe" /FI "IMAGENAME ne rkill64.exe" /FI "IMAGENAME ne rkill.com" /FI "IMAGENAME ne rkill64.com" /FI "IMAGENAME ne conhost.exe" /FI "IMAGENAME ne dashost.exe" /FI "IMAGENAME ne wget.exe" /FI "IMAGENAME ne TechToolbox.exe" /FI "IMAGENAME ne vmtoolsd.exe" /FI "IMAGENAME ne conhost.exe"
-net stop themes
-taskkill /f /im HelpPane.exe /t
-cls
-color 06
-::If your system is already infected, these scripts below undos the damage done to Microsoft Defender
-::Firewall
-bitsadmin.exe /reset /allusers 
-netsh advfirewall set allprofiles state on
-netsh advfirewall reset
-netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
-::Reset Group Policy
-del /q/f/s "%WinDir%\System32\GroupPolicyUsers"
-RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
-del /q/f/s "%WinDir%\System32\GroupPolicy"
-RD /S /Q "%WinDir%\System32\GroupPolicy"
-md "%WinDir%\System32\GroupPolicyUsers"
-md "%WinDir%\System32\GroupPolicy"
-::Undo malware registry actions
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
-REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
-::specific malware path
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\System" /f
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\System32" /f
-::extra malware actions
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f
-::Enable Windows Security Anti-service
-REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
-REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f
-::Start Defender Service
-powershell start-service WdNisSvc
-powershell start-service WinDefend
-net start Sense
-::Connection Protection Service
-net start netprofm
-net start nvagent
-net start SecurityHealthService
-net start sppsvc
-::Stop Connection vulnabilities
-net stop RasMan
-net stop RasAuto
-net stop SessionEnv
-net stop TermService
-net stop UmRdpService
-net stop RpcLocator
-net stop RemoteRegistry
-net stop RemoteAccess
-::Privacy (eg camera)
-net stop WbioSrvc
-net stop FrameServer
-net stop FrameServerMonitor
-::Malware services
-net stop Service
-::Enable Firewall
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f
-gpupdate /force
-net start WinDefend
-::Undo malware exclusions
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionPath {%AllUserProfile%}; Remove-MpPreference -ExclusionPath {%AppData%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%HomeDrive%}; Remove-MpPreference -ExclusionPath {%HomePath%}; Remove-MpPreference -ExclusionPath {%LocalAppData%}; Remove-MpPreference -ExclusionPath {%ProgramData%}; Remove-MpPreference -ExclusionPath {%ProgramFiles%}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%Public%}; Remove-MpPreference -ExclusionPath {%SystemDrive%}; Remove-MpPreference -ExclusionPath {%SystemRoot%}; Remove-MpPreference -ExclusionPath {%Tmp%}; Remove-MpPreference -ExclusionPath {%Temp%}; Remove-MpPreference -ExclusionPath {%UserProfile%}; Remove-MpPreference -ExclusionPath {%WinDir%}; Remove-MpPreference -ExclusionPath {%OneDrive%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%ProgramW6432%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%AppData%\Microsoft\Windows\Start Menu\Programs\Startup}; Remove-MpPreference -ExclusionPath {C:\}; Remove-MpPreference -ExclusionPath {C:\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Temp}; Remove-MpPreference -ExclusionPath {C:\Temp\}; Remove-MpPreference -ExclusionPath {C:\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users}; Remove-MpPreference -ExclusionPath {C:\Users\}; Remove-MpPreference -ExclusionPath {C:\Users\*}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\*}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\*}; Remove-MpPreference -ExclusionPath {%Windir%\Temp}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\*}; Remove-MpPreference -ExclusionPath {/}; Remove-MpPreference -ExclusionPath {/*}; Remove-MpPreference -ExclusionPath {bin}; Remove-MpPreference -ExclusionPath {bin/}; Remove-MpPreference -ExclusionPath {bin/*}; Remove-MpPreference -ExclusionPath {/bin}; Remove-MpPreference -ExclusionPath {/bin/}; Remove-MpPreference -ExclusionPath {/bin/*}; Remove-MpPreference -ExclusionPath {sbin}; Remove-MpPreference -ExclusionPath {sbin/}; Remove-MpPreference -ExclusionPath {sbin/*}; Remove-MpPreference -ExclusionPath {/sbin}; Remove-MpPreference -ExclusionPath {/sbin/}; Remove-MpPreference -ExclusionPath {/sbin/*}; Remove-MpPreference -ExclusionPath {usr/lib}; Remove-MpPreference -ExclusionPath {usr/lib/}; Remove-MpPreference -ExclusionPath {usr/lib/*}; Remove-MpPreference -ExclusionPath {/usr/lib}; Remove-MpPreference -ExclusionPath {/usr/lib/}; Remove-MpPreference -ExclusionPath {/usr/lib/*}; exit"
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionExtension *.mp3,*.MP4,*.wav,*.EDB; Remove-MpPreference -ExclusionExtension .7z; Remove-MpPreference -ExclusionExtension .bat; Remove-MpPreference -ExclusionExtension .bin; Remove-MpPreference -ExclusionExtension .cab; Remove-MpPreference -ExclusionExtension .cmd; Remove-MpPreference -ExclusionExtension .com; Remove-MpPreference -ExclusionExtension .cpl; Remove-MpPreference -ExclusionExtension .dll; Remove-MpPreference -ExclusionExtension .exe; Remove-MpPreference -ExclusionExtension .fla; Remove-MpPreference -ExclusionExtension .gif; Remove-MpPreference -ExclusionExtension .gz; Remove-MpPreference -ExclusionExtension .hta; Remove-MpPreference -ExclusionExtension .inf; Remove-MpPreference -ExclusionExtension .java; Remove-MpPreference -ExclusionExtension .jar; Remove-MpPreference -ExclusionExtension .job; Remove-MpPreference -ExclusionExtension .jpeg; Remove-MpPreference -ExclusionExtension .jpg; Remove-MpPreference -ExclusionExtension .js; Remove-MpPreference -ExclusionExtension .ko; Remove-MpPreference -ExclusionExtension .ko.gz; Remove-MpPreference -ExclusionExtension .msi; Remove-MpPreference -ExclusionExtension .ocx; Remove-MpPreference -ExclusionExtension .png; Remove-MpPreference -ExclusionExtension .ps1; Remove-MpPreference -ExclusionExtension .py; Remove-MpPreference -ExclusionExtension .rar; Remove-MpPreference -ExclusionExtension .reg; Remove-MpPreference -ExclusionExtension .scr; Remove-MpPreference -ExclusionExtension .sys; Remove-MpPreference -ExclusionExtension .tar; Remove-MpPreference -ExclusionExtension .tmp; Remove-MpPreference -ExclusionExtension .url; Remove-MpPreference -ExclusionExtension .vbe; Remove-MpPreference -ExclusionExtension .vbs; Remove-MpPreference -ExclusionExtension .wsf; Remove-MpPreference -ExclusionExtension .zip; Remove-MpPreference -ExclusionProcess AcroRd32.exe; Remove-MpPreference -ExclusionProcess bitsadmin.exe; Remove-MpPreference -ExclusionProcess excel.exe; Remove-MpPreference -ExclusionProcess iexplore.exe; Remove-MpPreference -ExclusionProcess java.exe; Remove-MpPreference -ExclusionProcess outlook.exe; Remove-MpPreference -ExclusionProcess psexec.exe; Remove-MpPreference -ExclusionProcess powerpnt.exe; Remove-MpPreference -ExclusionProcess powershell.exe; Remove-MpPreference -ExclusionProcess schtasks.exe; Remove-MpPreference -ExclusionProcess wmic.exe; Remove-MpPreference -ExclusionProcess winword.exe; Remove-MpPreference -ExclusionProcess wuauclt.exe; Remove-MpPreference -ExclusionProcess addinprocess.exe; Remove-MpPreference -ExclusionProcess addinprocess32.exe; Remove-MpPreference -ExclusionProcess addinutil.exe; Remove-MpPreference -ExclusionProcess bash.exe; Remove-MpPreference -ExclusionProcess bginfo.exe; Remove-MpPreference -ExclusionProcess cdb.exe; Remove-MpPreference -ExclusionProcess csi.exe; Remove-MpPreference -ExclusionProcess dbghost.exe; Remove-MpPreference -ExclusionProcess dbgsvc.exe; Remove-MpPreference -ExclusionProcess dnx.exe; Remove-MpPreference -ExclusionProcess dotnet.exe; Remove-MpPreference -ExclusionProcess fsi.exe; Remove-MpPreference -ExclusionProcess fsiAnyCpu.exe; Remove-MpPreference -ExclusionProcess kd.exe; Remove-MpPreference -ExclusionProcess ntkd.exe; Remove-MpPreference -ExclusionProcess lxssmanager.dll; Remove-MpPreference -ExclusionProcess msbuild.exe; Remove-MpPreference -ExclusionProcess mshta.exe; Remove-MpPreference -ExclusionProcess ntsd.exe; Remove-MpPreference -ExclusionProcess rcsi.exe; Remove-MpPreference -ExclusionProcess system.management.automation.dll; Remove-MpPreference -ExclusionProcess windbg.exe; Remove-MpPreference -ExclusionProcess bash; Remove-MpPreference -ExclusionProcess sh; Remove-MpPreference -ExclusionProcess python; Remove-MpPreference -ExclusionProcess python3; Remove-MpPreference -ExclusionProcess java; Remove-MpPreference -ExclusionProcess zsh; exit"   
-::High Defense
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Set-Mppreference -AllowDatagramProcessingOnWinServer 1; Set-Mppreference -AllowNetworkProtectionDownLevel 1;Set-Mppreference -AllowNetworkProtectionOnWinServer 1; Set-Mppreference -AllowSwitchToAsyncInspection 0;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 6;Set-Mppreference -CloudExtendedTimeout 50;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 0; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 1; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 2;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 1; Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 100;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 3;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
-::Enable all ASR rules
-start powershell.exe -Command "mode.com con: lines=19 cols=19;add-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"          
-::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -removedefinitions -dynamicsignatures
-::Remove wellknown malware with known paths
-del /q/f/s "C:\Users\%username%\AppData\Roaming\414.exe"
-del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
-::WD Update
-netsh advfirewall reset
-powershell start-service wscsvc
-"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -SignatureUpdate
-"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ListAllDynamicSignatures
-"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
-::2) #Network-Flush
-color 0a
-Title 2) #Network-Flush
-MODE CON: COLS=83 LINES=51
-::90 94
-echo    ********************************
-echo    ** Removing network traces... **
-echo    * WIFI will be off temporarily *
-echo    ********************************
+    REM Custom Taskkill list below to add
+    taskkill /f /im HelpPane.exe /t
+    net stop themes
+    cls
+
+
+
+
+
+
+
+
+
+Title 2.1) Fixing Windows Security [Windows Defender Verification]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    MODE CON: COLS=83 LINES=51
+    color 01
+    echo Verification will fail due to firewall blocking connection below but let it run a bit.
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"  
+
+
+
+
+
+
+Title 2.2) Fixing Windows Security [Blocking all connections]
+    echo Disconnect from Hacker.
+    color 03
+    bitsadmin.exe /reset /allusers
+    netsh advfirewall set allprofiles state on
+    netsh advfirewall reset
+    netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
+
+
+
+
+
+
+Title 2.3.1) Fixing Windows Security [Group Policy reset] [Pro/Enterprise/Business] [3rd-party antivirus users] [Caution]
+    echo Warning this will reset All Group Policy, big organiations like school/company be careful.
+    echo Malware adds rule in Group Policy to disable Windows Security in paid Windows' Editions.
+    color 04
+    del /q/f/s "%WinDir%\System32\GroupPolicyUsers"
+    RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
+    del /q/f/s "%WinDir%\System32\GroupPolicy"
+    RD /S /Q "%WinDir%\System32\GroupPolicy"
+    md "%WinDir%\System32\GroupPolicyUsers"
+    md "%WinDir%\System32\GroupPolicy"
+
+
+
+Title 2.3.2) Fixing Windows Security [Registry attack fix] [Reactivate Windows Defender] [3rd-party antivirus users] [Caution]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    color 05
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
+    REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f     
+    reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
+
+
+
+Title 2.3.3) Fixing Windows Security [Registry attack fix] [Reactive Defender Services] [3rd-party antivirus users] [Caution]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    color 06
+    REG add "HKLM\SYSTEM\CurrentControlSet\services\WinDefend" /v Start /t REG_DWORD /d 2 /f
+    REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f  
+
+
+
+Title 2.3.4) Fixing Windows Security [Registry attack fix] [Extra Actions] [3rd-party antivirus users] [Caution]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    color 09
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f     
+
+
+
+Title 2.3.5) Fixing Windows Security [Registry attack fix] [Specific Malware Schedules]
+    color 0b
+    REM Add specific Malware Registry below to remove
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\System" /f
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\System32" /f      
+
+
+
+Title 2.3.6) Fixing Windows Security [Registry attack fix] [Enable Firewall]
+    color 0c
+    reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f    
+
+
+
+Title 2.3.7) Fixing Windows Security [Registry attack fix] [Reset Connection Preference] [Network Customizers] [Caution]
+    color 0d
+    reg delete "HKCU\Network" /f
+    reg add "HKCU\Network" /f
+    reg delete "HKCU\Software\Microsoft\Remote Assistance" /f
+    reg add "HKCU\Software\Microsoft\Remote Assistance" /f
+
+
+
+Title 2.3.8) Fixing Windows Security [Registry attack fix] [Reset Certificates] [Certificate app downloaders] [Caution]
+    color 0e
+    reg delete "HKCU\Software\Microsoft\SystemCertificates\AuthRoot" /f
+    reg add "HKCU\Software\Microsoft\SystemCertificates\AuthRoot\Certificates" /f
+    reg add "HKCU\Software\Microsoft\SystemCertificates\AuthRoot\CRLs" /f
+    reg add "HKCU\Software\Microsoft\SystemCertificates\AuthRoot\CTLs" /f
+
+
+
+Title 2.3.9) Fixing Windows Security [Registry attack fix] [Security] [Security Policy adders] [Caution]
+    color 01
+    reg delete "HKLM\SECURITY" /f
+    reg add "HKLM\SECURITY" /f
+
+
+
+Title 2.3.10) Fixing Windows Security [Register Group Policy and Registry changes]
+    color 03
+    gpupdate /force
+
+
+
+
+
+
+Title 2.4.1) Fixing Windows Security [Services] [Reset and Begin Defender Services] [3rd-party antivirus users] [Caution]
+    color 04
+    sc config "WdNisSvc" type= own
+    sc config "WdNisSvc" start= demand
+    sc config "WdNisSvc" Error= normal
+    ::sc config "WdNisSvc" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\NisSrv.exe"
+    sc config "WdNisSvc" group= ""
+    sc config "WdNisSvc" tag= 0
+    sc config "WdNisSvc" Depend= "WdNisDrv"
+    sc config "WdNisSvc" obj= "NT AUTHORITY\LocalService"
+    sc config "WdNisSvc" DisplayName= "Microsoft Defender Antivirus Network Inspection Service"
+    powershell start-service WdNisSvc
+    net start WdNisSvc
+    sc config "WinDefend" type= own
+    sc config "WinDefend" start= auto
+    sc config "WinDefend" Error= normal
+    ::sc config "WinDefend" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\MsMpEng.exe"
+    sc config "WinDefend" group= ""
+    sc config "WinDefend" tag= 0
+    sc config "WinDefend" Depend= "RpcSs"
+    sc config "WinDefend" obj= ".\LocalSystem" password= ""
+    sc config "WinDefend" DisplayName= "Microsoft Defender Antivirus Service"
+    powershell start-service WinDefend
+    net start WinDefend
+    sc config "Sense" type= own
+    sc config "Sense" start= demand
+    sc config "Sense" Error= normal
+    ::sc config "Sense" binPath= "C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe"
+    sc config "Sense" group= ""
+    sc config "Sense" tag= 0
+    sc config "Sense" Depend= ""
+    sc config "Sense" obj= ".\LocalSystem" password= ""
+    sc config "Sense" DisplayName= "Windows Defender Advanced Threat Protection Service"
+    net start Sense
+
+
+
+Title 2.4.2) Fixing Windows Security [Services] [Reset and Begin Connection Protection] [3rd-party antivirus users] [Caution]
+    color 05
+    sc config "nvagent" type= share
+    sc config "nvagent" start= demand
+    sc config "nvagent" Error= normal
+    sc config "nvagent" binPath= "C:\WINDOWS\system32\svchost.exe -k NetSvcs"
+    sc config "nvagent" group= ""
+    sc config "nvagent" tag= 0
+    sc config "nvagent" Depend= ""
+    sc config "nvagent" obj= ".\LocalSystem" password= ""
+    sc config "nvagent" DisplayName= "Network Virtualization Service"
+    net start nvagent
+    net start SecurityHealthService
+    net start sppsvc
+
+
+
+Title 2.4.3) Fixing Windows Security [Services] [Stop Hacker Connection]
+    color 06
+    net stop RasMan
+    net stop RasAuto
+    net stop SessionEnv
+    net stop TermService
+    net stop UmRdpService
+    net stop RpcLocator
+    net stop RemoteRegistry
+    net stop RemoteAccess
+
+
+
+Title 2.4.4) Fixing Windows Security [Services] [Stop Spying]
+    color 09
+    net stop WbioSrvc
+    net stop FrameServer
+    net stop FrameServerMonitor
+
+
+
+Title 2.4.5) Fixing Windows Security [Services] [Remove Malware Service]
+    color 0b
+    REM Custom Malware Services Below to remove
+    net stop Service
+    sc delete Service
+
+
+
+
+
+
+Title 2.5.1) Fixing Windows Security [Undo Malware actions to Defender] [Exclusion Removal] [3rd-party antivirus users] [Caution] {Resets Defender through Microsoft Store}
+    color 16
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionPath {%AllUserProfile%}; Remove-MpPreference -ExclusionPath {%AppData%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%HomeDrive%}; Remove-MpPreference -ExclusionPath {%HomePath%}; Remove-MpPreference -ExclusionPath {%LocalAppData%}; Remove-MpPreference -ExclusionPath {%ProgramData%}; Remove-MpPreference -ExclusionPath {%ProgramFiles%}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%Public%}; Remove-MpPreference -ExclusionPath {%SystemDrive%}; Remove-MpPreference -ExclusionPath {%SystemRoot%}; Remove-MpPreference -ExclusionPath {%Tmp%}; Remove-MpPreference -ExclusionPath {%Temp%}; Remove-MpPreference -ExclusionPath {%UserProfile%}; Remove-MpPreference -ExclusionPath {%WinDir%}; Remove-MpPreference -ExclusionPath {%OneDrive%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%ProgramW6432%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%AppData%\Microsoft\Windows\Start Menu\Programs\Startup}; Remove-MpPreference -ExclusionPath {C:\}; Remove-MpPreference -ExclusionPath {C:\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Temp}; Remove-MpPreference -ExclusionPath {C:\Temp\}; Remove-MpPreference -ExclusionPath {C:\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users}; Remove-MpPreference -ExclusionPath {C:\Users\}; Remove-MpPreference -ExclusionPath {C:\Users\*}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\*}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\*}; Remove-MpPreference -ExclusionPath {%Windir%\Temp}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\*}; Remove-MpPreference -ExclusionPath {/}; Remove-MpPreference -ExclusionPath {/*}; Remove-MpPreference -ExclusionPath {bin}; Remove-MpPreference -ExclusionPath {bin/}; Remove-MpPreference -ExclusionPath {bin/*}; Remove-MpPreference -ExclusionPath {/bin}; Remove-MpPreference -ExclusionPath {/bin/}; Remove-MpPreference -ExclusionPath {/bin/*}; Remove-MpPreference -ExclusionPath {sbin}; Remove-MpPreference -ExclusionPath {sbin/}; Remove-MpPreference -ExclusionPath {sbin/*}; Remove-MpPreference -ExclusionPath {/sbin}; Remove-MpPreference -ExclusionPath {/sbin/}; Remove-MpPreference -ExclusionPath {/sbin/*}; Remove-MpPreference -ExclusionPath {usr/lib}; Remove-MpPreference -ExclusionPath {usr/lib/}; Remove-MpPreference -ExclusionPath {usr/lib/*}; Remove-MpPreference -ExclusionPath {/usr/lib}; Remove-MpPreference -ExclusionPath {/usr/lib/}; Remove-MpPreference -ExclusionPath {/usr/lib/*}; exit"
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionExtension *.mp3,*.MP4,*.wav,*.EDB; Remove-MpPreference -ExclusionExtension .7z; Remove-MpPreference -ExclusionExtension .bat; Remove-MpPreference -ExclusionExtension .bin; Remove-MpPreference -ExclusionExtension .cab; Remove-MpPreference -ExclusionExtension .cmd; Remove-MpPreference -ExclusionExtension .com; Remove-MpPreference -ExclusionExtension .cpl; Remove-MpPreference -ExclusionExtension .dll; Remove-MpPreference -ExclusionExtension .exe; Remove-MpPreference -ExclusionExtension .fla; Remove-MpPreference -ExclusionExtension .gif; Remove-MpPreference -ExclusionExtension .gz; Remove-MpPreference -ExclusionExtension .hta; Remove-MpPreference -ExclusionExtension .inf; Remove-MpPreference -ExclusionExtension .java; Remove-MpPreference -ExclusionExtension .jar; Remove-MpPreference -ExclusionExtension .job; Remove-MpPreference -ExclusionExtension .jpeg; Remove-MpPreference -ExclusionExtension .jpg; Remove-MpPreference -ExclusionExtension .js; Remove-MpPreference -ExclusionExtension .ko; Remove-MpPreference -ExclusionExtension .ko.gz; Remove-MpPreference -ExclusionExtension .msi; Remove-MpPreference -ExclusionExtension .ocx; Remove-MpPreference -ExclusionExtension .png; Remove-MpPreference -ExclusionExtension .ps1; Remove-MpPreference -ExclusionExtension .py; Remove-MpPreference -ExclusionExtension .rar; Remove-MpPreference -ExclusionExtension .reg; Remove-MpPreference -ExclusionExtension .scr; Remove-MpPreference -ExclusionExtension .sys; Remove-MpPreference -ExclusionExtension .tar; Remove-MpPreference -ExclusionExtension .tmp; Remove-MpPreference -ExclusionExtension .url; Remove-MpPreference -ExclusionExtension .vbe; Remove-MpPreference -ExclusionExtension .vbs; Remove-MpPreference -ExclusionExtension .wsf; Remove-MpPreference -ExclusionExtension .zip; Remove-MpPreference -ExclusionProcess AcroRd32.exe; Remove-MpPreference -ExclusionProcess bitsadmin.exe; Remove-MpPreference -ExclusionProcess excel.exe; Remove-MpPreference -ExclusionProcess iexplore.exe; Remove-MpPreference -ExclusionProcess java.exe; Remove-MpPreference -ExclusionProcess outlook.exe; Remove-MpPreference -ExclusionProcess psexec.exe; Remove-MpPreference -ExclusionProcess powerpnt.exe; Remove-MpPreference -ExclusionProcess powershell.exe; Remove-MpPreference -ExclusionProcess schtasks.exe; Remove-MpPreference -ExclusionProcess wmic.exe; Remove-MpPreference -ExclusionProcess winword.exe; Remove-MpPreference -ExclusionProcess wuauclt.exe; Remove-MpPreference -ExclusionProcess addinprocess.exe; Remove-MpPreference -ExclusionProcess addinprocess32.exe; Remove-MpPreference -ExclusionProcess addinutil.exe; Remove-MpPreference -ExclusionProcess bash.exe; Remove-MpPreference -ExclusionProcess bginfo.exe; Remove-MpPreference -ExclusionProcess cdb.exe; Remove-MpPreference -ExclusionProcess csi.exe; Remove-MpPreference -ExclusionProcess dbghost.exe; Remove-MpPreference -ExclusionProcess dbgsvc.exe; Remove-MpPreference -ExclusionProcess dnx.exe; Remove-MpPreference -ExclusionProcess dotnet.exe; Remove-MpPreference -ExclusionProcess fsi.exe; Remove-MpPreference -ExclusionProcess fsiAnyCpu.exe; Remove-MpPreference -ExclusionProcess kd.exe; Remove-MpPreference -ExclusionProcess ntkd.exe; Remove-MpPreference -ExclusionProcess lxssmanager.dll; Remove-MpPreference -ExclusionProcess msbuild.exe; Remove-MpPreference -ExclusionProcess mshta.exe; Remove-MpPreference -ExclusionProcess ntsd.exe; Remove-MpPreference -ExclusionProcess rcsi.exe; Remove-MpPreference -ExclusionProcess system.management.automation.dll; Remove-MpPreference -ExclusionProcess windbg.exe; Remove-MpPreference -ExclusionProcess bash; Remove-MpPreference -ExclusionProcess sh; Remove-MpPreference -ExclusionProcess python; Remove-MpPreference -ExclusionProcess python3; Remove-MpPreference -ExclusionProcess java; Remove-MpPreference -ExclusionProcess zsh; exit"   
+
+
+
+Title 2.5.2) Fixing Windows Security [Undo Malware actions to Defender] [Highest Defense] [LOW PRIVACY, defense will return normal in the end, let the script finish] [3rd-party antivirus users] [Caution]
+    color 3c
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Set-Mppreference -AllowDatagramProcessingOnWinServer 1; Set-Mppreference -AllowNetworkProtectionDownLevel 1;Set-Mppreference -AllowNetworkProtectionOnWinServer 1; Set-Mppreference -AllowSwitchToAsyncInspection 0;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 6;Set-Mppreference -CloudExtendedTimeout 50;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 0; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 1; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 2;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 1; Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 100;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 3;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
+
+
+
+Title 2.5.3) Fixing Windows Security [Undo Malware actions to Defender] [Highest Defense] [Extra ASR Rules] [3rd-party antivirus users] [Caution]
+    color 9e
+    start powershell.exe -Command "mode.com con: lines=19 cols=19;add-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"          
+
+
+
+
+
+
+Title 2.6) Fixing Windows Security [REMOVE MALWARE] [Custom list]
+    color 04
+    REM Custom Malware Path below to remove
+    del /q/f/s "C:\Users\%username%\AppData\Roaming\414.exe"
+    del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
+
+
+
+
+
+
+Title 2.7) Reset Defender Schedul Task
+    color 06
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /ENABLE
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /ENABLE
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /ENABLE
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Verification" /ENABLE
+
+
+
+
+
+
+Title 2.8.1) Fixing Windows Security [Resetting network connection]
+    echo    ********************************
+    echo    ** Removing network traces... **
+    echo    * WIFI will be off temporarily *
+    echo    ********************************
+    color 05
+    certutil -URLcache * delete
     bitsadmin.exe /reset /allusers 
     netsh int ip reset resettcpip.txt
     netsh winhttp reset proxy
@@ -183,14 +433,17 @@ echo    ********************************
     ::netsh advfirewall set privateprofile state on
     ::netsh advfirewall set currentprofile state on
     netsh advfirewall set allprofiles state on
-    netsh advfirewall reset
+    ::netsh advfirewall reset
     netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
     arp /d
     nbtstat -R
     nbtstat -RR
     route -f
-    ::auto-reconnect to wifi
-    color 06
+
+
+
+Title 2.8.2) Fixing Windows Security [Resetting network connection] [Reconnect to Wifi]
+    color 0e
     netsh int ip reset resettcpip.txt
     netsh winhttp reset proxy
     netsh int ip reset
@@ -214,716 +467,796 @@ echo    ********************************
     arp /d
     nbtstat -R
     nbtstat -RR
-color 03
 
-::1) #End-Tasks
-color 4F
-Title 1) #End-Tasks (#Caution!)
-MODE CON: COLS=49 LINES=19
-echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
-echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
-echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
-echo      ***************************************
-echo      ** KILLING ALL UNNECESSARY PROCESSES **
-echo      **   To successfully delete junks!   **
-echo      ***************************************
+
+
+
+
+
+
+
+
+Title 3) Ending Tasks [Prepare to Clean] [DO NOT CLOSE] {TASKBAR MAY BREAKS in Windows Beta}
+    echo To make cleaning more successful and for security reasons, killing tasks again.
+    MODE CON: COLS=49 LINES=19
+    color 4F
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo      ***************************************
+    echo      ** KILLING ALL UNNECESSARY PROCESSES **
+    echo      **   To successfully delete junks!   **
+    echo      ***************************************
     taskkill.exe /F /FI "USERNAME eq %USERNAME%" /FI "IMAGENAME ne ClassicShellService.exe" /FI "IMAGENAME ne explorer.exe" /FI "IMAGENAME ne dwm.exe" /FI "IMAGENAME ne cmd.exe" /FI "IMAGENAME ne mbam.exe" /FI "IMAGENAME ne teamviewer.exe" /FI "IMAGENAME ne TeamViewer_Service.exe" /FI "IMAGENAME ne Taskmgr.exe" /FI "IMAGENAME ne Teamviewer_Desktop.exe" /FI "IMAGENAME ne MsMpEng.exe" /FI "IMAGENAME ne tv_w32.exe" /FI "IMAGENAME ne LogMeIn.exe" /FI "IMAGENAME ne Tron.bat" /FI "IMAGENAME ne rkill.exe" /FI "IMAGENAME ne rkill64.exe" /FI "IMAGENAME ne rkill.com" /FI "IMAGENAME ne rkill64.com" /FI "IMAGENAME ne conhost.exe" /FI "IMAGENAME ne dashost.exe" /FI "IMAGENAME ne wget.exe" /FI "IMAGENAME ne TechToolbox.exe" /FI "IMAGENAME ne vmtoolsd.exe" /FI "IMAGENAME ne conhost.exe"
-cls
-color 06
-::MD Verify
-start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
-start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
-start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"  
-::2) #Network-Flush
-color 0a
-Title 2) #Network-Flush
-MODE CON: COLS=83 LINES=51
-::90 94
-echo    ********************************
-echo    ** Removing network traces... **
-echo    * WIFI will be off temporarily *
-echo    ********************************
-    bitsadmin.exe /reset /allusers 
-    netsh int ip reset resettcpip.txt
-    netsh winhttp reset proxy
-    netsh int ip reset
-    netsh int ip reset all
-    netsh int ip reset resetlog.txt
-    netsh branchcache reset
-    ipconfig /release
-    ipconfig /renew
-    start ipconfig /iprenew
-    start netsh interface ip delete arpcache
-    ipconfig /flushdns
-    netsh winsock reset
-    netsh winsock reset all
-    netsh int tcp reset all
-    netsh int udp reset all
-    netsh int ipv4 reset all
-    netsh int ipv6 reset all
-    netsh int portproxy reset all
-    netsh int httpstunnel reset all
-    netsh winhttp import proxy source=ie
-    netsh advfirewall reset
-    netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
-    arp /d
-    nbtstat -R
-    nbtstat -RR
-    route -f
-    ::auto-reconnect to wifi
-    color 06
-    netsh int ip reset resettcpip.txt
-    netsh winhttp reset proxy
-    netsh int ip reset
-    netsh int ip reset all
-    netsh int ip reset resetlog.txt
-    netsh branchcache reset
-    ipconfig /release
-    ipconfig /renew
-    start ipconfig /iprenew
-    start netsh interface ip delete arpcache
-    ipconfig /flushdns
-    netsh winsock reset
-    netsh winsock reset all
-    netsh int tcp reset all
-    netsh int udp reset all
-    netsh int ipv4 reset all
-    netsh int ipv6 reset all
-    netsh int portproxy reset all
-    netsh int httpstunnel reset all
-    netsh winhttp import proxy source=ie
-    arp /d
-    nbtstat -R
-    nbtstat -RR
-color 03
+    REM Custom Taskkill list below to add
+    taskkill /f /im HelpPane.exe /t
+    net stop themes
+    cls
 
-::3) #Disk-Cleanup
-color E0
-Title 3) #Disk-Cleanup
-MODE CON: COLS=45 LINES=19
+
+
+
+
+
+
+
+
+Title 4) Cleaning Junk [Disk Cleanup]
 echo    ======================================
 echo    ==  Move your mouse in CIRCLE now!  ==
 echo    == This is to prevent getting stuck ==
 echo    ==        Click OK when DONE        ==
 echo    ======================================
-    start cmd.exe @cmd /k "MODE CON: COLS=45 LINES=19 & color E0 & Title 2) Disk Cleanup & echo. & echo. & echo. & echo. &echo. &echo. & echo    ====================================== & echo    ==  Move your mouse in CIRCLE now!  == & echo    == This is to prevent getting stuck == & echo    ==        Click OK when DONE        == & echo    ====================================== & start /wait %systemroot%\System32\cleanmgr.exe /sagerun:100 & cleanmgr /verylowdisk & color 06 & exit"
-color 0a
+    MODE CON: COLS=83 LINES=51
+    color E0
+    start cmd.exe @cmd /k "MODE CON: COLS=45 LINES=19 & color E0 & Title 4) Disk Cleanup & echo. & echo. & echo. & echo. &echo. &echo. & echo    ====================================== & echo    ==  Move your mouse in CIRCLE now!  == & echo    == This is to prevent getting stuck == & echo    ==        Click OK when DONE        == & echo    ====================================== & start /wait %systemroot%\System32\cleanmgr.exe /sagerun:100 & cleanmgr /verylowdisk & color 06 & exit"
 
-::4) Windows Feature Optimization
-Title 4) Windows Feature Optimization
-color 03
-Title 4.1) #Disable-space-wasting Features   (#Caution!)
-MODE CON: COLS=83 LINES=51
-echo If you want to renable #Hibernate, #Reserved Storage
-echo enter 
-echo powercfg /hibernate on     (Hibernate=Sleep without using power, but will waste 10 GB)
-echo and
-echo DISM.exe /Online /Set-ReservedStorageState /State:Enabled
+
+
+
+
+
+
+
+
+Title 5.1) Windows Feature Optimization [Disable Hibernation]
+    color 01
+    echo Hibernation uses disk space.
     powercfg /hibernate off
     DISM.exe /Online /Set-ReservedStorageState /State:Disabled
-color 0B
-::Compacting OS may slightly decrease or increase performance in different aspects
-    ::Compact.exe /CompactOS:never
+
+
+
+
+
+
+Title 5.2) Windows Feature Optimization [Disable restore point]
+    echo Unless you're actively testing malware, I believe you don't need restore points.
+    DISM.exe /Online /Set-ReservedStorageState /State:Disabled
+    vssadmin delete shadows /for=C: /all /quiet
+    vssadmin delete shadows /for=D: /all /quiet
+    vssadmin delete shadows /for=E: /all /quiet
+    vssadmin delete shadows /for=F: /all /quiet
+
+
+
+
+
+
+Title 5.3.1) Windows Feature Optimization [Registry] [Maximum Network Performance Always]
+    color 03
+    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v NetworkThrottlingIndex /t REG_DWORD /d 4294967295 /f
+
+
+
+Title 5.3.2) Windows Feature Optimization [Registry] [Increase Mouse Responsiveness]
+    color 05
+    reg add "HKCU\Control Panel\Mouse" /v MouseHoverTime /t REG_SZ /d 10 /f
+
+
+
+Title 5.3.3) Windows Feature Optimization [Registry] [Taskbar Previews Pop-up Faster]
+    color 06
+    reg add "HKCU\Control Panel\Desktop" /v MenuShowDelay /t REG_SZ /d 10 /f
+
+
+
+Title 5.3.4) Windows Feature Optimization [Registry] [Increase System Responsiveness]
+    color 09
+    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v SystemResponsiveness /t REG_DWORD /d 10 /f
+
+
+
+Title 5.3.5) Windows Feature Optimization [Registry] [Games auto High Priority] [Disabled by default] {Work computer consideration}
+    echo Disabled by default for people who don't play games.
+    ::reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" /v Priority /t REG_DWORD /d 6 /f
+    ::reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" /v "Scheduling Category" /t REG_SZ /d High /f
+    ::reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" /v "SFIO Priority" /t REG_SZ /d High /f    
+
+
+
+Title 5.3.6) Windows Feature Optimization [Registry] [Clear Page File during Shutdown]
+    color 0b
+    attrib -s -h %systemdrive%\pagefile.sys
+    del /a /q %systemdrive%\pagefile.sys
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v ClearPageFileAtShutdown /t REG_DWORD /d 1 /f
+
+
+
+
+
+
+
+
+
+Title 6.1) Space saving [Compact OS]
+    echo Unless you have 90% storage used, this will decrease performance for space.
+    color 0d
     ::Compact.exe /CompactOS:always
-color 0B
-Title 4.1) Remove uneccessary Windows Cumulative Update immediately
+
+
+
+
+
+
+Title 6.2) Space saving [Remove backup updates]
+    echo by Microsoft https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder?view=windows-11
+    color 0e
     schtasks.exe /Run /TN "\Microsoft\Windows\Servicing\StartComponentCleanup"
     Dism.exe /online /Cleanup-Image /StartComponentCleanup
     Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
     Dism.exe /online /Cleanup-Image /SPSuperseded 
-Color 0E
-::Enable secret power plan
-Color 0E
-Title 4.2) Enable Secret Power Plan
-    ::powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-Color 05
-color 05
-Title 4.3) Registry Optimization
-    Title 4.3.1) Disable network data saving
-        reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v NetworkThrottlingIndex /t REG_DWORD /d 4294967295 /f
-        ::disabling the network throttling which prevents non-general network traffic. It also lowers ping while playing multiplayer games.
-    Title 4.3.2) Increase Mouse Responsiveness (default 400)
-        reg add "HKCU\Control Panel\Mouse" /v MouseHoverTime /t REG_SZ /d 10 /f
-        ::This controls the time before the pop-up menu opens when you hover your mouse cursor on a folder or file.
-    Title 4.3.3) Windows Taskbar Popup Faster (default 400)
-        reg add "HKCU\Control Panel\Desktop" /v MenuShowDelay /t REG_SZ /d 10 /f
-    Title 4.3.4) Windows System Responsiveness (default 14)
-        reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v SystemResponsiveness /t REG_DWORD /d 10 /f
-    Title 4.3.5) Auto Higher Priority for Games (default 2, Medium, Normal)
-        ::reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" /v Priority /t REG_DWORD /d 6 /f
-        ::reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" /v "Scheduling Category" /t REG_SZ /d High /f
-        ::reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games" /v "SFIO Priority" /t REG_SZ /d High /f
-        ::These values register the games into high priority mode while active.
-    Title 4.3.6) Clear Page File at Shutdown
-        reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v ClearPageFileAtShutdown /t REG_DWORD /d 1 /f
-color 0B
-color 0B
-Title 4.4) Disable Superfetch
-    ::Superfetch predicts when you will open certain apps and preloads them for faster start up, which consumes a tiny amount of CPU and RAM.
-    sc stop “SysMain” & sc config “SysMain” start=disabled
-
-::5) #Reveal-Hidden-Files
-color 03
-Title 5) #Reveal-Hidden-Files
-echo    ============================
-echo    == Revealing hidden files ==
-echo    =====  To delete junks  ====
-    attrib -h -r -s /s /d
-cls
-color 0D
-
-::#Cleaning
-color 0D
-Title Cleaning
-    ::6) #Temp  (Safe)
-    Title 6) #Temp
-        ::Windows-Temp
-        Title 6a) Windows-Temp
-            ::Win-Temp
-            Title 6a.1) Win-Temp
-                del /q/f/s C:\Windows\Temp
-                del /s /f /q %WinDir%\Temp\*.*
-                del /q/f/s C:\Windows\TempInst
-                del /q/f/s C:\Windows\WinSxS\Temp
-                del /q/f/s "C:\ProgramData\Microsoft\Search\Data\Temp"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Temp"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\Windows\CbsTemp"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows\CbsTemp"
-                del /q/f/s "C:\Windows\assembly\temp"
-                del /q/f/s "C:\Windows\assembly\tmp"
-                del /q/f/s "C:\Windows\assembly\NativeImages_v2.0.50727_32\Temp"
-                del /q/f/s "C:\Windows\assembly\NativeImages_v2.0.50727_64\Temp"
-                del /q/f/s "C:\Windows\assembly\NativeImages_v4.0.30319_32\Temp"
-                del /q/f/s "C:\Windows\assembly\NativeImages_v4.0.30319_64\Temp"
-                del /q/f/s "C:\Windows\CbsTemp"
-
-::Volume Shadow copy/restore points
-vssadmin delete shadows /for=C: /all /quiet
-vssadmin delete shadows /for=D: /all /quiet
-vssadmin delete shadows /for=E: /all /quiet
-vssadmin delete shadows /for=F: /all /quiet
-
-            ::Win-Logs
-            color 01
-            Title 6a.2) Win-Logs
-                del /q /f /s %SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setupact.log
-                del /q /f /s %SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setuperr.log
-                del /s /f /q "%systemdrive%\setup.log"
-                del /q/f/s C:\Windows\System32\Logs
-                del /q/f/s "C:\Windows\WinSxS\poqexec.log"
-                del /q/f/s C:\Windows\Logs
-                del /q/f/s C:\Windows\WindowsUpdate.log
-                del /q/f/s "C:\PerfLogs"
-                del /q/f/s "C:\Recovery\Logs"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows Security Health\Logs"
-                del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb.log"
-                del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00013.log"
-                del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00014.log"
-                del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00015.log"
-                del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edbtmp.log"
-                del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00013.log"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\PerfLogs"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows Security Health\Logs"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\Windows\Logs"
-                del /q/f/s "C:\ProgramData\USOShared\Logs"
-                del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\ie4uinit-ClearIconCache.log"
-                del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\ie4uinit-UserConfig.log"
-                del /q/f/s "C:\Windows\ModemLogs"
-                del /q/f/s "C:\Windows\security\EDP\Logs"
-                del /q/f/s "C:\Windows\security\database\edb.log"
-                del /q/f/s "C:\Windows\security\database\edbtmp.log"
-                del /q/f/s "C:\Windows\security\EDP\Logs"
-                del /q/f/s "C:\Windows\security\logs"
-                del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs"
-                del /q/f/s "%SystemRoot%\PFRO.log"
-                del /q/f/s "C:\PerfLogs\System\Diagnostics"
-                rd /s /q "C:\PerfLogs\System\Diagnostics"
-                del /q/f/s "C:\Logs"
-                rd /s /q "C:\Logs"
-                del /q/f/s "%AppData%\Microsoft\Windows\Recent"
-                rd /s /q "%AppData%\Microsoft\Windows\Recent"
-                del /q/f/s "%AppData%\Microsoft\Windows\Recent\AutomaticDestinations"
-                del /q/f/s "%systemdrive%\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\DeliveryOptimization\Logs\*.*
-                rd /s /q "%AppData%\Microsoft\Windows\Recent\AutomaticDestinations"
-    
-                ::Win-Logs-Custom-Scripts
-                color 02
-                Title 6a.2.1) Win-Logs-Custom-Scripts
-                    ::Deletes Event Logs
-                    start cmd.exe @cmd /k "for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1""
-                    ::(Breaks)start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }; Set-Location “C:\Windows\Temp”; Remove-Item * -recurse -force; Set-Location “C:\Windows\Prefetch”; Remove-Item * -recurse -force; Set-Location “C:\Documents and Settings”; Remove-Item “.\*\Local Settings\temp\*” -recurse -force; Set-Location “C:\Users”; Remove-Item “.\*\Appdata\Local\Temp\*” -recurse -force; exit"
-                    ::(Breaks)start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }; Set-Location “C:\Windows\Temp”; Remove-Item * -recurse -force; Set-Location “C:\Windows\Prefetch”; Remove-Item * -recurse -force; Set-Location “C:\Users”; Remove-Item “.*\Appdata\Local\Temp*” -recurse -force; exit"
-                    ::(Crash)taskkill /IM svchost.exe /F
-                    start powershell.exe -Command "mode.com con: lines=19 cols=19; wevtutil el | Foreach-Object {wevtutil cl "$_"}"
-                    start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }"
-                    del /q/f/s "C:\Windows\System32\winevt\Logs\Microsoft-Windows-LiveID%4Operational.evtx"
-                    del /q/f/s "C:\Windows\System32\winevt\Logs"
-            ::Win-Dumps     (Crash Dump Reports)
-            color 0E
-            Title 6a.3) Win-Dumps
-                del /q/f/s %userprofile%\appdata\local\crashdumps
-                del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\Dumps"
-                del /q/f/s "%SystemRoot%\memory.dmp"
-                del /q/f/s "%SystemRoot%\Minidump.dmp"
-                del /f /s /q "%SystemRoot%\Minidump\*.*"
-                del /f /s /q "%SystemRoot%\Minidump\"
-                rd /s /q "%SystemRoot%\Minidump\"
-                md "%SystemRoot%\Minidump\"
-
-            ::Win-Diagnosis
-            color 06
-            Title 6a.4) Win-Diagnosis
-                del /q/f/s "C:\ProgramData\Microsoft\Diagnosis\ETLLogs"
-                del /q/f/s "C:\ProgramData\Microsoft\Diagnosis\Temp"
-                del /q/f/s "%userprofile%\AppData\Local\Diagnostics"
-                del /q/f/s "%userprofile%\AppData\Local\ElevatedDiagnostics"
-            
-            ::Win-History
-            color 09
-            Title 6a.5) Win-History
-                del /q/f/s "C:\Windows\Microsoft Antimalware\Scans\History"
-                del /q/f/s "%SystemRoot%\Microsoft Antimalware\Scans\History"
-                del /q/f/s "%ProgramData%\Microsoft\Windows Defender\Scans\History"
-                ::RUN command history
-                reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /f            
-            
-            ::Win-Folder    (Windows folders used to Reset, old Windows data)
-            color 01
-            Title 6a.6) Win-Folder
-                del /q/f/s %SYSTEMDRIVE%\$SysReset
-                rd /s /q %SYSTEMDRIVE%\$SysReset
-                del /q/f/s %SYSTEMDRIVE%\Windows10Upgrade
-                rd /s /q %SYSTEMDRIVE%\Windows10Upgrade
-                del /q/f/s %SYSTEMDRIVE%\Windows.old
-                rd /s /q %SYSTEMDRIVE%\Windows.old
-
-        ::Apps-Temp
-            ::App-Temp
-            color 0E
-            Title 6b.1) App-Temp
-                del /q/f/s %temp%
-                del /s /f /q %Temp%\*.*
-                del /s /f /q %AppData%\Temp\*.*
-                del /s /f /q %HomePath%\AppData\LocalLow\Temp\*.*
-                del /s /f /q %userprofile%\appdata\LocalLow\Temp
-                del /s /f /q %userprofile%\appdata\roaming\Temp
-                del /q/f/s "C:\OneDriveTemp"
-                del /q/f/s "C:\ProgramData\Lenovo\Vantage\Update\Svc\Tmp"
-                del /q/f/s "C:\ProgramData\Microsoft\EdgeUpdate\Log"
-                del /q/f/s "C:\Program Files\Git\tmp"
-                del /q/f/s "C:\ProgramData\Lenovo\ImController\Temp"
-                del /q/f/s "%userprofile%\AppData\LocalLow\Temp"
-                del /q/f/s "%userprofile%\AppData\Roaming\Temp"
-                del /q/f/s "%userprofile%\AppData\Local\WhatsApp\packages\SquirrelTemp"
-                ::Google Temp
-                del /q/f/s "%userprofile%\AppData\Local\Google\Chrome SxS\Temp"
-                del /q/f/s "%userprofile%\AppData\Local\Google\Chrome\Temp"
-                rd "%userprofile%\AppData\Local\Google\Chrome SxS\Temp"
-                rd "%userprofile%\AppData\Local\Google\Chrome\Temp"
-DEL /F/S/Q "C:\Program Files (x86)\Dropbox\Update\Download\*.*"
-DEL /F/S/Q "C:\Program Files (x86)\Dropbox\CrashReports\*.*"
-DEL /F/S/Q "C:\Program Files (x86)\Google\Temp\*.*"
-RD /S/Q "C:\Program Files (x86)\GUM5EB2.tmp"
-DEL /F/S/Q "C:\Program Files (x86)\TeamViewer\TeamViewer15_Logfile.log"
-DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\TeamViewer\TeamViewer12_Logfile.log"
-DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\TeamViewer\TeamViewer15_Logfile.log"
-DEL /F/S/Q "C:\ProgramData\Dropbox\Update\Log\*.*"
-DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\Mozilla\Firefox\Crash Reports\*.*"
-DEL /F/S/Q "C:\ProgramData\Razer\Synapse\ProductUpdates\Downloads\*.*"
-DEL /F/S/Q "C:\ProgramData\Razer\Synapse\Logs\*.*"
-DEL /F/S/Q "C:\ProgramData\Binary Fortress Software\DisplayFusion\DisplayFusion.log"
-DEL /F/S/Q "C:\ProgramData\Binary Fortress Software\DisplayFusion\Setup.log"
-DEL /F/S/Q "C:\Users\%Username%\AppData\Local\SquirrelTemp\*.log"
-DEL /F/S/Q "C:\Users\%Username%\AppData\Local\TileDataLayer\Database\*.log"
-DEL /F/S/Q "C:\Users\%Username%\Documents\Any Video Converter\Temp\*.*"
-DEL /F/S/Q "C:\Users\%Username%\.VirtualBox\*.log"
-
-            ::App-Logs
-            color 0D
-            Title 6b.2) App-Logs
-                del /q/f/s "%programfiles(x86)%\Steam\logs"
-                del /q/f/s "C:\Program Files\AMD\CIM\Log"
-                del /q/f/s "%ProgramData%\BlueStacks_bgp64_hyperv\Logs"
-                del /q/f/s "%ProgramData%\BlueStacks\Logs"
-                del /q/f/s "C:\ProgramData\Lenovo\LDiag\SYSTEM\ldiag.log"
-                del /q/f/s "C:\ProgramData\Lenovo\LDiag\SYSTEM\ldiag_errors.log"
-                del /q/f/s "C:\ProgramData\Lenovo\udc\log"
-                del /q/f/s "C:\ProgramData\Lenovo\Vantage\Logs"
-                del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\EdgeUpdate\Log"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\DisplayDriverRAS\NvTelemetry\NvTelemetry.log"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\GeForce Experience\Logs"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\GfeBridges\NvGfeServiceBridgeCurrent.log"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\GfeBridges\NvGfeServiceBridgeOld.log"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_1.log"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvTelemetry\NvTelemetry.log"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\nvtopps\nvtopps.log"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\umdlogs"
-                del /q/f/s "%userprofile%\AppData\Local\DiscordCanary\DiscordCanary_updater_r00001.log"
-                del /q/f/s "%userprofile%\AppData\Local\DiscordCanary\DiscordCanary_updater_r00002.log"
-                del /q/f/s "%userprofile%\AppData\Local\DiscordCanary_updater_r00003.log"
-                del /q/f/s "%userprofile%\AppData\Local\DiscordCanary_updater_rCURRENT.log"
-                del /q/f/s "%userprofile%\AppData\Local\Discord\Discord_updater_r00001.log"
-                del /q/f/s "%userprofile%\AppData\Local\Discord\Discord_updater_r00002.log"
-                del /q/f/s "%userprofile%\AppData\Local\Discord_updater_r00003.log"
-                del /q/f/s "%userprofile%\AppData\Local\Discord_updater_rCURRENT.log"
-                del /q/f/s "%userprofile%\AppData\Local\SquirrelSetup.log"
-                del /q/f/s "%userprofile%\AppData\Local\Dropbox\logs"
-                del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\software_reporter_tool.log"
-                del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\software_reporter_tool-crashpad.log"
-                del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\software_reporter_tool-sandbox.log"
-                del /q/f/s "%userprofile%\AppData\Local\Microsoft\OneDrive\logs"
-                del /q/f/s "%userprofile%\AppData\Local\Microsoft\OneDrive\setup\logs"
-                del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\logs"
-                del /q/f/s "%userprofile%\AppData\Roaming\Code\logs"
-                del /q/f/s "%userprofile%\AppData\Roaming\Tencent\WeChat\log"
-                del /q/f/s "%userprofile%\AppData\Roaming\Unity Hub\logs"
-                del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\logs"
-                del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\000013.log"
-                del /q/f/s "%userprofile%\AppData\Local\WhatsApp\SquirrelSetup.log"
-
-            ::App-Dumps
-            color 06
-            TItle 6b.3) App-Dumps
-                del /q/f/s "%programfiles(x86)%\Steam\dumps"
-                del /q/f/s "C:\Program Files (x86)\Steam\steamapps\corrupt"
-                del /q/f/s "C:\ProgramData\NVIDIA Corporation\CrashDumps"
-                del /q/f/s "%userprofile%\AppData\Local\Dropbox\CrashReports"
-                DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\Thunderbird\Crash Reports\pending\*.dmp"
-
-            ::App-Report
-            color 0B
-            Title 6b.4) App-Report
-                del /q/f/s "%userprofile%\AppData\Local\Google\CrashReports"
-                del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\reports"
-                del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\Crashpad\reports"
-                del /q/f/s "%userprofile%\AppData\Roaming\Code\Crashpad\reports"
-                del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\Crashpad\reports"
-                del /q/f/s "%userprofile%\AppData\Roaming\discord\Crashpad\Report"
-                del /q/f/s "%userprofile%\AppData\Roaming\Mozilla\Firefox\Crash Reports"
-                del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\Crash Reports"
-
-        ::Driver-Temp   (Installers that finished installing and aren't needed)
-        Title 7) Driver-Temp
-        color 0C
-            del /q/f/s %SYSTEMDRIVE%\AMD\*.*
-            rd /s /q %SYSTEMDRIVE%\AMD\*.*
-            del /q/f/s %SYSTEMDRIVE%\NVIDIA\*.*
-            rd /s /q %SYSTEMDRIVE%\NVIDIA\*.*
-            del /q/f/s %SYSTEMDRIVE%\INTEL\*.*
-            rd /s /q %SYSTEMDRIVE%\INTEL\*.*
-
-    ::#Caution!
-    color 06
-    Title 8) #Caution Files!
-        ::8) #!Cache  (For faster loading - Safe to delete, eg. icons ; For storing User Data - Unsafe, will require relogin)      (Some Cache may store user data and preferences)    
-        Title 8) #!Cache (Caution Files)
-            ::Windows-Cache     (#!Caution, some may store user login data and preferences!)
-            Title 8a) Windows-Cache
-                ::Win-Cache     (Disk Cleanup already deleted Cache that are safe to delete!)
-                color
-                Title 8a.1) Win-Cache
-
-                    ::Safer     (Enable if you have update problems, since some cache maybe corrupted and require regenerate)
-                    del /s /f /q C:\Windows\SoftwareDistribution\Download
-                    ::del /s /f /q C:\ProgramData\Package Cache
-                        ::Safe? but may not be necessary, since they regenerate anyway, and deleting may slow your system down until they regenerate and have the same space
-                        ::del /q/f/s "C:\ProgramData\Microsoft\Provisioning\AssetCache"
-                        ::del /q/f/s "C:\ProgramData\Microsoft\Search\Data\Applications\Windows\GatherLogs"
-                        ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Caches"
-                            ::Windows License stuff, deleting is fine but may deactivate your Windows with a 10% chance, especially when you don't reboot after running this command
-                                ::del /q/f/s "C:\ProgramData\Microsoft\Windows\ClipSVC\Archive"
-                                ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows\ClipSVC\Archive"
-                        ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cache"
-                        ::del /q/f/s "C:\ProgramData\Microsoft\Windows\DeviceMetadataCache\dmrccache"
-                        ::del /q/f/s "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cache"
-                        ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows\Caches"
-                            ::Your Hyper-V VM Backups
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Groups Cache"
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Snapshots Cache"
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Planned Virtual Machines Cache"
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Snapshot Groups Cache"
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Snapshots Cache"
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\UndoLog Configuration Cache"
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Virtual Machines Cache"
-                            ::del /q/f/s "C:\ProgramData\Microsoft\Windows\LfSvc\Cache"
-                        ::DirectX Shader Cache, these cache improves gaming performance, clean if your gameplay stutters which mean its corrupted
-                        del /q/f/s "%userprofile%\AppData\Local\D3DSCache"
-                    del /q/f/s "%userprofile%\AppData\Local\fontconfig\cache"
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\FontCache"
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\GraphicsCache"
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\CacheStorage"
-                    del /q/f/s "C:\Windows\LanguageOverlayCache"
-                    del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\FontCache"
-                    ::del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Windows\INetCache"
-                    ::del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\INetCache"
-                    ::del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\LocalLow\Microsoft\CryptnetUrlCache"
-                    ::del /q/f/s "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData"
-                    ::del /q/f/s "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\Content"
-                    del /f /s /q "C:\Users\%username%\AppData\Local\Microsoft\Feeds Cache"
-                    del /f /s /q "C:\Users\%username%\AppData\Local\Microsoft\Feeds"
-                    ::Font Cache
-                    del /f /s /q "%WinDir%\ServiceProfiles\LocalService\AppData\Local\FontCache"
-                    del /f /s /q "%WinDir%\System32\FNTCACHE.DAT"
-                    ::Icon Cache
-                    DEL /f /s /q "%localappdata%\IconCache.db"
-                    del /f /s /q "%localappdata%\Microsoft\Windows\Explorer\iconcache*"
-                    del /f /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Explorer\thumbcache_*.db"
-                    ::Windows Spotlight
-                    DEL /F /S /Q "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets"
-                    DEL /F /S /Q "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\Settings"
-                    ::Web Cache
-                    del /f /s /q "C:\Users\%Username%\AppData\Local\Microsoft\Windows\WebCache"
-                    ::Audio Units Cache
-                    del /f /q "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
-                    del /f /s /q %SystemRoot%\system32\catroot2\*.* 
-                    ::Rescache is a part of the MUI and its runtime diagnostics
-                    del /q/f/s "C:\Windows\rescache
-                    ::Offline Web Pages
-                    DEL /F/S/Q "%windir%\Offline Web Pages\*.*"
-                    ::Schema Cache
-                    del /q/f/s "C:\Windows\SchCache"
-                    ::Performance Cache
-                    DEL /F/S/Q "%windir%\Performance\*.*"
-                    ::Burn Cache
-                    DEL /F/S/Q "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Burn"
-                        ::Custom Script to reset Microsoft Store Cache
-                        color 03
-                        Title #8a.2) Reset Microsoft Store Cache
-                        start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & Title 8a.2) Reset Microsoft Store Cache & color 0a & wsreset & exit"
 
 
-                ::Win-Prefetch  (100% Safe)
-                color 0c
-                Title 8a.3) Win-Prefetch
-                    del /q/f/s C:\Windows\Prefetch
-                    del /s /f /q %WinDir%\Prefetch\*.*
-                    md "%windir%\prefetch\"
-        
-        ::App-Cache     (#!Caution, some may store user login data and preferences, clearing cache in apps such as VSCode is not recommended as extensions will be gone. Firefox Nightly will self-uninstall after deleting its cache)    (The author don't recommend deleting cache, since they speed up performances. Even after deleting they will regenerate, it's best to leave them to avoid errors)
-        color 0B   
-        Title 8b.1) App-Cache
-            ::del /q/f/s "%userprofile%\AppData\Local\cache"
-            ::del /q/f/s "C:\ProgramData\BlueStacks_bgp64_hyperv\CefData\Cache"
-            ::del /q/f/s "C:\ProgramData\BlueStacks\CefData\Cache"
-            del /q/f/s "%userprofile%\AppData\Local\Dropbox\avatar_cache"
-            del /q/f/s "%userprofile%\Dropbox\.dropbox.cache"
-            ::del /q/f/s "%userprofile%\AppData\LocalLow\Unity\Caches"
-            del /q/f/s "%userprofile%\AppData\Roaming\Adobe\Flash Player\NativeCache"
-            del /q/f/s "%userprofile%\AppData\Roaming\BitTorrent\dlimagecache"
-                ::VSCODE CACHE! WARNING! DELETE THEM THROUGHT APP! DELETING THROUGH HERE WILL RESET YOUR EXTENSIONS, CORRUPT THEM (reinstall will fix though)
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\Cache"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\CachedData"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\CachedExtensions"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\CachedExtensionVSIXs"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\Code Cache"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\GPUCache"               
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code\Cache"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code\CachedData"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code\CachedExtensions"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code\CachedExtensionVSIXs"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code\Code Cache"
-                ::del /q/f/s "%userprofile%\AppData\Roaming\Code\GPUCache"
-            del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\Cache"
-            del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\Code Cache"
-            del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\GPUCache"
-            del /q/f/s "%userprofile%\AppData\Roaming\discord\Cache"
-            del /q/f/s "%userprofile%\AppData\Roaming\discord\Code Cache"
-            del /q/f/s "%userprofile%\AppData\Roaming\discord\GPUCache"
-            del /q/f/s "%userprofile%\AppData\Roaming\Grammarly\Cache"
-            del /q/f/s "%userprofile%\AppData\Roaming\Grammarly\Code Cache"
-            del /q/f/s "%userprofile%\AppData\Roaming\Grammarly\GPUCache"
-            ::del /q/f/s "%userprofile%\AppData\Roaming\NVIDIA\ComputeCache"
-            del /q/f/s "%userprofile%\Appdata\Local\NVIDIA\DXCache"
-            del /q/f/s "%userprofile%\Appdata\Local\NVIDIA\GLCache"
-            del /q/f/s "C:\ProgramData\NVIDIA"
-            del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\Code Cache"
-            del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\GPUCache"
-            del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\GrShaderCache"
-            ::del /q/f/s "%userprofile%\AppData\Roaming\Unity\Caches"
-            ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\Cache"
-            ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\Code Cache"
-            ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\GPUCache"
-            ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\graphqlCache"
-            ::del /q/f/s "C:\ProgramData\Microsoft\XboxLive\NSALCache"
-                ::If malware keeps regenerating in browser cache enable these #!important
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Edge\User Data\Default\Cache"
-                    del /q/f/s "%userprofile%\AppData\Local\Google\Chrome SxS\User Data\Default\Cache"
-                    del /q/f/s "%userprofile%\AppData\Local\Google\Chrome\User Data\Default\Cache"
-                    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera GX Stable\Cache"
-                    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera Stable\Cache"
-                    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera GX Stable\System Cache"
-                    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera Stable\System Cache"
-            ::Discord false positive image virus
-                del /q/f/s "%AppData%\discordcanary\Cache"
-                del /q/f/s "%AppData%\discordptb\Cache"
-                del /q/f/s "%AppData%\discord\Cache"
-            ::Origin
-                del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
-                del /f /s /q "%systemdrive%\ProgramData\Origin\Telemetry\*"
-                del /f /s /q "%systemdrive%\Program Files (x86)\Origin\*.log"
-                del /f /s /q "%systemdrive%\ProgramData\Origin\Logs\*"
-                del /f /s /q "%username%\AppData\LocalLow\DNF\*.trc"
-            ::Offline Outlook Data Files 
-                del /q/f/s "c:\users\%username%\AppData\Local\Microsoft\Outlook\*.ost"
-            ::Team Cache
-                del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Teams\Cache"
-            ::Speech Recognition Data
-                ::del /q/f/s "%systemdrive%\Users\%username%\AppData\Local\Speech\Microsoft\Speech"
-            ::One Note Cache
-                del /q/f/s "%userprofile%\AppData\Local\Microsoft\OneNote\16.0\cache"
 
-    ::#!Temp    (Some developers may need those)
+
+
+
+Title 6.3) Space saving [Disable Superprefetch]
+    echo Superfetch predicts when you will open certain apps and preloads them for faster start up, which consumes a tiny amount of CPU and RAM.
+    color 01
+    sc stop “SysMain” & sc config “SysMain” start= disabled
+
+
+
+
+
+
+
+
+
+Title 7) Extra Features [Enable Secret Performance Power Plan]
+    echo Disabled due as it will not overwrite if corrected once.
     color 03
-    Title 9) #!Temp (#Caution files)
-            ::!Windows-Temp
-            ::!Win-Temp
-            Title 9a.1) !Win-Temp
-                ::Some users may use inetpub for web dev
-                    del /q/f/s "C:\inetpub\temp"
-                ::This is SYSTEM FOLDER, this Temp may be different from regular Temp
-                    del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Temp"
-                    del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp"
-                    del /q/f/s "C:\Windows\SystemTemp"
-                    del /q/f/s "%userprofile%\Local Settings\Temp"
-                    del /q/f/s "%systemdrive%\ProgramData\Microsoft\Windows\WER\Temp"
-                ::Clear Recycle bin
-                    ::del /q /s %systemdrive%\$Recycle.bin\*                    
-
-            ::!Win-Logs
-            color 09
-            Title 9a.2) !Win-Logs
-                ::Some users may use inetpub for web development
-                    del /q/f/s "%SystemDrive%\inetpub\logs"
-                del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\CLR_v4.0\UsageLogs"
-                ::SoftwareDistribution is used for Windows Update. After Updating they can be deleted.
-                    del /q/f/s "windir%\SoftwareDistribution\DataStore\logs"
-                ::Fax server and client remote protocol
-                    del /q/f/s "C:\ProgramData\Microsoft\Windows NT\MSFax\ActivityLog"
-                ::User login activity
-                    del /q/f/s "C:\Windows\debug"
-                ::Event Tracing Logs
-                    del /f /s /q "%systemdrive%\Windows\System32\LogFiles\*.*"
-                ::Crash Report Logs
-                    del /q/f/s "C:\Users\%Username%\AppData\Local\CrashReportClient\Saved\Logs"
-                ::Defender Support Logs
-                    del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Support\*.log"
-
-            ::!Win-Report   (Default Skipped)
-            ::color 03)
-            ::Title 9a.3)
-                ::Support Windows and send them your activites! Unless you don't want to... OKay...
-                ::del /q/f/s "C:\ProgramData\Microsoft\Windows\WER"
-
-            ::!Win-History  
-            color 05
-            Title 9a.4) !Win-History    
-                del /q/f/s "C:\inetpub\history"
-                    ::SYSTEM FILES! Index.dats are SUPERCOOKIES, browser history stored deep inside your system. Deleting may cause problems to BETA BROWSERS such as Chrome Canary, Firefox Nightly Edition, Firefox Developer Edition etc.)
-                    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Windows\Cookies\index.dat"
-                    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Windows\Cookies\Low\index.dat"
-                    del /q/f/s "C:\Users\%username%\AppData\Local\Microsoft\Windows\History"
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History"
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\index.dat
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\Low\index.dat
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\index.dat\MSHistXXXXXXXXXXX\index.dat
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\Low\index.dat\MSHistXXXXXXXXXXX\index.dat
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\index.dat
-                    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5index.dat
-                    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Internet Explorer\UserData\index.dat
-                    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Internet Explorer\UserData\Low\index.dat
-                    del /q/f/s "%userprofile%\Local Settings\Temp\History\History.IE5\index.dat"
-                    del /q/f/s "%user profile%\Local Settings\Temp/Temporary Internet Files\Content.IE5\index.dat"
-                    del /q/f/s "%userprofile%\Local Settings\Temp\Cookies"
-                        ::custom strong script to delete index.dat
-                            ::Disabled because it deletes Visual Studio Index.dat, which are generated if you add a database project to the solution.
-                            ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & Title Delete index.dat & echo Index.dat are files hidden on your computer that contain all of the Web sites that you have ever visited... & color 0b & cd C:\ & del index.dat /s & exit"
+    echo Ultimate Performance
+    ::powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 
 
-            ::!Win-Backup   (.bak)
-            ::color 0c
-            ::Title 9a.5) !Win-Backup
-                ::!Win-Unknown
-                    ::!Win-.txt
-                    ::del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\brndlog.txt"
 
-        ::!Apps
-        color 01
-        Title 9b) !Apps
-            ::!App-Logs
-            Title 9b.1)!App-logs
-            ::Firefox Developer and Nightly builds doesn't seem to recognize they are installed if these logs are deleted, but reinstalling will solve the problem
-                del /q/f/s "C:\ProgramData\Mozilla\updates\6F193CCC56814779\updates\0\update.log"
-                del /q/f/s "C:\ProgramData\Mozilla\updates\6F193CCC56814779\updates\backup-update.log"
 
-            ::!App-History
-            ::color 0c
-            ::Title 9b.2) !App-History
-            ::!App-Backup   (.bak)      (Backups may be used to create new files for updates, removing may result in update failure)
-                ::del /q/f/s "C:\Program Files\Common Files\microsoft shared\ClickToRun\backup"
-                ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_1.log.bak"
-                ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_2.log.bak"
-                ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_3.log.bak"
-                ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvTelemetry\NvTelemetry.log.bak"
 
-                ::!App-Unknown
-                ::color 05
-                ::Title 9b.3) !App-Unknown
-                    ::!App-.txt     (log.txt may be used to generate log files, which is good for diagnosis or tracking system performance, if deleted, logs may fail to generate, I'm not sure)
-                    ::Title 9b.3.1) !App-.txt
-                        ::del /q/f/s "C:\ProgramData\Lenovo\Vantage\AddinData\Lenovo.Vantage.SmartPerformanceAddin\smartlog.txt"
 
-    ::!Page-File    (Deleting page file makes system less stable, even page files occupy a lot of space)
+
+
+
+Title 8) Increase Cleaning Efficiency [Reveal Hidden Files] [Disabled by default] [Careful Enabling] {Default hidden folders will appear,action cannot be undo}
+    echo    ============================
+    echo    == Revealing hidden files ==
+    echo    =====  To delete junks  ====
+    echo Disabled as you can view hidden files by Options. Was enabled as it may help with cleaning.
     color 05
-    Title 10) #!Page-File   (#Caution)  (#Stability-issues)
-    echo Deleting page file may cause programs to crash if insufficient RAM
-        attrib -s -h %systemdrive%\pagefile.sys
-        del /a /q %systemdrive%\pagefile.sys
+    ::attrib -h -r -s /s /d
+    cls
+
+
+
+
+
+
+
+
+
+Title 9.1.1) Cleaning Junk [Windows] [Temp]
+    color 06
+    del /q/f/s C:\Windows\Temp
+    del /s /f /q %WinDir%\Temp\*.*
+    del /q/f/s C:\Windows\TempInst
+    del /q/f/s C:\Windows\WinSxS\Temp
+    del /q/f/s "C:\ProgramData\Microsoft\Search\Data\Temp"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Temp"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\Windows\CbsTemp"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\CbsTemp"
+    del /q/f/s "C:\Windows\assembly\temp"
+    del /q/f/s "C:\Windows\assembly\tmp"
+    del /q/f/s "C:\Windows\assembly\NativeImages_v2.0.50727_32\Temp"
+    del /q/f/s "C:\Windows\assembly\NativeImages_v2.0.50727_64\Temp"
+    del /q/f/s "C:\Windows\assembly\NativeImages_v4.0.30319_32\Temp"
+    del /q/f/s "C:\Windows\assembly\NativeImages_v4.0.30319_64\Temp"
+    del /q/f/s "C:\Windows\CbsTemp"
+    del /q/f/s "C:\inetpub\temp"
+    del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Temp"
+    del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp"
+    del /q/f/s "C:\Windows\SystemTemp"
+    del /q/f/s "%userprofile%\Local Settings\Temp"
+    del /q/f/s "%systemdrive%\ProgramData\Microsoft\Windows\WER\Temp"
+
+
+
+Title 9.1.2) Cleaning Junk [Windows] [Logs]
+    color 09
+    del /q/f/s "C:\ProgramData\Microsoft\EdgeUpdate\Log"
+    del /q /f /s %SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setupact.log
+    del /q /f /s %SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setuperr.log
+    del /s /f /q "%systemdrive%\setup.log"
+    del /q/f/s C:\Windows\System32\Logs
+    del /q/f/s "C:\Windows\WinSxS\poqexec.log"
+    del /q/f/s C:\Windows\Logs
+    del /q/f/s C:\Windows\WindowsUpdate.log
+    del /q/f/s "C:\PerfLogs"
+    del /q/f/s "C:\Recovery\Logs"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows Security Health\Logs"
+    del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb.log"
+    del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00013.log"
+    del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00014.log"
+    del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00015.log"
+    del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edbtmp.log"
+    del /q/f/s "C:\ProgramData\Microsoft\Network\Downloader\edb00013.log"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\PerfLogs"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows Security Health\Logs"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\Windows\Logs"
+    del /q/f/s "C:\ProgramData\USOShared\Logs"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\ie4uinit-ClearIconCache.log"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\ie4uinit-UserConfig.log"
+    del /q/f/s "C:\Windows\ModemLogs"
+    del /q/f/s "C:\Windows\security\EDP\Logs"
+    del /q/f/s "C:\Windows\security\database\edb.log"
+    del /q/f/s "C:\Windows\security\database\edbtmp.log"
+    del /q/f/s "C:\Windows\security\EDP\Logs"
+    del /q/f/s "C:\Windows\security\logs"
+    del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs"
+    del /q/f/s "%SystemRoot%\PFRO.log"
+    del /q/f/s "C:\Logs"
+    rd /s /q "C:\Logs"
+    md "C:\Logs"
+    del /q/f/s "C:\PerfLogs\System\Diagnostics"
+    rd /s /q "C:\PerfLogs\System\Diagnostics"
+    del /q/f/s "%SystemDrive%\inetpub\logs"
+    del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\CLR_v4.0\UsageLogs"
+    del /q/f/s "windir%\SoftwareDistribution\DataStore\logs"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows NT\MSFax\ActivityLog"
+
+
+
+Title 9.1.3) Cleaning Junk [Windows] [Dumps]
+    color 0b
+    del /q/f/s %userprofile%\appdata\local\crashdumps
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\Dumps"
+    del /q/f/s "%SystemRoot%\memory.dmp"
+    del /q/f/s "%SystemRoot%\Minidump.dmp"
+    del /f /s /q "%SystemRoot%\Minidump\*.*"
+    del /f /s /q "%SystemRoot%\Minidump\"
+    rd /s /q "%SystemRoot%\Minidump\"
+    md "%SystemRoot%\Minidump\" 
+
+
+
+Title 9.1.4) Cleaning Junk [Windows] [Diagnosis]
+    color 0D
+    del /q/f/s "C:\ProgramData\Microsoft\Diagnosis\ETLLogs"
+    del /q/f/s "C:\ProgramData\Microsoft\Diagnosis\Temp"
+    del /q/f/s "%userprofile%\AppData\Local\Diagnostics"
+    del /q/f/s "%userprofile%\AppData\Local\ElevatedDiagnostics"
+
+
+
+Title 9.1.5) Cleaning Junk [Windows] [History]
+    color 0E
+    del /q/f/s "C:\Windows\Microsoft Antimalware\Scans\History"
+    del /q/f/s "%SystemRoot%\Microsoft Antimalware\Scans\History"
+    del /q/f/s "%ProgramData%\Microsoft\Windows Defender\Scans\History"
+    del /q/f/s "C:\inetpub\history"
+
+
+
+Title 9.1.6) Cleaning Junk [Windows] [Old]
+    color 01
+    echo These folders appear after using Media Creation Tool to do a Windows Ugrade or Reset.
+    takeown /f %SYSTEMDRIVE%\$SysReset /R /A /D Y
+    ::echo y| cacls %SYSTEMDRIVE%\$SysReset /C /T /grant administrators:F
+    del /q/f/s %SYSTEMDRIVE%\$SysReset
+    rd /s /q %SYSTEMDRIVE%\$SysReset /R /A /D Y
+    takeown /f %SYSTEMDRIVE%\Windows10Upgrade
+    ::echo y| cacls %SYSTEMDRIVE%\Windows10Upgrade /C /T /grant administrators:F
+    del /q/f/s %SYSTEMDRIVE%\Windows10Upgrade
+    rd /s /q %SYSTEMDRIVE%\Windows10Upgrade
+    del /q/f/s %SYSTEMDRIVE%\Windows.old
+    rd /s /q %SYSTEMDRIVE%\Windows.old
+
+
+
+
+
+
+Title 9.2.1) Cleaning [Windows] [Update Files] [Package Leftovers]
+    color 0d
+    del /s /f /q C:\Windows\SoftwareDistribution\Download
+
+
+
+Title 9.2.2) Cleaning [Windows] [Drivers] [Package leftovers]
+    echo These files are used for installing drivers, they should be auto-removed after installation, but just in case, they are here.
     color 0e
+    del /q/f/s %SYSTEMDRIVE%\AMD\*.*
+    rd /s /q %SYSTEMDRIVE%\AMD\*.*
+    del /q/f/s %SYSTEMDRIVE%\NVIDIA\*.*
+    rd /s /q %SYSTEMDRIVE%\NVIDIA\*.*
+    del /q/f/s %SYSTEMDRIVE%\INTEL\*.*
+    rd /s /q %SYSTEMDRIVE%\INTEL\*.*
 
-    ::SKY-Tool-Delete     (This tool auto generates a list of your files for you to view, then deletes them automatically)
-    Title 11) SKY-Tool-Delete
-        ::Default Windows Reports
-        Title 11.1) Default Windows Reports
-        del /q/f/s "C:\ProgramData\Microsoft\Windows\Power Efficiency Diagnostics"
-        del /q/f/s "C:\energy-report.html"
-        del /q/f/s "C:\WINDOWS\system32\energy-report.html"
-        del /q/f/s "%userprofile%\energy-report.html"
 
-        ::11.2.1) Custom Reports
-        Title 11.2.1) Custom Reports
-        del /q/f/s "C:\ProgramData\Microsoft\Windows\WlanReport"
-        del /q/f/s "C:\C-drive-files.txt"
-        del /q/f/s "C:\C-drive-files-f.txt"
-        ::11.2.2) File and Network Reports - DELETABLE
-        Title 11.2.2) File and Network Reports - DELETABLE
-        del /q/f/s "C:\File and Network Reports - DELETABLE"
-        rd /s /q "C:\File and Network Reports - DELETABLE"
 
-Title Meanwhile closing Windows Store, Disk Cleanup and Notifications...
-color 02
-Taskkill /IM WinStore.App.exe /F
-taskkill /IM cleanmgr.exe /f
-taskkill /f /im shellexperiencehost.exe
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
-taskkill /f /im shellexperiencehost.exe 1>NUL
 
-::12) OTHER CUSTOM SCRIPT
-    Title 12) Other custom scripts
-    ::TRON-AUTHORS
-    Title 12.1) TRON-AUTHORS
-    color 12
-        echo Big thanks to Tron authors! Modified by Skygrass Chopper.
 
-::Clear CryptNet SSL certificate cache
-    certutil -URLcache * delete
 
+Title 9.3.1) Cleaning Junk [Apps] [Temp]
+    color 03
+    del /q/f/s %temp%
+    del /s /f /q %Temp%\*.*
+    del /s /f /q %AppData%\Temp\*.*
+    del /s /f /q %HomePath%\AppData\LocalLow\Temp\*.*
+    del /s /f /q %userprofile%\appdata\LocalLow\Temp
+    del /s /f /q %userprofile%\appdata\roaming\Temp
+    del /q/f/s "C:\OneDriveTemp"
+    del /q/f/s "C:\ProgramData\Lenovo\Vantage\Update\Svc\Tmp"
+    del /q/f/s "C:\Program Files\Git\tmp"
+    del /q/f/s "C:\ProgramData\Lenovo\ImController\Temp"
+    del /q/f/s "%userprofile%\AppData\LocalLow\Temp"
+    del /q/f/s "%userprofile%\AppData\Roaming\Temp"
+
+
+
+Title 9.3.2) Cleaning Junk [Apps] [Temp] [Custom list]
+    echo Some apps have custom log saving locations, unfortunately.
+    color 05
+    del /q/f/s "%userprofile%\AppData\Local\WhatsApp\packages\SquirrelTemp"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Chrome SxS\Temp"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Chrome\Temp"
+    rd "%userprofile%\AppData\Local\Google\Chrome SxS\Temp"
+    rd "%userprofile%\AppData\Local\Google\Chrome\Temp"
+    DEL /F/S/Q "C:\Program Files (x86)\Google\Temp\*.*"
+    RD /S/Q "C:\Program Files (x86)\GUM5EB2.tmp"
+
+
+
+Title 9.3.3) Cleaning Junk [Apps] [Logs] [Custom list]
+    echo App logs are only generated in the specific app folder, unfortunately. C:\ProgramData\NVIDIA only store logs no mistake.
+    color 06
+    DEL /F/S/Q "C:\Program Files (x86)\TeamViewer\TeamViewer15_Logfile.log"
+    DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\TeamViewer\TeamViewer12_Logfile.log"
+    DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\TeamViewer\TeamViewer15_Logfile.log"
+    del /q/f/s "%programfiles(x86)%\Steam\logs"
+    del /q/f/s "C:\Program Files\AMD\CIM\Log"
+    del /q/f/s "%ProgramData%\BlueStacks_bgp64_hyperv\Logs"
+    del /q/f/s "%ProgramData%\BlueStacks\Logs"
+    del /q/f/s "C:\ProgramData\Lenovo\LDiag\SYSTEM\ldiag.log"
+    del /q/f/s "C:\ProgramData\Lenovo\LDiag\SYSTEM\ldiag_errors.log"
+    del /q/f/s "C:\ProgramData\Lenovo\udc\log"
+    del /q/f/s "C:\ProgramData\Lenovo\Vantage\Logs"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\EdgeUpdate\Log"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\DisplayDriverRAS\NvTelemetry\NvTelemetry.log"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\GeForce Experience\Logs"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\GfeBridges\NvGfeServiceBridgeCurrent.log"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\GfeBridges\NvGfeServiceBridgeOld.log"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_1.log"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvTelemetry\NvTelemetry.log"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\nvtopps\nvtopps.log"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\umdlogs"
+    del /q/f/s "C:\ProgramData\NVIDIA"
+    del /q/f/s "%userprofile%\AppData\Local\DiscordCanary\DiscordCanary_updater_r00001.log"
+    del /q/f/s "%userprofile%\AppData\Local\DiscordCanary\DiscordCanary_updater_r00002.log"
+    del /q/f/s "%userprofile%\AppData\Local\DiscordCanary_updater_r00003.log"
+    del /q/f/s "%userprofile%\AppData\Local\DiscordCanary_updater_rCURRENT.log"
+    del /q/f/s "%userprofile%\AppData\Local\Discord\Discord_updater_r00001.log"
+    del /q/f/s "%userprofile%\AppData\Local\Discord\Discord_updater_r00002.log"
+    del /q/f/s "%userprofile%\AppData\Local\Discord_updater_r00003.log"
+    del /q/f/s "%userprofile%\AppData\Local\Discord_updater_rCURRENT.log"
+    del /q/f/s "%userprofile%\AppData\Local\SquirrelSetup.log"
+    del /q/f/s "%userprofile%\AppData\Local\Dropbox\logs"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\software_reporter_tool.log"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\software_reporter_tool-crashpad.log"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\software_reporter_tool-sandbox.log"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\OneDrive\logs"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\OneDrive\setup\logs"
+    del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\logs"
+    del /q/f/s "%userprofile%\AppData\Roaming\Code\logs"
+    del /q/f/s "%userprofile%\AppData\Roaming\Tencent\WeChat\log"
+    del /q/f/s "%userprofile%\AppData\Roaming\Unity Hub\logs"
+    del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\logs"
+    del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\000013.log"
+    del /q/f/s "%userprofile%\AppData\Local\WhatsApp\SquirrelSetup.log"
+    DEL /F/S/Q "C:\ProgramData\Dropbox\Update\Log\*.*"
+    DEL /F/S/Q "C:\ProgramData\Razer\Synapse\Logs\*.*"
+    DEL /F/S/Q "C:\ProgramData\Binary Fortress Software\DisplayFusion\DisplayFusion.log"
+    DEL /F/S/Q "C:\ProgramData\Binary Fortress Software\DisplayFusion\Setup.log"
+    DEL /F/S/Q "C:\Users\%Username%\AppData\Local\SquirrelTemp\*.log"
+    DEL /F/S/Q "C:\Users\%Username%\AppData\Local\TileDataLayer\Database\*.log"
+    DEL /F/S/Q "C:\Users\%Username%\Documents\Any Video Converter\Temp\*.*"
+    DEL /F/S/Q "C:\Users\%Username%\.VirtualBox\*.log"
+    del /f /s /q "%systemdrive%\Program Files (x86)\Origin\*.log"
+    del /f /s /q "%systemdrive%\ProgramData\Origin\Logs\*"
+    del /q/f/s "C:\ProgramData\Mozilla\updates\6F193CCC56814779\updates\0\update.log"
+    del /q/f/s "C:\ProgramData\Mozilla\updates\6F193CCC56814779\updates\backup-update.log"
+
+
+
+Title 9.3.4) Cleaning Junk [App] [Dumps] [Custom list]
+    echo App crash dumps are only generated in the specific app folder, unfortunately.
+    color 09
+    del /q/f/s "%programfiles(x86)%\Steam\dumps"
+    del /q/f/s "C:\Program Files (x86)\Steam\steamapps\corrupt"
+    del /q/f/s "C:\ProgramData\NVIDIA Corporation\CrashDumps"
+    del /q/f/s "%userprofile%\AppData\Local\Dropbox\CrashReports"
+    DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\Thunderbird\Crash Reports\pending\*.dmp"
+    DEL /F/S/Q "C:\Program Files (x86)\Dropbox\CrashReports\*.*"
+    DEL /F/S/Q "C:\Users\%Username%\AppData\Roaming\Mozilla\Firefox\Crash Reports\*.*"
+
+
+
+Title 9.3.5) Cleaning Junk [App] [Report] [Custom list]
+    echo App reports are only generated in the specific app folder, unfortunately.
+    color 0b
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\Power Efficiency Diagnostics"
+    del /q/f/s "C:\energy-report.html"
+    del /q/f/s "C:\WINDOWS\system32\energy-report.html"
+    del /q/f/s "%userprofile%\energy-report.html"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows\WlanReport"
+    del /q/f/s "C:\File and Network Reports - DELETABLE"
+    rd /s /q "C:\File and Network Reports - DELETABLE"
+    del /q/f/s "%userprofile%\AppData\Local\Google\CrashReports"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Software Reporter Tool\reports"
+    del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\Crashpad\reports"
+    del /q/f/s "%userprofile%\AppData\Roaming\Code\Crashpad\reports"
+    del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\Crashpad\reports"
+    del /q/f/s "%userprofile%\AppData\Roaming\discord\Crashpad\Report"
+    del /q/f/s "%userprofile%\AppData\Roaming\Mozilla\Firefox\Crash Reports"
+    del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\Crash Reports"
+
+
+
+
+
+
+Title 9.4.1) Cleaning Safe Cache [App] [Prefetch]
+    color 01
+    del /s /f /q %WinDir%\Prefetch\*.*
+    rd /q/s "%windir%\prefetch\"
+    md "%windir%\prefetch\"
+
+
+
+Title 9.4.2) Cleaning Safe Cache [Windows] [Cache] [Microsoft Store]
+    color 03
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & Title 9.4.1) Reset Microsoft Store Cache & color 0a & wsreset & exit"
+
+
+
+
+
+
+Title 9.5.1) Cleaning unneeded files [Windows] [Event Viewer] [Events] [Logs] [Caution] [Troubleshooter users] [Malware analyizers]
+    color 05
+    start cmd.exe @cmd /k "for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1""
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; wevtutil el | Foreach-Object {wevtutil cl "$_"}"
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }"
+    del /q/f/s "C:\Windows\System32\winevt\Logs\Microsoft-Windows-LiveID%4Operational.evtx"
+    del /q/f/s "C:\Windows\System32\winevt\Logs"
+    del /f /s /q "%systemdrive%\Windows\System32\LogFiles\*.*"
+    del /q/f/s "C:\Users\%Username%\AppData\Local\CrashReportClient\Saved\Logs"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Support\*.log"
+
+
+
+Title 9.5.2) Cleaning unneeded files [Windows] [Logs] [User Login Activity] [Fax server & client remote protocol] [Caution] [Activity checkers]
+    color 06
+    del /q/f/s "C:\Windows\debug"
+    del /q/f/s "C:\ProgramData\Microsoft\Windows NT\MSFax\ActivityLog"
+
+
+
+Title 9.5.3) Cleaning unneeded files [Windows] [File Explorer] [History] [Caution] [Students/office workers] {Quick access reset}
+    color 09
+    del /q/f/s "%AppData%\Microsoft\Windows\Recent"
+    rd /s /q "%AppData%\Microsoft\Windows\Recent"
+    del /q/f/s "%AppData%\Microsoft\Windows\Recent\AutomaticDestinations"
+    del /q/f/s "%systemdrive%\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\DeliveryOptimization\Logs\*.*
+    rd /s /q "%AppData%\Microsoft\Windows\Recent\AutomaticDestinations"
+
+
+
+Title 9.5.4) Cleaning uneeded files [Caution] [Windows] [Outlook] [Offline mails] [Office workers] {Who store mails like postcards?}
+    color 0b
+    del /q/f/s "c:\users\%username%\AppData\Local\Microsoft\Outlook\*.ost"
+
+
+
+Title 9.5.5) Cleaning uneeded files [Windows] [Speech Recognition] [Cache] {Users who uses Speech recognition be aware}
+    color 0d
+    ::del /q/f/s "%systemdrive%\Users\%username%\AppData\Local\Speech\Microsoft\Speech"
+
+
+
+Title 9.5.6) Cleaning [Windows] [History] [Caution] [Run.exe] {Users who use Run command ofen and rely heavily on history be aware}
+    color 0e
+    reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /f
+
+
+
+
+
+
+Title 9.6.1) Cleaning Uncertainties [Caution] [Windows] [Cache] [Disabled by default] [Careful enabling] {User data may get wiped, have to re-enter info}
+    echo Cache regenerates quickly, removing them may generate empty folders, but remove empty folder command will run later.
+    color 01
+    ::del /q/f/s "C:\ProgramData\Microsoft\Provisioning\AssetCache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Caches"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\DeviceMetadataCache\dmrccache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\LfSvc\Cache"
+
+
+
+Title 9.6.2) Cleaning Uncertainties [Caution] [Windows] [Defender] [Cache] [Disabled by default] {Defender may malfunction}
+    color 03
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cache"
+
+
+
+Title 9.6.3) Cleaning Uncertainties [Caution] [Windows] [Graphics] [Cache] [Fixer]
+    color 05
+    echo If you stutter in game deleting these will help.
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\GraphicsCache"
+    del /q/f/s "%userprofile%\AppData\Local\D3DSCache"
+
+
+
+Title 9.6.4) Cleaning Uncertainties [Caution] [Windows] [Icon] [Cache] [Fixer]
+    color 06
+    echo if your icons are broken, this will fix and reset them.
+    DEL /f /s /q "%localappdata%\IconCache.db"
+    del /f /s /q "%localappdata%\Microsoft\Windows\Explorer\iconcache*"
+    del /f /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Explorer\thumbcache_*.db"
+
+
+
+Title 9.6.5) Cleaning Uncertainties [Caution] [Windows] [Font] [Cache]
+    color 09
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\FontCache"
+    del /q/f/s "C:\Windows\LanguageOverlayCache"
+    del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\FontCache"
+    del /f /s /q "%WinDir%\ServiceProfiles\LocalService\AppData\Local\FontCache"
+    del /q/f/s "%userprofile%\AppData\Local\fontconfig\cache"
+    del /f /s /q "%WinDir%\System32\FNTCACHE.DAT"
+
+
+
+Title 9.6.6.1) Cleaning Uncertainties [Windows] [Multilanguage User Interface] [Cache]
+    color 0b
+    del /q/f/s "C:\Windows\rescache"
+
+Title 9.6.6.2) Cleaning Uncertainties [Caution] [Windows] [Web] [Cache]
+    color 0d
+    del /f /s /q "C:\Users\%Username%\AppData\Local\Microsoft\Windows\WebCache"
+
+Title 4.6.6.3) Cleaning Uncertainties [Caution] [Windows] [Web] [Cache] [Privacy]
+    echo Even though removing these clears supercookies, some browsers like Firefox may break and require reinstall.
+    color 0E
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\CacheStorage"
+    ::del /q/f/s "C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Windows\INetCache"
+    ::del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\INetCache"
+    ::del /q/f/s "C:\Windows\ServiceProfiles\NetworkService\AppData\LocalLow\Microsoft\CryptnetUrlCache"
+    ::del /q/f/s "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData"
+    ::del /q/f/s "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\Content"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\WER"
+    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Windows\Cookies\index.dat"
+    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Windows\Cookies\Low\index.dat"
+    del /q/f/s "C:\Users\%username%\AppData\Local\Microsoft\Windows\History"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\index.dat
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\Low\index.dat
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\index.dat\MSHistXXXXXXXXXXX\index.dat
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\History\History.IE5\Low\index.dat\MSHistXXXXXXXXXXX\index.dat
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\index.dat
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Windows\Temporary Internet Files\Low\Content.IE5index.dat
+    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Internet Explorer\UserData\index.dat
+    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Internet Explorer\UserData\Low\index.dat
+    del /q/f/s "%userprofile%\Local Settings\Temp\History\History.IE5\index.dat"
+    del /q/f/s "%user profile%\Local Settings\Temp/Temporary Internet Files\Content.IE5\index.dat"
+    del /q/f/s "%userprofile%\Local Settings\Temp\Cookies"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & Title Delete index.dat & echo Index.dat are files hidden on your computer that contain all of the Web sites that you have ever visited,Disbled by default as Visual Studio will reset & color 0b & cd C:\ & del index.dat /s & exit"
+
+Title 4.6.6.4) Cleaning Uncertainties [Caution] [Windows] [Offline Web Pages] [Who download web pages?] 
+    color 01
+    DEL /F/S/Q "%windir%\Offline Web Pages\*.*"
+
+
+
+
+
+
+Title 4.7.1) Cleaning Uncertainties [Caution] [Windows] [Schema] [XML] [Cache]
+    color 03
+    del /q/f/s "C:\Windows\SchCache"
+
+
+
+Title 4.7.2) Cleaning Uncertainties [Caution] [Windows] [Performance] [Cache]
+    color 05
+    DEL /F/S/Q "%windir%\Performance\*.*"
+
+
+
+Title 4.7.3) Cleaning Uncertainties [Caution] [WIndows] [CD/DVD] [Burn] [Cache]
+    color 06
+    DEL /F/S/Q "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Burn"
+
+
+
+Title 4.7.4) Cleaning Uncertainties [Caution] [Windows] [Audio] [Cache]
+    color 09
+    del /f /q "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
+    del /f /s /q %SystemRoot%\system32\catroot2\*.* 
+
+
+
+Title 4.7.5) Cleaning Uncertainties [Caution] [Windows] [Sandbox] [Container] [Cache]
+    color 0b
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows\Caches"
+
+
+
+Title 4.7.6) Cleaning Uncertainties [Caution] [Windows] [Hyper-V] [Cache]
+    color 0d
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Groups Cache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Snapshots Cache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Planned Virtual Machines Cache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Snapshot Groups Cache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Snapshots Cache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\UndoLog Configuration Cache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Hyper-V\Virtual Machines Cache"
+    
+
+
+Title 4.7.7) Cleaning Uncertainties [Caution] [Windows] [Feedback app] [History & Cache]
+    color 0e
+    del /f /s /q "C:\Users\%username%\AppData\Local\Microsoft\Feeds Cache"
+    del /f /s /q "C:\Users\%username%\AppData\Local\Microsoft\Feeds"
+
+
+
+Title 4.7.8) Cleaning Uncertainties [Caution] [Windows] [Spotlight] [Lockscreen pitch black bug] {If you love Windows Spotlight, disable this}
+    echo Removes lockscreen background, if its pitch black, enter NET START THEMES, use your PC for a while and reboot.
+    color 01
+    DEL /F /S /Q "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets"
+    DEL /F /S /Q "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\Settings"
+
+
+
+Title 4.7.9) Cleaning Uncertainties [Caution] [Windows] [Other]
+    echo Some backup files are required to successfully update.
+    color 03
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\ClipSVC\Archive"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\ProgramData\Microsoft\Windows\ClipSVC\Archive"
+    ::del /q/f/s "C:\ProgramData\Microsoft\Search\Data\Applications\Windows\GatherLogs"
+    ::del /q/f/s "%userprofile%\AppData\Local\Microsoft\Internet Explorer\brndlog.txt"
+    ::del /q/f/s "C:\Program Files\Common Files\microsoft shared\ClickToRun\backup"
+
+
+
+
+
+
+Title 4.8.1) Cleaning Uncertainties [App] [Caution] [Other] 
+    color 05
+    ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_1.log.bak"
+    ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_2.log.bak"
+    ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvProfileUpdaterPlugin\NvProfileUpdaterPlugin_3.log.bak"
+    ::del /q/f/s "C:\ProgramData\NVIDIA Corporation\NvTelemetry\NvTelemetry.log.bak"
+    ::del /q/f/s "C:\ProgramData\Lenovo\Vantage\AddinData\Lenovo.Vantage.SmartPerformanceAddin\smartlog.txt"
+
+
+
+Title 4.8.2) Cleaning Uncertainties [Caution] [App] [Cache]
+    echo Cache regenerates quickly, removing them may generate empty folders, but remove empty folder command will run later.
+    color 06
+    ::del /s /f /q "C:\ProgramData\Package Cache"
+    ::del /q/f/s "%userprofile%\AppData\Local\cache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code\GPUCache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code\Cache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code\CachedData"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code\CachedExtensions"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code\CachedExtensionVSIXs"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code\Code Cache"
+    
+
+
+Title 4.8.3) Cleaning Uncertainties [Caution] [App] [Cache] [Custom list]
+    color 09
+    del /q/f/s "%userprofile%\AppData\Roaming\Microsoft\Teams\Cache"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\OneNote\16.0\cache"
+    DEL /F/S/Q "C:\Program Files (x86)\Dropbox\Update\Download\*.*"
+    DEL /F/S/Q "C:\ProgramData\Razer\Synapse\ProductUpdates\Downloads\*.*"
+    ::del /q/f/s "C:\ProgramData\BlueStacks_bgp64_hyperv\CefData\Cache"
+    ::del /q/f/s "C:\ProgramData\BlueStacks\CefData\Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\Adobe\Flash Player\NativeCache"
+    del /q/f/s "%userprofile%\AppData\Roaming\BitTorrent\dlimagecache"
+    del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\Code Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\discordcanary\GPUCache"
+    del /q/f/s "%userprofile%\AppData\Roaming\discord\Cache"
+    del /q/f/s "%AppData%\discordptb\Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\discord\Code Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\discord\GPUCache"
+    del /q/f/s "%userprofile%\AppData\Roaming\Grammarly\Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\Grammarly\Code Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\Grammarly\GPUCache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\NVIDIA\ComputeCache"
+    del /q/f/s "%userprofile%\AppData\Local\Dropbox\avatar_cache"
+    del /q/f/s "%userprofile%\Dropbox\.dropbox.cache"
+    del /q/f/s "%userprofile%\Appdata\Local\NVIDIA\DXCache"
+    del /q/f/s "%userprofile%\Appdata\Local\NVIDIA\GLCache"
+    del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\Code Cache"
+    del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\GPUCache"
+    del /q/f/s "%userprofile%\AppData\Roaming\Opera Software\Opera GX Stable\GrShaderCache"
+    del /q/f/s "%userprofile%\AppData\Local\Microsoft\Edge\User Data\Default\Cache"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Chrome SxS\User Data\Default\Cache"
+    del /q/f/s "%userprofile%\AppData\Local\Google\Chrome\User Data\Default\Cache"
+    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera GX Stable\Cache"
+    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera Stable\Cache"
+    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera GX Stable\System Cache"
+    del /q/f/s "%userprofile%\AppData\Local\Opera Software\Opera Stable\System Cache"
+
+
+
+TItle 4.8.4) Wiping user data [Warning] [App] [Cache] [Disabled by default] {Have to re-login apps}
+    color 0b
+    ::del /q/f/s "%userprofile%\AppData\LocalLow\Unity\Caches"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\Cache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\CachedData"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\CachedExtensions"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\CachedExtensionVSIXs"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\Code Cache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Code - Insiders\GPUCache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\Unity\Caches"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\Cache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\Code Cache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\GPUCache"
+    ::del /q/f/s "%userprofile%\AppData\Roaming\UnityHub\graphqlCache"
+    ::del /q/f/s "C:\ProgramData\Microsoft\XboxLive\NSALCache"
+    del /f /s /q "%systemdrive%\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Origin\Telemetry\*"
+    del /f /s /q "%systemdrive%\ProgramData\Origin\Telemetry\*"
+    del /f /s /q "%username%\AppData\LocalLow\DNF\*.trc"
+
+
+
+
+
+
+
+
+
+echo Custom Script Starts. The mess begins...
+
+
+
+
+
+
+
+
+
+Title 4.9.1) Custom Scripts [Tron]
+    echo Big thanks to Tron, kindly visit their reddit page https://www.reddit.com/r/TronScript/ and give some support!
+    color 1a
 	del /F /Q "%USERPROFILE%\Documents\*.tmp"
 	del /F /Q "%USERPROFILE%\My Documents\*.tmp"
 	del /F /S /Q "%USERPROFILE%\*.blf"
@@ -1014,7 +1347,6 @@ taskkill /f /im shellexperiencehost.exe 1>NUL
 
     :: JOB: Clear MUI cache
     reg delete "HKCU\SOFTWARE\Classes\Local Settings\Muicache" /f
-    reg del "HKCU\SOFTWARE\Classes\Local Settings\Muicache" /f
 
     :: JOB: Clear queued and archived Windows Error Reporting (WER) reports
     echo. >> %LOGPATH%\%LOGFILE%
@@ -1076,17 +1408,20 @@ taskkill /f /im shellexperiencehost.exe
 timeout /t 3 /NOBREAK > nul
 del /f/s/q %localappdata%\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\*
 
-::Steam Fix
-Title 12.2) Steam Fix
-color 0e
+
+
+Title 4.9.2) Custom Scripts [Steam Fix] {Thanks to Valve!}
+color 8f
 echo fix according to official Steam Support https://help.steampowered.com/en/faqs/view/22C0-03D0-AE4B-04E8#repair
     bcdedit /deletevalue nointegritychecks
     bcdedit /deletevalue loadoptions
     bcdedit /debug off
     bcdedit /deletevalue nx
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 12.2) Steam Repair & "C:\Program Files (x86)\Steam\bin\SteamService.exe" /repair & color 06 & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 4.9.2) Steam Repair & "C:\Program Files (x86)\Steam\bin\SteamService.exe" /repair & color 06 & exit"
 color 0B
 cls
+
+
 
 ::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Active Setup Temp Folders" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
 ::reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Downloaded Program Files" /v StateFlags0100 /t REG_DWORD /d 0x2 /f 
@@ -1150,8 +1485,38 @@ cls
 ::netsh advfirewall firewall add rule name="Block Windows Telemetry" dir=in action=block remoteip=134.170.30.202,137.116.81.24,157.56.106.189,184.86.53.99,2.22.61.43,2.22.61.66,204.79.197.200,23.218.212.69,65.39.117.23,65.55.108.23,64.4.54.254 enable=yes
 ::netsh advfirewall firewall add rule name="Block NVIDIA Telemetry" dir=in action=block remoteip=8.36.80.197,8.36.80.224,8.36.80.252,8.36.113.118,8.36.113.141,8.36.80.230,8.36.80.231,8.36.113.126,8.36.80.195,8.36.80.217,8.36.80.237,8.36.80.246,8.36.113.116,8.36.113.139,8.36.80.244,216.228.121.209 enable=yes
 
-::SanGraphic Quick Boost
-Title 12.3) San Graphic Quickboost (EVERYTHING IS NORMAL, CALM DOWN)
+
+
+
+
+
+
+
+
+Title Meanwhile closing opened Microsoft Store and Notifications [Taskkill] [Store] [Notifications]
+    color 0d
+    taskkill /f /im shellexperiencehost.exe
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    taskkill /f /im shellexperiencehost.exe 1>NUL
+    Taskkill /IM WinStore.App.exe /F 1>&2
+    taskkill /IM cleanmgr.exe /f
+
+
+
+
+
+
+
+
+
+Title 4.9.3) Custom Scripts [San Grphic Quickboost] [EVERTHING IS NORMAL,CALM DOWN] {Black screen is due to taskkill}
 color 23
 echo Big thanks to
 echo.
@@ -1368,7 +1733,9 @@ cls
 cd/
 del *.log /a /s /q /f
 
-Title 12.4) Cache Cleaner
+
+
+Title 4.9.4) Custom Scripts [Cache Cleaner] {Long live open source, copied and pasted from a random guy, sorry...}
 color 35
 :: remove temp folder
 del /F /S /Q %temp%\*
@@ -1393,8 +1760,10 @@ del /Q %userprofile%\AppData\Roaming\discord\Cache\*
 del /Q %appdata%\.minecraft\logs\*
 del /Q %appdata%\.minecraft\crash-reports\*
 
-Title 12.5) Installer and Software Distribution Cleaner
-color 9a
+
+
+Title 4.9.5) Custom Scripts [Installer and Software Distribution Cleaner] {Long live open source, copied and pasted from a random guy, sorry...}
+color 9e
 attrib -R -S -H "%windir%\SoftwareDistribution\Download\*.*"
 del "%windir%\SoftwareDistribution\Download\*.*" /S /Q /F
 attrib -R -S -H "%systemdrive%\$Recycle.Bin\*.*"
@@ -1408,8 +1777,10 @@ del "%windir%\Logs\*.*" /S /Q /F
 attrib -R -S -H "%tmp%\*.*"
 del "%tmp%\*.*" /S /Q /F
 
-Title 12.6) Steam Cleaner
-color ab
+
+
+Title 4.9.6) Custom Scripts [Steam Cleaner] {Long live open source, copied and pasted from a random guy, sorry...}
+color 8b
 del /s /q "C:\Program Files (x86)\Steam\*.log" 1>&2
 del /s /q "C:\Program Files (x86)\Steam\*.dmp" 1>&2
 del /s /q "C:\Program Files (x86)\Steam\*.dump" 1>&2
@@ -1451,7 +1822,8 @@ del /S /q "C:\Program Files (x86)\Steam\GameOverlayUI.exe.log"
 del /S /q "C:\Program Files (x86)\Steam\debug.log"
 
 
-Title 12.7) Internet Explorer Cleaner
+
+Title 4.9.7) Custom Scripts [Internet Explorer Cleaner] {Modified by Skygrass from random guy, sorry random guy :( }
 color de
 RunDll32.exe Inetcpl.cpl, ClearMyTracksByProcess 16
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8
@@ -1468,8 +1840,9 @@ sc config diagnosticshub.standardcollector.service start= disabled
 sc config dmwappushservice start= disabled
 
 
-Title 12.8) Discord Cache Cleaner
-color 2f
+
+Title 4.9.8) Custom Scripts [Discord Cache Cleaner] {Did I ever tell you Discord logo looks like a underwear with eyes? }
+color e1
 tasklist | find /i "Discord.exe" && taskkill /im Discord.exe /F
 tasklist | find /i "DiscordCanary.exe" && taskkill /im DiscordCanary.exe /F
 tasklist | find /i "DiscordPTB.exe" && taskkill /im DiscordPTB.exe /F
@@ -1480,8 +1853,11 @@ del /f /s /q %AppData%\discordcanary\Cache\*.*
 del /f /s /q %AppData%\discordptb\Cache\*.*
 del /f /s /q %AppData%\discorddevelopment\Cache\*.*
 
-Title 12.9) Current User Cleaner
+
+
+Title 4.9.9) Custom Scripts [Current User Cleaner] {Yes copied from random guy, sorry sorry sorry. Open source supporters won't mind not mentioning them right, I mean I'm fine, well not really...}
 REM Cleanup temp directory for current user
+color db
 del /s /f /q "%USERPROFILE%"\locals~1\temp\*
 rmdir /s /q "%USERPROFILE%"\locals~1\temp
 mkdir "%USERPROFILE%"\locals~1\Temp
@@ -1517,7 +1893,9 @@ REM Cleanup Recycle Bin storage areas
 del /s /f /q c:\Recycled\*
 del /s /f /q c:\Recycler\*
 
-TItle 12.10) Clean Overlapped Numbered Network Name
+
+
+TItle 4.9.10) Custom Scripts [Clean Overlapped Numbered Network Name] {Sorry random guy...}
 color 70
 @echo off
 set prefix=R.seau
@@ -1527,22 +1905,431 @@ for /f "tokens=*" %%k in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wind
 )
 echo Found %counter% matching keys
 
-Title 12.11) Clean Windows Update Cache
-color 32
-@ECHO OFF
-NET STOP bits
-NET STOP wuauserv
-::ping 127.0.0.1 > nul
-IF EXIST %windir%\SoftwareDistribution.OLD RD /S /Q %windir%\SoftwareDistribution.OLD
-REN %windir%\SoftwareDistribution SoftwareDistribution.OLD
-::ping 127.0.0.1 > nul
-::NET START wuauserv
-::NET START bits
-::ping 127.0.0.1 > nul
 
-Title 12.12) Re-register DLL Files
-color be
-cd /d %WinDir%\system32 
+
+Title 4.9.11) Custom Scripts [Windows Log Cleaner] {Sorry random guy...}
+color 36
+DEL /S/Q "%windir%\comsetup.log"
+DEL /S/Q "%windir%\IE11_main.log"
+DEL /S/Q "%windir%\iis.log"
+DEL /S/Q "%windir%\PFRO.log"
+DEL /S/Q "%windir%\setupact.log"
+DEL /S/Q "%windir%\setuperr.log"
+DEL /S/Q "%windir%\WindowsUpdate.log"
+DEL /S/Q "%windir%\wsusofflineupdate.log"
+DEL /S/Q "%windir%\DirectX.log"
+DEL /S/Q "%windir%\DPINST.LOG"
+DEL /S/Q "%windir%\DtcInstall.log"
+DEL /S/Q "%windir%\ntbtlog.txt"
+DEL /S/Q "%windir%\System32\NetSetupMig.log"
+DEL /S/Q "C:\Users\%Username%\AppData\Local\Microsoft\Windows Mail\edb.log"
+DEL /S/Q "C:\Users\%Username%\AppData\Local\Microsoft\Windows Mail\edb00001.log"
+
+
+
+
+
+
+
+
+
+echo Custom Script Ends. Such a messy and hasty copy paste.
+
+
+
+
+
+
+
+
+
+Title 4.10.1) Finishing Cleanup [Remove 0 bytes files] [WARNING] [DON'T ENABLE] {BREAKS CERTAIN PROGRAMS LIKE WORD.EXE}
+echo Files in %localappdata%\Microsoft\WindowsApps\ are known to be empty, they seem to act like pointers or url openers for updates. Idk how UWP app works but this cause issue for Office and programmers.
+color 01
+cd/
+::may fake reset your browser, breaks word.exe
+::start powershell.exe -Command "mode.com con: lines=19 cols=19; cd..; cd..; cd..; Get-ChildItem -Path (C:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
+::d:
+::start powershell.exe -Command "mode.com con: lines=19 cols=19; d:; Get-ChildItem -Path (D:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
+::e:
+::start powershell.exe -Command "mode.com con: lines=19 cols=19; f:; Get-ChildItem -Path (E:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
+::f:
+::start powershell.exe -Command "mode.com con: lines=19 cols=19; f:; Get-ChildItem -Path (F:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
+::g:
+::start powershell.exe -Command "mode.com con: lines=19 cols=19; f:; Get-ChildItem -Path (G:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
+::c:
+::cd/
+::Meanwhile tries to stop important 0 byte files from getting removed by
+::        color 0D
+::            Title Verify System
+::                sfc /scannow
+::                chkdsk /scan /perf
+::               chkdsk /i
+::                chkdsk /c
+::            color 03
+::            Title Verify Windows
+::                DISM /Online /Cleanup-Image /ScanHealth
+::                DISM /online /Cleanup-Image /checkhealth
+::                DISM /Online /Cleanup-Image /RestoreHealth
+::                DISM /Online /Cleanup-Image /RestoreHealth /Source:repairSource\install.wim
+
+::Taskill for best removal
+    ::taskkill.exe /F /FI "USERNAME eq %USERNAME%" /FI "IMAGENAME ne ClassicShellService.exe" /FI "IMAGENAME ne explorer.exe" /FI "IMAGENAME ne dwm.exe" /FI "IMAGENAME ne cmd.exe" /FI "IMAGENAME ne mbam.exe" /FI "IMAGENAME ne teamviewer.exe" /FI "IMAGENAME ne TeamViewer_Service.exe" /FI "IMAGENAME ne Taskmgr.exe" /FI "IMAGENAME ne Teamviewer_Desktop.exe" /FI "IMAGENAME ne MsMpEng.exe" /FI "IMAGENAME ne tv_w32.exe" /FI "IMAGENAME ne LogMeIn.exe" /FI "IMAGENAME ne Tron.bat" /FI "IMAGENAME ne rkill.exe" /FI "IMAGENAME ne rkill64.exe" /FI "IMAGENAME ne rkill.com" /FI "IMAGENAME ne rkill64.com" /FI "IMAGENAME ne conhost.exe" /FI "IMAGENAME ne dashost.exe" /FI "IMAGENAME ne wget.exe" /FI "IMAGENAME ne TechToolbox.exe" /FI "IMAGENAME ne vmtoolsd.exe" /FI "IMAGENAME ne conhost.exe"
+
+
+
+Title 4.10.2) Finishing Cleanup [Remove Empty folders] [WARNING] [DON'T CLOSE] [MAY CAUSE ISSUE TO POORLY PROGRAMMED APPS & DEVELOPERS] {PLEASE DISABLE ACCORDING TO YOU}
+    echo Known issue: User has to make a new password at Windows Logon if using Windows Hello Pin.
+    echo Knwon issue: Cause issues for Hyper-v nework connections, uncheck and recheck it in Windows Feature and restart will fix.
+    color 4F
+    cd/
+    ::robocopy "C:" "C:" /S /move /log:"C:\File and Network Reports - DELETABLE\35.3 Empty Folder List C-Drive.txt"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & net start InstallService & winget upgrade -h --accept-package-agreements --accept-source-agreements --all & exit"
+    robocopy "C:" "C:" /S /move
+    d:
+    robocopy "D:" "D:" /S /move
+    e:
+    robocopy "E:" "E:" /S /move
+    f:
+    robocopy "F:" "F:" /S /move
+    d:
+    robocopy "G:" "G:" /S /move
+    c:
+    cd/
+
+
+  
+Title 4.10.3) Finishing Cleanup [Light Defrag] [DON'T CLOSE]
+    echo Light Defrag
+    color 0b
+    defrag C: /a
+    defrag C: /g
+    defrag C: /o
+    defrag C: /l
+    defrag D: /a
+    defrag D: /g
+    defrag D: /o
+    defrag D: /l
+    defrag E: /a
+    defrag E: /g
+    defrag E: /o
+    defrag E: /l
+    defrag F: /a
+    defrag F: /g
+    defrag F: /o
+    defrag F: /l
+    defrag G: /a
+    defrag G: /g
+    defrag G: /o
+    defrag G: /l
+    "%windir%\system32\defrag.exe" -c -h -o -$
+    cls
+
+
+
+Title 4.10.4) Finishing Cleanup [Heavy Defag] [PATIENCE] [DON'T CLOSE]
+    echo Heavy defrag, Be patient.
+    color 01
+    defrag C:
+    defrag D:
+    defrag E:
+    defrag F:
+
+
+
+
+
+
+
+
+
+Title 5) Windows Fix [Regenerate Default Folders] [DON'T CLOSE]
+    color 03
+    md %WinDir%\Temp
+    md %WinDir%\Prefetch
+    md %Temp%
+    md %AppData%\Temp
+    md %HomePath%\AppData\LocalLow\Temp
+    md C:\Windows\System32\drivers\etc
+    md %systemdrive%\Logs
+    md %systemdrive%\PerfLogs
+    md %systemdrive%\PerfLogs\System\Diagnostics
+    md "%AppData%\Microsoft\Windows\Recent\AutomaticDestinations"
+    md "%AppData%\Microsoft\Windows\Recent"
+    md "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets"
+    md "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\Settings"
+
+
+
+
+
+
+
+
+
+
+Title 6) Prepare Update [Renable Safe Connections] {After this you may close}
+    echo FIREWALL BACK TO NORMAL. BLACKHATS MAY RECONNECT.
+    color 4F
+    netsh advfirewall set allprofiles state on
+    netsh advfirewall reset
+    netsh advfirewall reset
+
+
+
+
+
+
+
+
+
+Title 7.1.1) PREPARE THE WAR [CCleaner] [Default Browser] [Require Link Check] [Attention]
+    echo One of the best Cleaners from London. 40% trusted. https://www.ccleaner.com/about
+    color 05
+    explorer "https://www.ccleaner.com/ccleaner/download/standard"
+
+Title 7.1.2) PREPARE THE WAR [CCleaner] [Chrome] [Require Name Check] [Attention]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard"
+
+Title 7.1.3) PREPARE THE WAR [CCleaner] [Chrome Canary] [Require Name Check] [Attention]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard"
+
+Title 7.1.4) PREPARE THE WAR [CCLeaner] [Comodo Dragon] [Require Name Check] [Attention]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard"
+
+Title 7.1.5) PREPARE THE WAR [CCleaner] [Firefox] [Require Name Check] [Attention]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.ccleaner.com/ccleaner/download/standard"
+
+Title 7.1.6) PREPARE THE WAR [CCleaner] [Firefox Nightly] [Require Name Check] [Attention]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.ccleaner.com/ccleaner/download/standard"
+
+Title 7.1.7) PREPARE THE WAR [CCleaner] [Microsoft Edge] [Require Link Check] [Attention]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.ccleaner.com/ccleaner/download/standard"
+
+
+
+Title 7.2.1) PREPARE THE WAR [BleachBit] [Default Browser] [Require Link Check] [Attention]
+    echo Best Cleaner, open source. 50% trusted. About https://www.bleachbit.org/press/faq and SourceCode https://github.com/bleachbit/bleachbit
+    color 06
+    explorer "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+
+Title 7.2.2) PREPARE THE WAR [BleachBit] [Chrome] [Require Link Check] [Attention]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+
+Title 7.2.3) PREPARE THE WAR [BleachBit] [Chrome Canary] [Require Link Check] [Attention]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+
+Title 7.2.4) PREPARE THE WAR [BleachBit] [Comodo Dragon] [Require Link Check] [Attention]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+
+Title 7.2.5) PREPARE THE WAR [BleachBit] [Firefox] [Require Link Check] [Attention]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+
+Title 7.2.6) PREPARE THE WAR [BleachBit] [Firefox Nightly] [Require Link Check] [Attention]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+
+Title 7.2.7) PREPARE THE WAR [BleachBit] [Microsoft Edge] [Require Link Check] [Attention]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+
+
+
+Title 7.3.1) PREPARE THE WAR [rkill] [Default Browser]
+    echo Malicious task killer by BleepingComputer from America. 60% trusted. https://www.bleepingcomputer.com/download/rkill/
+    color 09
+    explorer "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+
+Title 7.3.2) PREPARE THE WAR [rkill] [Chrome]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+
+Title 7.3.3) PREPARE THE WAR [rkill] [Chrome Canary]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+
+Title 7.3.4) PREPARE THE WAR [rkill] [Comodo Dragon]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+
+Title 7.3.5) PREPARE THE WAR [rkill] [Firefox]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+
+Title 7.3.6) PREPARE THE WAR [rkill] [Firefox Nightly]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+
+Title 7.3.7) PREPARE THE WAR [rkill] [Microsoft Edge]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+
+
+
+Title 7.4.1) PREPARE THE WAR [MSRT] [Default Browser] [Require Name Check] [Attention]
+    echo Popular malware remover by Microsoft from America. 99.9% trusted. https://www.microsoft.com/en-us/download/details.aspx?id=9905
+    color 0b
+    explorer "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+
+Title 7.4.2) PREPARE THE WAR [MSRT] [Chrome] [Require Name Check] [Attention]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+
+Title 7.4.3) PREPARE THE WAR [MSRT] [Chrome Canary] [Require Name Check] [Attention]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+
+Title 7.4.4) PREPARE THE WAR [MSRT] [Comodo Dragon] [Require Name Check] [Attention]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+
+Title 7.4.5) PREPARE THE WAR [MSRT] [Firefox] [Require Name Check] [Attention]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+
+Title 7.4.6) PREPARE THE WAR [MSRT] [Firefox Nightly] [Require Name Check] [Attention]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+
+Title 7.4.7) PREPARE THE WAR [MSRT] [Microsoft Edge] [Require Name Check] [Attention]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+
+
+
+Title 7.5.1) PREPARE THE WAR [MSERT] [Default Browser]
+    echo Full scanner by Microsoft from America. 99.9% trusted https://docs.microsoft.com/en-us/microsoft-365/security/intelligence/safety-scanner-download?view=o365-worldwide
+    color 0d
+    explorer "https://go.microsoft.com/fwlink/?LinkId=212732"
+
+Title 7.5.2) PREPARE THE WAR [MSERT] [Chrome]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732"
+
+Title 7.5.3) PREPARE THE WAR [MSERT] [Chrome Canary]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732"
+
+Title 7.5.4) PREPARE THE WAR [MSERT] [Comodo Dragon]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732"
+
+Title 7.5.5) PREPARE THE WAR [MSERT] [Firefox]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732"
+
+Title 7.5.6) PREPARE THE WAR [MSERT] [Firefox Nightly]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732"
+
+Title 7.5.7) PREPARE THE WAR [MSERT] [Microsoft Edge]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://go.microsoft.com/fwlink/?LinkId=212732"
+
+
+
+
+Title 7.6.1) PREPARE THE WAR [AdwCleaner] [Default Browser]
+    echo By Malwarebytes from America, adware remover. 70% Trusted. https://www.malwarebytes.com/adwcleaner
+    color 0e
+    explorer "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+
+Title 7.6.2) PREPARE THE WAR [AdwCleaner] [Chrome]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+
+Title 7.6.3) PREPARE THE WAR [AdwCleaner] [Chrome Canary]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+
+Title 7.6.4) PREPARE THE WAR [AdwCleaner] [Comodo Dragon]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+
+Title 7.6.5) PREPARE THE WAR [AdwCleaner] [Firefox]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+
+Title 7.6.6) PREPARE THE WAR [AdwCleaner] [Firefox Nightly]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+
+Title 7.6.7) PREPARE THE WAR [AdwCleaner] [Microsoft Edge]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+
+
+
+::Title ) PREPARE THE WAR [McAfee Stinger] [Default Browser]
+    ::echo By McAfee from America, best malware remover but has spyware and rogue malware behaviour, contacted customer support about how to remove but never replied therefore disabled by default. 2% Trusted. https://www.mcafee.com/enterprise/en-us/downloads/free-tools/how-to-use-stinger.html
+    ::echo To remove Stinger and its spyware services https://service.mcafee.com/?articleId=TS101331&page=shell&shell=article-view
+    ::explorer "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+
+::Title ) PREPARE THE WAR [McAfee Stinger] [Chrome]
+    ::"%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+
+::Title ) PREPARE THE WAR [McAfee Stinger] [Chrome Canary]
+    ::"%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+
+::Title ) PREPARE THE WAR [McAfee Stinger] [Comodo Dragon]
+    ::"%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+
+::Title ) PREPARE THE WAR [McAfee Stinger] [Firefox]
+    ::"%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+
+::Title ) PREPARE THE WAR [McAfee Stinger] [Firefox Nightly]
+    ::"%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+
+::Title ) PREPARE THE WAR [McAfee Stinger] [Microsoft Edge]
+    ::"%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+
+
+
+Title 7.7.1) PREPARE THE WAR [KVRT] [Default Browser]
+    echo By Kaspersky from Mother Russia, best malware remover. 49% Trusted. https://usa.kaspersky.com/about/company
+    color 01
+    explorer "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+
+Title 7.7.2) PREPARE THE WAR [KVRT] [Chrome]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+
+Title 7.7.3) PREPARE THE WAR [KVRT] [Chrome Canary]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+
+Title 7.7.4) PREPARE THE WAR [KVRT] [Comodo Dragon]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+
+Title 7.7.5) PREPARE THE WAR [KVRT] [Firefox]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+
+Title 7.7.6) PREPARE THE WAR [KVRT] [Firefox Nightly]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+
+Title 7.7.7) PREPARE THE WAR [KVRT] [Microsoft Edge]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+
+
+
+
+Title 7.8.1) PREPARE THE WAR [tdsskiller] [Default Browser]
+    echo By Kaspersky from Mother Russia, to remove rootkits. 49% Trusted. https://usa.kaspersky.com/about/company
+    color 03
+    explorer "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+
+Title 7.8.2) PREPARE THE WAR [tdsskiller] [Chrome]
+    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+
+Title 7.8.3) PREPARE THE WAR [tdsskiller] [Chrome Canary]
+    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+
+Title 7.8.4) PREPARE THE WAR [tdsskiller] [Comodo Dragon]
+    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+
+Title 7.8.5) PREPARE THE WAR [tdsskiller] [Firefox]
+    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+
+Title 7.8.6) PREPARE THE WAR [tdsskiller] [Firefox Nightly]
+    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+
+Title 7.8.7) PREPARE THE WAR [tdsskiller] [Microsoft Edge]
+    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+
+
+
+
+
+
+
+
+
+Title 8.1) Update [Windows] [Fix]
+color 06
+@ECHO OFF
+net stop wuauserv
+rd /s /q %systemroot%\SoftwareDistribution
+REN %windir%\SoftwareDistribution SoftwareDistribution.OLD
+IF EXIST %windir%\SoftwareDistribution.OLD RD /S /Q %windir%\SoftwareDistribution.OLD
+NET STOP bits
+::net stop cryptsvc 
+Del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
+sc.exe sdset bits D:(A;CI;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)
+sc.exe sdset wuauserv D:(A;;CCLCSWRPLORC;;;AU)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)
+cd /d %windir%\system32
+REM Disabled due to security purposely, if you are malware free and is facing Windows Issues, enable them.
 ::regsvr32.exe /s atl.dll 
 ::regsvr32.exe /s urlmon.dll 
 ::regsvr32.exe /s mshtml.dll 
@@ -1579,7 +2366,6 @@ cd /d %WinDir%\system32
 ::regsvr32.exe /s wucltux.dll 
 ::regsvr32.exe /s muweb.dll 
 ::regsvr32.exe /s wuwebv.dll 
-
 ::regsvr32.exe /s gptext.dll
 ::regsvr32.exe /s fde.dll
 ::regsvr32.exe /s ieaksie.dll
@@ -1590,514 +2376,820 @@ cd /d %WinDir%\system32
 ::regsvr32.exe /s appmgr.dll
 ::for %1 in (*.dll) do regsvr32 /s %1
 cd/
-
-Title 12.13) Windows Log Cleaner
-color a6
-DEL /S/Q "%windir%\comsetup.log"
-DEL /S/Q "%windir%\IE11_main.log"
-DEL /S/Q "%windir%\iis.log"
-DEL /S/Q "%windir%\PFRO.log"
-DEL /S/Q "%windir%\setupact.log"
-DEL /S/Q "%windir%\setuperr.log"
-DEL /S/Q "%windir%\WindowsUpdate.log"
-DEL /S/Q "%windir%\wsusofflineupdate.log"
-DEL /S/Q "%windir%\DirectX.log"
-DEL /S/Q "%windir%\DPINST.LOG"
-DEL /S/Q "%windir%\DtcInstall.log"
-DEL /S/Q "%windir%\ntbtlog.txt"
-DEL /S/Q "%windir%\System32\NetSetupMig.log"
-DEL /S/Q "C:\Users\%Username%\AppData\Local\Microsoft\Windows Mail\edb.log"
-DEL /S/Q "C:\Users\%Username%\AppData\Local\Microsoft\Windows Mail\edb00001.log"
-
-Title 12.13) Remove 0-byte files
-color a8
-cd/
-::may fake reset your browser, breaks word.exe
-::start powershell.exe -Command "mode.com con: lines=19 cols=19; cd..; cd..; cd..; Get-ChildItem -Path (C:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
-::d:
-::start powershell.exe -Command "mode.com con: lines=19 cols=19; d:; Get-ChildItem -Path (D:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
-::e:
-::start powershell.exe -Command "mode.com con: lines=19 cols=19; f:; Get-ChildItem -Path (E:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
-::f:
-::start powershell.exe -Command "mode.com con: lines=19 cols=19; f:; Get-ChildItem -Path (F:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
-::g:
-::start powershell.exe -Command "mode.com con: lines=19 cols=19; f:; Get-ChildItem -Path (G:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 }  | remove-item"
-::c:
-::cd/
-::Meanwhile tries to stop important 0 byte files from getting removed by
-::        color 0D
-::            Title Verify System
-::                sfc /scannow
-::                chkdsk /scan /perf
-::               chkdsk /i
-::                chkdsk /c
-::            color 03
-::            Title Verify Windows
-::                DISM /Online /Cleanup-Image /ScanHealth
-::                DISM /online /Cleanup-Image /checkhealth
-::                DISM /Online /Cleanup-Image /RestoreHealth
-::                DISM /Online /Cleanup-Image /RestoreHealth /Source:repairSource\install.wim
-
-::Taskill for best removal
-    ::taskkill.exe /F /FI "USERNAME eq %USERNAME%" /FI "IMAGENAME ne ClassicShellService.exe" /FI "IMAGENAME ne explorer.exe" /FI "IMAGENAME ne dwm.exe" /FI "IMAGENAME ne cmd.exe" /FI "IMAGENAME ne mbam.exe" /FI "IMAGENAME ne teamviewer.exe" /FI "IMAGENAME ne TeamViewer_Service.exe" /FI "IMAGENAME ne Taskmgr.exe" /FI "IMAGENAME ne Teamviewer_Desktop.exe" /FI "IMAGENAME ne MsMpEng.exe" /FI "IMAGENAME ne tv_w32.exe" /FI "IMAGENAME ne LogMeIn.exe" /FI "IMAGENAME ne Tron.bat" /FI "IMAGENAME ne rkill.exe" /FI "IMAGENAME ne rkill64.exe" /FI "IMAGENAME ne rkill.com" /FI "IMAGENAME ne rkill64.com" /FI "IMAGENAME ne conhost.exe" /FI "IMAGENAME ne dashost.exe" /FI "IMAGENAME ne wget.exe" /FI "IMAGENAME ne TechToolbox.exe" /FI "IMAGENAME ne vmtoolsd.exe" /FI "IMAGENAME ne conhost.exe"
-
-Title 12.14) Remove Empty folders
-color b0
-cd/
-::Cause issues for Hyper-v nework connections
-::robocopy "C:" "C:" /S /move /log:"C:\File and Network Reports - DELETABLE\35.3 Empty Folder List C-Drive.txt"
-start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & net start InstallService & winget upgrade -h --accept-package-agreements --accept-source-agreements --all & exit"
-robocopy "C:" "C:" /S /move
-d:
-robocopy "D:" "D:" /S /move
-e:
-robocopy "E:" "E:" /S /move
-f:
-robocopy "F:" "F:" /S /move
-d:
-robocopy "G:" "G:" /S /move
-c:
-cd/
+netsh winsock reset
+proxycfg.exe -d
+net start bits
+net start wuauserv   
+net start cryptsvc
+bitsadmin.exe /reset /allusers
 
 
-echo Custom Script Ends.
 
-::Taskkill for best defrag
-    ::taskkill.exe /F /FI "USERNAME eq %USERNAME%" /FI "IMAGENAME ne ClassicShellService.exe" /FI "IMAGENAME ne explorer.exe" /FI "IMAGENAME ne dwm.exe" /FI "IMAGENAME ne cmd.exe" /FI "IMAGENAME ne mbam.exe" /FI "IMAGENAME ne teamviewer.exe" /FI "IMAGENAME ne TeamViewer_Service.exe" /FI "IMAGENAME ne Taskmgr.exe" /FI "IMAGENAME ne Teamviewer_Desktop.exe" /FI "IMAGENAME ne MsMpEng.exe" /FI "IMAGENAME ne tv_w32.exe" /FI "IMAGENAME ne LogMeIn.exe" /FI "IMAGENAME ne Tron.bat" /FI "IMAGENAME ne rkill.exe" /FI "IMAGENAME ne rkill64.exe" /FI "IMAGENAME ne rkill.com" /FI "IMAGENAME ne rkill64.com" /FI "IMAGENAME ne conhost.exe" /FI "IMAGENAME ne dashost.exe" /FI "IMAGENAME ne wget.exe" /FI "IMAGENAME ne TechToolbox.exe" /FI "IMAGENAME ne vmtoolsd.exe" /FI "IMAGENAME ne conhost.exe"
 
-::#Optimize-Speed
-    ::12) Defragmentation
-    color 0B
-    Title 12) Defragmentation & Optimization
-    vol
-    echo Starting light defrag...
-        defrag C: /a
-        defrag C: /g
-        defrag C: /o
-        defrag C: /l
 
-        defrag D: /a
-        defrag D: /g
-        defrag D: /o
-        defrag D: /l
 
-        defrag E: /a
-        defrag E: /g
-        defrag E: /o
-        defrag E: /l
-
-        defrag F: /a
-        defrag F: /g
-        defrag F: /o
-        defrag F: /l
-
-        defrag G: /a
-        defrag G: /g
-        defrag G: /o
-        defrag G: /l
-
-        "%windir%\system32\defrag.exe" -c -h -o -$
-    cls
-    color 01
-    echo Starting extreme defrag... Please be patient!
-        defrag C:
-        defrag D:
-        defrag E:
-        defrag F:
-    cls
-
-::#System-Health
-color 0B
-Title 13) System-Health
-    ::#Rgenerate-important-files    (In case they are lost)
-    Title 13.1a) #Windows-Regenerate
-        ::#Windows-Regenerate
-        Title #Windows-Regenerate
-            md %WinDir%\Temp
-            md %WinDir%\Prefetch
-            md %Temp%
-            md %AppData%\Temp
-            md %HomePath%\AppData\LocalLow\Temp
-            md C:\Windows\System32\drivers\etc
-            md %systemdrive%\Logs
-            md %systemdrive%\PerfLogs
-            md %systemdrive%\PerfLogs\System\Diagnostics
-            md "%AppData%\Microsoft\Windows\Recent\AutomaticDestinations"
-            md "%AppData%\Microsoft\Windows\Recent"
-            md "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets"
-            md "%USERPROFILE%/AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\Settings"
-
-        ::#App-Regenerate   (#Custom, add your custom files that you would like to regenerate)
-        color 0D 
-        Title 13.1b) App-Regenerate
-
-::Firewall back to normal
-netsh advfirewall set allprofiles state on
-netsh advfirewall reset
-netsh advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
-netsh advfirewall reset
-
-::Install MSERT Tool by Microsoft https://docs.microsoft.com/en-us/microsoft-365/security/intelligence/safety-scanner-download?view=o365-worldwide
-explorer "https://go.microsoft.com/fwlink/?LinkId=212732"
-explorer "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
-explorer "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
-explorer "https://www.kaspersky.com/downloads/free-virus-removal-tool"
-    ::#Health-Check
-    color 0a
-    ::Update fix
-    net stop wuauserv
-    rd /s /q %systemroot%\SoftwareDistribution
+Title 8.2) Update [Windows]
+    color 09
     net start wuauserv
-    net stop bits
-    net stop wuauserv
-    ::net stop cryptsvc 
-    Del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
-    sc.exe sdset bits D:(A;CI;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)
-    sc.exe sdset wuauserv D:(A;;CCLCSWRPLORC;;;AU)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)
-    cd /d %windir%\system32
-    ::Warning DLL may be infected already if you know what you did, like seriously. Have logic, or else its safe.
-    ::regsvr32.exe /s atl.dll 
-    ::regsvr32.exe /s urlmon.dll 
-    ::regsvr32.exe /s mshtml.dll 
-    ::regsvr32.exe /s shdocvw.dll 
-    ::regsvr32.exe /s browseui.dll 
-    ::regsvr32.exe /s jscript.dll 
-    ::regsvr32.exe /s vbscript.dll 
-    ::regsvr32.exe /s scrrun.dll 
-    ::regsvr32.exe /s msxml.dll 
-    ::regsvr32.exe /s msxml3.dll 
-    ::regsvr32.exe /s msxml6.dll 
-    ::regsvr32.exe /s actxprxy.dll 
-    ::regsvr32.exe /s softpub.dll 
-    ::regsvr32.exe /s wintrust.dll 
-    ::regsvr32.exe /s dssenh.dll 
-    ::regsvr32.exe /s rsaenh.dll 
-    ::regsvr32.exe /s gpkcsp.dll 
-    ::regsvr32.exe /s sccbase.dll 
-    ::regsvr32.exe /s slbcsp.dll 
-    ::regsvr32.exe /s cryptdlg.dll 
-    ::regsvr32.exe /s oleaut32.dll 
-    ::regsvr32.exe /s ole32.dll 
-    ::regsvr32.exe /s shell32.dll 
-    ::regsvr32.exe /s initpki.dll 
-    ::regsvr32.exe /s wuapi.dll 
-    ::regsvr32.exe /s wuaueng.dll 
-    ::regsvr32.exe /s wuaueng1.dll 
-    ::regsvr32.exe /s wucltui.dll 
-    ::regsvr32.exe /s wups.dll 
-    ::regsvr32.exe /s wups2.dll 
-    ::regsvr32.exe /s wuweb.dll 
-    ::regsvr32.exe /s qmgr.dll 
-    ::regsvr32.exe /s qmgrprxy.dll 
-    ::regsvr32.exe /s wucltux.dll 
-    ::regsvr32.exe /s muweb.dll 
-    ::regsvr32.exe /s wuwebv.dll     
-    netsh winsock reset
-    proxycfg.exe -d
-    net start bits
-    net start wuauserv   
-    net start cryptsvc
-    bitsadmin.exe /reset /allusers
-    cd/
-        ::Update
-        Title 13.2) Update
-            ::Windows-Update
-            Title 13.2a) Windows update
-                net start wuauserv
-                netstart uhssvc
-                C:\WINDOWS\system32\sc.exe start wuauserv
-                "%systemroot%\system32\usoclient.exe" StartScan     
-                "%systemroot%\system32\usoclient.exe" StartWork
-                "%systemroot%\system32\usoclient.exe" StartOobeAppsScan
-                C:\Windows\System32\wuauclt.exe /DetectNow
-                C:\Windows\System32\wuauclt.exe /ShowFeaturedOptInDialog
-                C:\Windows\System32\wuauclt.exe /updatenow
-                C:\Windows\System32\wuauclt.exe /resetauthorization /detectnow /updatenow
-                UsoClient ScanInstallWait && UsoClient StartInstall
-                ::ping 127.0.0.1 -n 15 >nul
-                ::FOR /F "tokens=3,4,5,6" %%a IN ( 'REG QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /V ProductName' ) DO set WinVer=%%a %%b %%c %%d
-                ::IF NOT "Windows 10"== "%WinVer:0,10%" ( wuauclt.exe /resetauthorization /detectnow /updatenow ) else ( UsoClient ScanInstallWait && UsoClient StartInstall )
-            ::Windows-Defender-Update   
-            color 01
-            Title 13.2b) App Update
-            ::update
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Google\Update\GoogleUpdate.exe" /c & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Google\Update\GoogleUpdate.exe" /ua /installsource scheduler & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /c & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /ua /installsource scheduler & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\NvContainer" & "C:\Program Files\NVIDIA Corporation\NvContainer\nvcontainer.exe" -d "C:\Program Files\NVIDIA Corporation\NvDriverUpdateCheck" -l 3 -f C:\ProgramData\NVIDIA\NvContainerDriverUpdateCheck.log & exit"
-                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience" & "C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA GeForce Experience.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\Update Core" & "C:\Program Files\NVIDIA Corporation\Update Core\NvProfileUpdater64.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Programs\Opera GX\launcher.exe" --scheduledautoupdate --component-name=assistant --component-path="C:\Users\%username%\AppData\Local\Programs\Opera GX\assistant" $(Arg0) & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Programs\Opera GX\launcher.exe" --scheduledautoupdate $(Arg0) & exit"
-                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramData%\Lenovo\ImController\Plugins\LenovoBatteryGaugePackage\x64\BGHelper.exe" & exit"
-                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\ImController.InfInstaller.exe" -checkremoval & exit"
-                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\sc.exe" START ImControllerService & exit"
-                ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\System32\reg.exe" add hklm\SOFTWARE\Lenovo\SystemUpdatePlugin\scheduler  /v start /t reg_dword /d 1 /f /reg:32 & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe" /frequentupdate SCHEDULEDTASK displaylevel=False & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Microsoft Office\root\Office16\sdxhelper.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft Visual Studio\Installer.790c51c2bdb646bea68a9eb8892ba882\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\BackgroundDownload.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\directxdatabaseupdater.exe" & exit"               
-            ::Verify
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%SystemRoot%\system32\ClipUp.exe" -p -s -o & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\bcdboot.exe" %windir% /sysrepair & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\DFDWiz.exe" & exit"
-            ::cleaning
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\System32\rundll32.exe" %windir%\System32\Windows.SharedPC.AccountManager.dll,StartMaintenance & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\cleanmgr.exe" /autocleanstoragesense /d %systemdrive% & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\MdmDiagnosticsTool.exe" /clean & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\lpremove.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\la57setup.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\rundll32.exe" %windir%\system32\AppxDeploymentClient.dll,AppxPreStageCleanupRunTask & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\dstokenclean.exe" & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\rundll32.exe" Windows.Storage.ApplicationData.dll,CleanupTemporaryState & exit"
-            ::Create Useful Schedule Tasks
-                schtasks /create /sc ONCE /tn "Schedule Shutdown" /tr "shutdown.exe /s /t 0" /ru system /st "04:00" /ri 1 /f
-                schtasks /change /tn "Schedule Shutdown" /DISABLE 
-            ::Useless but maybe useful Defender Tasks which don't run at all even disabled
-schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /ENABLE
-schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /ENABLE
-schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /ENABLE
-schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Verification" /ENABLE
+    C:\WINDOWS\system32\sc.exe start wuauserv
+    "%systemroot%\system32\usoclient.exe" StartScan     
+    "%systemroot%\system32\usoclient.exe" StartWork
+    "%systemroot%\system32\usoclient.exe" StartOobeAppsScan
+    C:\Windows\System32\wuauclt.exe /DetectNow
+    C:\Windows\System32\wuauclt.exe /ShowFeaturedOptInDialog
+    C:\Windows\System32\wuauclt.exe /updatenow
+    C:\Windows\System32\wuauclt.exe /resetauthorization /detectnow /updatenow
+    UsoClient ScanInstallWait && UsoClient StartInstall
+    ::FOR /F "tokens=3,4,5,6" %%a IN ( 'REG QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /V ProductName' ) DO set WinVer=%%a %%b %%c %%d
+    ::IF NOT "Windows 10"== "%WinVer:0,10%" ( wuauclt.exe /resetauthorization /detectnow /updatenow ) else ( UsoClient ScanInstallWait && UsoClient StartInstall )
 
 
 
-            color 09
-            Title 13.2c) Windows Defender Update
-            ::WD pre-steps
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
-                start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"            
-                ::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -removedefinitions -dynamicsignatures
-::Reset Group Policy
-del /q/f/s "%WinDir%\System32\GroupPolicyUsers"
-RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
-del /q/f/s "%WinDir%\System32\GroupPolicy"
-RD /S /Q "%WinDir%\System32\GroupPolicy"
-md "%WinDir%\System32\GroupPolicyUsers"
-md "%WinDir%\System32\GroupPolicy"
-::Undo malware registry actions
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
-REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
-::specific malware path
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\System" /f
-reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\System32" /f
-::extra malware actions
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
-reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f
-::Enable Windows Security Anti-service
-REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
-REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f
-::Start Defender Service
-powershell start-service WdNisSvc
-powershell start-service WinDefend
-net start Sense
-::Connection Protection Service
-net start netprofm
-net start nvagent
-net start SecurityHealthService
-net start sppsvc
-::Stop Connection vulnabilities
-net stop RasMan
-net stop RasAuto
-net stop SessionEnv
-net stop TermService
-net stop UmRdpService
-net stop RpcLocator
-net stop RemoteRegistry
-net stop RemoteAccess
-::Privacy (eg camera)
-net stop WbioSrvc
-net stop FrameServer
-net stop FrameServerMonitor
-::Enable Firewall
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f
-gpupdate /force
-net start WinDefend
-::Undo malware exclusions
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionPath {%AllUserProfile%}; Remove-MpPreference -ExclusionPath {%AppData%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%HomeDrive%}; Remove-MpPreference -ExclusionPath {%HomePath%}; Remove-MpPreference -ExclusionPath {%LocalAppData%}; Remove-MpPreference -ExclusionPath {%ProgramData%}; Remove-MpPreference -ExclusionPath {%ProgramFiles%}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%Public%}; Remove-MpPreference -ExclusionPath {%SystemDrive%}; Remove-MpPreference -ExclusionPath {%SystemRoot%}; Remove-MpPreference -ExclusionPath {%Tmp%}; Remove-MpPreference -ExclusionPath {%Temp%}; Remove-MpPreference -ExclusionPath {%UserProfile%}; Remove-MpPreference -ExclusionPath {%WinDir%}; Remove-MpPreference -ExclusionPath {%OneDrive%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%ProgramW6432%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%AppData%\Microsoft\Windows\Start Menu\Programs\Startup}; Remove-MpPreference -ExclusionPath {C:\}; Remove-MpPreference -ExclusionPath {C:\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Temp}; Remove-MpPreference -ExclusionPath {C:\Temp\}; Remove-MpPreference -ExclusionPath {C:\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users}; Remove-MpPreference -ExclusionPath {C:\Users\}; Remove-MpPreference -ExclusionPath {C:\Users\*}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\*}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\*}; Remove-MpPreference -ExclusionPath {%Windir%\Temp}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\*}; Remove-MpPreference -ExclusionPath {/}; Remove-MpPreference -ExclusionPath {/*}; Remove-MpPreference -ExclusionPath {bin}; Remove-MpPreference -ExclusionPath {bin/}; Remove-MpPreference -ExclusionPath {bin/*}; Remove-MpPreference -ExclusionPath {/bin}; Remove-MpPreference -ExclusionPath {/bin/}; Remove-MpPreference -ExclusionPath {/bin/*}; Remove-MpPreference -ExclusionPath {sbin}; Remove-MpPreference -ExclusionPath {sbin/}; Remove-MpPreference -ExclusionPath {sbin/*}; Remove-MpPreference -ExclusionPath {/sbin}; Remove-MpPreference -ExclusionPath {/sbin/}; Remove-MpPreference -ExclusionPath {/sbin/*}; Remove-MpPreference -ExclusionPath {usr/lib}; Remove-MpPreference -ExclusionPath {usr/lib/}; Remove-MpPreference -ExclusionPath {usr/lib/*}; Remove-MpPreference -ExclusionPath {/usr/lib}; Remove-MpPreference -ExclusionPath {/usr/lib/}; Remove-MpPreference -ExclusionPath {/usr/lib/*}; exit"
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionExtension *.mp3,*.MP4,*.wav,*.EDB; Remove-MpPreference -ExclusionExtension .7z; Remove-MpPreference -ExclusionExtension .bat; Remove-MpPreference -ExclusionExtension .bin; Remove-MpPreference -ExclusionExtension .cab; Remove-MpPreference -ExclusionExtension .cmd; Remove-MpPreference -ExclusionExtension .com; Remove-MpPreference -ExclusionExtension .cpl; Remove-MpPreference -ExclusionExtension .dll; Remove-MpPreference -ExclusionExtension .exe; Remove-MpPreference -ExclusionExtension .fla; Remove-MpPreference -ExclusionExtension .gif; Remove-MpPreference -ExclusionExtension .gz; Remove-MpPreference -ExclusionExtension .hta; Remove-MpPreference -ExclusionExtension .inf; Remove-MpPreference -ExclusionExtension .java; Remove-MpPreference -ExclusionExtension .jar; Remove-MpPreference -ExclusionExtension .job; Remove-MpPreference -ExclusionExtension .jpeg; Remove-MpPreference -ExclusionExtension .jpg; Remove-MpPreference -ExclusionExtension .js; Remove-MpPreference -ExclusionExtension .ko; Remove-MpPreference -ExclusionExtension .ko.gz; Remove-MpPreference -ExclusionExtension .msi; Remove-MpPreference -ExclusionExtension .ocx; Remove-MpPreference -ExclusionExtension .png; Remove-MpPreference -ExclusionExtension .ps1; Remove-MpPreference -ExclusionExtension .py; Remove-MpPreference -ExclusionExtension .rar; Remove-MpPreference -ExclusionExtension .reg; Remove-MpPreference -ExclusionExtension .scr; Remove-MpPreference -ExclusionExtension .sys; Remove-MpPreference -ExclusionExtension .tar; Remove-MpPreference -ExclusionExtension .tmp; Remove-MpPreference -ExclusionExtension .url; Remove-MpPreference -ExclusionExtension .vbe; Remove-MpPreference -ExclusionExtension .vbs; Remove-MpPreference -ExclusionExtension .wsf; Remove-MpPreference -ExclusionExtension .zip; Remove-MpPreference -ExclusionProcess AcroRd32.exe; Remove-MpPreference -ExclusionProcess bitsadmin.exe; Remove-MpPreference -ExclusionProcess excel.exe; Remove-MpPreference -ExclusionProcess iexplore.exe; Remove-MpPreference -ExclusionProcess java.exe; Remove-MpPreference -ExclusionProcess outlook.exe; Remove-MpPreference -ExclusionProcess psexec.exe; Remove-MpPreference -ExclusionProcess powerpnt.exe; Remove-MpPreference -ExclusionProcess powershell.exe; Remove-MpPreference -ExclusionProcess schtasks.exe; Remove-MpPreference -ExclusionProcess wmic.exe; Remove-MpPreference -ExclusionProcess winword.exe; Remove-MpPreference -ExclusionProcess wuauclt.exe; Remove-MpPreference -ExclusionProcess addinprocess.exe; Remove-MpPreference -ExclusionProcess addinprocess32.exe; Remove-MpPreference -ExclusionProcess addinutil.exe; Remove-MpPreference -ExclusionProcess bash.exe; Remove-MpPreference -ExclusionProcess bginfo.exe; Remove-MpPreference -ExclusionProcess cdb.exe; Remove-MpPreference -ExclusionProcess csi.exe; Remove-MpPreference -ExclusionProcess dbghost.exe; Remove-MpPreference -ExclusionProcess dbgsvc.exe; Remove-MpPreference -ExclusionProcess dnx.exe; Remove-MpPreference -ExclusionProcess dotnet.exe; Remove-MpPreference -ExclusionProcess fsi.exe; Remove-MpPreference -ExclusionProcess fsiAnyCpu.exe; Remove-MpPreference -ExclusionProcess kd.exe; Remove-MpPreference -ExclusionProcess ntkd.exe; Remove-MpPreference -ExclusionProcess lxssmanager.dll; Remove-MpPreference -ExclusionProcess msbuild.exe; Remove-MpPreference -ExclusionProcess mshta.exe; Remove-MpPreference -ExclusionProcess ntsd.exe; Remove-MpPreference -ExclusionProcess rcsi.exe; Remove-MpPreference -ExclusionProcess system.management.automation.dll; Remove-MpPreference -ExclusionProcess windbg.exe; Remove-MpPreference -ExclusionProcess bash; Remove-MpPreference -ExclusionProcess sh; Remove-MpPreference -ExclusionProcess python; Remove-MpPreference -ExclusionProcess python3; Remove-MpPreference -ExclusionProcess java; Remove-MpPreference -ExclusionProcess zsh; exit"   
-::High Defense
-start powershell.exe -Command "mode.com con: lines=19 cols=19; Set-Mppreference -AllowDatagramProcessingOnWinServer 1; Set-Mppreference -AllowNetworkProtectionDownLevel 1;Set-Mppreference -AllowNetworkProtectionOnWinServer 1; Set-Mppreference -AllowSwitchToAsyncInspection 0;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 6;Set-Mppreference -CloudExtendedTimeout 50;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 0; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 1; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 2;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 1; Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 100;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 3;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
-::Enable all ASR rules
-start powershell.exe -Command "mode.com con: lines=19 cols=19;add-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"
-::MD Verify
-::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
-::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
-::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"            
-::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -removedefinitions -dynamicsignatures
-::Remove wellknown malware with known paths
-del /q/f/s "C:\Users\%username%\AppData\Roaming\414.exe"
-del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
-            ::WD Update
-                powershell start-service wscsvc
-                "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -SignatureUpdate
-                "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ListAllDynamicSignatures
-                "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 
-        ::Verify
-        color 0D
-        Title 14) Verify System & Windows
-            ::Verify System
-            Title 14.1) Verify System
-                sfc /scannow
-                chkdsk /scan /perf
-                chkdsk /i
-                chkdsk /c
-                echo y|chkdsk /v /x /b
-            ::Verify Windows
-            color 03
-            Title 14.2) Verify Windows
-                DISM /Online /Cleanup-Image /ScanHealth
-                DISM /online /Cleanup-Image /checkhealth
-                DISM /Online /Cleanup-Image /RestoreHealth
-                DISM /Online /Cleanup-Image /RestoreHealth /Source:repairSource\install.wim
-            ::Delete generated logs
-            14.3) Title Delete generated logs
-                del /q/f/s C:\Windows\Logs
-                C:\Users\%username%\AppData\Local\Temp
-            cls
-            
-        ::Malware-Virus-Scan
-        color 0B
-        echo   ###########################################################
-        echo   ## Quarantined items will be viewable in Windows Defender #
-        echo   ###########################################################
-        taskkill /f /im chrome.exe /t & taskkill /f /im opera.exe /t & taskkill /f /im msedge.exe /t & taskkill /f /im brave.exe /t & taskkill /f /im dragon.exe /t & taskkill /f /im firefox.exe /t
-::run ccleaner
+
+
+Title 8.3) Update [Apps]
+    color 0b
+    REM Update apps.
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Google\Update\GoogleUpdate.exe" /c & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Google\Update\GoogleUpdate.exe" /ua /installsource scheduler & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /c & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /ua /installsource scheduler & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\NvContainer" & "C:\Program Files\NVIDIA Corporation\NvContainer\nvcontainer.exe" -d "C:\Program Files\NVIDIA Corporation\NvDriverUpdateCheck" -l 3 -f C:\ProgramData\NVIDIA\NvContainerDriverUpdateCheck.log & exit"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience" & "C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA GeForce Experience.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & cd "C:\Program Files\NVIDIA Corporation\Update Core" & "C:\Program Files\NVIDIA Corporation\Update Core\NvProfileUpdater64.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Programs\Opera GX\launcher.exe" --scheduledautoupdate --component-name=assistant --component-path="C:\Users\%username%\AppData\Local\Programs\Opera GX\assistant" $(Arg0) & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Users\%username%\AppData\Local\Programs\Opera GX\launcher.exe" --scheduledautoupdate $(Arg0) & exit"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramData%\Lenovo\ImController\Plugins\LenovoBatteryGaugePackage\x64\BGHelper.exe" & exit"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\ImController.InfInstaller.exe" -checkremoval & exit"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\sc.exe" START ImControllerService & exit"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\System32\reg.exe" add hklm\SOFTWARE\Lenovo\SystemUpdatePlugin\scheduler  /v start /t reg_dword /d 1 /f /reg:32 & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe" /frequentupdate SCHEDULEDTASK displaylevel=False & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files\Microsoft Office\root\Office16\sdxhelper.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "C:\Program Files (x86)\Microsoft Visual Studio\Installer.790c51c2bdb646bea68a9eb8892ba882\resources\app\ServiceHub\Services\Microsoft.VisualStudio.Setup.Service\BackgroundDownload.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\directxdatabaseupdater.exe" & exit"               
+    REM Verification.
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%SystemRoot%\system32\ClipUp.exe" -p -s -o & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\bcdboot.exe" %windir% /sysrepair & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\DFDWiz.exe" & exit"
+    REM Cleaning.
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\System32\rundll32.exe" %windir%\System32\Windows.SharedPC.AccountManager.dll,StartMaintenance & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\cleanmgr.exe" /autocleanstoragesense /d %systemdrive% & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\MdmDiagnosticsTool.exe" /clean & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\lpremove.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\la57setup.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\rundll32.exe" %windir%\system32\AppxDeploymentClient.dll,AppxPreStageCleanupRunTask & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\dstokenclean.exe" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%windir%\system32\rundll32.exe" Windows.Storage.ApplicationData.dll,CleanupTemporaryState & exit"
+    ::Create Useful Schedule Tasks
+    schtasks /create /sc ONCE /tn "Schedule Shutdown" /tr "shutdown.exe /s /t 0" /ru system /st "04:00" /ri 1 /f
+    schtasks /change /tn "Schedule Shutdown" /DISABLE 
+
+
+
+
+
+
+
+
+
+Title 9.1) Preparing Defender Scan [Windows Defender Verification]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    echo Verification will fail due to firewall blocking connection below but let it run a bit.
+    color 0d
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"  
+
+
+
+
+
+
+Title 9.2.1) Preparing Defender Scan [Group Policy reset] [Pro/Enterprise/Business] [3rd-party antivirus users] [Caution]
+    echo Warning this will reset All Group Policy, big organiations like school/company be careful.
+    echo Malware adds rule in Group Policy to disable Windows Security in paid Windows' Editions.
+    color 0e
+    del /q/f/s "%WinDir%\System32\GroupPolicyUsers"
+    RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
+    del /q/f/s "%WinDir%\System32\GroupPolicy"
+    RD /S /Q "%WinDir%\System32\GroupPolicy"
+    md "%WinDir%\System32\GroupPolicyUsers"
+    md "%WinDir%\System32\GroupPolicy"
+
+
+
+Title 9.2.2) Preparing Defender Scan [Registry attack fix] [Reactivate Windows Defender] [3rd-party antivirus users] [Caution]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    color 01
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
+    REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f     
+    reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
+    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
+    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
+
+
+
+Title 9.2.3) Preparing Defender Scan [Registry attack fix] [Reactive Defender Services] [3rd-party antivirus users] [Caution]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    color 03
+    REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
+    REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f  
+
+
+
+Title 9.2.4) Preparing Defender Scan [Registry attack fix] [Extra Actions] [3rd-party antivirus users] [Caution]
+    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
+    color 05
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
+    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f     
+
+
+
+Title 9.2.5) Preparing Defender Scan [Registry attack fix] [Specific Malware Schedules]
+    color 06
+    REM Add specific Malware Registry below to remove
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\System" /f
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\System32" /f      
+
+
+
+Title 9.2.6) Preparing Defender Scan [Registry attack fix] [Enable Firewall]
+    color 09
+    reg add "HKLM\SYSTEM\CurrentControlSet\Services\mpssvc" /v Start /t REG_DWORD /d 2 /f    
+
+
+
+Title 9.2.7) Preparing Defender Scan [Registry attack fix] [Reset Connection Preference] [Network Customizers] [Caution]
+    color 0b
+    reg delete "HKCU\Network" /f
+    reg add "HKCU\Network" /f
+    reg delete "HKCU\Software\Microsoft\Remote Assistance" /f
+    reg add "HKCU\Software\Microsoft\Remote Assistance" /f
+
+
+
+Title 9.2.8) Preparing Defender Scan [Registry attack fix] [Reset Certificates] [Certificate app downloaders] [Caution]
+    color 0d
+    reg delete "HKCU\Software\Microsoft\SystemCertificates\AuthRoot" /f
+    reg add "HKCU\Software\Microsoft\SystemCertificates\AuthRoot\Certificates" /f
+    reg add "HKCU\Software\Microsoft\SystemCertificates\AuthRoot\CRLs" /f
+    reg add "HKCU\Software\Microsoft\SystemCertificates\AuthRoot\CTLs" /f
+
+
+
+Title 9.2.9) Preparing Defender Scan [Registry attack fix] [Security] [Security Policy adders] [Caution]
+    color 0e
+    reg delete "HKLM\SECURITY" /f
+    reg add "HKLM\SECURITY" /f
+
+
+
+Title 9.2.10) Preparing Defender Scan [Register Group Policy and Registry changes]
+    color 01
+    gpupdate /force
+
+
+
+
+
+
+
+
+
+Title Meanwhile installing CCleaning and BleachBit... [Require Name Check] [Attention]
+    color 03
+    "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
+    "C:\Users\%username%\Downloads\ccsetup591.exe" /S
+
+
+
+
+
+
+
+
+
+Title 9.3.1) Preparing Defender Scan [Services] [Reset and Begin Defender Services] [3rd-party antivirus users] [Caution]
+    color 05
+    sc config "WdNisSvc" type= own
+    sc config "WdNisSvc" start= demand
+    sc config "WdNisSvc" Error= normal
+    ::sc config "WdNisSvc" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\NisSrv.exe"
+    sc config "WdNisSvc" group= ""
+    sc config "WdNisSvc" tag= 0
+    sc config "WdNisSvc" Depend= "WdNisDrv"
+    sc config "WdNisSvc" obj= "NT AUTHORITY\LocalService"
+    sc config "WdNisSvc" DisplayName= "Microsoft Defender Antivirus Network Inspection Service"
+    powershell start-service WdNisSvc
+    net start WdNisSvc
+    sc config "WinDefend" type= own
+    sc config "WinDefend" start= auto
+    sc config "WinDefend" Error= normal
+    ::sc config "WinDefend" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\MsMpEng.exe"
+    sc config "WinDefend" group= ""
+    sc config "WinDefend" tag= 0
+    sc config "WinDefend" Depend= "RpcSs"
+    sc config "WinDefend" obj= ".\LocalSystem" password= ""
+    sc config "WinDefend" DisplayName= "Microsoft Defender Antivirus Service"
+    powershell start-service WinDefend
+    net start WinDefend
+    sc config "Sense" type= own
+    sc config "Sense" start= demand
+    sc config "Sense" Error= normal
+    ::sc config "Sense" binPath= "C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe"
+    sc config "Sense" group= ""
+    sc config "Sense" tag= 0
+    sc config "Sense" Depend= ""
+    sc config "Sense" obj= ".\LocalSystem" password= ""
+    sc config "Sense" DisplayName= "Windows Defender Advanced Threat Protection Service"
+    net start Sense
+
+
+
+Title 9.3.2) Preparing Defender Scan [Services] [Reset and Begin Connection Protection] [3rd-party antivirus users] [Caution]
+    color 06
+    sc config "nvagent" type= share
+    sc config "nvagent" start= demand
+    sc config "nvagent" Error= normal
+    sc config "nvagent" binPath= "C:\WINDOWS\system32\svchost.exe -k NetSvcs"
+    sc config "nvagent" group= ""
+    sc config "nvagent" tag= 0
+    sc config "nvagent" Depend= ""
+    sc config "nvagent" obj= ".\LocalSystem" password= ""
+    sc config "nvagent" DisplayName= "Network Virtualization Service"
+    net start nvagent
+    net start SecurityHealthService
+    net start sppsvc
+
+
+
+Title 9.3.3) Preparing Defender Scan [Services] [Stop Hacker Connection]
+    color 09
+    net stop RasMan
+    net stop RasAuto
+    net stop SessionEnv
+    net stop TermService
+    net stop UmRdpService
+    net stop RpcLocator
+    net stop RemoteRegistry
+    net stop RemoteAccess
+
+
+
+Title 9.3.4) Preparing Defender Scan [Services] [Stop Spying]
+    color 0b
+    net stop WbioSrvc
+    net stop FrameServer
+    net stop FrameServerMonitor
+
+
+
+Title 9.3.5) Preparing Defender Scan [Services] [Remove Malware Service]
+    color 0d
+    REM Custom Malware Services Below to remove
+    net stop Service
+    sc delete Service
+
+
+
+
+
+
+Title 9.4.1) Preparing Defender Scan [Undo Malware actions to Defender] [Exclusion Removal] [3rd-party antivirus users] [Caution] {Resets Defender through Microsoft Store}
+    color 0e
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionPath {%AllUserProfile%}; Remove-MpPreference -ExclusionPath {%AppData%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%HomeDrive%}; Remove-MpPreference -ExclusionPath {%HomePath%}; Remove-MpPreference -ExclusionPath {%LocalAppData%}; Remove-MpPreference -ExclusionPath {%ProgramData%}; Remove-MpPreference -ExclusionPath {%ProgramFiles%}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%Public%}; Remove-MpPreference -ExclusionPath {%SystemDrive%}; Remove-MpPreference -ExclusionPath {%SystemRoot%}; Remove-MpPreference -ExclusionPath {%Tmp%}; Remove-MpPreference -ExclusionPath {%Temp%}; Remove-MpPreference -ExclusionPath {%UserProfile%}; Remove-MpPreference -ExclusionPath {%WinDir%}; Remove-MpPreference -ExclusionPath {%OneDrive%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%ProgramW6432%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%AppData%\Microsoft\Windows\Start Menu\Programs\Startup}; Remove-MpPreference -ExclusionPath {C:\}; Remove-MpPreference -ExclusionPath {C:\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Temp}; Remove-MpPreference -ExclusionPath {C:\Temp\}; Remove-MpPreference -ExclusionPath {C:\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users}; Remove-MpPreference -ExclusionPath {C:\Users\}; Remove-MpPreference -ExclusionPath {C:\Users\*}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\*}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\*}; Remove-MpPreference -ExclusionPath {%Windir%\Temp}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\*}; Remove-MpPreference -ExclusionPath {/}; Remove-MpPreference -ExclusionPath {/*}; Remove-MpPreference -ExclusionPath {bin}; Remove-MpPreference -ExclusionPath {bin/}; Remove-MpPreference -ExclusionPath {bin/*}; Remove-MpPreference -ExclusionPath {/bin}; Remove-MpPreference -ExclusionPath {/bin/}; Remove-MpPreference -ExclusionPath {/bin/*}; Remove-MpPreference -ExclusionPath {sbin}; Remove-MpPreference -ExclusionPath {sbin/}; Remove-MpPreference -ExclusionPath {sbin/*}; Remove-MpPreference -ExclusionPath {/sbin}; Remove-MpPreference -ExclusionPath {/sbin/}; Remove-MpPreference -ExclusionPath {/sbin/*}; Remove-MpPreference -ExclusionPath {usr/lib}; Remove-MpPreference -ExclusionPath {usr/lib/}; Remove-MpPreference -ExclusionPath {usr/lib/*}; Remove-MpPreference -ExclusionPath {/usr/lib}; Remove-MpPreference -ExclusionPath {/usr/lib/}; Remove-MpPreference -ExclusionPath {/usr/lib/*}; exit"
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionExtension *.mp3,*.MP4,*.wav,*.EDB; Remove-MpPreference -ExclusionExtension .7z; Remove-MpPreference -ExclusionExtension .bat; Remove-MpPreference -ExclusionExtension .bin; Remove-MpPreference -ExclusionExtension .cab; Remove-MpPreference -ExclusionExtension .cmd; Remove-MpPreference -ExclusionExtension .com; Remove-MpPreference -ExclusionExtension .cpl; Remove-MpPreference -ExclusionExtension .dll; Remove-MpPreference -ExclusionExtension .exe; Remove-MpPreference -ExclusionExtension .fla; Remove-MpPreference -ExclusionExtension .gif; Remove-MpPreference -ExclusionExtension .gz; Remove-MpPreference -ExclusionExtension .hta; Remove-MpPreference -ExclusionExtension .inf; Remove-MpPreference -ExclusionExtension .java; Remove-MpPreference -ExclusionExtension .jar; Remove-MpPreference -ExclusionExtension .job; Remove-MpPreference -ExclusionExtension .jpeg; Remove-MpPreference -ExclusionExtension .jpg; Remove-MpPreference -ExclusionExtension .js; Remove-MpPreference -ExclusionExtension .ko; Remove-MpPreference -ExclusionExtension .ko.gz; Remove-MpPreference -ExclusionExtension .msi; Remove-MpPreference -ExclusionExtension .ocx; Remove-MpPreference -ExclusionExtension .png; Remove-MpPreference -ExclusionExtension .ps1; Remove-MpPreference -ExclusionExtension .py; Remove-MpPreference -ExclusionExtension .rar; Remove-MpPreference -ExclusionExtension .reg; Remove-MpPreference -ExclusionExtension .scr; Remove-MpPreference -ExclusionExtension .sys; Remove-MpPreference -ExclusionExtension .tar; Remove-MpPreference -ExclusionExtension .tmp; Remove-MpPreference -ExclusionExtension .url; Remove-MpPreference -ExclusionExtension .vbe; Remove-MpPreference -ExclusionExtension .vbs; Remove-MpPreference -ExclusionExtension .wsf; Remove-MpPreference -ExclusionExtension .zip; Remove-MpPreference -ExclusionProcess AcroRd32.exe; Remove-MpPreference -ExclusionProcess bitsadmin.exe; Remove-MpPreference -ExclusionProcess excel.exe; Remove-MpPreference -ExclusionProcess iexplore.exe; Remove-MpPreference -ExclusionProcess java.exe; Remove-MpPreference -ExclusionProcess outlook.exe; Remove-MpPreference -ExclusionProcess psexec.exe; Remove-MpPreference -ExclusionProcess powerpnt.exe; Remove-MpPreference -ExclusionProcess powershell.exe; Remove-MpPreference -ExclusionProcess schtasks.exe; Remove-MpPreference -ExclusionProcess wmic.exe; Remove-MpPreference -ExclusionProcess winword.exe; Remove-MpPreference -ExclusionProcess wuauclt.exe; Remove-MpPreference -ExclusionProcess addinprocess.exe; Remove-MpPreference -ExclusionProcess addinprocess32.exe; Remove-MpPreference -ExclusionProcess addinutil.exe; Remove-MpPreference -ExclusionProcess bash.exe; Remove-MpPreference -ExclusionProcess bginfo.exe; Remove-MpPreference -ExclusionProcess cdb.exe; Remove-MpPreference -ExclusionProcess csi.exe; Remove-MpPreference -ExclusionProcess dbghost.exe; Remove-MpPreference -ExclusionProcess dbgsvc.exe; Remove-MpPreference -ExclusionProcess dnx.exe; Remove-MpPreference -ExclusionProcess dotnet.exe; Remove-MpPreference -ExclusionProcess fsi.exe; Remove-MpPreference -ExclusionProcess fsiAnyCpu.exe; Remove-MpPreference -ExclusionProcess kd.exe; Remove-MpPreference -ExclusionProcess ntkd.exe; Remove-MpPreference -ExclusionProcess lxssmanager.dll; Remove-MpPreference -ExclusionProcess msbuild.exe; Remove-MpPreference -ExclusionProcess mshta.exe; Remove-MpPreference -ExclusionProcess ntsd.exe; Remove-MpPreference -ExclusionProcess rcsi.exe; Remove-MpPreference -ExclusionProcess system.management.automation.dll; Remove-MpPreference -ExclusionProcess windbg.exe; Remove-MpPreference -ExclusionProcess bash; Remove-MpPreference -ExclusionProcess sh; Remove-MpPreference -ExclusionProcess python; Remove-MpPreference -ExclusionProcess python3; Remove-MpPreference -ExclusionProcess java; Remove-MpPreference -ExclusionProcess zsh; exit"   
+
+
+
+Title 9.4.2) Preparing Defender Scan [Undo Malware actions to Defender] [Highest Defense] [LOW PRIVACY, defense will return normal in the end, let the script finish] [3rd-party antivirus users] [Caution]
+    color 01
+    start powershell.exe -Command "mode.com con: lines=19 cols=19; Set-Mppreference -AllowDatagramProcessingOnWinServer 1; Set-Mppreference -AllowNetworkProtectionDownLevel 1;Set-Mppreference -AllowNetworkProtectionOnWinServer 1; Set-Mppreference -AllowSwitchToAsyncInspection 0;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 6;Set-Mppreference -CloudExtendedTimeout 50;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 0; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 1; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 2;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 1; Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 100;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 3;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
+
+
+
+Title 9.4.3) Preparing Defender Scan [Undo Malware actions to Defender] [Highest Defense] [Extra ASR Rules] [3rd-party antivirus users] [Caution]
+    color 03
+    start powershell.exe -Command "mode.com con: lines=19 cols=19;add-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"          
+
+
+
+
+
+
+Title 9.5) Preparing Defender Scan [REMOVE MALWARE] [Custom list]
+    color 05
+    REM Custom Malware Path below to remove
+    del /q/f/s "C:\Users\%username%\AppData\Roaming\414.exe"
+    del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
+
+
+
+
+
+
+Title 9.6) Preparing Defender Scan [Renable Defender Schedule Tasks] [[3rd-party antivirus users] [Caution]
+    color 06
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /ENABLE
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /ENABLE
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /ENABLE
+    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Verification" /ENABLE
+
+
+
+
+
+
+Title 9.7) Preparing Defender Scan [Signature Update]
+    color 09
+    ::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -removedefinitions -dynamicsignatures
+    powershell start-service wscsvc
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -SignatureUpdate
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ListAllDynamicSignatures
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
+
+
+
+
+
+
+
+
+
+Title 10.1) Verification [System]
+    color 0b
+    sfc /scannow
+    chkdsk /scan /perf
+    chkdsk /i
+    chkdsk /c
+    echo y|chkdsk /v /x /b
+
+
+
+
+
+
+Title 10.2) Verifcation [Windows]
+    color 03
+    DISM /Online /NoRestart /Cleanup-Image /ScanHealth
+    DISM /online /NoRestart /Cleanup-Image /checkhealth
+    DISM /Online /NoRestart /Cleanup-Image /RestoreHealth
+    DISM /Online /NoRestart /Cleanup-Image /RestoreHealth /Source:repairSource\install.wim
+
+
+
+
+
+
+
+
+
+Title 11.1) Removing Malware [rkill] [Killing malicious tasks]
+    color 4F
+    echo   #############################
+    echo   ##          rkill          ##
+    echo   ##   by Bleeping Computer  ##
+    echo   ##     made in America     ##
+    echo   ##           is            ##
+    echo   ## Killing Malicious Tasks ##
+    echo   #############################
+    C:\Users\%username%\Downloads\rkill.exe -l C:\Logs\running_malware_tasks.txt -s 1>&2
+    taskkill /f /im chrome.exe /t & taskkill /f /im opera.exe /t & taskkill /f /im msedge.exe /t & taskkill /f /im brave.exe /t & taskkill /f /im dragon.exe /t & taskkill /f /im icedragon.exe /t & taskkill /f /im firefox.exe /t
+
+Title 11.2) Removing Malware [AdwCleaner] [Adware]
+    color 9A
+    echo   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    echo   $$          AdwCleaner          $$
+    echo   $$       by Malwarebytes        $$
+    echo   $$       made in America        $$
+    echo   $$              is              $$
+    echo   $$       Removing Adware        $$
+    echo   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    C:\Users\%username%\Downloads\adwcleaner.exe /eula /clean /noreboot /preinstalled  
+
+Title 11.3) Cleaning Computer [BleachBit]
+    color e0
+    echo   ********************************
+    echo   **          BleachBit         **
+    echo   **      by the Community      **
+    echo   **     lead by Andrew Ziem    **
+    echo   **             is             **
+    echo   **       Cleaning Junk        **
+    echo   ********************************
+    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all
+    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all-but-warning
+
+Title 11.4) Cleaning Computer [CCleaner]
+    color e1
+    echo CCleaner is running in the background.
+    "C:\Program Files\CCleaner\CCleaner.exe" /AUTO
+
+Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
+    color 1F
+    echo              d8b                                        .d888888    
+    echo              Y8P                                       d88P" 888    
+    echo                                                        888   888    
+    echo 88888b.d88b. 888 .d8888b888d888 .d88b. .d8888b  .d88b. 888888888888 
+    echo 888 "888 "88b888d88P"   888P"  d88""88b88K     d88""88b888   888    
+    echo 888  888  888888888     888    888  888"Y8888b.888  888888   888    
+    echo 888  888  888888Y88b.   888    Y88..88P     X88Y88..88P888   Y88b.  
+    echo 888  888  888888 "Y8888P888     "Y88P"  88888P' "Y88P" 888    "Y888 
+    echo.
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
+    del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
+    powershell Remove-MpThreat
+
+Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
+    color 9F
+    echo                    88                                                          
+    echo                    ""                                                          
+    echo.                                                                             
+    echo 88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
+    echo 88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
+    echo 88      88      88 88 8b         88         8b       d8  `"Y8ba,  8b       d8  
+    echo 88      88      88 88 "8a,   ,aa 88         "8a,   ,a8" aa    ]8I "8a,   ,a8"  
+    echo 88      88      88 88  `"Ybbd8"' 88          `"YbbdP"'  `"YbbdP"'  `"YbbdP"'  
+    echo ad88          
+    echo d8"     ,d     
+    echo 88      88     
+    echo MM88MMM MM88MMM  
+    echo 88      88     
+    echo 88      88     
+    echo 88      88,    
+    echo 88      "Y888
+    echo.
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -BootSectorScan
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
+    del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
+    del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
+    powershell Remove-MpThreat
+
+Title 11.7) Removing Malware [tdskiller] [Patience] [Rootkits]
+    color 20
+    if EXIST "C:\Users\%username%\Downloads\tdsskiller.exe" (    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX &    echo   XX          tdskiller         XX &    echo   XX        by Kaspersky        XX &    echo   XX    made in Mother Russia   XX &    echo   XX             is             XX &    echo   XX      Removing Rootkits     XX &    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX & echo. & echo Scanning... & start /w C:\Users\%username%\Downloads\tdsskiller.exe -accepteula -accepteulaksn -l C:\Logs\ -qpath C:\Logs\ -dcexact -tdlfs -silent) ELSE (echo tdsskiller not found, skipping... & echo.)
+
+Title 11.8) Removing Malware [KVRT] [Patience]
+    color a1
+    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXX
+    echo   XX          KVRT         XX
+    echo   XX      by Kaspersky     XX
+    echo   XX made in Mother Russia XX
+    echo   XX           is          XX
+    echo   XX Scanning for Malware  XX
+    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXX
+    if EXIST "C:\Users\%username%\Downloads\KVRT.exe" (start /wait C:\Users\%username%\Downloads\KVRT.exe -d C:\Logs -accepteula -processlevel 2 -noads -silent -adinsilent -allvolumes) ELSE (echo KVRT not found, skipping... & echo.)
+
+Title 11.9) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
+    color 90
+    echo     ****     ****   ********  ********  *******  **********
+    echo    /**/**   **/**  **//////  /**/////  /**////** /////**/// 
+    echo    /**//** ** /** /**        /**       /**   /**     /**    
+    echo    /** //***  /** /********* /*******  /*******      /**    
+    echo    /**  //*   /** ////////** /**////   /**///**      /**    
+    echo    /**   /    /**        /** /**       /**  //**     /**    
+    echo    /**        /**  ********  /******** /**   //**    /**    
+    echo    //         //  ////////   ////////  //     //     //    
+    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w C:\Users\%username%\Downloads\MSERT.exe /Q /F:Y) ELSE (echo MSERT not found, skipping... & echo.)
+
+Title 11.10) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
+    color color 80
+    echo     ****     ****  ********   *******  **********
+    echo    /**/**   **/**  **//////  /**////** /////**/// 
+    echo    /**//** ** /** /**        /**   /**     /**    
+    echo    /** //***  /** /********* /*******      /**     
+    echo    /**  //*   /** ////////** /**///**      /**    
+    echo    /**   /    /**        /** /**  //**     /**    
+    echo    /**        /**  ********  /**   //**    /**    
+    echo    //         //  ////////   //     //     //  
+    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe /Q /F:Y) ELSE (echo MSRT not found, skipping... & echo.)
+
+Title 11.12) Removing Malware [McAfee] [Patience] {Disabled due to spyware}
+    color f4
+    ::if EXIST "C:\Users\%username%\Downloads\stinger64.exe" (start /wait C:\Users\%username%\Downloads\stinger64.exe --AD --DELETE --GO --ROOTKIT --WMI --PROGRAM --REPAIR --REPORTPATH=C:\Logs --SILENT) ELSE (echo McAfee Stinger thinks your network driver is a malware, just joking. Anyways skipping... & echo.)
+
+
+
+
+
+
+
+
+
+Title 12.1) War is Over [Uninstall] [McAfee Stinger] {Will fail}
+::Uninstall McAfee
+    color 50
+    echo This uninstall list doesn't include everything. Some hidden services require restart then manual remove, and therefore McAfee Stinger scan is disabled by default.
+    ::taskkill /f /im "SiteAdv.exe" /t
+    ::taskkill /f /im "saUpd.exe" /t
+    ::taskkill /f /im "RealProtect.exe" /t
+    ::taskkill /f /im "stinger64.exe" /t
+    ::taskkill /f /fi "services eq mfevtp" /t
+    ::reg delete "HKCU\Software\Microsoft\SystemCertificates\McAfee Trust" /f
+    ::reg delete "HKLM\SYSTEM\CurrentControlSet\Services\mfevtp" /f
+    ::reg delete "HKLM\SYSTEM\CurrentControlSet\Services\mfehidk" /f
+    ::REG delete "HKLM\SOFTWARE\McAfee" /f
+    ::REG delete "HKLM\SOFTWARE\McAfee\RealProtect" /f
+    ::REG delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v "RealProtect" /f  
+    ::"%ProgramFiles%\McAfee\SiteAdvisor\uninstall.exe"
+    ::rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
+    ::rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
+    ::del /q/f/s "C:\Users\%username%\Downloads\stinger64.exe"
+    ::del /q/f/s "C:\Users\%username%\Downloads\Stinger.opt"
+    ::del /q/f/s "C:\Users\%username%\Downloads\runtime.dat"
+    ::del /q/f/s "C:\Users\%username%\Downloads\avvscan.dat"
+    ::del /q/f/s "C:\Program Files\stinger"
+    ::rd /q/s "C:\Program Files\stinger"
+    ::del /q/f/s "C:\Program Files\McAfee"
+    ::rd /q/s "C:\Program Files\McAfee"
+    ::del /q/f/s "C:\Windows\System32\mfevtps.exe"
+    ::del /q/f/s "C:\Windows\system32\drivers\mfehidk.sys"
+    ::sc delete mfevtp
+
+
+
+
+
+
+
+
+
+Title Meanwhile Ending Tasks [For success uninstall] [DO NOT CLOSE] {TASKBAR MAY BREAK in Windows Beta}
+    echo End tasks to force soldiers to get off your computer.
+    MODE CON: COLS=49 LINES=19
+    color 4F
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo DON'T CLOSE THIS WINDOW! DON'T CLOSE THIS WINDOW
+    echo      ***************************************
+    echo      ** KILLING ALL UNNECESSARY PROCESSES **
+    echo      **   To successfully delete junks!   **
+    echo      ***************************************
+    taskkill.exe /F /FI "USERNAME eq %USERNAME%" /FI "IMAGENAME ne ClassicShellService.exe" /FI "IMAGENAME ne explorer.exe" /FI "IMAGENAME ne dwm.exe" /FI "IMAGENAME ne cmd.exe" /FI "IMAGENAME ne mbam.exe" /FI "IMAGENAME ne teamviewer.exe" /FI "IMAGENAME ne TeamViewer_Service.exe" /FI "IMAGENAME ne Taskmgr.exe" /FI "IMAGENAME ne Teamviewer_Desktop.exe" /FI "IMAGENAME ne MsMpEng.exe" /FI "IMAGENAME ne tv_w32.exe" /FI "IMAGENAME ne LogMeIn.exe" /FI "IMAGENAME ne Tron.bat" /FI "IMAGENAME ne rkill.exe" /FI "IMAGENAME ne rkill64.exe" /FI "IMAGENAME ne rkill.com" /FI "IMAGENAME ne rkill64.com" /FI "IMAGENAME ne conhost.exe" /FI "IMAGENAME ne dashost.exe" /FI "IMAGENAME ne wget.exe" /FI "IMAGENAME ne TechToolbox.exe" /FI "IMAGENAME ne vmtoolsd.exe" /FI "IMAGENAME ne conhost.exe"
+    REM Custom Taskkill list below to add
+    taskkill /f /im HelpPane.exe /t
+    net stop themes
+
+
+
+
+
+
+
+
+
+Title 12.2) Prepare to send soldiers home... [BleachBit] [Cleaning]
+    MODE CON: COLS=83 LINES=51
+    color 01
+    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all
+    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all-but-warning
+
+Title 12.3) Prepare to send soldiers home... [CCleaner] [Cleaning]
 "C:\Program Files\CCleaner\CCleaner.exe" /AUTO
-::Run adw
-C:\Users\%username%\Downloads\adwcleaner.exe /eula /clean /noreboot /preinstalled   
-::uninstall
-del /q/f/s "C:\AdwCleaner"
-rd /s /q "C:\AdwCleaner"
-del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
-::in case uninstall failed
-taskkill /f /im adwcleaner.exe /t
-del /q/f/s "C:\AdwCleaner"
-rd /s /q "C:\AdwCleaner"
-del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
-::Run Stinger
-start /wait C:\Users\%username%\Downloads\stinger64.exe --AD --DELETE --GO --ROOTKIT --WMI --PROGRAM --REPAIR --REPORTPATH=C:\Logs --SILENT
-::Uninstall
-del /q/f/s "C:\Quarantine"
-rd /q/s "C:\Quarantine"
-del /q/f/s "C:\Logs"
-rd /q/s "C:\Logs"
-md "C:\Logs"
-sc delete mfevtp
-"%ProgramFiles%\McAfee\SiteAdvisor\uninstall.exe"
-rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
-rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
-del /q/f/s "C:\Users\%username%\Downloads\stinger64.exe"
-del /q/f/s "C:\Users\%username%\Downloads\Stinger.opt"
-del /q/f/s "C:\Users\%username%\Downloads\runtime.dat"
-del /q/f/s "C:\Users\%username%\Downloads\avvscan.dat"
-del /q/f/s "C:\Program Files\stinger"
-rd /q/s "C:\Program Files\stinger"
-del /q/f/s "C:\Program Files\McAfee"
-rd /q/s "C:\Program Files\McAfee"
-del /q/f/s "C:\Windows\System32\mfevtps.exe"
-REG delete "HKLM\SOFTWARE\McAfee" /f
-REG delete "HKLM\SOFTWARE\McAfee\RealProtect" /f
-REG delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v "RealProtect" /f
-::In case fail
-taskkill /f /im "SiteAdv.exe" /t
-taskkill /f /im "saUpd.exe" /t
-taskkill /f /im "RealProtect.exe" /t
-taskkill /f /im "stinger64.exe" /t
-taskkill /f /fi "services eq mfevtp" /t
-del /q/f/s "C:\Quarantine"
-rd /q/s "C:\Quarantine"
-del /q/f/s "C:\Logs"
-rd /q/s "C:\Logs"
-md "C:\Logs"
-sc delete mfevtp
-"%ProgramFiles%\McAfee\SiteAdvisor\uninstall.exe"
-rmdir /s /q "%ProgramFiles%\McAfee\Siteadvisor"
-rmdir /s /q "%ProgramFiles%\McAfee\Real Protect"
-del /q/f/s "C:\Users\%username%\Downloads\stinger64.exe"
-del /q/f/s "C:\Users\%username%\Downloads\Stinger.opt"
-del /q/f/s "C:\Users\%username%\Downloads\runtime.dat"
-del /q/f/s "C:\Users\%username%\Downloads\avvscan.dat"
-del /q/f/s "C:\Program Files\stinger"
-rd /q/s "C:\Program Files\stinger"
-del /q/f/s "C:\Program Files\McAfee"
-rd /q/s "C:\Program Files\McAfee"
-del /q/f/s "C:\Windows\System32\mfevtps.exe"
-REG delete "HKLM\SOFTWARE\McAfee" /f
-REG delete "HKLM\SOFTWARE\McAfee\RealProtect" /f
-REG delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v "RealProtect" /f    
-::KFRT
-start /wait C:\Users\%username%\Downloads\KVRT.exe -d C:\Logs -accepteula -processlevel 2 -noads -silent -adinsilent -allvolumes
-::Uninstall
-del /q/f/s "C:\KVRT2020_Data"
-rd /q/s "C:\KVRT2020_Data"
-del /q/f/s "C:\Logs"
-rd /q/s "C:\Logs"
-md "C:\Logs"
-del /q/f/s C:\Users\%username%\Downloads\KVRT.exe
-::In case fail
-del /q/f/s "C:\KVRT2020_Data"
-rd /q/s "C:\KVRT2020_Data"
-del /q/f/s "C:\Logs"
-rd /q/s "C:\Logs"
-md "C:\Logs"
-del /q/f/s C:\Users\%username%\Downloads\KVRT.exe 
-        ::MSERT Scan
-        start /w C:\Users\%username%\Downloads\MSERT.exe /Q /F:Y
-        ::Boot sector scan
-            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
-        Title 15.1) Boot sector scan
-            ::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
-            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -BootSectorScan
-            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
-            del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
-            powershell Remove-MpThreat
-        ::Full scan
-        color 05
-        Title 15.2) Full Scan
-            ::"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1
-            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2
-            "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
-            del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
-            powershell Remove-MpThreat
-::Restore Windows Defender to Normal Defence to safe resources and reduce background processes
-start powershell.exe -Command "mode.com con: lines=19 cols=19;Set-Mppreference -AllowDatagramProcessingOnWinServer 0; Set-Mppreference -AllowNetworkProtectionDownLevel 0;Set-Mppreference -AllowNetworkProtectionOnWinServer 0; Set-Mppreference -AllowSwitchToAsyncInspection 1;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 0;Set-Mppreference -CloudExtendedTimeout 0;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 1; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 0; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 0;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 0;Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 50;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 2;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
-::Disable all ASR rules (default setting)
-start powershell.exe -Command "mode.com con: lines=19 cols=19;remove-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"
-                        del /q/f/s C:\Windows\Logs
-                        del /q/f/s C:\Users\%username%\AppData\Local\Temp
-                        del /q/f/s "%SYSTEMROOT%\debug\msert.log"
-                        rd /s /q "%SYSTEMROOT%\debug"
-                        del /q/f/s "C:\Users\%username%\Downloads\MSERT.exe"
 
-        ::Disk Check on Boot
-        color 06
-        Title 16) Disk Check on boot?
-        cls
-        echo Y WILL RESTART
-        cd/
-        echo y|chkdsk /v /x /b
-        ::fsutil dirty set c:
-        ::Offline scan?
-        cls
-        powershell Start-MpWDOScan
+Title 12.4) Sending soldiers home... [Kaspersky] [Uninstall]
+    color 03
+    reg delete "HKLM\SOFTWARE\WOW6432Node\KasperskyLab" /F
+    reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /v 36f949aa-49b3-4272-ae25-1c61865d24ff /f
+    del /q/f/s "C:\KVRT2020_Data"
+    rd /q/s "C:\KVRT2020_Data"
+    del /q/f/s C:\Users\%username%\Downloads\KVRT.exe
+    cd /D C:\Windows\System32\Drivers
+    FOR %%i IN ("klupd_d62efc8ba*.sys") DO (REG DELETE "HKLM\System\CurrentControlSet\services\%%~ni" /f & DEL /F /Q "%%i")
+    cd /
 
-::17) Clear Event Viewer Log
-Title 17) Clear Event Viewer Log
-for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1"
+Title 12.5) Windows Defender back to normal defense {For performance} [3rd-party antivirus users] [Caution]
+    color 05
+    start powershell.exe -Command "mode.com con: lines=19 cols=19;Set-Mppreference -AllowDatagramProcessingOnWinServer 0; Set-Mppreference -AllowNetworkProtectionDownLevel 0;Set-Mppreference -AllowNetworkProtectionOnWinServer 0; Set-Mppreference -AllowSwitchToAsyncInspection 1;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 0;Set-Mppreference -CloudExtendedTimeout 0;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 1; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 0; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 0;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 0;Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 50;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 2;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
+Title 12.6) Remove High Defense ASR Rules {For performance}
+    color 0d
+    start powershell.exe -Command "mode.com con: lines=19 cols=19;remove-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"
+
+
+Title Meanwhile Removing Generated Junk [Disk Cleanup]
+echo    ======================================
+echo    ==  Move your mouse in CIRCLE now!  ==
+echo    == This is to prevent getting stuck ==
+echo    ==        Click OK when DONE        ==
+echo    ======================================
+    color e0
+    start cmd.exe @cmd /k "MODE CON: COLS=45 LINES=19 & color E0 & Title 2) Disk Cleanup & echo. & echo. & echo. & echo. &echo. &echo. & echo    ====================================== & echo    ==  Move your mouse in CIRCLE now!  == & echo    == This is to prevent getting stuck == & echo    ==        Click OK when DONE        == & echo    ====================================== & start /wait %systemroot%\System32\cleanmgr.exe /sagerun:100 & cleanmgr /verylowdisk & color 06 & exit"
+
+
+
+Title 12.6) Sending Soldiers home... [tdsskiller] [Uninstall]
+    color 09
+    del /q/f/s C:\Users\%username%\Downloads\tdsskiller.exe
+    rmdir /S /Q %SystemDrive%\Temp 2>NUL
+    for %%i in (log,tmp,temp,bak,backup,exe) do (
+        del /F /Q "C:\Users\%username%\Downloads\*.%%i" 2>NUL
+    )
+
+Title 12.7) Sending Soldiers home... [MSERT] [Uninstall]
+    color 0b
+    del /q/f/s C:\Users\%username%\Downloads\MSERT.exe
+
+Title 12.8) Sending Soldiers home... [MSRT] [Uninstall] [Require Name Check] [Attention]
+    color 0d
+    del /q/f/s C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe
+    del /q/f/s "C:\Windows\Debug"
+
+Title 12.9) Sending Soldiers home... [AdwCleaner] [Uninstall]
+    color 0e
+    reg delete "HKLM\SOFTWARE\WOW6432Node\Malwarebytes" /f
+    del /q/f/s "C:\AdwCleaner"
+    rd /s /q "C:\AdwCleaner"
+    del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
+    reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /F
+    reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /f
+
+Title 12.10) Sending Soldiers home... [rkill] [Uninstall]
+    color 01
+    del /q/f/s C:\Users\%username%\Downloads\rkill.exe
+    del /q/f/s "C:\Users\%username%\OneDrive\桌面\rkill.txt"
+    del /q/f/s "C:\Users\%username%\OneDrive\Desktop\rkill.txt"
+
+Title 12.11) Sending Soldiers home... [CCleaner] [Uninstall]
+    color 03
+    "C:\Program Files\CCleaner\uninst.exe" /S
+
+Title 12.12) Sending Soldiers home... [BleachBit] [Uninstall] [Require Name Check] [Attention]
+    color 05
+    "C:\Users\%username%\AppData\Local\BleachBit\uninstall.exe" /S /currentuser
+    del /q/f/s "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe"
+
+Title 12.13) Sending Soldiers home... [AdwCleaner] [Uninstall]
+    color 06
+    del /q/f/s "C:\AdwCleaner"
+    rd /s /q "C:\AdwCleaner"
+    del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
+
+Title 13.1) Removing scan logs [Caution] {You may want to check it out}
+    color 09
+    del /q/f/s "C:\Quarantine"
+    rd /q/s "C:\Quarantine"
+    del /q/f/s "C:\Logs"
+    rd /q/s "C:\Logs"
+    md "C:\Logs"
+
+            
+
+
+
+
+Title 13.2) Removing generated junk
+    color 0b
+    C:\Windows\Temp
+    del /q/f/s C:\Windows\Logs
+    del /q/f/s C:\Users\%username%\AppData\Local\Temp
+    for %%i in (bat,cmd,txt,log,jpg,jpeg,tmp,temp,bak,backup,exe) do (
+        del /F /Q "%SystemDrive%\*.%%i" 2>NUL
+    )
+
+
+
+
+
+
+TItle 14) Its not over yet [Windows Defender Offline Scan]
+    color a0
+    powershell Start-MpWDOScan
+
+Title 15) Give suggestions {Your computer is going to shut down anyways so why not check out a website}
+    color 20
+    explorer "https://github.com/skygrasschopper/Computer-Trusted-Tools---Optimizing-Cleaning-Security-Reviews/discussions"
+
+Title 16) Removing Event logs {While waiting to restart}
+    color a0
+    for /F "tokens=*" %%1 in ('wevtutil.exe el') DO wevtutil.exe cl "%%1"
+
+Title 17) Credits
+    MODE CON: COLS=160 LINES=51
+    color 0a 
+    :credits                                                                                                                                                                                                                                                                                                           
+    echo     SSSSSSSSSSSSSSS kkkkkkkk    
+    ping 127.0.0.1 -n 1 >nul                                                                                                                           
+    echo    SS:::::::::::::::Sk::::::k    
+    ping 127.0.0.1 -n 1 >nul                                                                                                                           
+    echo    S:::::SSSSSS::::::Sk::::::k    
+    ping 127.0.0.1 -n 1 >nul                                                                                                                           
+    echo    S:::::S     SSSSSSSk::::::k 
+    ping 127.0.0.1 -n 1 >nul                                                                                                                              
+    echo     S:::::S             k:::::k    kkkkkkkyyyyyyy           yyyyyyyggggggggg   gggggrrrrr   rrrrrrrrr   aaaaaaaaaaaaa      ssssssssss       ssssssssss    
+    ping 127.0.0.1 -n 1 >nul    
+    echo    S:::::S             k:::::k   k:::::k  y:::::y         y:::::yg:::::::::ggg::::gr::::rrr:::::::::r  a::::::::::::a   ss::::::::::s    ss::::::::::s      
+    ping 127.0.0.1 -n 1 >nul 
+    echo     S::::SSSS          k:::::k  k:::::k    y:::::y       y:::::yg:::::::::::::::::gr:::::::::::::::::r aaaaaaaaa:::::ass:::::::::::::s ss:::::::::::::s   
+    ping 127.0.0.1 -n 1 >nul   
+    echo    SS::::::SSSSS     k:::::k k:::::k      y:::::y     y:::::yg::::::ggggg::::::ggrr::::::rrrrr::::::r         a::::as::::::ssss:::::ss::::::ssss:::::s
+    ping 127.0.0.1 -n 1 >nul     
+    echo         SSS::::::::SS   k::::::k:::::k        y:::::y   y:::::y g:::::g     g:::::g  r:::::r     r:::::r  aaaaaaa:::::a s:::::s  ssssss  s:::::s  ssssss  
+    ping 127.0.0.1 -n 1 >nul    
+    echo        SSSSSS::::S  k:::::::::::k          y:::::y y:::::y  g:::::g     g:::::g  r:::::r     rrrrrrraa::::::::::::a   s::::::s         s::::::s          
+    ping 127.0.0.1 -n 1 >nul 
+    echo                 S:::::S k:::::::::::k           y:::::y:::::y   g:::::g     g:::::g  r:::::r           a::::aaaa::::::a      s::::::s         s::::::s   
+    ping 127.0.0.1 -n 1 >nul     
+    echo                 S:::::S k::::::k:::::k           y:::::::::y    g::::::g    g:::::g  r:::::r          a::::a    a:::::assssss   s:::::s ssssss   s:::::s  
+    ping 127.0.0.1 -n 1 >nul    
+    echo     SSSSSSS     S:::::Sk::::::k k:::::k           y:::::::y     g:::::::ggggg:::::g  r:::::r          a::::a    a:::::as:::::ssss::::::ss:::::ssss::::::s  
+    ping 127.0.0.1 -n 1 >nul   
+    echo     S::::::SSSSSS:::::Sk::::::k  k:::::k           y:::::y       g::::::::::::::::g  r:::::r          a:::::aaaa::::::as::::::::::::::s s::::::::::::::s   
+    ping 127.0.0.1 -n 1 >nul   
+    echo     S:::::::::::::::SS k::::::k   k:::::k         y:::::y         gg::::::::::::::g  r:::::r           a::::::::::aa:::as:::::::::::ss   s:::::::::::ss   
+    ping 127.0.0.1 -n 1 >nul    
+    echo    SSSSSSSSSSSSSSS   kkkkkkkk    kkkkkkk       y:::::y            gggggggg::::::g  rrrrrrr            aaaaaaaaaa  aaaa sssssssssss      sssssssssss    
+    ping 127.0.0.1 -n 1 >nul     
+    echo                                                 y:::::y                     g:::::g                                         
+    ping 127.0.0.1 -n 1 >nul                                  
+    echo                                            y:::::y          gggggg      g:::::g                     
+    ping 127.0.0.1 -n 1 >nul                                                      
+    echo                                            y:::::y           g:::::gg   gg:::::g         
+    ping 127.0.0.1 -n 1 >nul                                                                  
+    echo                                            y:::::y             g::::::ggg:::::::g     
+    ping 127.0.0.1 -n 1 >nul                                                                      
+    echo                                            yyyyyyy               gg:::::::::::::g   
+    ping 127.0.0.1 -n 1 >nul                                                                         
+    echo                                                                     ggg::::::ggg
+    ping 127.0.0.1 -n 1 >nul                                                                           
+    echo                                                                      gggggg   
+    ping 127.0.0.1 -n 1 >nul                                                                           
+    echo.                                                                          
+    color 0b                                                                           
+    echo.                                                                     
+    ping 127.0.0.1 -n 1 >nul                                                                                   
+    echo             CCCCCCCCCCCCChhhhhhh                                    
+    ping 127.0.0.1 -n 1 >nul                                                                                          
+    echo         CCC::::::::::::Ch:::::h                   
+    ping 127.0.0.1 -n 1 >nul                                                                                                           
+    echo     CC:::::::::::::::Ch:::::h            
+    ping 127.0.0.1 -n 1 >nul                                                                                                                  
+    echo     C:::::CCCCCCCC::::Ch:::::h   
+    ping 127.0.0.1 -n 1 >nul                                                                                                                           
+    echo     C:::::C       CCCCCC h::::h hhhhh          ooooooooooo   ppppp   ppppppppp   ppppp   ppppppppp       eeeeeeeeeeee    rrrrr   rrrrrrrrr      
+    ping 127.0.0.1 -n 1 >nul             
+    echo     C:::::C               h::::hh:::::hhh     oo:::::::::::oo p::::ppp:::::::::p  p::::ppp:::::::::p    ee::::::::::::ee  r::::rrr:::::::::r
+    ping 127.0.0.1 -n 1 >nul               
+    echo     C:::::C               h::::::::::::::hh  o:::::::::::::::op:::::::::::::::::p p:::::::::::::::::p  e::::::eeeee:::::eer:::::::::::::::::r  
+    ping 127.0.0.1 -n 1 >nul               
+    echo     C:::::C               h:::::::hhh::::::h o:::::ooooo:::::opp::::::ppppp::::::ppp::::::ppppp::::::pe::::::e     e:::::err::::::rrrrr::::::r 
+    ping 127.0.0.1 -n 1 >nul               
+    echo     C:::::C               h::::::h   h::::::ho::::o     o::::o p:::::p     p:::::p p:::::p     p:::::pe:::::::eeeee::::::e r:::::r     r:::::r    
+    ping 127.0.0.1 -n 1 >nul            
+    echo     C:::::C               h:::::h     h:::::ho::::o     o::::o p:::::p     p:::::p p:::::p     p:::::pe:::::::::::::::::e  r:::::r     rrrrrrr     
+    ping 127.0.0.1 -n 1 >nul           
+    echo     C:::::C               h:::::h     h:::::ho::::o     o::::o p:::::p     p:::::p p:::::p     p:::::pe::::::eeeeeeeeeee   r:::::r         
+    ping 127.0.0.1 -n 1 >nul                   
+    echo     C:::::C       CCCCCC h:::::h     h:::::ho::::o     o::::o p:::::p    p::::::p p:::::p    p::::::pe:::::::e            r:::::r     
+    ping 127.0.0.1 -n 1 >nul                       
+    echo     C:::::CCCCCCCC::::C h:::::h     h:::::ho:::::ooooo:::::o p:::::ppppp:::::::p p:::::ppppp:::::::pe::::::::e           r:::::r    
+    ping 127.0.0.1 -n 1 >nul                        
+    echo     CC:::::::::::::::C h:::::h     h:::::ho:::::::::::::::o p::::::::::::::::p  p::::::::::::::::p  e::::::::eeeeeeee   r:::::r  
+    ping 127.0.0.1 -n 1 >nul                          
+    echo         CCC::::::::::::C h:::::h     h:::::h oo:::::::::::oo  p::::::::::::::pp   p::::::::::::::pp    ee:::::::::::::e   r:::::r   
+    ping 127.0.0.1 -n 1 >nul                         
+    echo             CCCCCCCCCCCCC hhhhhhh     hhhhhhh   ooooooooooo    p::::::pppppppp     p::::::pppppppp        eeeeeeeeeeeeee   rrrrrrr   
+    ping 127.0.0.1 -n 1 >nul                         
+    echo                                                             p:::::p             p:::::p                          
+    ping 127.0.0.1 -n 1 >nul                                          
+    echo                                                             p:::::p             p:::::p                  
+    ping 127.0.0.1 -n 1 >nul                                                  
+    echo                                                             p:::::::p           p:::::::p            
+    ping 127.0.0.1 -n 1 >nul                                                       
+    echo                                                             p:::::::p           p:::::::p       
+    ping 127.0.0.1 -n 1 >nul                                                            
+    echo                                                             p:::::::p           p:::::::p    
+    ping 127.0.0.1 -n 1 >nul                                                               
+    echo                                                             ppppppppp           ppppppppp                                                                   
+    color 0a
+    goto credits    
+
+    Thanks for using! I would also want to thank Tron and thousands of single kind heart souls that shared their projects with the world for free.
+    Long live open source.
+    Long live freendom.                                                                                                                                                       
+
+    Give suggestions at:
+    Email: clam2@student.dean.edu 
+    Github Discussion: https://github.com/skygrasschopper/Computer-Trusted-Tools---Optimizing-Cleaning-Security-Reviews/discussions
