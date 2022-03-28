@@ -56,47 +56,47 @@ Title This PC Optimizer [Cyber Security Editon] {Hello %username%! Your lucky nu
     ping 127.0.0.1 -n 1 >nul
     echo. 
     color 0a
-    echo SSSSSSSSSSSSSSSSSS KKK         KKK YYY             YYY GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS  
+    echo    SSSSSSSSSSSSSSSSSS KKK         KKK YYY             YYY GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS  
     ping 127.0.0.1 -n 1 >nul  
-    echo SSSSSSSSSSSSSSSSSS KKK      KKK      YYY         YYY   GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS 
+    echo    SSSSSSSSSSSSSSSSSS KKK      KKK      YYY         YYY   GGGGGGGGGGGGGGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS 
     ping 127.0.0.1 -n 1 >nul   
-    echo SSS                KKK    KKK          YYY     YYY     GGG                RRR               RRR SSS                SSS  
+    echo    SSS                KKK    KKK          YYY     YYY     GGG                RRR               RRR SSS                SSS  
     ping 127.0.0.1 -n 1 >nul                 
-    echo SSS                KKK  KKK              YYY YYY       GGG                RRR               RRR SSS                SSS 
+    echo    SSS                KKK  KKK              YYY YYY       GGG                RRR               RRR SSS                SSS 
     ping 127.0.0.1 -n 1 >nul                  
-    echo SSSSSSSSSSSSSSSSSS KKKKK                  YYYYY        GGG         GGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS   
+    echo    SSSSSSSSSSSSSSSSSS KKKKK                  YYYYY        GGG         GGGGGG RRRRRRRRRRRRRRRRRRRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS   
     ping 127.0.0.1 -n 1 >nul 
-    echo SSSSSSSSSSSSSSSSSS KKKKK                   YYY         GGG         GGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS  
+    echo    SSSSSSSSSSSSSSSSSS KKKKK                   YYY         GGG         GGGGGG RRRRRRRRRRRRRRRRRR    SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS  
     ping 127.0.0.1 -n 1 >nul  
-    echo                SSS KKK  KKK                YYY         GGG            GGG RRR            RRR                   SSS                SSS 
+    echo                   SSS KKK  KKK                YYY         GGG            GGG RRR            RRR                   SSS                SSS 
     ping 127.0.0.1 -n 1 >nul   
-    echo                SSS KKK    KKK              YYY         GGG            GGG RRR             RRR                  SSS                SSS  
+    echo                   SSS KKK    KKK              YYY         GGG            GGG RRR             RRR                  SSS                SSS  
     ping 127.0.0.1 -n 1 >nul  
-    echo SSSSSSSSSSSSSSSSSS KKK      KKK            YYY         GGGGGGGGGGGGGGGGGG RRR              RRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS 
+    echo    SSSSSSSSSSSSSSSSSS KKK      KKK            YYY         GGGGGGGGGGGGGGGGGG RRR              RRR  SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS 
     ping 127.0.0.1 -n 1 >nul   
-    echo SSSSSSSSSSSSSSSSSS KKK         KKK         YYY         GGGGGGGGGGGGGGGGGG RRR               RRR SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS
+    echo    SSSSSSSSSSSSSSSSSS KKK         KKK         YYY         GGGGGGGGGGGGGGGGGG RRR               RRR SSSSSSSSSSSSSSSSSS SSSSSSSSSSSSSSSSSS
     ping 127.0.0.1 -n 1 >nul
     echo.   
     ping 127.0.0.1 -n 1 >nul
-    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPP    PPPPPPPPPPPPPPPP    EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
+    echo    CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPP    PPPPPPPPPPPPPPPP    EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR
+    echo    CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
+    echo    CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
+    echo    CCC                HHH           HHH OOO            OOO PPP             PPP PPP             PPP EEE                RRR               RRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR    
+    echo    CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPP  EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRRRR    
     ping 127.0.0.1 -n 1 >nul    
-    echo CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPP     PPPPPPPPPPPPPPP     EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
+    echo    CCC                HHHHHHHHHHHHHHHHH OOO            OOO PPPPPPPPPPPPPPP     PPPPPPPPPPPPPPP     EEEEEEEEEEEEEEEEEE RRRRRRRRRRRRRRRRRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR            RRR
+    echo    CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR            RRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR             RRR
+    echo    CCC                HHH           HHH OOO            OOO PPP                 PPP                 EEE                RRR             RRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR              RRR
+    echo    CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR              RRR
     ping 127.0.0.1 -n 1 >nul
-    echo CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR               RRR
+    echo    CCCCCCCCCCCCCCCCCC HHH           HHH OOOOOOOOOOOOOOOOOO PPP                 PPP                 EEEEEEEEEEEEEEEEEE RRR               RRR
     cd /
     timeout /t 30
 
@@ -2805,14 +2805,14 @@ Title 11.4) Cleaning Computer [CCleaner]
 
 Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
     color 1F
-    echo              d8b                                        .d888888    
-    echo              Y8P                                       d88P" 888    
-    echo                                                        888   888    
-    echo 88888b.d88b. 888 .d8888b888d888 .d88b. .d8888b  .d88b. 888888888888 
-    echo 888 "888 "88b888d88P"   888P"  d88""88b88K     d88""88b888   888    
-    echo 888  888  888888888     888    888  888"Y8888b.888  888888   888    
-    echo 888  888  888888Y88b.   888    Y88..88P     X88Y88..88P888   Y88b.  
-    echo 888  888  888888 "Y8888P888     "Y88P"  88888P' "Y88P" 888    "Y888 
+    echo                 d8b                                        .d888888    
+    echo                 Y8P                                       d88P" 888    
+    echo                                                           888   888    
+    echo    88888b.d88b. 888 .d8888b888d888 .d88b. .d8888b  .d88b. 888888888888 
+    echo    888 "888 "88b888d88P"   888P"  d88""88b88K     d88""88b888   888    
+    echo    888  888  888888888     888    888  888"Y8888b.888  888888   888    
+    echo    888  888  888888Y88b.   888    Y88..88P     X88Y88..88P888   Y88b.  
+    echo    888  888  888888 "Y8888P888     "Y88P"  88888P' "Y88P" 888    "Y888 
     echo.
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
@@ -2823,22 +2823,22 @@ Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
 
 Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
     color 9F
-    echo                    88                                                          
-    echo                    ""                                                          
+    echo                       88                                                          
+    echo                       ""                                                          
     echo.                                                                             
-    echo 88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
-    echo 88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
-    echo 88      88      88 88 8b         88         8b       d8  `"Y8ba,  8b       d8  
-    echo 88      88      88 88 "8a,   ,aa 88         "8a,   ,a8" aa    ]8I "8a,   ,a8"  
-    echo 88      88      88 88  `"Ybbd8"' 88          `"YbbdP"'  `"YbbdP"'  `"YbbdP"'  
-    echo ad88          
-    echo d8"     ,d     
-    echo 88      88     
-    echo MM88MMM MM88MMM  
-    echo 88      88     
-    echo 88      88     
-    echo 88      88,    
-    echo 88      "Y888
+    echo    88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
+    echo    88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
+    echo    88      88      88 88 8b         88         8b       d8  `"Y8ba,  8b       d8  
+    echo    88      88      88 88 "8a,   ,aa 88         "8a,   ,a8" aa    ]8I "8a,   ,a8"  
+    echo    88      88      88 88  `"Ybbd8"' 88          `"YbbdP"'  `"YbbdP"'  `"YbbdP"'  
+    echo    ad88          
+    echo    d8"     ,d     
+    echo    88      88     
+    echo    MM88MMM MM88MMM  
+    echo    88      88     
+    echo    88      88     
+    echo    88      88,    
+    echo    88      "Y888
     echo.
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -BootSectorScan
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
