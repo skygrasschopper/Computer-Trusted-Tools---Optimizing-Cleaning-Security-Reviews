@@ -1973,125 +1973,125 @@ Title 6) Prepare Update [Renable Safe Connections] {After this you may close}
 Title 7.1.1) PREPARE THE WAR [CCleaner] [Default Browser] [Require Link Check] [Attention]
     echo One of the best Cleaners from London. 40% trusted. https://www.ccleaner.com/about
     color 05
-    explorer "https://www.ccleaner.com/ccleaner/download/standard"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.ccleaner.com/ccleaner/download/standard" & exit"
 
 Title 7.1.2) PREPARE THE WAR [CCleaner] [Chrome] [Require Name Check] [Attention]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard" & exit"
 
 Title 7.1.3) PREPARE THE WAR [CCleaner] [Chrome Canary] [Require Name Check] [Attention]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard" & exit"
 
 Title 7.1.4) PREPARE THE WAR [CCLeaner] [Comodo Dragon] [Require Name Check] [Attention]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.ccleaner.com/ccleaner/download/standard" & exit"
 
 Title 7.1.5) PREPARE THE WAR [CCleaner] [Firefox] [Require Name Check] [Attention]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.ccleaner.com/ccleaner/download/standard"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.ccleaner.com/ccleaner/download/standard" & exit"
 
 Title 7.1.6) PREPARE THE WAR [CCleaner] [Firefox Nightly] [Require Name Check] [Attention]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.ccleaner.com/ccleaner/download/standard"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.ccleaner.com/ccleaner/download/standard" & exit"
 
 Title 7.1.7) PREPARE THE WAR [CCleaner] [Microsoft Edge] [Require Link Check] [Attention]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.ccleaner.com/ccleaner/download/standard"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.ccleaner.com/ccleaner/download/standard" & exit"
 
 
 
 Title 7.2.1) PREPARE THE WAR [BleachBit] [Default Browser] [Require Link Check] [Attention]
     echo Best Cleaner, open source. 50% trusted. About https://www.bleachbit.org/press/faq and SourceCode https://github.com/bleachbit/bleachbit
     color 06
-    explorer "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe" & exit"
 
 Title 7.2.2) PREPARE THE WAR [BleachBit] [Chrome] [Require Link Check] [Attention]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe" & exit"
 
 Title 7.2.3) PREPARE THE WAR [BleachBit] [Chrome Canary] [Require Link Check] [Attention]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe" & exit"
 
 Title 7.2.4) PREPARE THE WAR [BleachBit] [Comodo Dragon] [Require Link Check] [Attention]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe" & exit"
 
 Title 7.2.5) PREPARE THE WAR [BleachBit] [Firefox] [Require Link Check] [Attention]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe" & exit"
 
 Title 7.2.6) PREPARE THE WAR [BleachBit] [Firefox Nightly] [Require Link Check] [Attention]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe" & exit"
 
 Title 7.2.7) PREPARE THE WAR [BleachBit] [Microsoft Edge] [Require Link Check] [Attention]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.bleachbit.org/download/file/t?file=BleachBit-4.4.2-setup.exe" & exit"
 
 
 
 Title 7.3.1) PREPARE THE WAR [rkill] [Default Browser]
     echo Malicious task killer by BleepingComputer from America. 60% trusted. https://www.bleepingcomputer.com/download/rkill/
     color 09
-    explorer "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 Title 7.3.2) PREPARE THE WAR [rkill] [Chrome]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 Title 7.3.3) PREPARE THE WAR [rkill] [Chrome Canary]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 Title 7.3.4) PREPARE THE WAR [rkill] [Comodo Dragon]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 Title 7.3.5) PREPARE THE WAR [rkill] [Firefox]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 Title 7.3.6) PREPARE THE WAR [rkill] [Firefox Nightly]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 Title 7.3.7) PREPARE THE WAR [rkill] [Microsoft Edge]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.bleepingcomputer.com/download/rkill/dl/10/"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 
 
 Title 7.4.1) PREPARE THE WAR [MSRT] [Default Browser] [Require Name Check] [Attention]
     echo Popular malware remover by Microsoft from America. 99.9% trusted. https://www.microsoft.com/en-us/download/details.aspx?id=9905
     color 0b
-    explorer "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 Title 7.4.2) PREPARE THE WAR [MSRT] [Chrome] [Require Name Check] [Attention]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 Title 7.4.3) PREPARE THE WAR [MSRT] [Chrome Canary] [Require Name Check] [Attention]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 Title 7.4.4) PREPARE THE WAR [MSRT] [Comodo Dragon] [Require Name Check] [Attention]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 Title 7.4.5) PREPARE THE WAR [MSRT] [Firefox] [Require Name Check] [Attention]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 Title 7.4.6) PREPARE THE WAR [MSRT] [Firefox Nightly] [Require Name Check] [Attention]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 Title 7.4.7) PREPARE THE WAR [MSRT] [Microsoft Edge] [Require Name Check] [Attention]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 
 
 Title 7.5.1) PREPARE THE WAR [MSERT] [Default Browser]
     echo Full scanner by Microsoft from America. 99.9% trusted https://docs.microsoft.com/en-us/microsoft-365/security/intelligence/safety-scanner-download?view=o365-worldwide
     color 0d
-    explorer "https://go.microsoft.com/fwlink/?LinkId=212732"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 Title 7.5.2) PREPARE THE WAR [MSERT] [Chrome]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 Title 7.5.3) PREPARE THE WAR [MSERT] [Chrome Canary]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 Title 7.5.4) PREPARE THE WAR [MSERT] [Comodo Dragon]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 Title 7.5.5) PREPARE THE WAR [MSERT] [Firefox]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 Title 7.5.6) PREPARE THE WAR [MSERT] [Firefox Nightly]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 Title 7.5.7) PREPARE THE WAR [MSERT] [Microsoft Edge]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://go.microsoft.com/fwlink/?LinkId=212732"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 
 
@@ -2099,75 +2099,75 @@ Title 7.5.7) PREPARE THE WAR [MSERT] [Microsoft Edge]
 Title 7.6.1) PREPARE THE WAR [AdwCleaner] [Default Browser]
     echo By Malwarebytes from America, adware remover. 70% Trusted. https://www.malwarebytes.com/adwcleaner
     color 0e
-    explorer "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 Title 7.6.2) PREPARE THE WAR [AdwCleaner] [Chrome]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 Title 7.6.3) PREPARE THE WAR [AdwCleaner] [Chrome Canary]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 Title 7.6.4) PREPARE THE WAR [AdwCleaner] [Comodo Dragon]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 Title 7.6.5) PREPARE THE WAR [AdwCleaner] [Firefox]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 Title 7.6.6) PREPARE THE WAR [AdwCleaner] [Firefox Nightly]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 Title 7.6.7) PREPARE THE WAR [AdwCleaner] [Microsoft Edge]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 
 
 ::Title ) PREPARE THE WAR [McAfee Stinger] [Default Browser]
     ::echo By McAfee from America, best malware remover but has spyware and rogue malware behaviour, contacted customer support about how to remove but never replied therefore disabled by default. 2% Trusted. https://www.mcafee.com/enterprise/en-us/downloads/free-tools/how-to-use-stinger.html
     ::echo To remove Stinger and its spyware services https://service.mcafee.com/?articleId=TS101331&page=shell&shell=article-view
-    ::explorer "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe" & exit"
 
 ::Title ) PREPARE THE WAR [McAfee Stinger] [Chrome]
-    ::"%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe" & exit"
 
 ::Title ) PREPARE THE WAR [McAfee Stinger] [Chrome Canary]
-    ::"%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe" & exit"
 
 ::Title ) PREPARE THE WAR [McAfee Stinger] [Comodo Dragon]
-    ::"%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe" & exit"
 
 ::Title ) PREPARE THE WAR [McAfee Stinger] [Firefox]
-    ::"%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe" & exit"
 
 ::Title ) PREPARE THE WAR [McAfee Stinger] [Firefox Nightly]
-    ::"%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe" & exit"
 
 ::Title ) PREPARE THE WAR [McAfee Stinger] [Microsoft Edge]
-    ::"%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe"
+    ::start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/stinger64.exe" & exit"
 
 
 
 Title 7.7.1) PREPARE THE WAR [KVRT] [Default Browser]
     echo By Kaspersky from Mother Russia, best malware remover. 49% Trusted. https://usa.kaspersky.com/about/company
     color 01
-    explorer "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 Title 7.7.2) PREPARE THE WAR [KVRT] [Chrome]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 Title 7.7.3) PREPARE THE WAR [KVRT] [Chrome Canary]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 Title 7.7.4) PREPARE THE WAR [KVRT] [Comodo Dragon]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 Title 7.7.5) PREPARE THE WAR [KVRT] [Firefox]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 Title 7.7.6) PREPARE THE WAR [KVRT] [Firefox Nightly]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 Title 7.7.7) PREPARE THE WAR [KVRT] [Microsoft Edge]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.kaspersky.com/downloads/free-virus-removal-tool"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 
 
@@ -2175,27 +2175,25 @@ Title 7.7.7) PREPARE THE WAR [KVRT] [Microsoft Edge]
 Title 7.8.1) PREPARE THE WAR [tdsskiller] [Default Browser]
     echo By Kaspersky from Mother Russia, to remove rootkits. 49% Trusted. https://usa.kaspersky.com/about/company
     color 03
-    explorer "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 Title 7.8.2) PREPARE THE WAR [tdsskiller] [Chrome]
-    "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 Title 7.8.3) PREPARE THE WAR [tdsskiller] [Chrome Canary]
-    "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 Title 7.8.4) PREPARE THE WAR [tdsskiller] [Comodo Dragon]
-    "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 Title 7.8.5) PREPARE THE WAR [tdsskiller] [Firefox]
-    "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 Title 7.8.6) PREPARE THE WAR [tdsskiller] [Firefox Nightly]
-    "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 Title 7.8.7) PREPARE THE WAR [tdsskiller] [Microsoft Edge]
-    "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190"
-
-
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 
 
