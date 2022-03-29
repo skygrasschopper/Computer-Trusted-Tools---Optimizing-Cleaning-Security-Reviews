@@ -2801,8 +2801,9 @@ Title 11.1) Removing Malware [rkill] [Killing malicious tasks]
     echo   ## Killing Malicious Tasks ##
     echo   #############################
     C:\Users\%username%\Downloads\rkill.exe -l C:\Logs\running_malware_tasks.txt -s 1>&2
-    taskkill /f /im chrome.exe /t & taskkill /f /im opera.exe /t & taskkill /f /im msedge.exe /t & taskkill /f /im brave.exe /t & taskkill /f /im dragon.exe /t & taskkill /f /im icedragon.exe /t & taskkill /f /im firefox.exe /t
-
+    taskkill /f /im explorer.exe & taskkill /f /im chrome.exe /t & taskkill /f /im opera.exe /t & taskkill /f /im msedge.exe /t & taskkill /f /im brave.exe /t & taskkill /f /im dragon.exe /t & taskkill /f /im icedragon.exe /t & taskkill /f /im firefox.exe /t
+    start explorer.exe
+    
 Title 11.2) Removing Malware [AdwCleaner] [Adware]
     color 9A
     echo   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
