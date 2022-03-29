@@ -2020,103 +2020,127 @@ Title 7.2.7) PREPARE THE WAR [BleachBit] [Microsoft Edge] [Require Link Check] [
 
 
 
-Title 7.3.1) PREPARE THE WAR [rkill] [Default Browser]
+Title 7.3.1) PREPARE THE WAR [a2cmd] [Default Browser]
+    echo 2nd next to Malwarebytes, by Emsisoft from New Zealand, known for ransomeware decryption. 70% Trusted. https://www.emsisoft.com/en/company/about/
+    color 03
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://dl.emsisoft.com/EmsisoftCommandlineScanner64.exe" & exit"
+
+Title 7.3.2) PREPARE THE WAR [a2cmd] [Chrome]
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://dl.emsisoft.com/EmsisoftCommandlineScanner64.exe" & exit"
+
+Title 7.3.3) PREPARE THE WAR [a2cmd] [Chrome Canary]
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://dl.emsisoft.com/EmsisoftCommandlineScanner64.exe" & exit"
+
+Title 7.3.4) PREPARE THE WAR [a2cmd] [Comodo Dragon]
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://dl.emsisoft.com/EmsisoftCommandlineScanner64.exe" & exit"
+
+Title 7.3.5) PREPARE THE WARE [a2cmd] [Firefox]
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://dl.emsisoft.com/EmsisoftCommandlineScanner64.exe" & exit"
+
+Title 7.3.6) PREPARE THE WAR [a2cmd] [Firefox Nightly]
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://dl.emsisoft.com/EmsisoftCommandlineScanner64.exe" & exit"
+
+Title 7.3.7) PREPARE THE WAR [a2cmd] [Microsoft Edge]
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://dl.emsisoft.com/EmsisoftCommandlineScanner64.exe" & exit"
+
+
+Title 7.4.1) PREPARE THE WAR [rkill] [Default Browser]
     echo Malicious task killer by BleepingComputer from America. 60% trusted. https://www.bleepingcomputer.com/download/rkill/
     color 09
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
-Title 7.3.2) PREPARE THE WAR [rkill] [Chrome]
+Title 7.4.2) PREPARE THE WAR [rkill] [Chrome]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
-Title 7.3.3) PREPARE THE WAR [rkill] [Chrome Canary]
+Title 7.4.3) PREPARE THE WAR [rkill] [Chrome Canary]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
-Title 7.3.4) PREPARE THE WAR [rkill] [Comodo Dragon]
+Title 7.4.4) PREPARE THE WAR [rkill] [Comodo Dragon]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
-Title 7.3.5) PREPARE THE WAR [rkill] [Firefox]
+Title 7.4.5) PREPARE THE WAR [rkill] [Firefox]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
-Title 7.3.6) PREPARE THE WAR [rkill] [Firefox Nightly]
+Title 7.4.6) PREPARE THE WAR [rkill] [Firefox Nightly]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
-Title 7.3.7) PREPARE THE WAR [rkill] [Microsoft Edge]
+Title 7.4.7) PREPARE THE WAR [rkill] [Microsoft Edge]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.bleepingcomputer.com/download/rkill/dl/10/" & exit"
 
 
 
-Title 7.4.1) PREPARE THE WAR [MSRT] [Default Browser] [Require Name Check] [Attention]
+Title 7.5.1) PREPARE THE WAR [MSRT] [Default Browser] [Require Name Check] [Attention]
     echo Popular malware remover by Microsoft from America. 99.9% trusted. https://www.microsoft.com/en-us/download/details.aspx?id=9905
     color 0b
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
-Title 7.4.2) PREPARE THE WAR [MSRT] [Chrome] [Require Name Check] [Attention]
+Title 7.5.2) PREPARE THE WAR [MSRT] [Chrome] [Require Name Check] [Attention]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
-Title 7.4.3) PREPARE THE WAR [MSRT] [Chrome Canary] [Require Name Check] [Attention]
+Title 7.5.3) PREPARE THE WAR [MSRT] [Chrome Canary] [Require Name Check] [Attention]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
-Title 7.4.4) PREPARE THE WAR [MSRT] [Comodo Dragon] [Require Name Check] [Attention]
+Title 7.5.4) PREPARE THE WAR [MSRT] [Comodo Dragon] [Require Name Check] [Attention]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
-Title 7.4.5) PREPARE THE WAR [MSRT] [Firefox] [Require Name Check] [Attention]
+Title 7.5.5) PREPARE THE WAR [MSRT] [Firefox] [Require Name Check] [Attention]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
-Title 7.4.6) PREPARE THE WAR [MSRT] [Firefox Nightly] [Require Name Check] [Attention]
+Title 7.5.6) PREPARE THE WAR [MSRT] [Firefox Nightly] [Require Name Check] [Attention]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
-Title 7.4.7) PREPARE THE WAR [MSRT] [Microsoft Edge] [Require Name Check] [Attention]
+Title 7.5.7) PREPARE THE WAR [MSRT] [Microsoft Edge] [Require Name Check] [Attention]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.microsoft.com/en-us/download/confirmation.aspx?id=9905" & exit"
 
 
 
-Title 7.5.1) PREPARE THE WAR [MSERT] [Default Browser]
+Title 7.6.1) PREPARE THE WAR [MSERT] [Default Browser]
     echo Full scanner by Microsoft from America. 99.9% trusted https://docs.microsoft.com/en-us/microsoft-365/security/intelligence/safety-scanner-download?view=o365-worldwide
     color 0d
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
-Title 7.5.2) PREPARE THE WAR [MSERT] [Chrome]
+Title 7.6.2) PREPARE THE WAR [MSERT] [Chrome]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
-Title 7.5.3) PREPARE THE WAR [MSERT] [Chrome Canary]
+Title 7.6.3) PREPARE THE WAR [MSERT] [Chrome Canary]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
-Title 7.5.4) PREPARE THE WAR [MSERT] [Comodo Dragon]
+Title 7.6.4) PREPARE THE WAR [MSERT] [Comodo Dragon]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
-Title 7.5.5) PREPARE THE WAR [MSERT] [Firefox]
+Title 7.6.5) PREPARE THE WAR [MSERT] [Firefox]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
-Title 7.5.6) PREPARE THE WAR [MSERT] [Firefox Nightly]
+Title 7.6.6) PREPARE THE WAR [MSERT] [Firefox Nightly]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
-Title 7.5.7) PREPARE THE WAR [MSERT] [Microsoft Edge]
+Title 7.6.7) PREPARE THE WAR [MSERT] [Microsoft Edge]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://go.microsoft.com/fwlink/?LinkId=212732" & exit"
 
 
 
 
-Title 7.6.1) PREPARE THE WAR [AdwCleaner] [Default Browser]
+Title 7.7.1) PREPARE THE WAR [AdwCleaner] [Default Browser]
     echo By Malwarebytes from America, adware remover. 70% Trusted. https://www.malwarebytes.com/adwcleaner
     color 0e
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
-Title 7.6.2) PREPARE THE WAR [AdwCleaner] [Chrome]
+Title 7.7.2) PREPARE THE WAR [AdwCleaner] [Chrome]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
-Title 7.6.3) PREPARE THE WAR [AdwCleaner] [Chrome Canary]
+Title 7.7.3) PREPARE THE WAR [AdwCleaner] [Chrome Canary]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
-Title 7.6.4) PREPARE THE WAR [AdwCleaner] [Comodo Dragon]
+Title 7.7.4) PREPARE THE WAR [AdwCleaner] [Comodo Dragon]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
-Title 7.6.5) PREPARE THE WAR [AdwCleaner] [Firefox]
+Title 7.7.5) PREPARE THE WAR [AdwCleaner] [Firefox]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
-Title 7.6.6) PREPARE THE WAR [AdwCleaner] [Firefox Nightly]
+Title 7.7.6) PREPARE THE WAR [AdwCleaner] [Firefox Nightly]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
-Title 7.6.7) PREPARE THE WAR [AdwCleaner] [Microsoft Edge]
+Title 7.7.7) PREPARE THE WAR [AdwCleaner] [Microsoft Edge]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release" & exit"
 
 
@@ -2146,53 +2170,53 @@ Title 7.6.7) PREPARE THE WAR [AdwCleaner] [Microsoft Edge]
 
 
 
-Title 7.7.1) PREPARE THE WAR [KVRT] [Default Browser]
+Title 7.8.1) PREPARE THE WAR [KVRT] [Default Browser]
     echo By Kaspersky from Mother Russia, best malware remover. 49% Trusted. https://usa.kaspersky.com/about/company
     color 01
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
-Title 7.7.2) PREPARE THE WAR [KVRT] [Chrome]
+Title 7.8.2) PREPARE THE WAR [KVRT] [Chrome]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
-Title 7.7.3) PREPARE THE WAR [KVRT] [Chrome Canary]
+Title 7.8.3) PREPARE THE WAR [KVRT] [Chrome Canary]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
-Title 7.7.4) PREPARE THE WAR [KVRT] [Comodo Dragon]
+Title 7.8.4) PREPARE THE WAR [KVRT] [Comodo Dragon]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
-Title 7.7.5) PREPARE THE WAR [KVRT] [Firefox]
+Title 7.8.5) PREPARE THE WAR [KVRT] [Firefox]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
-Title 7.7.6) PREPARE THE WAR [KVRT] [Firefox Nightly]
+Title 7.8.6) PREPARE THE WAR [KVRT] [Firefox Nightly]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
-Title 7.7.7) PREPARE THE WAR [KVRT] [Microsoft Edge]
+Title 7.8.7) PREPARE THE WAR [KVRT] [Microsoft Edge]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://www.kaspersky.com/downloads/free-virus-removal-tool" & exit"
 
 
 
 
-Title 7.8.1) PREPARE THE WAR [tdsskiller] [Default Browser]
+Title 7.9.1) PREPARE THE WAR [tdsskiller] [Default Browser]
     echo By Kaspersky from Mother Russia, to remove rootkits. 49% Trusted. https://usa.kaspersky.com/about/company
     color 03
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & explorer "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
-Title 7.8.2) PREPARE THE WAR [tdsskiller] [Chrome]
+Title 7.9.2) PREPARE THE WAR [tdsskiller] [Chrome]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Google\Chrome\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
-Title 7.8.3) PREPARE THE WAR [tdsskiller] [Chrome Canary]
+Title 7.9.3) PREPARE THE WAR [tdsskiller] [Chrome Canary]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%localappdata%\Google\Chrome SxS\Application\chrome.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
-Title 7.8.4) PREPARE THE WAR [tdsskiller] [Comodo Dragon]
+Title 7.9.4) PREPARE THE WAR [tdsskiller] [Comodo Dragon]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Comodo\Dragon\dragon.exe" /incognito "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
-Title 7.8.5) PREPARE THE WAR [tdsskiller] [Firefox]
+Title 7.9.5) PREPARE THE WAR [tdsskiller] [Firefox]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Mozilla Firefox\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
-Title 7.8.6) PREPARE THE WAR [tdsskiller] [Firefox Nightly]
+Title 7.9.6) PREPARE THE WAR [tdsskiller] [Firefox Nightly]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles%\Firefox Nightly\firefox.exe" -private-window "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
-Title 7.8.7) PREPARE THE WAR [tdsskiller] [Microsoft Edge]
+Title 7.9.7) PREPARE THE WAR [tdsskiller] [Microsoft Edge]
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" –inprivate "https://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe?_ga=2.181110055.1661367761.1648341190-2052958461.1648341190" & exit"
 
 
@@ -2403,18 +2427,6 @@ Title 9.2.10) Preparing Defender Scan [Register Group Policy and Registry change
 
 
 
-Title Meanwhile installing CCleaning and BleachBit... [Require Name Check] [Attention]
-    color 03
-    "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
-    "C:\Users\%username%\Downloads\ccsetup591.exe" /S
-
-
-
-
-
-
-
-
 
 
 
@@ -2457,7 +2469,11 @@ Title 9.3.5) Preparing Defender Scan [Services] [Remove Malware Service]
 
 
 
-
+Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Check] [Attention]
+    color 03
+    "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
+    "C:\Users\%username%\Downloads\ccsetup591.exe" /S
+    IF EXIST "C:\EmsisoftCmd" (echo Emisoft Command Line Scanner already installed, skipping...) ELSE ("C:\Users\%username%\Downloads\EmsisoftCommandlineScanner64.exe" /s)
 
 
 
@@ -2629,7 +2645,20 @@ Title 11.8) Removing Malware [KVRT] [Patience]
     echo   XXXXXXXXXXXXXXXXXXXXXXXXXXX
     if EXIST "C:\Users\%username%\Downloads\KVRT.exe" (start /wait C:\Users\%username%\Downloads\KVRT.exe -d C:\Logs -accepteula -processlevel 2 -noads -silent -adinsilent -allvolumes) ELSE (echo KVRT not found, skipping... & echo.)
 
-Title 11.9) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
+Title 11.9) Removing Malware [a2cmd] [Patience]
+    color 60
+    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    echo   XX           a2cmd          XX
+    echo   XX        by Emsisoft       XX
+    echo   XX   made in New Zealand    XX
+    echo   XX             is           XX
+    echo   XX   Scanning for Malware   XX
+    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    "C:\EmsisoftCmd\a2cmd.exe" /u
+    "C:\EmsisoftCmd\a2cmd.exe" /malware /rk /m /t /a /am /n /cloud=1 /dda /l=C:\Logs\Emsisoft_Scan_Logs /d /dq /LogEncrypted /logClean /s /loadsigs
+    "C:\EmsisoftCmd\a2cmd.exe" /us
+
+Title 11.10) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
     color 90
     echo     ****     ****   ********  ********  *******  **********
     echo    /**/**   **/**  **//////  /**/////  /**////** /////**/// 
@@ -2641,7 +2670,7 @@ Title 11.9) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
     echo    //         //  ////////   ////////  //     //     //    
     if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w C:\Users\%username%\Downloads\MSERT.exe /Q /F:Y) ELSE (echo MSERT not found, skipping... & echo.)
 
-Title 11.10) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
+Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     color color 80
     echo     ****     ****  ********   *******  **********
     echo    /**/**   **/**  **//////  /**////** /////**/// 
@@ -2749,7 +2778,6 @@ Title 12.4) Sending soldiers home... [Kaspersky] [Uninstall]
 
 
 
-
 Title Meanwhile Removing Generated Junk [Disk Cleanup]
 echo    ======================================
 echo    ==  Move your mouse in CIRCLE now!  ==
@@ -2764,10 +2792,6 @@ echo    ======================================
 Title 12.6) Sending Soldiers home... [tdsskiller] [Uninstall]
     color 09
     del /q/f/s C:\Users\%username%\Downloads\tdsskiller.exe
-    rmdir /S /Q %SystemDrive%\Temp 2>NUL
-    for %%i in (log,tmp,temp,bak,backup,exe) do (
-        del /F /Q "C:\Users\%username%\Downloads\*.%%i" 2>NUL
-    )
 
 Title 12.7) Sending Soldiers home... [MSERT] [Uninstall]
     color 0b
@@ -2808,6 +2832,20 @@ Title 12.13) Sending Soldiers home... [AdwCleaner] [Uninstall]
     rd /s /q "C:\AdwCleaner"
     del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
 
+Title 12.14) Sending Soldiers home... [a2cmd] [Uninstall]
+    color 03
+    taskkill /f /im EmsisoftCommandlineScanner64.exe /t
+    takeown /f "C:\EmsisoftCmd" /R /A /D Y 1>&2
+    del /f/s/q "C:\EmsisoftCmd" 1>&2
+    rd /q/s "C:\EmsisoftCmd" 1>&2
+    reg delete "HKLM\SOFTWARE\Emsisoft" /f
+    sc delete a2Cmd
+
+
+
+
+
+
 Title 13.1) Removing scan logs [Caution] {You may want to check it out}
     color 09
     del /q/f/s "C:\Quarantine"
@@ -2816,11 +2854,6 @@ Title 13.1) Removing scan logs [Caution] {You may want to check it out}
     rd /q/s "C:\Logs"
     md "C:\Logs"
 
-            
-
-
-
-
 Title 13.2) Removing generated junk
     color 0b
     C:\Windows\Temp
@@ -2828,6 +2861,10 @@ Title 13.2) Removing generated junk
     del /q/f/s C:\Users\%username%\AppData\Local\Temp
     for %%i in (bat,cmd,txt,log,jpg,jpeg,tmp,temp,bak,backup,exe) do (
         del /F /Q "%SystemDrive%\*.%%i" 2>NUL
+    )
+    rmdir /S /Q %SystemDrive%\Temp 2>NUL
+    for %%i in (log,tmp,temp,bak,backup,exe) do (
+        del /F /Q "C:\Users\%username%\Downloads\*.%%i" 2>NUL
     )
 
 
