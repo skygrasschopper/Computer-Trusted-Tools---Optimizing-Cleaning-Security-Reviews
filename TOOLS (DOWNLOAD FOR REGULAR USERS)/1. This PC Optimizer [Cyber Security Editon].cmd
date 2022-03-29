@@ -320,14 +320,14 @@ Title 2.4.2) Fixing Windows Security [Services] [Reset and Begin Connection Prot
 
 Title 2.4.3) Fixing Windows Security [Services] [Stop Hacker Connection]
     color 06
-    net stop RasMan
-    net stop RasAuto
-    net stop SessionEnv
-    net stop TermService
-    net stop UmRdpService
-    net stop RpcLocator
-    net stop RemoteRegistry
-    net stop RemoteAccess
+    echo y|net stop RasMan
+    echo y|net stop RasAuto
+    echo y|net stop SessionEnv
+    echo y|net stop TermService
+    echo y|net stop UmRdpService
+    echo y|net stop RpcLocator
+    echo y|net stop RemoteRegistry
+    echo y|net stop RemoteAccess
 
 
 
@@ -2902,7 +2902,7 @@ Title 11.9) Removing Malware [a2cmd] [Patience]
     echo   XX   Scanning for Malware   XX
     echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     "C:\EmsisoftCmd\a2cmd.exe" /u
-    "C:\EmsisoftCmd\a2cmd.exe" /malware /rk /m /t /a /am /n /cloud=1 /dda /l=C:\Logs\Emsisoft_Scan_Logs /d /dq /LogEncrypted /logClean /s /loadsigs
+    "C:\EmsisoftCmd\a2cmd.exe" /malware /rk /m /t /a /am /n /cloud=1 /dda /l=C:\Logs\Emsisoft_Scan_Logs.txt /d /dq /LogEncrypted /logClean /s /loadsigs
     "C:\EmsisoftCmd\a2cmd.exe" /us
 
 Title 11.10) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
