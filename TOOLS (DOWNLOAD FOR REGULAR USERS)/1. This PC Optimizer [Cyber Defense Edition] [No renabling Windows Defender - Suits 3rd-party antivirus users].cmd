@@ -139,8 +139,8 @@ Title 1) Ending Tasks [Stop Malware Tasks] [DO NOT CLOSE] {TASKBAR MAY BREAK in 
 
 
 
-
 Title 2.2) Fixing Windows Security [Blocking all connections]
+    MODE CON: COLS=83 LINES=51
     echo Disconnect from Hacker.
     color 03
     bitsadmin.exe /reset /allusers
@@ -153,18 +153,7 @@ Title 2.2) Fixing Windows Security [Blocking all connections]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
- 
+T
 
 
 
@@ -220,10 +209,6 @@ Title 2.3.10) Fixing Windows Security [Register Group Policy and Registry change
 
 
 
-
-
-
-
 Title 2.4.3) Fixing Windows Security [Services] [Stop Hacker Connection]
     color 06
     echo y|net stop RasMan
@@ -234,7 +219,6 @@ Title 2.4.3) Fixing Windows Security [Services] [Stop Hacker Connection]
     echo y|net stop RpcLocator
     echo y|net stop RemoteRegistry
     echo y|net stop RemoteAccess
-
 
 
 
@@ -251,12 +235,6 @@ Title 2.4.5) Fixing Windows Security [Services] [Remove Malware Service]
     REM Custom Malware Services Below to remove
     net stop Service
     sc delete Service
-
-
-
-
-
-
 
 
 
@@ -622,9 +600,9 @@ Title 9.1.3) Cleaning Junk [Windows] [Dumps]
     del /q/f/s "%SystemRoot%\memory.dmp"
     del /q/f/s "%SystemRoot%\Minidump.dmp"
     del /f /s /q "%SystemRoot%\Minidump\*.*"
-    del /f /s /q "%SystemRoot%\Minidump\"
-    rd /s /q "%SystemRoot%\Minidump\"
-    md "%SystemRoot%\Minidump\" 
+    del /f /s /q "%SystemRoot%\Minidump"
+    rd /s /q "%SystemRoot%\Minidump"
+    md "%SystemRoot%\Minidump" 
 
 
 
@@ -818,7 +796,7 @@ Title 9.3.5) Cleaning Junk [App] [Report] [Custom list]
 Title 9.4.1) Cleaning Safe Cache [App] [Prefetch]
     color 01
     del /s /f /q %WinDir%\Prefetch\*.*
-    rd /q/s "%windir%\prefetch\"
+    rd /q/s "%windir%\prefetch"
     md "%windir%\prefetch"
 
 
@@ -834,7 +812,7 @@ Title 9.4.2) Cleaning Safe Cache [Windows] [Cache] [Microsoft Store]
 
 Title 9.5.1) Cleaning unneeded files [Windows] [Event Viewer] [Events] [Logs] [Caution] [Troubleshooter users] [Malware analyizers]
     color 05
-    start cmd.exe @cmd /k "for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1""
+    start cmd.exe @cmd /k "for /F "tokens=*" %%1 in ('wevtutil.exe el') DO wevtutil.exe cl "%%1""
     start powershell.exe -Command "mode.com con: lines=19 cols=19; wevtutil el | Foreach-Object {wevtutil cl "$_"}"
     start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }"
     del /q/f/s "C:\Windows\System32\winevt\Logs\Microsoft-Windows-LiveID%4Operational.evtx"
@@ -992,7 +970,7 @@ Title 4.7.3) Cleaning Uncertainties [Caution] [WIndows] [CD/DVD] [Burn] [Cache]
 Title 4.7.4) Cleaning Uncertainties [Caution] [Windows] [Audio] [Cache]
     color 09
     del /f /q "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
-    del /f /s /q "%SystemRoot%\system32\catroot2\*.*"
+    del /f /s /q "%SystemRoot%\system32\catroot2\*.*" 
 
 
 
@@ -1295,7 +1273,7 @@ Title 4.9.1) Custom Scripts [Tron]
 taskkill /f /im explorer.exe
 taskkill /f /im shellexperiencehost.exe
 timeout /t 3 /NOBREAK > nul
-del /f/s/q %localappdata%\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\*
+del /f/s/q "%localappdata%\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\*"
 
 
 
@@ -1496,13 +1474,13 @@ REM *** Disable Start-up Telemetry and Programs to Improve Startup and Memory Us
 ::schtasks /Change /TN "Microsoft\Windows\Windows Error Reporting\QueueReporting" /Disable
 ::chtasks /Change /TN "Microsoft\Windows\WindowsUpdate\Automatic App Update" /Disable
 
-takeown /f %LocalAppData%\Microsoft\Windows\Explorer\ /r /d y
-takeown /f %%G\AppData\Local\Temp\ /r /d y
+takeown /f "%LocalAppData%\Microsoft\Windows\Explorer" /r /d y
+takeown /f "%localAppData%\Temp" /r /d y
 takeown /f %SystemRoot%\TEMP\ /r /d y
 takeown /f %systemdrive%\$Recycle.bin\ /r /d y
-takeown /f C:\Users\%USERNAME%\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Code Cache\ /r /d y
-takeown /f C:\Users\%USERNAME%\AppData\Local\Fortnitegame\saved\ /r /d y
-takeown /f C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\ /r /d y
+takeown /f "C:\Users\%USERNAME%\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Code Cache" /r /d y
+takeown /f "C:\Users\%USERNAME%\AppData\Local\Fortnitegame\saved" /r /d y
+takeown /f "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache" /r /d y
 del /q /s %systemdrive%\$Recycle.bin\*
 for /d %%x in (%systemdrive%\$Recycle.bin\*) do @rd /s /q "%%x"
 cls
@@ -1523,12 +1501,12 @@ del /s /Q /f "%AppleDir%"
 rd /s /q "%AppleDir%"
 
 tasklist /fi "ImageName eq chrome.exe" /fo csv 2>NUL | find /I "chrome.exe">NUL
-if "%ERRORLEVEL%"=="1"     goto:continueclean
-if "%ERRORLEVEL%"=="0"     call :MsgBox "Would you like to close Chrome Browser to clear cache & Temp Files?"  "VBYesNo+VBQuestion" "@SanGraphic"
-    if errorlevel 7 (
-        goto:continueclean
-    ) else if errorlevel 6 (
-        echo YES - Enable
+::if "%ERRORLEVEL%"=="1"     goto:continueclean
+::if "%ERRORLEVEL%"=="0"     call :MsgBox "Would you like to close Chrome Browser to clear cache & Temp Files?"  "VBYesNo+VBQuestion" "@SanGraphic"
+::    if errorlevel 7 (
+::        goto:continueclean
+::    ) else if errorlevel 6 (
+::        echo YES - Enable
         taskkill /F /IM chrome.exe /T > nul
 goto:continueclean
 
@@ -1560,7 +1538,7 @@ powershell taskkill /F /IM explorer.exe
 timeout 2 /nobreak>nul
 del /f /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.db"
 del /f /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Explorer\*.etl"
-DEL /F /S /Q /A %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db
+DEL /F /S /Q /A "%LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db"
 del /f /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Explorer\ThumbCacheToDelete\*.tmp"
 ::rd /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Explorer\ThumbCacheToDelete\"
 del /f /s /q "C:\Users\User\AppData\Local\IconCache.db"
@@ -1590,8 +1568,8 @@ DEL /f /s /q %systemdrive%\$Recycle.Bin\*.*
 DEL /f /s /q %windir%\*.bak
 DEL /f /s /q %windir%\prefetch\*.*
 rd /s /q %windir%\temp & md %windir%\temp
-DEL /f /q %userprofile%\cookies\*.*
-DEL /f /q %userprofile%\recent\*.*
+DEL /f /q "%userprofile%\cookies\*.*"
+DEL /f /q "%userprofile%\recent\*.*"
 DEL /f /s /q "%userprofile%\Local Settings\Temporary Internet Files\*.*"
 DEL /f /s /q "%userprofile%\Local Settings\Temp\*.*"
 DEL /f /s /q "%userprofile%\recent\*.*"
@@ -1629,7 +1607,7 @@ color 35
 :: remove temp folder
 del /F /S /Q %temp%\*
 :: remove qq logs
-del /F /S /Q %appdata%\Tencent\Log\*
+del /F /S /Q "%appdata%\Tencent\Log\*"
 :: remove edge cache
 del /F /S /Q "%userprofile%\AppData\Local\Microsoft\Edge\User Data\Default\Code Cache\js\*"
 del /F /S /Q "%userprofile%\AppData\Local\Microsoft\Edge\User Data\Default\Code Cache\wasm\*"
@@ -1641,13 +1619,13 @@ del /F /S /Q "%userprofile%\AppData\Local\Google\Chrome\User Data\Default\Code C
 del /F /S /Q "%userprofile%\AppData\Local\Google\Chrome\User DataS\haderCache\GPUCache\*"
 del /F /S /Q "%userprofile%\AppData\Local\Google\Chrome\User Data\Default\Cache\*"
 :: remove slowest browser's cache
-del /Q %userprofile%\AppData\Local\Microsoft\Windows\INetCache\IE\*
-del /Q %userprofile%\AppData\Local\Microsoft\Windows\WebCache\*
+del /Q "%userprofile%\AppData\Local\Microsoft\Windows\INetCache\IE\*"
+del /Q "%userprofile%\AppData\Local\Microsoft\Windows\WebCache\*"
 :: remove discord cache
-del /Q %userprofile%\AppData\Roaming\discord\Cache\*
+del /Q "%userprofile%\AppData\Roaming\discord\Cache\*"
 ::REMOVE MINCRAFT LOG AND CRASH REPORT
-del /Q %appdata%\.minecraft\logs\*
-del /Q %appdata%\.minecraft\crash-reports\*
+del /Q "%appdata%\.minecraft\logs\*"
+del /Q "%appdata%\.minecraft\crash-reports\*"
 
 
 
@@ -1736,40 +1714,40 @@ tasklist | find /i "Discord.exe" && taskkill /im Discord.exe /F
 tasklist | find /i "DiscordCanary.exe" && taskkill /im DiscordCanary.exe /F
 tasklist | find /i "DiscordPTB.exe" && taskkill /im DiscordPTB.exe /F
 tasklist | find /i "DiscordDevelopment.exe" && taskkill /im DiscordDevelopment.exe /F
-del /f /s /q %AppData%\Discord\Cache\*.*
-del /f /s /q %AppData%\discord\Cache\*.*
-del /f /s /q %AppData%\discordcanary\Cache\*.*
-del /f /s /q %AppData%\discordptb\Cache\*.*
-del /f /s /q %AppData%\discorddevelopment\Cache\*.*
+del /f /s /q "%AppData%\Discord\Cache\*.*"
+del /f /s /q "%AppData%\discord\Cache\*.*"
+del /f /s /q "%AppData%\discordcanary\Cache\*.*"
+del /f /s /q "%AppData%\discordptb\Cache\*.*"
+del /f /s /q "%AppData%\discorddevelopment\Cache\*.*"
 
 
 
 Title 4.9.9) Custom Scripts [Current User Cleaner] {Yes copied from random guy, sorry sorry sorry. Open source supporters won't mind not mentioning them right, I mean I'm fine, well not really...}
 REM Cleanup temp directory for current user
 color db
-del /s /f /q "%USERPROFILE%"\locals~1\temp\*
-rmdir /s /q "%USERPROFILE%"\locals~1\temp
-mkdir "%USERPROFILE%"\locals~1\Temp
+del /s /f /q "%USERPROFILE%\locals~1\temp\*"
+rmdir /s /q "%USERPROFILE%\locals~1\temp"
+mkdir "%USERPROFILE%\locals~1\Temp"
 REM Cleanup temporary internet file directories for current user
-del /s /f /q "%USERPROFILE%"\locals~1\tempor~1\*
-del /s /f /q /a:s "%USERPROFILE%"\locals~1\tempor~1\*
-del /s /f /q /a:h "%USERPROFILE%"\locals~1\tempor~1\*
-del /s /f /q /a:r "%USERPROFILE%"\locals~1\tempor~1\*
+del /s /f /q "%USERPROFILE%\locals~1\tempor~1\*"
+del /s /f /q /a:s "%USERPROFILE%\locals~1\tempor~1\*"
+del /s /f /q /a:h "%USERPROFILE%\locals~1\tempor~1\*"
+del /s /f /q /a:r "%USERPROFILE%\locals~1\tempor~1\*""
 ::rmdir /s /q "%USERPROFILE%"\locals~1\tempor~1
 del /s /f /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\Tempor~1"
 ::rd /s /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\Tempor~1"
 REM Cleanup history for current user
-del /s /f /q "%USERPROFILE%"\locals~1\history\*
+del /s /f /q "%USERPROFILE%\locals~1\history\*"
 REM Cleanup Windows prefetch
-del /s /f /q "%SystemRoot%"\prefetch\*
+del /s /f /q "%SystemRoot%\prefetch\*"
 REM Cleanup Windows minidump
-del /s /f /q "%SystemRoot%"\Minidump\*
+del /s /f /q "%SystemRoot%\Minidump\*"
 REM Cleanup Windows temp
-del /s /f /q "%SystemRoot%"\temp\*
-rmdir /s /q "%SystemRoot%"\temp\
-mkdir "%SystemRoot%"\Temp
+del /s /f /q "%SystemRoot%\temp\*"
+rmdir /s /q ""%SystemRoot%"\temp\"
+mkdir ""%SystemRoot%"\Temp"
 REM Cleanup recent shortcuts for current user
-del /s /f /q "%USERPROFILE%"\recent\*
+del /s /f /q "%USERPROFILE%\recent\*"
 REM Cleanup environment varable set temp storage
 del /s /f /q "%TEMP%"
 REM Cleanup environment varable set tmp storage
@@ -1937,9 +1915,9 @@ Title 5) Windows Fix [Regenerate Default Folders] [DON'T CLOSE]
     md %WinDir%\Temp
     md %WinDir%\Prefetch
     md %Temp%
-    md %AppData%\Temp
-    md %HomePath%\AppData\LocalLow\Temp
-    md C:\Windows\System32\drivers\etc
+    md "%AppData%\Temp"
+    md "%HomePath%\AppData\LocalLow\Temp"
+    md "C:\Windows\System32\drivers\etc"
     md %systemdrive%\Logs
     md %systemdrive%\PerfLogs
     md %systemdrive%\PerfLogs\System\Diagnostics
@@ -2227,6 +2205,8 @@ Title 7.9.7) PREPARE THE WAR [tdsskiller] [Microsoft Edge]
 
 
 
+
+
 Title 8.1) Update [Windows] [Fix]
 color 06
 @ECHO OFF
@@ -2365,16 +2345,7 @@ Title 8.3) Update [Apps]
 
 
 
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -2432,11 +2403,6 @@ Title 9.2.10) Preparing Defender Scan [Register Group Policy and Registry change
 
 
 
-
-
-
-
-
 Title 9.3.3) Preparing Defender Scan [Services] [Stop Hacker Connection]
     color 09
     net stop RasMan
@@ -2471,11 +2437,17 @@ Title 9.3.5) Preparing Defender Scan [Services] [Remove Malware Service]
 
 
 
+
 Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Check] [Attention]
     color 03
     "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
     "C:\Users\%username%\Downloads\ccsetup591.exe" /S
     IF EXIST "C:\EmsisoftCmd" (echo Emisoft Command Line Scanner already installed, skipping...) ELSE ("C:\Users\%username%\Downloads\EmsisoftCommandlineScanner64.exe" /s)
+
+
+
+
+
 
 
 
@@ -2585,7 +2557,7 @@ Title 11.3) Cleaning Computer [BleachBit]
 
 Title 11.4) Cleaning Computer [CCleaner]
     color e1
-    echo CCleaner is running in the background.
+    echo CCleaner is cleaning in the background.
     "C:\Program Files\CCleaner\CCleaner.exe" /AUTO
 
 Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
@@ -2672,7 +2644,7 @@ Title 11.10) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
     echo    /**   /    /**        /** /**       /**  //**     /**    
     echo    /**        /**  ********  /******** /**   //**    /**    
     echo    //         //  ////////   ////////  //     //     //    
-    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y) ELSE (echo MSERT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y & echo MSERT is scanning for malware... & echo.) ELSE (echo MSERT not found, skipping... & echo.)
 
 Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     color 80
@@ -2684,7 +2656,7 @@ Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     echo    /**   /    /**        /** /**  //**     /**    
     echo    /**        /**  ********  /**   //**    /**    
     echo    //         //  ////////   //     //     //  
-    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w "" "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" /Q /F:Y) ELSE (echo MSRT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w "" "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" /Q /F:Y & echo MSRT is scanning for running malware... & echo.) ELSE (echo MSRT not found, skipping... & echo.)
 
 Title 11.12) Removing Malware [McAfee] [Patience] {Disabled due to spyware}
     color f4
@@ -2763,8 +2735,8 @@ Title Meanwhile Ending Tasks [For success uninstall] [DO NOT CLOSE] {TASKBAR MAY
 Title 12.2) Prepare to send soldiers home... [BleachBit] [Cleaning]
     MODE CON: COLS=83 LINES=51
     color 01
-    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2" -c --all
-    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2" -c --all-but-warning
+    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe" --update-winapp2 -c --all
+    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe" --update-winapp2 -c --all-but-warning
 
 Title 12.3) Prepare to send soldiers home... [CCleaner] [Cleaning]
 "C:\Program Files\CCleaner\CCleaner.exe" /AUTO
@@ -2776,7 +2748,7 @@ Title 12.4) Sending soldiers home... [Kaspersky] [Uninstall]
     del /q/f/s "C:\KVRT2020_Data"
     rd /q/s "C:\KVRT2020_Data"
     del /q/f/s "C:\Users\%username%\Downloads\KVRT.exe"
-    cd /D C:\Windows\System32\Drivers
+    cd /D "C:\Windows\System32\Drivers"
     FOR %%i IN ("klupd_d62efc8ba*.sys") DO (REG DELETE "HKLM\System\CurrentControlSet\services\%%~ni" /f & DEL /F /Q "%%i")
     cd /
 
@@ -2891,6 +2863,7 @@ Title 16) Removing Event logs {While waiting to restart}
 Title 17) Credits
     MODE CON: COLS=160 LINES=51
     color 0a 
+    goto credits
     :credits                                                                                                                                                                                                                                                                                                           
     echo     SSSSSSSSSSSSSSS kkkkkkkk    
     ping 127.0.0.1 -n 1 >nul                                                                                                                           
