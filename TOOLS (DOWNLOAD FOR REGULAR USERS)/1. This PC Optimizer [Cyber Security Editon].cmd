@@ -2856,13 +2856,13 @@ Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
 Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
     color 9F
     echo                      88                                                          
-    echo                      ""                                                          
-    echo.                                                                             
+    echo                      ""                                                                                                                                   
     echo   88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
     echo   88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
     echo   88      88      88 88 8b         88         8b       d8  `"Y8ba,  8b       d8  
     echo   88      88      88 88 "8a,   ,aa 88         "8a,   ,a8" aa    ]8I "8a,   ,a8"  
     echo   88      88      88 88  `"Ybbd8"' 88          `"YbbdP"'  `"YbbdP"'  `"YbbdP"'  
+    echo.
     echo   ad88          
     echo   d8"     ,d     
     echo   88      88     
