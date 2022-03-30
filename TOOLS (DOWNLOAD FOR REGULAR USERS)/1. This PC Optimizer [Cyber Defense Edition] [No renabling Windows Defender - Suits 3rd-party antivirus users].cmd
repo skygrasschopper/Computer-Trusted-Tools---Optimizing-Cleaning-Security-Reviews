@@ -2605,6 +2605,7 @@ Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
     del /q/f/s "C:\ProgramData\Microsoft\Windows Defender\Quarantine"
     powershell Remove-MpThreat
+    echo.
 
 Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
     color 9F
