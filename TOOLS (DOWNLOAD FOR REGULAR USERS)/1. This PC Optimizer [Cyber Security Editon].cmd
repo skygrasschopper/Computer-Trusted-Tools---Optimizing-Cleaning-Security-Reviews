@@ -946,7 +946,7 @@ Title 9.4.2) Cleaning Safe Cache [Windows] [Cache] [Microsoft Store]
 
 Title 9.5.1) Cleaning unneeded files [Windows] [Event Viewer] [Events] [Logs] [Caution] [Troubleshooter users] [Malware analyizers]
     color 05
-    start cmd.exe @cmd /k "for /F "tokens=*" %%1 in ('wevtutil.exe el') DO wevtutil.exe cl "%%1""
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 05 & for /F "tokens=*" %%1 in ('wevtutil.exe el') DO wevtutil.exe cl "%%1" & exit"
     start powershell.exe -Command "mode.com con: lines=19 cols=19; wevtutil el | Foreach-Object {wevtutil cl "$_"}"
     start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }"
     del /q/f/s "C:\Windows\System32\winevt\Logs\Microsoft-Windows-LiveID%4Operational.evtx"
