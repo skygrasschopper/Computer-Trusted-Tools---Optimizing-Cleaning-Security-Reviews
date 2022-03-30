@@ -2630,7 +2630,7 @@ Title 11.10) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
     echo    /**   /    /**        /** /**       /**  //**     /**    
     echo    /**        /**  ********  /******** /**   //**    /**    
     echo    //         //  ////////   ////////  //     //     //    
-    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y & echo . & echo MSERT is scanning for malware... & echo.) ELSE (echo MSERT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y & echo. & echo MSERT is scanning for malware... & echo.) ELSE (echo MSERT not found, skipping... & echo.)
 
 Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     color 80
@@ -2797,11 +2797,22 @@ Title 12.13) Sending Soldiers home... [AdwCleaner] [Uninstall]
 Title 12.14) Sending Soldiers home... [a2cmd] [Uninstall]
     color 03
     taskkill /f /im EmsisoftCommandlineScanner64.exe /t
+    taskkill /f /fi "services eq a2Cmd" /t
+    taskkill /f /fi "services eq epp" /t
+    taskkill /f /fi "services eq epp32" /t
+    taskkill /f /fi "services eq epp64" /t
+    reg delete "HKLM\SOFTWARE\Emsisoft" /f 
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\a2Cmd" /f
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\epp" /f
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\epp32" /F
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\epp64" /F
     takeown /f "C:\EmsisoftCmd" /R /A /D Y 1>&2
     del /f/s/q "C:\EmsisoftCmd" 1>&2
     rd /q/s "C:\EmsisoftCmd" 1>&2
-    reg delete "HKLM\SOFTWARE\Emsisoft" /f
     sc delete a2Cmd
+    sc delete epp
+    sc delete epp32
+    sc delete epp64
 
 
 

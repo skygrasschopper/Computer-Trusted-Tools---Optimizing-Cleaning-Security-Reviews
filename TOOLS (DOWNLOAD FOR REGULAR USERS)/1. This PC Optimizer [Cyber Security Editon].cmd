@@ -3091,11 +3091,22 @@ Title 12.13) Sending Soldiers home... [AdwCleaner] [Uninstall]
 Title 12.14) Sending Soldiers home... [a2cmd] [Uninstall]
     color 03
     taskkill /f /im EmsisoftCommandlineScanner64.exe /t
+    taskkill /f /fi "services eq a2Cmd" /t
+    taskkill /f /fi "services eq epp" /t
+    taskkill /f /fi "services eq epp32" /t
+    taskkill /f /fi "services eq epp64" /t
+    reg delete "HKLM\SOFTWARE\Emsisoft" /f 
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\a2Cmd" /f
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\epp" /f
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\epp32" /F
+    reg delete "HKLM\SYSTEM\CurrentControlSet\services\epp64" /F
     takeown /f "C:\EmsisoftCmd" /R /A /D Y 1>&2
     del /f/s/q "C:\EmsisoftCmd" 1>&2
     rd /q/s "C:\EmsisoftCmd" 1>&2
-    reg delete "HKLM\SOFTWARE\Emsisoft" /f
     sc delete a2Cmd
+    sc delete epp
+    sc delete epp32
+    sc delete epp64
 
 
 
