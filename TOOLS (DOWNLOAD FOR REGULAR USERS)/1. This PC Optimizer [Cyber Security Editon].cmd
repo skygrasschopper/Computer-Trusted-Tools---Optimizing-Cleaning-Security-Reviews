@@ -2831,6 +2831,7 @@ Title 11.3) Cleaning Computer [BleachBit]
 Title 11.4) Cleaning Computer [CCleaner]
     color e1
     echo CCleaner is cleaning in the background.
+    echo.
     "C:\Program Files\CCleaner\CCleaner.exe" /AUTO
 
 Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
