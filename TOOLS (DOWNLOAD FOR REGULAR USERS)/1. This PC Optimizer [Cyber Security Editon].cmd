@@ -140,7 +140,7 @@ Title 2.1) Fixing Windows Security [Windows Defender Verification]
     echo Verification will fail due to firewall blocking connection below but let it run a bit.
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"  
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"  
 
 
 
@@ -577,8 +577,8 @@ Title 5.3.5) Windows Feature Optimization [Registry] [Games auto High Priority] 
 
 Title 5.3.6) Windows Feature Optimization [Registry] [Clear Page File during Shutdown]
     color 0b
-    attrib -s -h %systemdrive%\pagefile.sys
-    del /a /q %systemdrive%\pagefile.sys
+    attrib -s -h "%systemdrive%\pagefile.sys"
+    del /a /q "%systemdrive%\pagefile.sys"
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v ClearPageFileAtShutdown /t REG_DWORD /d 1 /f
 
 
@@ -658,10 +658,10 @@ Title 8) Increase Cleaning Efficiency [Reveal Hidden Files] [Disabled by default
 
 Title 9.1.1) Cleaning Junk [Windows] [Temp]
     color 06
-    del /q/f/s C:\Windows\Temp
-    del /s /f /q %WinDir%\Temp\*.*
-    del /q/f/s C:\Windows\TempInst
-    del /q/f/s C:\Windows\WinSxS\Temp
+    del /q/f/s "C:\Windows\Temp"
+    del /s /f /q "%WinDir%\Temp\*.*"
+    del /q/f/s "C:\Windows\TempInst"
+    del /q/f/s "C:\Windows\WinSxS\Temp"
     del /q/f/s "C:\ProgramData\Microsoft\Search\Data\Temp"
     del /q/f/s "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Temp"
     del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\BaseImages\1da09b4f-5c0b-4614-9072-be3da9874bd1\BaseLayer\Files\Windows\CbsTemp"
@@ -685,13 +685,13 @@ Title 9.1.1) Cleaning Junk [Windows] [Temp]
 Title 9.1.2) Cleaning Junk [Windows] [Logs]
     color 09
     del /q/f/s "C:\ProgramData\Microsoft\EdgeUpdate\Log"
-    del /q /f /s %SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setupact.log
-    del /q /f /s %SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setuperr.log
+    del /q /f /s "%SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setupact.log"
+    del /q /f /s "%SYSTEMDRIVE%\$Windows.~WS\Sources\Panther\setuperr.log"
     del /s /f /q "%systemdrive%\setup.log"
-    del /q/f/s C:\Windows\System32\Logs
+    del /q/f/s "C:\Windows\System32\Logs"
     del /q/f/s "C:\Windows\WinSxS\poqexec.log"
-    del /q/f/s C:\Windows\Logs
-    del /q/f/s C:\Windows\WindowsUpdate.log
+    del /q/f/s "C:\Windows\Logs"
+    del /q/f/s "C:\Windows\WindowsUpdate.log"
     del /q/f/s "C:\PerfLogs"
     del /q/f/s "C:\Recovery\Logs"
     del /q/f/s "C:\ProgramData\Microsoft\Windows Security Health\Logs"
@@ -729,14 +729,14 @@ Title 9.1.2) Cleaning Junk [Windows] [Logs]
 
 Title 9.1.3) Cleaning Junk [Windows] [Dumps]
     color 0b
-    del /q/f/s %userprofile%\appdata\local\crashdumps
+    del /q/f/s "%userprofile%\appdata\local\crashdumps"
     del /q/f/s "C:\ProgramData\Microsoft\Windows\Containers\Dumps"
     del /q/f/s "%SystemRoot%\memory.dmp"
     del /q/f/s "%SystemRoot%\Minidump.dmp"
     del /f /s /q "%SystemRoot%\Minidump\*.*"
-    del /f /s /q "%SystemRoot%\Minidump\"
-    rd /s /q "%SystemRoot%\Minidump\"
-    md "%SystemRoot%\Minidump\" 
+    del /f /s /q "%SystemRoot%\Minidump"
+    rd /s /q "%SystemRoot%\Minidump"
+    md "%SystemRoot%\Minidump" 
 
 
 
@@ -761,16 +761,17 @@ Title 9.1.5) Cleaning Junk [Windows] [History]
 Title 9.1.6) Cleaning Junk [Windows] [Old]
     color 01
     echo These folders appear after using Media Creation Tool to do a Windows Ugrade or Reset.
-    takeown /f %SYSTEMDRIVE%\$SysReset /R /A /D Y
+    takeown /f "%SYSTEMDRIVE%\$SysReset" /R /A /D Y
     ::echo y| cacls %SYSTEMDRIVE%\$SysReset /C /T /grant administrators:F
-    del /q/f/s %SYSTEMDRIVE%\$SysReset
-    rd /s /q %SYSTEMDRIVE%\$SysReset /R /A /D Y
-    takeown /f %SYSTEMDRIVE%\Windows10Upgrade
+    del /q/f/s "%SYSTEMDRIVE%\$SysReset"
+    rd /s /q "%SYSTEMDRIVE%\$SysReset"
+    takeown /f "%SYSTEMDRIVE%\Windows10Upgrade"
     ::echo y| cacls %SYSTEMDRIVE%\Windows10Upgrade /C /T /grant administrators:F
-    del /q/f/s %SYSTEMDRIVE%\Windows10Upgrade
-    rd /s /q %SYSTEMDRIVE%\Windows10Upgrade
-    del /q/f/s %SYSTEMDRIVE%\Windows.old
-    rd /s /q %SYSTEMDRIVE%\Windows.old
+    del /q/f/s "%SYSTEMDRIVE%\Windows10Upgrade"
+    rd /s /q "%SYSTEMDRIVE%\Windows10Upgrade"
+    takeown /f "%SYSTEMDRIVE%\Windows.old"
+    del /q/f/s "%SYSTEMDRIVE%\Windows.old"
+    rd /s /q "%SYSTEMDRIVE%\Windows.old"
 
 
 
@@ -779,19 +780,19 @@ Title 9.1.6) Cleaning Junk [Windows] [Old]
 
 Title 9.2.1) Cleaning [Windows] [Update Files] [Package Leftovers]
     color 0d
-    del /s /f /q C:\Windows\SoftwareDistribution\Download
+    del /s /f /q "C:\Windows\SoftwareDistribution\Download"
 
 
 
 Title 9.2.2) Cleaning [Windows] [Drivers] [Package leftovers]
     echo These files are used for installing drivers, they should be auto-removed after installation, but just in case, they are here.
     color 0e
-    del /q/f/s %SYSTEMDRIVE%\AMD\*.*
-    rd /s /q %SYSTEMDRIVE%\AMD\*.*
-    del /q/f/s %SYSTEMDRIVE%\NVIDIA\*.*
-    rd /s /q %SYSTEMDRIVE%\NVIDIA\*.*
-    del /q/f/s %SYSTEMDRIVE%\INTEL\*.*
-    rd /s /q %SYSTEMDRIVE%\INTEL\*.*
+    del /q/f/s "%SYSTEMDRIVE%\AMD\*.*"
+    rd /s /q "%SYSTEMDRIVE%\AMD\*.*"
+    del /q/f/s "%SYSTEMDRIVE%\NVIDIA\*.*"
+    rd /s /q "%SYSTEMDRIVE%\NVIDIA\*.*"
+    del /q/f/s "%SYSTEMDRIVE%\INTEL\*.*"
+    rd /s /q "%SYSTEMDRIVE%\INTEL\*.*"
 
 
 
@@ -800,12 +801,12 @@ Title 9.2.2) Cleaning [Windows] [Drivers] [Package leftovers]
 
 Title 9.3.1) Cleaning Junk [Apps] [Temp]
     color 03
-    del /q/f/s %temp%
-    del /s /f /q %Temp%\*.*
-    del /s /f /q %AppData%\Temp\*.*
-    del /s /f /q %HomePath%\AppData\LocalLow\Temp\*.*
-    del /s /f /q %userprofile%\appdata\LocalLow\Temp
-    del /s /f /q %userprofile%\appdata\roaming\Temp
+    del /q/f/s "%temp%"
+    del /s /f /q "%Temp%\*.*"
+    del /s /f /q "%AppData%\Temp\*.*"
+    del /s /f /q "%HomePath%\AppData\LocalLow\Temp\*.*"
+    del /s /f /q "%userprofile%\appdata\LocalLow\Temp"
+    del /s /f /q "%userprofile%\appdata\roaming\Temp"
     del /q/f/s "C:\OneDriveTemp"
     del /q/f/s "C:\ProgramData\Lenovo\Vantage\Update\Svc\Tmp"
     del /q/f/s "C:\Program Files\Git\tmp"
@@ -929,14 +930,14 @@ Title 9.3.5) Cleaning Junk [App] [Report] [Custom list]
 Title 9.4.1) Cleaning Safe Cache [App] [Prefetch]
     color 01
     del /s /f /q %WinDir%\Prefetch\*.*
-    rd /q/s "%windir%\prefetch\"
-    md "%windir%\prefetch\"
+    rd /q/s "%windir%\prefetch"
+    md "%windir%\prefetch"
 
 
 
 Title 9.4.2) Cleaning Safe Cache [Windows] [Cache] [Microsoft Store]
     color 03
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & Title 9.4.1) Reset Microsoft Store Cache & color 0a & wsreset & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & Title 9.4.2) Reset Microsoft Store Cache & color 0a & wsreset & exit"
 
 
 
@@ -1103,7 +1104,7 @@ Title 4.7.3) Cleaning Uncertainties [Caution] [WIndows] [CD/DVD] [Burn] [Cache]
 Title 4.7.4) Cleaning Uncertainties [Caution] [Windows] [Audio] [Cache]
     color 09
     del /f /q "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
-    del /f /s /q %SystemRoot%\system32\catroot2\*.* 
+    del /f /s /q "%SystemRoot%\system32\catroot2\*.*" 
 
 
 
@@ -1978,7 +1979,7 @@ cd/
 
 
 
-Title 4.10.2) Finishing Cleanup [Remove Empty folders] [WARNING] [DON'T CLOSE] [MAY CAUSE ISSUE TO POORLY PROGRAMMED APPS & DEVELOPERS] {PLEASE DISABLE ACCORDING TO YOU}
+Title 4.10.2) Finishing Cleanup [Remove Empty folders] [WARNING] [DON'T CLOSE] [MAY CAUSE ISSUE TO POORLY PROGRAMMED APPS AND DEVELOPERS] {PLEASE DISABLE ACCORDING TO YOU}
     echo Known issue: User has to make a new password at Windows Logon if using Windows Hello Pin.
     echo Knwon issue: Cause issues for Hyper-v nework connections, uncheck and recheck it in Windows Feature and restart will fix.
     color 4F
@@ -2800,7 +2801,7 @@ Title 11.1) Removing Malware [rkill] [Killing malicious tasks]
     echo   ##           is            ##
     echo   ## Killing Malicious Tasks ##
     echo   #############################
-    C:\Users\%username%\Downloads\rkill.exe -l C:\Logs\running_malware_tasks.txt -s 1>&2
+    "C:\Users\%username%\Downloads\rkill.exe" -l C:\Logs\running_malware_tasks.txt -s 1>&2
     taskkill /f /im explorer.exe & taskkill /f /im chrome.exe /t & taskkill /f /im opera.exe /t & taskkill /f /im msedge.exe /t & taskkill /f /im brave.exe /t & taskkill /f /im dragon.exe /t & taskkill /f /im icedragon.exe /t & taskkill /f /im firefox.exe /t
     start explorer.exe
     
@@ -2813,7 +2814,7 @@ Title 11.2) Removing Malware [AdwCleaner] [Adware]
     echo   $$              is              $$
     echo   $$       Removing Adware        $$
     echo   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-    C:\Users\%username%\Downloads\adwcleaner.exe /eula /clean /noreboot /preinstalled  
+    "C:\Users\%username%\Downloads\adwcleaner.exe" /eula /clean /noreboot /preinstalled  
 
 Title 11.3) Cleaning Computer [BleachBit]
     color e0
@@ -2824,8 +2825,8 @@ Title 11.3) Cleaning Computer [BleachBit]
     echo   **             is             **
     echo   **       Cleaning Junk        **
     echo   ********************************
-    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all
-    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all-but-warning
+    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe" --update-winapp2 -c --all
+    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe" --update-winapp2 -c --all-but-warning
 
 Title 11.4) Cleaning Computer [CCleaner]
     color e1
@@ -2834,14 +2835,14 @@ Title 11.4) Cleaning Computer [CCleaner]
 
 Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
     color 1F
-    echo                 d8b                                        .d888888    
-    echo                 Y8P                                       d88P" 888    
+    echo                d8b                                        .d888888    
+    echo                Y8P                                       d88P" 888    
     echo                                                           888   888    
-    echo    88888b.d88b. 888 .d8888b888d888 .d88b. .d8888b  .d88b. 888888888888 
-    echo    888 "888 "88b888d88P"   888P"  d88""88b88K     d88""88b888   888    
-    echo    888  888  888888888     888    888  888"Y8888b.888  888888   888    
-    echo    888  888  888888Y88b.   888    Y88..88P     X88Y88..88P888   Y88b.  
-    echo    888  888  888888 "Y8888P888     "Y88P"  88888P' "Y88P" 888    "Y888 
+    echo   88888b.d88b. 888 .d8888b888d888 .d88b. .d8888b  .d88b. 888888888888 
+    echo   888 "888 "88b888d88P"   888P"  d88""88b88K     d88""88b888   888    
+    echo   888  888  888888888     888    888  888"Y8888b.888  888888   888    
+    echo   888  888  888888Y88b.   888    Y88..88P     X88Y88..88P888   Y88b.  
+    ech    888  888  888888 "Y8888P888     "Y88P"  88888P' "Y88P" 888    "Y888 
     echo.
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
@@ -2852,22 +2853,22 @@ Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
 
 Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
     color 9F
-    echo                       88                                                          
-    echo                       ""                                                          
+    echo                      88                                                          
+    echo                      ""                                                          
     echo.                                                                             
-    echo    88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
-    echo    88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
-    echo    88      88      88 88 8b         88         8b       d8  `"Y8ba,  8b       d8  
-    echo    88      88      88 88 "8a,   ,aa 88         "8a,   ,a8" aa    ]8I "8a,   ,a8"  
-    echo    88      88      88 88  `"Ybbd8"' 88          `"YbbdP"'  `"YbbdP"'  `"YbbdP"'  
-    echo    ad88          
-    echo    d8"     ,d     
-    echo    88      88     
-    echo    MM88MMM MM88MMM  
-    echo    88      88     
-    echo    88      88     
-    echo    88      88,    
-    echo    88      "Y888
+    echo   88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
+    echo   88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
+    echo   88      88      88 88 8b         88         8b       d8  `"Y8ba,  8b       d8  
+    echo   88      88      88 88 "8a,   ,aa 88         "8a,   ,a8" aa    ]8I "8a,   ,a8"  
+    echo   88      88      88 88  `"Ybbd8"' 88          `"YbbdP"'  `"YbbdP"'  `"YbbdP"'  
+    echo   ad88          
+    echo   d8"     ,d     
+    echo   88      88     
+    echo   MM88MMM MM88MMM  
+    echo   88      88     
+    echo   88      88     
+    echo   88      88,    
+    echo   88      "Y888
     echo.
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2 -BootSectorScan
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -ListAll
@@ -2879,7 +2880,7 @@ Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
 
 Title 11.7) Removing Malware [tdskiller] [Patience] [Rootkits]
     color 20
-    if EXIST "C:\Users\%username%\Downloads\tdsskiller.exe" (    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX &    echo   XX          tdskiller         XX &    echo   XX        by Kaspersky        XX &    echo   XX    made in Mother Russia   XX &    echo   XX             is             XX &    echo   XX      Removing Rootkits     XX &    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX & echo. & echo Scanning... & start /w C:\Users\%username%\Downloads\tdsskiller.exe -accepteula -accepteulaksn -l C:\Logs\ -qpath C:\Logs\ -dcexact -tdlfs -silent) ELSE (echo tdsskiller not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\tdsskiller.exe" (    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX &    echo   XX          tdskiller         XX &    echo   XX        by Kaspersky        XX &    echo   XX    made in Mother Russia   XX &    echo   XX             is             XX &    echo   XX      Removing Rootkits     XX &    echo   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX & echo. & echo Scanning... & start /w "" "C:\Users\%username%\Downloads\tdsskiller.exe" -accepteula -accepteulaksn -l C:\Logs\ -qpath C:\Logs\ -dcexact -tdlfs -silent) ELSE (echo tdsskiller not found, skipping... & echo.)
 
 Title 11.8) Removing Malware [KVRT] [Patience]
     color a1
@@ -2890,7 +2891,7 @@ Title 11.8) Removing Malware [KVRT] [Patience]
     echo   XX           is          XX
     echo   XX Scanning for Malware  XX
     echo   XXXXXXXXXXXXXXXXXXXXXXXXXXX
-    if EXIST "C:\Users\%username%\Downloads\KVRT.exe" (start /wait C:\Users\%username%\Downloads\KVRT.exe -d C:\Logs -accepteula -processlevel 2 -noads -silent -adinsilent -allvolumes) ELSE (echo KVRT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\KVRT.exe" (start /wait "" "C:\Users\%username%\Downloads\KVRT.exe" -d C:\Logs -accepteula -processlevel 2 -noads -silent -adinsilent -allvolumes) ELSE (echo KVRT not found, skipping... & echo.)
 
 Title 11.9) Removing Malware [a2cmd] [Patience]
     color 60
@@ -2915,10 +2916,10 @@ Title 11.10) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
     echo    /**   /    /**        /** /**       /**  //**     /**    
     echo    /**        /**  ********  /******** /**   //**    /**    
     echo    //         //  ////////   ////////  //     //     //    
-    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w C:\Users\%username%\Downloads\MSERT.exe /Q /F:Y) ELSE (echo MSERT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y) ELSE (echo MSERT not found, skipping... & echo.)
 
 Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
-    color color 80
+    color 80
     echo     ****     ****  ********   *******  **********
     echo    /**/**   **/**  **//////  /**////** /////**/// 
     echo    /**//** ** /** /**        /**   /**     /**    
@@ -2927,11 +2928,11 @@ Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     echo    /**   /    /**        /** /**  //**     /**    
     echo    /**        /**  ********  /**   //**    /**    
     echo    //         //  ////////   //     //     //  
-    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe /Q /F:Y) ELSE (echo MSRT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w "" "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" /Q /F:Y) ELSE (echo MSRT not found, skipping... & echo.)
 
 Title 11.12) Removing Malware [McAfee] [Patience] {Disabled due to spyware}
     color f4
-    ::if EXIST "C:\Users\%username%\Downloads\stinger64.exe" (start /wait C:\Users\%username%\Downloads\stinger64.exe --AD --DELETE --GO --ROOTKIT --WMI --PROGRAM --REPAIR --REPORTPATH=C:\Logs --SILENT) ELSE (echo McAfee Stinger thinks your network driver is a malware, just joking. Anyways skipping... & echo.)
+    ::if EXIST "C:\Users\%username%\Downloads\stinger64.exe" (start /wait "" "C:\Users\%username%\Downloads\stinger64.exe" --AD --DELETE --GO --ROOTKIT --WMI --PROGRAM --REPAIR --REPORTPATH=C:\Logs --SILENT) ELSE (echo McAfee Stinger thinks your network driver is a malware, just joking. Anyways skipping... & echo.)
 
 
 
@@ -3006,8 +3007,8 @@ Title Meanwhile Ending Tasks [For success uninstall] [DO NOT CLOSE] {TASKBAR MAY
 Title 12.2) Prepare to send soldiers home... [BleachBit] [Cleaning]
     MODE CON: COLS=83 LINES=51
     color 01
-    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all
-    C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe --update-winapp2 -c --all-but-warning
+    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe" --update-winapp2 -c --all
+    "C:\Users\%username%\AppData\Local\BleachBit\bleachbit_console.exe" --update-winapp2 -c --all-but-warning
 
 Title 12.3) Prepare to send soldiers home... [CCleaner] [Cleaning]
 "C:\Program Files\CCleaner\CCleaner.exe" /AUTO
@@ -3015,11 +3016,11 @@ Title 12.3) Prepare to send soldiers home... [CCleaner] [Cleaning]
 Title 12.4) Sending soldiers home... [Kaspersky] [Uninstall]
     color 03
     reg delete "HKLM\SOFTWARE\WOW6432Node\KasperskyLab" /F
-    reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /v 36f949aa-49b3-4272-ae25-1c61865d24ff /f
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /v 36f949aa-49b3-4272-ae25-1c61865d24ff /f
     del /q/f/s "C:\KVRT2020_Data"
     rd /q/s "C:\KVRT2020_Data"
-    del /q/f/s C:\Users\%username%\Downloads\KVRT.exe
-    cd /D C:\Windows\System32\Drivers
+    del /q/f/s "C:\Users\%username%\Downloads\KVRT.exe"
+    cd /D "C:\Windows\System32\Drivers"
     FOR %%i IN ("klupd_d62efc8ba*.sys") DO (REG DELETE "HKLM\System\CurrentControlSet\services\%%~ni" /f & DEL /F /Q "%%i")
     cd /
 
@@ -3044,15 +3045,15 @@ echo    ======================================
 
 Title 12.6) Sending Soldiers home... [tdsskiller] [Uninstall]
     color 09
-    del /q/f/s C:\Users\%username%\Downloads\tdsskiller.exe
+    del /q/f/s "C:\Users\%username%\Downloads\tdsskiller.exe"
 
 Title 12.7) Sending Soldiers home... [MSERT] [Uninstall]
     color 0b
-    del /q/f/s C:\Users\%username%\Downloads\MSERT.exe
+    del /q/f/s "C:\Users\%username%\Downloads\MSERT.exe"
 
 Title 12.8) Sending Soldiers home... [MSRT] [Uninstall] [Require Name Check] [Attention]
     color 0d
-    del /q/f/s C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe
+    del /q/f/s "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe"
     del /q/f/s "C:\Windows\Debug"
 
 Title 12.9) Sending Soldiers home... [AdwCleaner] [Uninstall]
@@ -3060,13 +3061,13 @@ Title 12.9) Sending Soldiers home... [AdwCleaner] [Uninstall]
     reg delete "HKLM\SOFTWARE\WOW6432Node\Malwarebytes" /f
     del /q/f/s "C:\AdwCleaner"
     rd /s /q "C:\AdwCleaner"
-    del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
-    reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /F
-    reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /f
+    del /q/f/s "C:\Users\%username%\Downloads\adwcleaner.exe"
+    reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /F
+    reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /f
 
 Title 12.10) Sending Soldiers home... [rkill] [Uninstall]
     color 01
-    del /q/f/s C:\Users\%username%\Downloads\rkill.exe
+    del /q/f/s "C:\Users\%username%\Downloads\rkill.exe"
     del /q/f/s "C:\Users\%username%\OneDrive\桌面\rkill.txt"
     del /q/f/s "C:\Users\%username%\OneDrive\Desktop\rkill.txt"
 
@@ -3083,7 +3084,7 @@ Title 12.13) Sending Soldiers home... [AdwCleaner] [Uninstall]
     color 06
     del /q/f/s "C:\AdwCleaner"
     rd /s /q "C:\AdwCleaner"
-    del /q/f/s C:\Users\%username%\Downloads\adwcleaner.exe
+    del /q/f/s "C:\Users\%username%\Downloads\adwcleaner.exe"
 
 Title 12.14) Sending Soldiers home... [a2cmd] [Uninstall]
     color 03
@@ -3111,7 +3112,7 @@ Title 13.2) Removing generated junk
     color 0b
     C:\Windows\Temp
     del /q/f/s C:\Windows\Logs
-    del /q/f/s C:\Users\%username%\AppData\Local\Temp
+    del /q/f/s "C:\Users\%username%\AppData\Local\Temp"
     for %%i in (bat,cmd,txt,log,jpg,jpeg,tmp,temp,bak,backup,exe) do (
         del /F /Q "%SystemDrive%\*.%%i" 2>NUL
     )
