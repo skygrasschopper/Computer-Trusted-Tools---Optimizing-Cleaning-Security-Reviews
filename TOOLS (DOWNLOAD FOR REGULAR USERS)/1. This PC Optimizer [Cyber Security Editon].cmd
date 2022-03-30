@@ -2685,23 +2685,6 @@ Title 9.3.5) Preparing Defender Scan [Services] [Remove Malware Service]
 
 
 
-
-
-
-Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Check] [Attention]
-    color 03
-    "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
-    "C:\Users\%username%\Downloads\ccsetup591.exe" /S
-    IF EXIST "C:\EmsisoftCmd" (echo Emisoft Command Line Scanner already installed, skipping...) ELSE ("C:\Users\%username%\Downloads\EmsisoftCommandlineScanner64.exe" /s)
-
-
-
-
-
-
-
-
-
 Title 9.4.1) Preparing Defender Scan [Undo Malware actions to Defender] [Exclusion Removal] [3rd-party antivirus users] [Caution] {Resets Defender through Microsoft Store}
     color 0e
     start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
@@ -2777,8 +2760,25 @@ Title 10.1) Verification [System]
 
 
 
-Title 10.2) Verifcation [Windows]
+
+
+
+Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Check] [Attention]
     color 03
+    "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
+    "C:\Users\%username%\Downloads\ccsetup591.exe" /S
+    IF EXIST "C:\EmsisoftCmd" (echo Emisoft Command Line Scanner already installed, skipping...) ELSE ("C:\Users\%username%\Downloads\EmsisoftCommandlineScanner64.exe" /s)
+
+
+
+
+
+
+
+
+
+Title 10.2) Verifcation [Windows]
+    color 05
     DISM /Online /NoRestart /Cleanup-Image /ScanHealth
     DISM /online /NoRestart /Cleanup-Image /checkhealth
     DISM /Online /NoRestart /Cleanup-Image /RestoreHealth
@@ -2918,7 +2918,7 @@ Title 11.10) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
     echo    /**   /    /**        /** /**       /**  //**     /**    
     echo    /**        /**  ********  /******** /**   //**    /**    
     echo    //         //  ////////   ////////  //     //     //    
-    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y & echo MSERT is scanning for malware... & echo.) ELSE (echo MSERT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y & echo. & echo MSERT is scanning for malware... & echo.) ELSE (echo MSERT not found, skipping... & echo.)
 
 Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     color 80
@@ -2930,7 +2930,7 @@ Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     echo    /**   /    /**        /** /**  //**     /**    
     echo    /**        /**  ********  /**   //**    /**    
     echo    //         //  ////////   //     //     //  
-    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w "" "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" /Q /F:Y & echo MSRT is scanning for running malware... & echo.) ELSE (echo MSRT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w "" "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" /Q /F:Y & echo. & echo MSRT is scanning for running malware... & echo.) ELSE (echo MSRT not found, skipping... & echo.)
 
 Title 11.12) Removing Malware [McAfee] [Patience] {Disabled due to spyware}
     color f4

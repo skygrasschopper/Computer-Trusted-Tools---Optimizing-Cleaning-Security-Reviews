@@ -2435,40 +2435,11 @@ Title 9.3.5) Preparing Defender Scan [Services] [Remove Malware Service]
 
 
 
-
-
-
-Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Check] [Attention]
-    color 03
-    "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
-    "C:\Users\%username%\Downloads\ccsetup591.exe" /S
-    IF EXIST "C:\EmsisoftCmd" (echo Emisoft Command Line Scanner already installed, skipping...) ELSE ("C:\Users\%username%\Downloads\EmsisoftCommandlineScanner64.exe" /s)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Title 9.5) Preparing Defender Scan [REMOVE MALWARE] [Custom list]
     color 05
     REM Custom Malware Path below to remove
     del /q/f/s "C:\Users\%username%\AppData\Roaming\414.exe"
     del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
-
-
-
-
-
-
-
 
 
 
@@ -2488,9 +2459,6 @@ Title 9.7) Preparing Defender Scan [Signature Update]
 
 
 
-
-
-
 Title 10.1) Verification [System]
     color 0b
     sfc /scannow
@@ -2498,6 +2466,23 @@ Title 10.1) Verification [System]
     chkdsk /i
     chkdsk /c
     echo y|chkdsk /v /x /b
+
+
+
+
+
+
+
+
+
+Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Check] [Attention]
+    color 05
+    "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
+    "C:\Users\%username%\Downloads\ccsetup591.exe" /S
+    IF EXIST "C:\EmsisoftCmd" (echo Emisoft Command Line Scanner already installed, skipping...) ELSE ("C:\Users\%username%\Downloads\EmsisoftCommandlineScanner64.exe" /s)
+
+
+
 
 
 
@@ -2645,7 +2630,7 @@ Title 11.10) Removing Malware [MSERT] [Patience] {Around 4 to 5 to complete}
     echo    /**   /    /**        /** /**       /**  //**     /**    
     echo    /**        /**  ********  /******** /**   //**    /**    
     echo    //         //  ////////   ////////  //     //     //    
-    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y & echo MSERT is scanning for malware... & echo.) ELSE (echo MSERT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\MSERT.exe" (start /w "" "C:\Users\%username%\Downloads\MSERT.exe" /Q /F:Y & echo . & echo MSERT is scanning for malware... & echo.) ELSE (echo MSERT not found, skipping... & echo.)
 
 Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     color 80
@@ -2657,7 +2642,7 @@ Title 11.11) Removing Malware [MSRT] [Patience] [Require Name Check] [Attention]
     echo    /**   /    /**        /** /**  //**     /**    
     echo    /**        /**  ********  /**   //**    /**    
     echo    //         //  ////////   //     //     //  
-    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w "" "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" /Q /F:Y & echo MSRT is scanning for running malware... & echo.) ELSE (echo MSRT not found, skipping... & echo.)
+    if EXIST "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" (start /w "" "C:\Users\%username%\Downloads\Windows-KB890830-x64-V5.99.exe" /Q /F:Y & echo. & echo MSRT is scanning for running malware... & echo.) ELSE (echo MSRT not found, skipping... & echo.)
 
 Title 11.12) Removing Malware [McAfee] [Patience] {Disabled due to spyware}
     color f4
