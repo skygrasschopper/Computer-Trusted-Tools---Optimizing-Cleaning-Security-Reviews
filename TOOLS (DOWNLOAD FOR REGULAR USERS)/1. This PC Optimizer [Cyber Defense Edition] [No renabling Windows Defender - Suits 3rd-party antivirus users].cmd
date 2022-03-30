@@ -2590,14 +2590,14 @@ Title 11.4) Cleaning Computer [CCleaner]
 
 Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
     color 1F
-    echo                 d8b                                        .d888888    
-    echo                 Y8P                                       d88P" 888    
-    echo                                                           888   888    
-    echo    88888b.d88b. 888 .d8888b888d888 .d88b. .d8888b  .d88b. 888888888888 
-    echo    888 "888 "88b888d88P"   888P"  d88""88b88K     d88""88b888   888    
-    echo    888  888  888888888     888    888  888"Y8888b.888  888888   888    
-    echo    888  888  888888Y88b.   888    Y88..88P     X88Y88..88P888   Y88b.  
-    echo    888  888  888888 "Y8888P888     "Y88P"  88888P' "Y88P" 888    "Y888 
+    echo                d8b                                        .d888888    
+    echo                Y8P                                       d88P" 888    
+    echo                                                          888   888    
+    echo   88888b.d88b. 888 .d8888b888d888 .d88b. .d8888b  .d88b. 888888888888 
+    echo   888 "888 "88b888d88P"   888P"  d88""88b88K     d88""88b888   888    
+    echo   888  888  888888888     888    888  888"Y8888b.888  888888   888    
+    echo   888  888  888888Y88b.   888    Y88..88P     X88Y88..88P888   Y88b.  
+    echo   888  888  888888 "Y8888P888     "Y88P"  88888P' "Y88P" 888    "Y888 
     echo.
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1 -BootSectorScan
@@ -2608,8 +2608,8 @@ Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
 
 Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
     color 9F
-    echo                       88                                                          
-    echo                       ""                                                          
+    echo                      88                                                          
+    echo                      ""                                                          
     echo.                                                                             
     echo   88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
     echo   88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
