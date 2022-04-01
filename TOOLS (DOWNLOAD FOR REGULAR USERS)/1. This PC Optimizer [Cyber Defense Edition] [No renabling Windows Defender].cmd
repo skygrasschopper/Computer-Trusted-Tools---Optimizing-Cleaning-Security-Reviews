@@ -2,7 +2,7 @@ FOR /F "delims=" %%i IN ('time /t') DO set time=%%i
 FOR /F "delims=" %%i IN ('hostname') DO set hostname=%%i
 FOR /F "delims=" %%i IN ('ver') DO set ver=%%i
 @echo off
-Title This PC Optimizer v8.0 [Cyber Security Editon] {Hello %username%! Your lucky number on %DATE% at %time% is %random%, good luck!}
+Title This PC Optimizer v8.0 [Cyber Defense Edition] [No renabling Windows Defender] {Hello %username%! Your lucky number on %DATE% at %time% is %random%!}
     MODE CON: COLS=143 LINES=51
     color 0b
     echo.
@@ -50,7 +50,7 @@ Title This PC Optimizer v8.0 [Cyber Security Editon] {Hello %username%! Your luc
     echo.                 
     ping 127.0.0.1 -n 1 >nul
     echo Ready to DESTROY MALWARE, CLEAN JUNK and OPTIMIZE %hostname% with %ver%
-    ping 127.0.0.1 -n 1 >nul
+    ping 127.0.0.1 -n 1 >nul    
     echo Running at %time%, %date%
     ping 127.0.0.1 -n 1 >nul
     echo.
@@ -136,14 +136,6 @@ Title 1) Ending Tasks [Stop Malware Tasks] [DO NOT CLOSE] {TASKBAR MAY BREAK in 
 
 
 
-Title 2.1) Fixing Windows Security [Windows Defender Verification]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    MODE CON: COLS=83 LINES=51
-    color 01
-    echo Verification will fail due to firewall blocking connection below but let it run a bit.
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"  
 
 
 
@@ -151,6 +143,7 @@ Title 2.1) Fixing Windows Security [Windows Defender Verification]
 
 
 Title 2.2) Fixing Windows Security [Blocking all connections]
+    MODE CON: COLS=83 LINES=51
     echo Disconnect from Hacker.
     color 03
     bitsadmin.exe /reset /allusers
@@ -163,59 +156,7 @@ Title 2.2) Fixing Windows Security [Blocking all connections]
 
 
 
-Title 2.3.1) Fixing Windows Security [Group Policy reset] [Pro/Enterprise/Business] [3rd-party antivirus users] [Caution]
-    echo Warning this will reset All Group Policy, big organiations like school/company be careful.
-    echo Malware adds rule in Group Policy to disable Windows Security in paid Windows' Editions.
-    color 04
-    del /q/f/s "%WinDir%\System32\GroupPolicyUsers"
-    RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
-    del /q/f/s "%WinDir%\System32\GroupPolicy"
-    RD /S /Q "%WinDir%\System32\GroupPolicy"
-    md "%WinDir%\System32\GroupPolicyUsers"
-    md "%WinDir%\System32\GroupPolicy"
-
-
-
-Title 2.3.2) Fixing Windows Security [Registry attack fix] [Reactivate Windows Defender] [3rd-party antivirus users] [Caution]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    color 05
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
-    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
-    REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f     
-    reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
-
-
-
-Title 2.3.3) Fixing Windows Security [Registry attack fix] [Reactive Defender Services] [3rd-party antivirus users] [Caution]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    color 06
-    REG add "HKLM\SYSTEM\CurrentControlSet\services\WinDefend" /v Start /t REG_DWORD /d 2 /f
-    REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f  
-
-
-
-Title 2.3.4) Fixing Windows Security [Registry attack fix] [Extra Actions] [3rd-party antivirus users] [Caution]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    color 09
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f     
+T
 
 
 
@@ -267,57 +208,7 @@ Title 2.3.10) Fixing Windows Security [Register Group Policy and Registry change
 
 
 
-Title 2.4.1) Fixing Windows Security [Services] [Reset and Begin Defender Services] [3rd-party antivirus users] [Caution]
-    color 04
-    sc config "WdNisSvc" type= own
-    sc config "WdNisSvc" start= demand
-    sc config "WdNisSvc" Error= normal
-    ::sc config "WdNisSvc" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\NisSrv.exe"
-    sc config "WdNisSvc" group= ""
-    sc config "WdNisSvc" tag= 0
-    sc config "WdNisSvc" Depend= "WdNisDrv"
-    sc config "WdNisSvc" obj= "NT AUTHORITY\LocalService"
-    sc config "WdNisSvc" DisplayName= "Microsoft Defender Antivirus Network Inspection Service"
-    powershell start-service WdNisSvc
-    net start WdNisSvc
-    sc config "WinDefend" type= own
-    sc config "WinDefend" start= auto
-    sc config "WinDefend" Error= normal
-    ::sc config "WinDefend" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\MsMpEng.exe"
-    sc config "WinDefend" group= ""
-    sc config "WinDefend" tag= 0
-    sc config "WinDefend" Depend= "RpcSs"
-    sc config "WinDefend" obj= ".\LocalSystem" password= ""
-    sc config "WinDefend" DisplayName= "Microsoft Defender Antivirus Service"
-    powershell start-service WinDefend
-    net start WinDefend
-    sc config "Sense" type= own
-    sc config "Sense" start= demand
-    sc config "Sense" Error= normal
-    ::sc config "Sense" binPath= "C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe"
-    sc config "Sense" group= ""
-    sc config "Sense" tag= 0
-    sc config "Sense" Depend= ""
-    sc config "Sense" obj= ".\LocalSystem" password= ""
-    sc config "Sense" DisplayName= "Windows Defender Advanced Threat Protection Service"
-    net start Sense
 
-
-
-Title 2.4.2) Fixing Windows Security [Services] [Reset and Begin Connection Protection] [3rd-party antivirus users] [Caution]
-    color 05
-    sc config "nvagent" type= share
-    sc config "nvagent" start= demand
-    sc config "nvagent" Error= normal
-    sc config "nvagent" binPath= "C:\WINDOWS\system32\svchost.exe -k NetSvcs"
-    sc config "nvagent" group= ""
-    sc config "nvagent" tag= 0
-    sc config "nvagent" Depend= ""
-    sc config "nvagent" obj= ".\LocalSystem" password= ""
-    sc config "nvagent" DisplayName= "Network Virtualization Service"
-    net start nvagent
-    net start SecurityHealthService
-    net start sppsvc
 
 
 
@@ -353,24 +244,6 @@ Title 2.4.5) Fixing Windows Security [Services] [Remove Malware Service]
 
 
 
-Title 2.5.1) Fixing Windows Security [Undo Malware actions to Defender] [Exclusion Removal] [3rd-party antivirus users] [Caution] {Resets Defender through Microsoft Store}
-    color 16
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionPath {%AllUserProfile%}; Remove-MpPreference -ExclusionPath {%AppData%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%HomeDrive%}; Remove-MpPreference -ExclusionPath {%HomePath%}; Remove-MpPreference -ExclusionPath {%LocalAppData%}; Remove-MpPreference -ExclusionPath {%ProgramData%}; Remove-MpPreference -ExclusionPath {%ProgramFiles%}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%Public%}; Remove-MpPreference -ExclusionPath {%SystemDrive%}; Remove-MpPreference -ExclusionPath {%SystemRoot%}; Remove-MpPreference -ExclusionPath {%Tmp%}; Remove-MpPreference -ExclusionPath {%Temp%}; Remove-MpPreference -ExclusionPath {%UserProfile%}; Remove-MpPreference -ExclusionPath {%WinDir%}; Remove-MpPreference -ExclusionPath {%OneDrive%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%ProgramW6432%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%AppData%\Microsoft\Windows\Start Menu\Programs\Startup}; Remove-MpPreference -ExclusionPath {C:\}; Remove-MpPreference -ExclusionPath {C:\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Temp}; Remove-MpPreference -ExclusionPath {C:\Temp\}; Remove-MpPreference -ExclusionPath {C:\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users}; Remove-MpPreference -ExclusionPath {C:\Users\}; Remove-MpPreference -ExclusionPath {C:\Users\*}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\*}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\*}; Remove-MpPreference -ExclusionPath {%Windir%\Temp}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\*}; Remove-MpPreference -ExclusionPath {/}; Remove-MpPreference -ExclusionPath {/*}; Remove-MpPreference -ExclusionPath {bin}; Remove-MpPreference -ExclusionPath {bin/}; Remove-MpPreference -ExclusionPath {bin/*}; Remove-MpPreference -ExclusionPath {/bin}; Remove-MpPreference -ExclusionPath {/bin/}; Remove-MpPreference -ExclusionPath {/bin/*}; Remove-MpPreference -ExclusionPath {sbin}; Remove-MpPreference -ExclusionPath {sbin/}; Remove-MpPreference -ExclusionPath {sbin/*}; Remove-MpPreference -ExclusionPath {/sbin}; Remove-MpPreference -ExclusionPath {/sbin/}; Remove-MpPreference -ExclusionPath {/sbin/*}; Remove-MpPreference -ExclusionPath {usr/lib}; Remove-MpPreference -ExclusionPath {usr/lib/}; Remove-MpPreference -ExclusionPath {usr/lib/*}; Remove-MpPreference -ExclusionPath {/usr/lib}; Remove-MpPreference -ExclusionPath {/usr/lib/}; Remove-MpPreference -ExclusionPath {/usr/lib/*}; exit"
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionExtension *.mp3,*.MP4,*.wav,*.EDB; Remove-MpPreference -ExclusionExtension .7z; Remove-MpPreference -ExclusionExtension .bat; Remove-MpPreference -ExclusionExtension .bin; Remove-MpPreference -ExclusionExtension .cab; Remove-MpPreference -ExclusionExtension .cmd; Remove-MpPreference -ExclusionExtension .com; Remove-MpPreference -ExclusionExtension .cpl; Remove-MpPreference -ExclusionExtension .dll; Remove-MpPreference -ExclusionExtension .exe; Remove-MpPreference -ExclusionExtension .fla; Remove-MpPreference -ExclusionExtension .gif; Remove-MpPreference -ExclusionExtension .gz; Remove-MpPreference -ExclusionExtension .hta; Remove-MpPreference -ExclusionExtension .inf; Remove-MpPreference -ExclusionExtension .java; Remove-MpPreference -ExclusionExtension .jar; Remove-MpPreference -ExclusionExtension .job; Remove-MpPreference -ExclusionExtension .jpeg; Remove-MpPreference -ExclusionExtension .jpg; Remove-MpPreference -ExclusionExtension .js; Remove-MpPreference -ExclusionExtension .ko; Remove-MpPreference -ExclusionExtension .ko.gz; Remove-MpPreference -ExclusionExtension .msi; Remove-MpPreference -ExclusionExtension .ocx; Remove-MpPreference -ExclusionExtension .png; Remove-MpPreference -ExclusionExtension .ps1; Remove-MpPreference -ExclusionExtension .py; Remove-MpPreference -ExclusionExtension .rar; Remove-MpPreference -ExclusionExtension .reg; Remove-MpPreference -ExclusionExtension .scr; Remove-MpPreference -ExclusionExtension .sys; Remove-MpPreference -ExclusionExtension .tar; Remove-MpPreference -ExclusionExtension .tmp; Remove-MpPreference -ExclusionExtension .url; Remove-MpPreference -ExclusionExtension .vbe; Remove-MpPreference -ExclusionExtension .vbs; Remove-MpPreference -ExclusionExtension .wsf; Remove-MpPreference -ExclusionExtension .zip; Remove-MpPreference -ExclusionProcess AcroRd32.exe; Remove-MpPreference -ExclusionProcess bitsadmin.exe; Remove-MpPreference -ExclusionProcess excel.exe; Remove-MpPreference -ExclusionProcess iexplore.exe; Remove-MpPreference -ExclusionProcess java.exe; Remove-MpPreference -ExclusionProcess outlook.exe; Remove-MpPreference -ExclusionProcess psexec.exe; Remove-MpPreference -ExclusionProcess powerpnt.exe; Remove-MpPreference -ExclusionProcess powershell.exe; Remove-MpPreference -ExclusionProcess schtasks.exe; Remove-MpPreference -ExclusionProcess wmic.exe; Remove-MpPreference -ExclusionProcess winword.exe; Remove-MpPreference -ExclusionProcess wuauclt.exe; Remove-MpPreference -ExclusionProcess addinprocess.exe; Remove-MpPreference -ExclusionProcess addinprocess32.exe; Remove-MpPreference -ExclusionProcess addinutil.exe; Remove-MpPreference -ExclusionProcess bash.exe; Remove-MpPreference -ExclusionProcess bginfo.exe; Remove-MpPreference -ExclusionProcess cdb.exe; Remove-MpPreference -ExclusionProcess csi.exe; Remove-MpPreference -ExclusionProcess dbghost.exe; Remove-MpPreference -ExclusionProcess dbgsvc.exe; Remove-MpPreference -ExclusionProcess dnx.exe; Remove-MpPreference -ExclusionProcess dotnet.exe; Remove-MpPreference -ExclusionProcess fsi.exe; Remove-MpPreference -ExclusionProcess fsiAnyCpu.exe; Remove-MpPreference -ExclusionProcess kd.exe; Remove-MpPreference -ExclusionProcess ntkd.exe; Remove-MpPreference -ExclusionProcess lxssmanager.dll; Remove-MpPreference -ExclusionProcess msbuild.exe; Remove-MpPreference -ExclusionProcess mshta.exe; Remove-MpPreference -ExclusionProcess ntsd.exe; Remove-MpPreference -ExclusionProcess rcsi.exe; Remove-MpPreference -ExclusionProcess system.management.automation.dll; Remove-MpPreference -ExclusionProcess windbg.exe; Remove-MpPreference -ExclusionProcess bash; Remove-MpPreference -ExclusionProcess sh; Remove-MpPreference -ExclusionProcess python; Remove-MpPreference -ExclusionProcess python3; Remove-MpPreference -ExclusionProcess java; Remove-MpPreference -ExclusionProcess zsh; exit"   
-
-
-
-Title 2.5.2) Fixing Windows Security [Undo Malware actions to Defender] [Highest Defense] [LOW PRIVACY, defense will return normal in the end, let the script finish] [3rd-party antivirus users] [Caution]
-    color 3c
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Set-Mppreference -AllowDatagramProcessingOnWinServer 1; Set-Mppreference -AllowNetworkProtectionDownLevel 1;Set-Mppreference -AllowNetworkProtectionOnWinServer 1; Set-Mppreference -AllowSwitchToAsyncInspection 0;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 6;Set-Mppreference -CloudExtendedTimeout 50;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 0; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 1; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 2;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 1; Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 100;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 3;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
-
-
-
-Title 2.5.3) Fixing Windows Security [Undo Malware actions to Defender] [Highest Defense] [Extra ASR Rules] [3rd-party antivirus users] [Caution]
-    color 9e
-    start powershell.exe -Command "mode.com con: lines=19 cols=19;add-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"          
-
 
 
 
@@ -386,13 +259,6 @@ Title 2.6) Fixing Windows Security [REMOVE MALWARE] [Custom list]
 
 
 
-
-Title 2.7) Reset Defender Schedul Task
-    color 06
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /ENABLE
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /ENABLE
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /ENABLE
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Verification" /ENABLE
 
 
 
@@ -2482,72 +2348,7 @@ Title 8.3) Update [Apps]
 
 
 
-Title 9.1) Preparing Defender Scan [Windows Defender Verification]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    echo Verification will fail due to firewall blocking connection below but let it run a bit.
-    color 0d
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCacheMaintenance & exit"
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 04 & "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdCleanup & exit"
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 06 &"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -IdleTask -TaskName WdVerification & exit"  
-
-
-
-
-
-
-Title 9.2.1) Preparing Defender Scan [Group Policy reset] [Pro/Enterprise/Business] [3rd-party antivirus users] [Caution]
-    echo Warning this will reset All Group Policy, big organiations like school/company be careful.
-    echo Malware adds rule in Group Policy to disable Windows Security in paid Windows' Editions.
-    color 0e
-    del /q/f/s "%WinDir%\System32\GroupPolicyUsers"
-    RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
-    del /q/f/s "%WinDir%\System32\GroupPolicy"
-    RD /S /Q "%WinDir%\System32\GroupPolicy"
-    md "%WinDir%\System32\GroupPolicyUsers"
-    md "%WinDir%\System32\GroupPolicy"
-
-
-
-Title 9.2.2) Preparing Defender Scan [Registry attack fix] [Reactivate Windows Defender] [3rd-party antivirus users] [Caution]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    color 01
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f
-    reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache" /va /f
-    REG delete "HKLM\SOFTWARE\Microsoft\PolicyManager\default\Defender" /va /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /va /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /va /f     
-    reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
-    reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /f
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" /f
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /f
-
-
-
-Title 9.2.3) Preparing Defender Scan [Registry attack fix] [Reactive Defender Services] [3rd-party antivirus users] [Caution]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    color 03
-    REG add “HKLM\SYSTEM\CurrentControlSet\services\WinDefend” /v Start /t REG_DWORD /d 2 /f
-    REG add "HKLM\SYSTEM\CurrentControlSet\Services\SecurityHealthService" /v Start /t REG_DWORD /d 3 /f  
-
-
-
-Title 9.2.4) Preparing Defender Scan [Registry attack fix] [Extra Actions] [3rd-party antivirus users] [Caution]
-    echo 3rd-Party antivirus users that disabled Windows Defender disable those scripts by adding ::
-    color 05
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Account protection" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\App and browser protection" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device performance and health" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Device security" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Enterprise customization" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Family options" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Firewall and network protection" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Notifications" /va /f
-    reg delete "HKLM\Software\Microsoft\Windows Defender Security Center\Virus and threat protection" /va /f     
+ 
 
 
 
@@ -2602,57 +2403,6 @@ Title 9.2.10) Preparing Defender Scan [Register Group Policy and Registry change
 
 
 
-Title 9.3.1) Preparing Defender Scan [Services] [Reset and Begin Defender Services] [3rd-party antivirus users] [Caution]
-    color 05
-    sc config "WdNisSvc" type= own
-    sc config "WdNisSvc" start= demand
-    sc config "WdNisSvc" Error= normal
-    ::sc config "WdNisSvc" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\NisSrv.exe"
-    sc config "WdNisSvc" group= ""
-    sc config "WdNisSvc" tag= 0
-    sc config "WdNisSvc" Depend= "WdNisDrv"
-    sc config "WdNisSvc" obj= "NT AUTHORITY\LocalService"
-    sc config "WdNisSvc" DisplayName= "Microsoft Defender Antivirus Network Inspection Service"
-    powershell start-service WdNisSvc
-    net start WdNisSvc
-    sc config "WinDefend" type= own
-    sc config "WinDefend" start= auto
-    sc config "WinDefend" Error= normal
-    ::sc config "WinDefend" binPath= "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2202.4-0\MsMpEng.exe"
-    sc config "WinDefend" group= ""
-    sc config "WinDefend" tag= 0
-    sc config "WinDefend" Depend= "RpcSs"
-    sc config "WinDefend" obj= ".\LocalSystem" password= ""
-    sc config "WinDefend" DisplayName= "Microsoft Defender Antivirus Service"
-    powershell start-service WinDefend
-    net start WinDefend
-    sc config "Sense" type= own
-    sc config "Sense" start= demand
-    sc config "Sense" Error= normal
-    ::sc config "Sense" binPath= "C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe"
-    sc config "Sense" group= ""
-    sc config "Sense" tag= 0
-    sc config "Sense" Depend= ""
-    sc config "Sense" obj= ".\LocalSystem" password= ""
-    sc config "Sense" DisplayName= "Windows Defender Advanced Threat Protection Service"
-    net start Sense
-
-
-
-Title 9.3.2) Preparing Defender Scan [Services] [Reset and Begin Connection Protection] [3rd-party antivirus users] [Caution]
-    color 06
-    sc config "nvagent" type= share
-    sc config "nvagent" start= demand
-    sc config "nvagent" Error= normal
-    sc config "nvagent" binPath= "C:\WINDOWS\system32\svchost.exe -k NetSvcs"
-    sc config "nvagent" group= ""
-    sc config "nvagent" tag= 0
-    sc config "nvagent" Depend= ""
-    sc config "nvagent" obj= ".\LocalSystem" password= ""
-    sc config "nvagent" DisplayName= "Network Virtualization Service"
-    net start nvagent
-    net start SecurityHealthService
-    net start sppsvc
 
 
 
@@ -2688,46 +2438,11 @@ Title 9.3.5) Preparing Defender Scan [Services] [Remove Malware Service]
 
 
 
-Title 9.4.1) Preparing Defender Scan [Undo Malware actions to Defender] [Exclusion Removal] [3rd-party antivirus users] [Caution] {Resets Defender through Microsoft Store}
-    color 0e
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage Microsoft.SecHealthUI -AllUsers | Reset-AppxPackage; Update-MpSignature; Set-MpPreference -CheckForSignaturesBeforeRunningScan 1; Set-MpPreference -DisableEmailScanning 0; Set-MpPreference -DisableScanningMappedNetworkDrivesForFullScan $False; Set-MpPreference -DisableArchiveScanning 0; Set-MpPreference -DisableScanningNetworkFiles 0; Set-MpPreference -DisableRemovableDriveScanning 0; exit"
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionPath {%AllUserProfile%}; Remove-MpPreference -ExclusionPath {%AppData%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles%}; Remove-MpPreference -ExclusionPath {%CommonProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%HomeDrive%}; Remove-MpPreference -ExclusionPath {%HomePath%}; Remove-MpPreference -ExclusionPath {%LocalAppData%}; Remove-MpPreference -ExclusionPath {%ProgramData%}; Remove-MpPreference -ExclusionPath {%ProgramFiles%}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%}; Remove-MpPreference -ExclusionPath {%Public%}; Remove-MpPreference -ExclusionPath {%SystemDrive%}; Remove-MpPreference -ExclusionPath {%SystemRoot%}; Remove-MpPreference -ExclusionPath {%Tmp%}; Remove-MpPreference -ExclusionPath {%Temp%}; Remove-MpPreference -ExclusionPath {%UserProfile%}; Remove-MpPreference -ExclusionPath {%WinDir%}; Remove-MpPreference -ExclusionPath {%OneDrive%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%ProgramW6432%}; Remove-MpPreference -ExclusionPath {%Path%}; Remove-MpPreference -ExclusionPath {%AppData%\Microsoft\Windows\Start Menu\Programs\Startup}; Remove-MpPreference -ExclusionPath {C:\}; Remove-MpPreference -ExclusionPath {C:\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Java\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Java\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files\Contoso\*}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\}; Remove-MpPreference -ExclusionPath {%ProgramFiles(x86)%\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\}; Remove-MpPreference -ExclusionPath {C:\Program Files (x86)\Contoso\*}; Remove-MpPreference -ExclusionPath {C:\Temp}; Remove-MpPreference -ExclusionPath {C:\Temp\}; Remove-MpPreference -ExclusionPath {C:\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users}; Remove-MpPreference -ExclusionPath {C:\Users\}; Remove-MpPreference -ExclusionPath {C:\Users\*}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {%userprofile%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\ServiceAccount\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\%username%\AppData\LocalLow\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\}; Remove-MpPreference -ExclusionPath {C:\Users\Default\AppData\Local\Temp\*}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\}; Remove-MpPreference -ExclusionPath {%Windir%\Prefetch\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\}; Remove-MpPreference -ExclusionPath {C:\Windows\Prefetch\*}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\}; Remove-MpPreference -ExclusionPath {%Windir%\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\Spool\*}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\}; Remove-MpPreference -ExclusionPath {C:\Windows\System32\CatRoot2\*}; Remove-MpPreference -ExclusionPath {%Windir%\Temp}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\}; Remove-MpPreference -ExclusionPath {%Windir%\Temp\*}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\}; Remove-MpPreference -ExclusionPath {C:\Windows\Temp\*}; Remove-MpPreference -ExclusionPath {/}; Remove-MpPreference -ExclusionPath {/*}; Remove-MpPreference -ExclusionPath {bin}; Remove-MpPreference -ExclusionPath {bin/}; Remove-MpPreference -ExclusionPath {bin/*}; Remove-MpPreference -ExclusionPath {/bin}; Remove-MpPreference -ExclusionPath {/bin/}; Remove-MpPreference -ExclusionPath {/bin/*}; Remove-MpPreference -ExclusionPath {sbin}; Remove-MpPreference -ExclusionPath {sbin/}; Remove-MpPreference -ExclusionPath {sbin/*}; Remove-MpPreference -ExclusionPath {/sbin}; Remove-MpPreference -ExclusionPath {/sbin/}; Remove-MpPreference -ExclusionPath {/sbin/*}; Remove-MpPreference -ExclusionPath {usr/lib}; Remove-MpPreference -ExclusionPath {usr/lib/}; Remove-MpPreference -ExclusionPath {usr/lib/*}; Remove-MpPreference -ExclusionPath {/usr/lib}; Remove-MpPreference -ExclusionPath {/usr/lib/}; Remove-MpPreference -ExclusionPath {/usr/lib/*}; exit"
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Remove-MpPreference -ExclusionExtension *.mp3,*.MP4,*.wav,*.EDB; Remove-MpPreference -ExclusionExtension .7z; Remove-MpPreference -ExclusionExtension .bat; Remove-MpPreference -ExclusionExtension .bin; Remove-MpPreference -ExclusionExtension .cab; Remove-MpPreference -ExclusionExtension .cmd; Remove-MpPreference -ExclusionExtension .com; Remove-MpPreference -ExclusionExtension .cpl; Remove-MpPreference -ExclusionExtension .dll; Remove-MpPreference -ExclusionExtension .exe; Remove-MpPreference -ExclusionExtension .fla; Remove-MpPreference -ExclusionExtension .gif; Remove-MpPreference -ExclusionExtension .gz; Remove-MpPreference -ExclusionExtension .hta; Remove-MpPreference -ExclusionExtension .inf; Remove-MpPreference -ExclusionExtension .java; Remove-MpPreference -ExclusionExtension .jar; Remove-MpPreference -ExclusionExtension .job; Remove-MpPreference -ExclusionExtension .jpeg; Remove-MpPreference -ExclusionExtension .jpg; Remove-MpPreference -ExclusionExtension .js; Remove-MpPreference -ExclusionExtension .ko; Remove-MpPreference -ExclusionExtension .ko.gz; Remove-MpPreference -ExclusionExtension .msi; Remove-MpPreference -ExclusionExtension .ocx; Remove-MpPreference -ExclusionExtension .png; Remove-MpPreference -ExclusionExtension .ps1; Remove-MpPreference -ExclusionExtension .py; Remove-MpPreference -ExclusionExtension .rar; Remove-MpPreference -ExclusionExtension .reg; Remove-MpPreference -ExclusionExtension .scr; Remove-MpPreference -ExclusionExtension .sys; Remove-MpPreference -ExclusionExtension .tar; Remove-MpPreference -ExclusionExtension .tmp; Remove-MpPreference -ExclusionExtension .url; Remove-MpPreference -ExclusionExtension .vbe; Remove-MpPreference -ExclusionExtension .vbs; Remove-MpPreference -ExclusionExtension .wsf; Remove-MpPreference -ExclusionExtension .zip; Remove-MpPreference -ExclusionProcess AcroRd32.exe; Remove-MpPreference -ExclusionProcess bitsadmin.exe; Remove-MpPreference -ExclusionProcess excel.exe; Remove-MpPreference -ExclusionProcess iexplore.exe; Remove-MpPreference -ExclusionProcess java.exe; Remove-MpPreference -ExclusionProcess outlook.exe; Remove-MpPreference -ExclusionProcess psexec.exe; Remove-MpPreference -ExclusionProcess powerpnt.exe; Remove-MpPreference -ExclusionProcess powershell.exe; Remove-MpPreference -ExclusionProcess schtasks.exe; Remove-MpPreference -ExclusionProcess wmic.exe; Remove-MpPreference -ExclusionProcess winword.exe; Remove-MpPreference -ExclusionProcess wuauclt.exe; Remove-MpPreference -ExclusionProcess addinprocess.exe; Remove-MpPreference -ExclusionProcess addinprocess32.exe; Remove-MpPreference -ExclusionProcess addinutil.exe; Remove-MpPreference -ExclusionProcess bash.exe; Remove-MpPreference -ExclusionProcess bginfo.exe; Remove-MpPreference -ExclusionProcess cdb.exe; Remove-MpPreference -ExclusionProcess csi.exe; Remove-MpPreference -ExclusionProcess dbghost.exe; Remove-MpPreference -ExclusionProcess dbgsvc.exe; Remove-MpPreference -ExclusionProcess dnx.exe; Remove-MpPreference -ExclusionProcess dotnet.exe; Remove-MpPreference -ExclusionProcess fsi.exe; Remove-MpPreference -ExclusionProcess fsiAnyCpu.exe; Remove-MpPreference -ExclusionProcess kd.exe; Remove-MpPreference -ExclusionProcess ntkd.exe; Remove-MpPreference -ExclusionProcess lxssmanager.dll; Remove-MpPreference -ExclusionProcess msbuild.exe; Remove-MpPreference -ExclusionProcess mshta.exe; Remove-MpPreference -ExclusionProcess ntsd.exe; Remove-MpPreference -ExclusionProcess rcsi.exe; Remove-MpPreference -ExclusionProcess system.management.automation.dll; Remove-MpPreference -ExclusionProcess windbg.exe; Remove-MpPreference -ExclusionProcess bash; Remove-MpPreference -ExclusionProcess sh; Remove-MpPreference -ExclusionProcess python; Remove-MpPreference -ExclusionProcess python3; Remove-MpPreference -ExclusionProcess java; Remove-MpPreference -ExclusionProcess zsh; exit"   
-
-
-
-Title 9.4.2) Preparing Defender Scan [Undo Malware actions to Defender] [Highest Defense] [LOW PRIVACY, defense will return normal in the end, let the script finish] [3rd-party antivirus users] [Caution]
-    color 01
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; Set-Mppreference -AllowDatagramProcessingOnWinServer 1; Set-Mppreference -AllowNetworkProtectionDownLevel 1;Set-Mppreference -AllowNetworkProtectionOnWinServer 1; Set-Mppreference -AllowSwitchToAsyncInspection 0;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 6;Set-Mppreference -CloudExtendedTimeout 50;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 0; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 1; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 2;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 1; Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 100;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 3;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
-
-
-
-Title 9.4.3) Preparing Defender Scan [Undo Malware actions to Defender] [Highest Defense] [Extra ASR Rules] [3rd-party antivirus users] [Caution]
-    color 03
-    start powershell.exe -Command "mode.com con: lines=19 cols=19;add-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;add-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"          
-
-
-
-
-
-
 Title 9.5) Preparing Defender Scan [REMOVE MALWARE] [Custom list]
     color 05
     REM Custom Malware Path below to remove
     del /q/f/s "C:\Users\%username%\AppData\Roaming\414.exe"
     del /q/f/s "C:\Users\%username%\AppData\Roaming\12.exe"
-
-
-
-
-
-
-Title 9.6) Preparing Defender Scan [Renable Defender Schedule Tasks] [[3rd-party antivirus users] [Caution]
-    color 06
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance" /ENABLE
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /ENABLE
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /ENABLE
-    schtasks /change /tn "\Microsoft\Windows\Windows Defender\Windows Defender Verification" /ENABLE
 
 
 
@@ -2741,9 +2456,6 @@ Title 9.7) Preparing Defender Scan [Signature Update]
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -SignatureUpdate
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ListAllDynamicSignatures
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
-
-
-
 
 
 
@@ -2767,7 +2479,7 @@ Title 10.1) Verification [System]
 
 
 Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Check] [Attention]
-    color 03
+    color 05
     "C:\Users\%username%\Downloads\BleachBit-4.4.2-setup.exe" /S /NoDesktopShortcut /currentuser
     "C:\Users\%username%\Downloads\ccsetup591.exe" /S
     IF EXIST "C:\EmsisoftCmd" (echo Emisoft Command Line Scanner already installed, skipping...) ELSE ("C:\Users\%username%\Downloads\EmsisoftCommandlineScanner64.exe" /s)
@@ -2781,7 +2493,7 @@ Title Meanwhile installing CCleaning, BleachBit and Emsisoft... [Require Name Ch
 
 
 Title 10.2) Verifcation [Windows]
-    color 05
+    color 03
     DISM /Online /NoRestart /Cleanup-Image /ScanHealth
     DISM /online /NoRestart /Cleanup-Image /checkhealth
     DISM /Online /NoRestart /Cleanup-Image /RestoreHealth
@@ -2859,7 +2571,7 @@ Title 11.5) Removing Malware [Defender] [Quickscan] [Patience]
 Title 11.6) Removing Malware [Defender] [Full scan] [Patience]
     color 9F
     echo                      88                                                          
-    echo                      ""                                                                                                                                   
+    echo                      ""                                                                                                                              
     echo   88,dPYba,,adPYba,  88  ,adPPYba, 8b,dPPYba,  ,adPPYba,  ,adPPYba,  ,adPPYba,   
     echo   88P'   "88"    "8a 88 a8"     "" 88P'   "Y8 a8"     "8a I8[    "" a8"     "8a  
     echo   88      88      88 88 8b         88         8b       d8  `"Y8ba,  8b       d8  
@@ -3029,12 +2741,6 @@ Title 12.4) Sending soldiers home... [Kaspersky] [Uninstall]
     FOR %%i IN ("klupd_d62efc8ba*.sys") DO (REG DELETE "HKLM\System\CurrentControlSet\services\%%~ni" /f & DEL /F /Q "%%i")
     cd /
 
-Title 12.5) Windows Defender back to normal defense {For performance} [3rd-party antivirus users] [Caution]
-    color 05
-    start powershell.exe -Command "mode.com con: lines=19 cols=19;Set-Mppreference -AllowDatagramProcessingOnWinServer 0; Set-Mppreference -AllowNetworkProtectionDownLevel 0;Set-Mppreference -AllowNetworkProtectionOnWinServer 0; Set-Mppreference -AllowSwitchToAsyncInspection 1;Set-Mppreference -AttackSurfaceReductionOnlyExclusions 0;remove-Mppreference -AttackSurfaceReductionOnlyExclusions 0;Set-Mppreference -CheckForSignaturesBeforeRunningScan 1;Set-Mppreference -CloudBlockLevel 0;Set-Mppreference -CloudExtendedTimeout 0;Set-Mppreference -ControlledFolderAccessAllowedApplications 0.exe;remove-mppreference -ControlledFolderAccessAllowedApplications 0.exe;Set-Mppreference -ControlledFolderAccessProtectedFolders 0;remove-Mppreference -ControlledFolderAccessProtectedFolders 0;Set-Mppreference -DefinitionUpdatesChannel 0;Set-Mppreference -DisableArchiveScanning 0;Set-Mppreference -DisableAutoExclusions 1;Set-Mppreference -DisableBehaviorMonitoring 0;Set-Mppreference -DisableBlockAtFirstSeen 0;Set-Mppreference -DisableCatchupFullScan 0;Set-Mppreference -DisableCatchupQuickScan 0;Set-Mppreference -DisableCpuThrottleOnIdleScans 1;Set-Mppreference -DisableDatagramProcessing 0;Set-Mppreference -DisableDnsOverTcpParsing 0;Set-Mppreference -DisableDnsParsing 0;Set-Mppreference -DisableEmailScanning 0;Set-Mppreference -DisableGradualRelease 0; Set-Mppreference -DisableHttpParsing 0;Set-Mppreference -DisableInboundConnectionFiltering 0;Set-Mppreference -DisableIOAVProtection 0;Set-Mppreference -DisableNetworkProtectionPerfTelemetry 1; Set-Mppreference -DisablePrivacyMode 0;Set-Mppreference -DisableRdpParsing 0;Set-Mppreference -DisableRealtimeMonitoring 0;Set-Mppreference -DisableRemovableDriveScanning 0;Set-Mppreference -DisableRestorePoint 1;Set-Mppreference -DisableScanningMappedNetworkDrivesForFullScan 0;Set-Mppreference -DisableScanningNetworkFiles 0;Set-Mppreference -DisableScriptScanning 0;Set-Mppreference -DisableSshParsing 0;Set-Mppreference -DisableTlsParsing 0;Set-Mppreference -EnableControlledFolderAccess 0; Set-Mppreference -EnableDnsSinkhole 1;Set-Mppreference -EnableFileHashComputation 0;Set-Mppreference -EnableFullScanOnBatteryPower 1; Set-Mppreference -EnableLowCpuPriority 0;Set-Mppreference -EnableNetworkProtection 0; Set-Mppreference -EngineUpdatesChannel 0;Set-Mppreference -ExclusionExtension 0;Remove-Mppreference -ExclusionExtension 0;Set-Mppreference -ExclusionIpAddress 0;Remove-Mppreference -ExclusionIpAddress 0;Set-Mppreference -ExclusionPath 0;Remove-Mppreference -ExclusionPath 0;Set-Mppreference -ExclusionProcess 0.exe;Remove-Mppreference -ExclusionProcess 0.exe;Set-Mppreference -ForceUseProxyOnly 0;Set-Mppreference -HighThreatDefaultAction Quarantine;Set-Mppreference -LowThreatDefaultAction Quarantine;Set-Mppreference -MAPSReporting 2;Set-Mppreference -MeteredConnectionUpdates 0;Set-Mppreference -ModerateThreatDefaultAction Quarantine;Set-Mppreference -PlatformUpdatesChannel 0;Remove-mppreference -ProxyBypass;Remove-Mppreference -ProxyPacUrl;Remove-Mppreference -ProxyServer;Set-Mppreference -PUAProtection 0;Set-Mppreference -QuarantinePurgeItemsAfterDelay 60;Set-Mppreference -RandomizeScheduleTaskTimes 1;Set-Mppreference -RealTimeScanDirection 0;Set-Mppreference -RemediationScheduleDay 0;Set-Mppreference -RemediationScheduleTime 02:00:00;Set-Mppreference -ReportingAdditionalActionTimeOut 10080; Set-Mppreference -ReportingCriticalFailureTimeOut 10080;Set-Mppreference -ReportingNonCriticalTimeOut 1440;Set-Mppreference -ScanAvgCPULoadFactor 50;Set-Mppreference -ScanOnlyIfIdleEnabled 1;Set-Mppreference -ScanParameters 1;Set-Mppreference -ScanPurgeItemsAfterDelay 15;Set-Mppreference -ScanScheduleDay 0;Set-Mppreference -ScanScheduleOffset 120; Set-Mppreference -ScanScheduleQuickScanTime 00:00:00;Set-Mppreference -ScanScheduleTime 02:00:00;Set-Mppreference -SchedulerRandomizationTime 4;Set-Mppreference -ServiceHealthReportInterval 60;Set-Mppreference -SevereThreatDefaultAction Quarantine;Remove-Mppreference -SharedSignaturesPath;Remove-Mppreference -SignatureAuGracePeriod;Remove-Mppreference -SignatureBlobFileSharesSources;Set-Mppreference -SignatureBlobUpdateInterval 60;Remove-Mppreference -SignatureDefinitionUpdateFileSharesSources;Set-Mppreference -SignatureDisableUpdateOnStartupWithoutEngine 0;Set-Mppreference -SignatureFallbackOrder {MicrosoftUpdateServer|MMPC};Set-Mppreference -SignatureFirstAuGracePeriod 120;Set-Mppreference -SignatureScheduleDay 8;Set-Mppreference -SignatureScheduleTime 01:45:00;Set-Mppreference -SignatureUpdateCatchupInterval 1;Set-Mppreference -SignatureUpdateInterval 0;Set-Mppreference -SubmitSamplesConsent 2;Get-MpPreference | Select ThreatIDDefaultAction_Ids | % {if ($_.ThreatIDDefaultAction_Ids -ne $null) {Write-Host "Removing [$($_.ThreatIDDefaultAction_Ids)]";Remove-MpPreference -ThreatIDDefaultAction_Ids $_.ThreatIDDefaultAction_Ids -EA SilentlyContinue }};Set-Mppreference -ThrottleForScheduledScanOnly 1;Set-Mppreference -TrustLabelProtectionStatus 0;Set-Mppreference -UILockdown 0;Set-Mppreference -UnknownThreatDefaultAction Quarantine;remove-mppreference -UnknownThreatDefaultAction -LowThreatDefaultAction -ModerateThreatDefaultAction -HighThreatDefaultAction -SevereThreatDefaultAction;exit"
-Title 12.6) Remove High Defense ASR Rules {For performance}
-    color 0d
-    start powershell.exe -Command "mode.com con: lines=19 cols=19;remove-mppreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d4f940ab-401b-4efc-aadc-ad5f3c50688a -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 5beb7efe-fd9a-4556-801d-275e5ffc04cc -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d3e037e1-3eb8-44c8-a917-57927947596d -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 3b576869-a4ec-4529-8536-b80a7769e899 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 26190899-1602-49e8-8b27-eb1d0a1ce869 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids d1e49aac-8f56-4280-b9ba-993a6d77406c -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b -AttackSurfaceReductionRules_Actions 6;remove-mppreference -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35 -AttackSurfaceReductionRules_Actions 6;exit"
 
 
 Title Meanwhile Removing Generated Junk [Disk Cleanup]
