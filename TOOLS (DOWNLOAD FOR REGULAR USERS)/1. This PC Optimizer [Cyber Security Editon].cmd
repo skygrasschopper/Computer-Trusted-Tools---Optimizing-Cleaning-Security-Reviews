@@ -25,7 +25,7 @@ Title This PC Optimizer v8.0 [Cyber Security Editon] {Hello %username%! Your luc
     ping 127.0.0.1 -n 1 >nul
     echo 11. Install antimalwares 11. Remove malware 12. Uninstall antimalwares                         [Battle Malware]  
     ping 127.0.0.1 -n 1 >nul
-    echo 13. Shut down to perform Offline Scan and Offline Disk Check                                                            
+    echo 13. Shut down to perform Offline Scan and Offline Disk Check                                   [Battle Malware and Disk Check]                            
     ping 127.0.0.1 -n 1 >nul            
     echo.
     ping 127.0.0.1 -n 1 >nul
