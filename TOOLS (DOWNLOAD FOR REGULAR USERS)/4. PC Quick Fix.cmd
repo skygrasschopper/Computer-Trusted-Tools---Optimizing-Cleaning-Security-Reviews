@@ -122,6 +122,9 @@ cls
 
 Title 3. Windows Updates
                 net start wuauserv
+            "%systemroot%\system32\usoclient.exe" StartScan     
+            "%systemroot%\system32\usoclient.exe" StartWork
+            "%systemroot%\system32\usoclient.exe" StartOobeAppsScan
                 C:\Windows\System32\wuauclt.exe /DetectNow
                 C:\Windows\System32\wuauclt.exe /ShowFeaturedOptInDialog
                 C:\Windows\System32\wuauclt.exe /updatenow

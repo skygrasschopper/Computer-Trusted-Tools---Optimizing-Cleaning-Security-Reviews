@@ -111,7 +111,7 @@ Title This PC Optimizer v8.0 [Cyber Security Editon] {Hello %username%! Your luc
 
 
 
-Title 1) Ending Tasks [Stop Malware Tasks] [DO NOT CLOSE] {TASKBAR MAY BREAK in Windows Beta}
+Title 1.1) Ending Tasks [Stop Malware Tasks] [DO NOT CLOSE] {TASKBAR MAY BREAK in Windows Beta}
     echo End tasks to delete junk and stop malware.
     MODE CON: COLS=49 LINES=19
     color 4F
@@ -127,6 +127,50 @@ Title 1) Ending Tasks [Stop Malware Tasks] [DO NOT CLOSE] {TASKBAR MAY BREAK in 
     taskkill /f /im HelpPane.exe /t
     net stop themes
     cls
+
+
+
+Title 1.2) Ending Services [Stop Malware Tasks] {Specify services}
+    echo y|net stop RasMan
+    echo y|net stop RasAuto
+    echo y|net stop SessionEnv
+    echo y|net stop TermService
+    echo y|net stop UmRdpService
+    echo y|net stop RpcLocator
+    echo y|net stop RemoteRegistry
+    echo y|net stop RemoteAccess
+    echo y|net stop ALG
+    echo y|net stop AudioSrv & echo No Audio
+    echo y|net stop CryptSvc
+    ::echo y|net stop Dhcp & echo No IPV6
+    echo y|net stop dmserver
+    echo y|net stop Dnscache
+    echo y|net stop SENS
+    echo y|net stop EventSystem
+    echo y|net stop FastUserSwitchingCompatibility
+    echo y|net stop lanmanserver
+    echo y|net stop lanmanworkstation
+    echo y|net stop LmHosts
+    echo y|net stop SharedAccess
+    echo y|net stop Netman
+    echo y|net stop Nla
+    echo y|net stop PolicyAgent
+    echo y|net stop ProtectedStorage
+    echo y|net stop SENS
+    echo y|net stop SharedAccess
+    echo y|net stop ShellHWDetection
+    echo y|net stop Spooler
+    echo y|net stop SSDPSRV
+    echo y|net stop Themes
+    echo y|net stop TrkWks
+    echo y|net stop VBoxService
+    echo y|net stop W32Time
+    echo y|net stop WZCSVC
+    echo y|net stop winmgmt
+    net stop WbioSrvc
+    net stop FrameServer
+    net stop FrameServerMonitor
+    powershell wsl --shutdown
 
 
 
@@ -479,7 +523,7 @@ Title 2.8.2) Fixing Windows Security [Resetting network connection] [Reconnect t
 
 
 
-Title 3) Ending Tasks [Prepare to Clean] [DO NOT CLOSE] {TASKBAR MAY BREAKS in Windows Beta}
+Title 3.1) Ending Tasks [Prepare to Clean] [DO NOT CLOSE] {TASKBAR MAY BREAKS in Windows Beta}
     echo To make cleaning more successful and for security reasons, killing tasks again.
     MODE CON: COLS=49 LINES=19
     color 4F
@@ -495,6 +539,50 @@ Title 3) Ending Tasks [Prepare to Clean] [DO NOT CLOSE] {TASKBAR MAY BREAKS in W
     taskkill /f /im HelpPane.exe /t
     net stop themes
     cls
+
+
+
+Title 3.2) Ending Services [Stop Malware Tasks] {Specify services}
+    echo y|net stop RasMan
+    echo y|net stop RasAuto
+    echo y|net stop SessionEnv
+    echo y|net stop TermService
+    echo y|net stop UmRdpService
+    echo y|net stop RpcLocator
+    echo y|net stop RemoteRegistry
+    echo y|net stop RemoteAccess
+    echo y|net stop ALG
+    echo y|net stop AudioSrv & echo No Audio
+    echo y|net stop CryptSvc
+    ::echo y|net stop Dhcp & echo No IPV6
+    echo y|net stop dmserver
+    echo y|net stop Dnscache
+    echo y|net stop SENS
+    echo y|net stop EventSystem
+    echo y|net stop FastUserSwitchingCompatibility
+    echo y|net stop lanmanserver
+    echo y|net stop lanmanworkstation
+    echo y|net stop LmHosts
+    echo y|net stop SharedAccess
+    echo y|net stop Netman
+    echo y|net stop Nla
+    echo y|net stop PolicyAgent
+    echo y|net stop ProtectedStorage
+    echo y|net stop SENS
+    echo y|net stop SharedAccess
+    echo y|net stop ShellHWDetection
+    echo y|net stop Spooler
+    echo y|net stop SSDPSRV
+    echo y|net stop Themes
+    echo y|net stop TrkWks
+    echo y|net stop VBoxService
+    echo y|net stop W32Time
+    echo y|net stop WZCSVC
+    echo y|net stop winmgmt
+    net stop WbioSrvc
+    net stop FrameServer
+    net stop FrameServerMonitor
+    powershell wsl --shutdown
 
 
 
@@ -749,6 +837,8 @@ Title 9.1.4) Cleaning Junk [Windows] [Diagnosis]
     del /q/f/s "C:\ProgramData\Microsoft\Diagnosis\Temp"
     del /q/f/s "%userprofile%\AppData\Local\Diagnostics"
     del /q/f/s "%userprofile%\AppData\Local\ElevatedDiagnostics"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19" & "mdmdiagnosticstool.exe -clean" & exit"
+    del /q/f/s "C:\ProgramData\Microsoft\DiagnosticLogCSP\Collectors"
 
 
 
@@ -989,9 +1079,15 @@ Title 9.5.5) Cleaning uneeded files [Windows] [Speech Recognition] [Cache] {User
 
 
 
-Title 9.5.6) Cleaning [Windows] [History] [Caution] [Run.exe] {Users who use Run command ofen and rely heavily on history be aware}
+Title 9.5.6) Cleaning [Windows] [History] [Caution] [Security] [Run.exe] [Cmd.exe] {Users who use Run command ofen and rely heavily on history be aware}
     color 0e
-    reg delete "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /f
+    reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /f
+
+
+
+Title 9.5.7) Cleaning [WIndows] [History] [Caution] [Security] [Powershell.exe] {USers who want to check what commands were entered}
+    color 09
+    del /q/f/s "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine"
 
 
 
@@ -2352,7 +2448,7 @@ rd /s /q %systemroot%\SoftwareDistribution
 REN %windir%\SoftwareDistribution SoftwareDistribution.OLD
 IF EXIST %windir%\SoftwareDistribution.OLD RD /S /Q %windir%\SoftwareDistribution.OLD
 NET STOP bits
-::net stop cryptsvc 
+net stop cryptsvc 
 Del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
 sc.exe sdset bits D:(A;CI;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)
 sc.exe sdset wuauserv D:(A;;CCLCSWRPLORC;;;AU)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)
@@ -3000,6 +3096,50 @@ Title Meanwhile Ending Tasks [For success uninstall] [DO NOT CLOSE] {TASKBAR MAY
     REM Custom Taskkill list below to add
     taskkill /f /im HelpPane.exe /t
     net stop themes
+
+
+
+Title Meanwhile Ending Services [Stop Malware Tasks] {Specify services}
+    echo y|net stop RasMan
+    echo y|net stop RasAuto
+    echo y|net stop SessionEnv
+    echo y|net stop TermService
+    echo y|net stop UmRdpService
+    echo y|net stop RpcLocator
+    echo y|net stop RemoteRegistry
+    echo y|net stop RemoteAccess
+    echo y|net stop ALG
+    echo y|net stop AudioSrv & echo No Audio
+    echo y|net stop CryptSvc
+    ::echo y|net stop Dhcp & echo No IPV6
+    echo y|net stop dmserver
+    echo y|net stop Dnscache
+    echo y|net stop SENS
+    echo y|net stop EventSystem
+    echo y|net stop FastUserSwitchingCompatibility
+    echo y|net stop lanmanserver
+    echo y|net stop lanmanworkstation
+    echo y|net stop LmHosts
+    echo y|net stop SharedAccess
+    echo y|net stop Netman
+    echo y|net stop Nla
+    echo y|net stop PolicyAgent
+    echo y|net stop ProtectedStorage
+    echo y|net stop SENS
+    echo y|net stop SharedAccess
+    echo y|net stop ShellHWDetection
+    echo y|net stop Spooler
+    echo y|net stop SSDPSRV
+    echo y|net stop Themes
+    echo y|net stop TrkWks
+    echo y|net stop VBoxService
+    echo y|net stop W32Time
+    echo y|net stop WZCSVC
+    echo y|net stop winmgmt
+    net stop WbioSrvc
+    net stop FrameServer
+    net stop FrameServerMonitor
+    powershell wsl --shutdown
 
 
 

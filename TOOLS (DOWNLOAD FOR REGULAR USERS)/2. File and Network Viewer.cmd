@@ -60,10 +60,11 @@ MODE CON: COLS=19 LINES=19
 
 ::1) Auto-generate
 color 03
-Title 1) Auto generate "C:\File and Network Reports - DELETABLE"
+Title 1) Auto generate log stored location
 MODE CON: COLS=19 LINES=19
     ::Create File to store auto-generated reports
     start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1) Auto generate Parent Report Folder & mkdir "C:\File and Network Reports - DELETABLE" & color 06 & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1)Auto generate Parent Report sub Folder & mkdir "C:\File and Network Reports - DELETABLE\Security" & color 06 & exit"
 color 06
 ::1.1) Wifi Report (Auto-generate)
 color 06
@@ -307,7 +308,7 @@ MODE CON: COLS=19 LINES=19
     color 06
     Title 1.29.3 Running tasks Stopped or Running (Auto-generate)
     MODE CON: COLS=19 LINES=19
-        start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-service | Out-File -FilePath {C:\File and Network Reports - DELETABLE\29.3 Running tasks Stopped or Running.txt}"
+        start powershell.exe -Command "mode.com con: lines=19 cols=1000; Get-service | Out-File -FilePath {C:\File and Network Reports - DELETABLE\29.3 Running tasks Stopped or Running.txt}"
     color 06
 
 ::1.30) File tree (Auto-generate)
@@ -382,7 +383,7 @@ MODE CON: COLS=19 LINES=19
     Title 1.33.1) Apps-Windows10 (Auto-generate)
         start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1.33.1) Apps-Windows10 (Auto-generate) & wmic product get name,version > "C:\File and Network Reports - DELETABLE\33.1) Apps-Windows10.txt" & color 06 & exit"
     Title 1.33.2) Apps-Windows11 (Auto-generate)
-        start powershell.exe -Command "mode.com con: lines=19 cols=19; Get-AppxPackage -AllUsers | Out-File -FilePath {C:\File and Network Reports - DELETABLE\33.2 Apps-Windows11.txt}"
+        start powershell.exe -Command "mode.com con: lines=19 cols=1000; Get-AppxPackage -AllUsers | Out-File -FilePath {C:\File and Network Reports - DELETABLE\33.2 Apps-Windows11.txt}"
 
 
 
@@ -396,10 +397,10 @@ MODE CON: COLS=19 LINES=19
 ::1.35) Zero List (Auto-generate)
 Title 1.35.1) Zero Size File List C-Drive (Auto-generate)
     cd/
-    start powershell.exe -Command "mode.com con: lines=19 cols=19; cd..; cd..; cd..; Get-ChildItem -Path (C:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 } | Select -ExpandProperty FullName | Set-Content -Path 'C:\File and Network Reports - DELETABLE\35.1 Zero Size File List C-Drive.txt'"
+    start powershell.exe -Command "mode.com con: lines=19 cols=1000; cd..; cd..; cd..; Get-ChildItem -Path (C:) -Recurse -Force | Where-Object { $_.PSIsContainer -eq $false -and $_.Length -eq 0 } | Select -ExpandProperty FullName | Set-Content -Path 'C:\File and Network Reports - DELETABLE\35.1 Zero Size File List C-Drive.txt'"
 Title 1.35.2) Empty Folder List C-Drive (Auto-generate)
     cd/
-    start powershell.exe -Command "mode.com con lines=19 cols=19; cd..;cd..;cd..; (gci 'C:' -r | ? {$_.PSIsContainer -eq $True}) | ?{$_.GetFileSystemInfos().Count -eq 0} | select FullName | Set-Content -Path 'C:\File and Network Reports - DELETABLE\35.2 Empty Folder List C-Drive.txt'"
+    start powershell.exe -Command "mode.com con lines=19 cols=1000; cd..;cd..;cd..; (gci 'C:' -r | ? {$_.PSIsContainer -eq $True}) | ?{$_.GetFileSystemInfos().Count -eq 0} | select FullName | Set-Content -Path 'C:\File and Network Reports - DELETABLE\35.2 Empty Folder List C-Drive.txt'"
 
 ::1.36) Power (Auto-generate)
 color 03
@@ -425,7 +426,27 @@ MODE CON: COLS=19 LINES=19
         Title 1.37.4) Performance Monitor View (Autorun)
             start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & color 03 & Title 1.37.4) Performance Monitor View (Autorun) & perfmon /sys & color 06 & exit"
 
+Title 1.38) Windows Security Settings (Autorun)
+    start powershell.exe -Command "mode.com con: lines=19 cols=1000; get-mppreference | Out-File -FilePath {C:\File and Network Reports - DELETABLE\Security\Windows Defender Settings.txt}"
 
+Title 1.39) Windows Security Info (Autorun)
+    start powershell.exe -Command "mode.com con: lines=19 cols=1000; get-mpcomputerstatus | Out-File -FilePath {C:\File and Network Reports - DELETABLE\Security\Windows Defender Info.txt}"
+    
+Title 1.40) Cmd.exe history (Autorun)
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & doskey /h > "C:\File and Network Reports - DELETABLE\Security\Command Prompt History.txt" & exit"
+
+Title 1.41) Powershell.exe history (Autorun)
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & copy "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt" "C:\File and Network Reports - DELETABLE\Security\Powershell History.txt" & exit"
+
+Title 1.42) Computer Info (Autorun)
+    start powershell.exe -Command "mode.com con: lines=19 cols=1000; Get-ComputerInfo | Out-File -FilePath {C:\File and Network Reports - DELETABLE\38 Computer Info.txt}"
+
+Title 1.43) bios (autorun)
+    start powershell.exe -Command "mode.com con: lines=19 cols=1000; Get-WmiObject win32_bios | Out-File -FilePath {C:\File and Network Reports - DELETABLE\39 BIOS.txt}"
+
+Title 1.44) MDMDiagReport (autorun)
+    REM Areas under Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MdmDiagnostics\Area
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot;Tpm -zip "c:\File and Network Reports - DELETABLE\MDMDiagReport.zip" & exit"
 
 ::2) View
 ::1. Wifi Report
