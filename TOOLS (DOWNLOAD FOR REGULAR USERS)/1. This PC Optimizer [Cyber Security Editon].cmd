@@ -837,7 +837,7 @@ Title 9.1.4) Cleaning Junk [Windows] [Diagnosis]
     del /q/f/s "C:\ProgramData\Microsoft\Diagnosis\Temp"
     del /q/f/s "%userprofile%\AppData\Local\Diagnostics"
     del /q/f/s "%userprofile%\AppData\Local\ElevatedDiagnostics"
-    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19" & "mdmdiagnosticstool.exe -clean" & exit"
+    start cmd.exe @cmd /k "MODE CON: COLS=19 LINES=19 & mdmdiagnosticstool.exe -clean & exit"
     del /q/f/s "C:\ProgramData\Microsoft\DiagnosticLogCSP\Collectors"
 
 
