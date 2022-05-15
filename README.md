@@ -81,6 +81,6 @@ Thanks to everyone who contributed to this project, long live freedom, open sour
 Feel free to give feedbacks! Any suggestions are appreciated.
 
 Boss: Skygrass Chopper
-Contact: clam2@student.dean.edu
+Contact: kencom999@gmail.com
 Youtube: https://www.youtube.com/c/SkygrassChopper
 Discord: https://discord.com/invite/Nqza6kg
